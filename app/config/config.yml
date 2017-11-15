@@ -82,13 +82,14 @@ nelmio_cors:
     paths:
         '^/': ~
 
-stof_doctrine_extensions:
-    orm:
-        default:
-            timestampable: true
-            blameable: true
-            softdeleteable: true
-            sluggable: true
+# stof_doctrine_extensions:
+#     orm:
+#         default:
+#             timestampable: true
+#             blameable: true
+#             softdeleteable: true
+#             sluggable: true
+
 fpn_tag:
     model:
         tag_class:     AppBundle\Entity\Tag
