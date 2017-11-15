@@ -1,0 +1,46 @@
+easy_admin:
+    entities:
+        Item:
+            class: AppBundle\Entity\Item
+            list:
+                fields:
+                    - property: title
+                    #   label: Code
+                    #   template: code.html.twig
+                    # - property: status
+                    #   sortable: true
+                    #   template: status.html.twig
+                    # - property: startTime
+                    #   label: Time range
+                    #   template: date_time_range.html.twig
+                    # - property: template
+                    # - property: note
+                    #   sortable: false
+                    #   template: note.html.twig
+                    # - property: createdAt
+                    #   template: datetime.html.twig
+                    # - property: createdBy
+                    #   roles: [ROLE_ADMIN]
+
+            edit:
+                fields:
+                    - type: group
+                      css_class: 'basic-information'
+                      label: 'Basic information'
+                    - property: title
+                      type_options:
+                          disabled: true
+
+        Source:
+            class: AppBundle\Entity\Source
+            list:
+                fields:
+                    - property: title
+                    - property: url
+                      type: url
+
+            edit:
+                fields:
+                    - property: title
+                    - property: url
+                      type: url

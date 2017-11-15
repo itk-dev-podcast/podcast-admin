@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+    <channel>
+        <itunes:owner>
+            <itunes:name>Radio24syv</itunes:name>
+            <itunes:email>digital@radio24syv.dk</itunes:email>
+        </itunes:owner>
+        <title>24 Spørgsmål til Professoren</title>
+        <link>https://www.radio24syv.dk</link>
+        <description>I ”24 Spørgsmål til Professoren” vil lytterne opleve Lone Frank i dybe og medrivende samtaler med nogle af landets førende forskere, og hvis man foretrækker sin videnskabsjournalistik så udfordrende, underholdende og samtidig så nuanceret som muligt, går man ikke galt i byen med ”24 Spørgsmål til Professoren”. 
+
+"24 Spørgsmål til Professoren" er produceret i samarbejde med Carlsbergfondet.</description>
+        <language>da-dk</language>
+        <generator>Visualplatform</generator>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <itunes:author>Radio24syv</itunes:author>
+        <itunes:summary>I ”24 Spørgsmål til Professoren” vil lytterne opleve Lone Frank i dybe og medrivende samtaler med nogle af landets førende forskere, og hvis man foretrækker sin videnskabsjournalistik så udfordrende, underholdende og samtidig så nuanceret som muligt, går man ikke galt i byen med ”24 Spørgsmål til Professoren”. 
+
+"24 Spørgsmål til Professoren" er produceret i samarbejde med Carlsbergfondet.</itunes:summary>
+        <itunes:keywords>radio24syv, radio, sommer, videnskab, lone frank</itunes:keywords>
+        <itunes:type>episodic</itunes:type>
+        <itunes:explicit>no</itunes:explicit>
+        <itunes:image href="https://arkiv.radio24syv.dk/files/podcastimage-13973671.jpg"/>
+        <itunes:category text="Science &amp; Medicine"/>
+        <atom:link rel="self" href="https://arkiv.radio24syv.dk/audiopodcast/channel/13973671"/>
+        <atom:link rel="next" href="http://arkiv.radio24syv.dk/audiopodcast/channel/13973671?p=2&amp;album%5fid=13973671&amp;podcast%5fp=t&amp;https="/>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/19476792/19944606/08b2d0dbf0b4dd365284ed1e0778e704/audio/podcast/19944606-audio.mp3" type="audio/mp3" length="39601197"/>
+            <title>Menneskets rodede familiehistorie</title>
+            <link>https://arkiv.radio24syv.dk/photo/19944606/menneskets-rodede-familiehistorie</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Længe troede man, at historien om menneskets oprindelse var enkel og lineær. Men fossiler og DNA-data bliver afdækker stadig mere interessant rod i familietræet. Vores tidlige forfædre parrede sig lystigt med neanderthalerne, og måske også med de mange andre mennesketyper, som levede på samme tid og sted. Direktør for Statens Naturhistoriske Museum, Peter C. Kjærgaard, fortæller om &amp;quot;vidunderlige fossiler&amp;quot;, &amp;quot;yndige skeletter&amp;quot; og gustne forskere.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/19944606/menneskets-rodede-familiehistorie"&gt;&lt;img src="https://arkiv.radio24syv.dk/19476792/19944606/08b2d0dbf0b4dd365284ed1e0778e704/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/19944606</guid>
+            <pubDate>Sat, 11 Nov 2017 15:08:08 GMT</pubDate>
+            <itunes:summary>Længe troede man, at historien om menneskets oprindelse var enkel og lineær. Men fossiler og DNA-data bliver afdækker stadig mere interessant rod i familietræet. Vores tidlige forfædre parrede sig lystigt med neanderthalerne, og måske også med de mange andre mennesketyper, som levede på samme tid og sted. Direktør for Statens Naturhistoriske Museum, Peter C. Kjærgaard, fortæller om vidunderlige fossiler, yndige skeletter og gustne forskere.
+</itunes:summary>
+            <itunes:subtitle>Længe troede man, at historien om menneskets oprindelse var enkel og lineær. Men fossiler og DNA-data bliver afdækker stadig mere interessant rod i familietræet. Vores tidlige forfædre parrede sig lystigt med neanderthalerne, og måske også med de...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/19476792/19944606/08b2d0dbf0b4dd365284ed1e0778e704/standard/thumbnail.jpg"/>
+            <category>broadcast:154500</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/19476793/19872983/d769a14560b75cd5166cea7595f2e812/audio/podcast/19872983-audio.mp3" type="audio/mp3" length="39607821"/>
+            <title>Solceller – lige i øjet - med nanoforsker Rasmus Schmidt Davidsen</title>
+            <link>https://arkiv.radio24syv.dk/photo/19872983/solceller-lige-i-ojet-med-nanoforsker-rasmus</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Siden 1960erne har ingeniører haft visioner om at gøre blinde seende med elektroniske implantater, men de store fremskridt har manglet. Nu har den danske nanoforsker Rasmus Schmidt Davidsen fået den idé at bruge solceller. De virker i princippet som nethindens sanseceller, og målet er et panel i mikrostørrelse, som lægges ind i øjet og forbinder sig direkte med synsnerven.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/19872983/solceller-lige-i-ojet-med-nanoforsker-rasmus"&gt;&lt;img src="https://arkiv.radio24syv.dk/19476793/19872983/d769a14560b75cd5166cea7595f2e812/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/19872983</guid>
+            <pubDate>Sat, 04 Nov 2017 15:11:31 GMT</pubDate>
+            <itunes:summary>Siden 1960erne har ingeniører haft visioner om at gøre blinde seende med elektroniske implantater, men de store fremskridt har manglet. Nu har den danske nanoforsker Rasmus Schmidt Davidsen fået den idé at bruge solceller. De virker i princippet som nethindens sanseceller, og målet er et panel i mikrostørrelse, som lægges ind i øjet og forbinder sig direkte med synsnerven.
+</itunes:summary>
+            <itunes:subtitle>Siden 1960erne har ingeniører haft visioner om at gøre blinde seende med elektroniske implantater, men de store fremskridt har manglet. Nu har den danske nanoforsker Rasmus Schmidt Davidsen fået den idé at bruge solceller. De virker i princippet...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/19476793/19872983/d769a14560b75cd5166cea7595f2e812/standard/thumbnail.jpg"/>
+            <category>broadcast:154006</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/19476793/19771117/4b0f8bc9adcca658182798483a9ca8d9/audio/podcast/19771117-audio.mp3" type="audio/mp3" length="39381741"/>
+            <title>Bakteriernes hemmelige liv - Bakteriolog Lone Gram, DTU</title>
+            <link>https://arkiv.radio24syv.dk/photo/19771117/bakteriernes-hemmelige-liv-bakteriolog-lone-gram</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Bakterier tænker ikke, men de kan både handle i flok og slå enhver kemiker af banen, når det handler om at sammensætte interessante molekyler. Bakteriolog Lone Gram leder et nyt grundforskningscenter, som skal opklare, hvordan bakterierne selv bruger antibiotika, og hun fortæller om udspekulerede mikrober, der samarbejder på tværs af arter og danner komplekse samfund.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/19771117/bakteriernes-hemmelige-liv-bakteriolog-lone-gram"&gt;&lt;img src="https://arkiv.radio24syv.dk/19476793/19771117/4b0f8bc9adcca658182798483a9ca8d9/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/19771117</guid>
+            <pubDate>Fri, 27 Oct 2017 13:19:14 GMT</pubDate>
+            <itunes:summary>Bakterier tænker ikke, men de kan både handle i flok og slå enhver kemiker af banen, når det handler om at sammensætte interessante molekyler. Bakteriolog Lone Gram leder et nyt grundforskningscenter, som skal opklare, hvordan bakterierne selv bruger antibiotika, og hun fortæller om udspekulerede mikrober, der samarbejder på tværs af arter og danner komplekse samfund.
+</itunes:summary>
+            <itunes:subtitle>Bakterier tænker ikke, men de kan både handle i flok og slå enhver kemiker af banen, når det handler om at sammensætte interessante molekyler. Bakteriolog Lone Gram leder et nyt grundforskningscenter, som skal opklare, hvordan bakterierne selv...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>54:41</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/19476793/19771117/4b0f8bc9adcca658182798483a9ca8d9/standard/thumbnail.jpg"/>
+            <category>broadcast:153514</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/19476794/19662735/4a696bf7514115fa5d94ad97e1324e06/audio/podcast/19662735-audio.mp3" type="audio/mp3" length="39401901"/>
+            <title>Tyngdekraftens tiltrækning - astrofysiker Uffe Gråe Jørgensen</title>
+            <link>https://arkiv.radio24syv.dk/photo/19662735/tyngdekraftens-tiltraekning-astrofysiker-uffe</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Alle jublede over ugens sensationelle målinger af tyngdebølger. Men hvad er det overhovedet fysikerne går og roder med? Hvordan fungerer tyngdekraften, og hvad er masse overhovedet? Faktisk ved vi det ikke helt, forklarer astrofysiker Uffe Gråe Jørgensen og tager os både ind i materien og ned gennem den utrolige historie om jagten på forståelse. Fra Newton over Einstein og den oversete tragiske helt Bernhard Riemann.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/19662735/tyngdekraftens-tiltraekning-astrofysiker-uffe"&gt;&lt;img src="https://arkiv.radio24syv.dk/19476794/19662735/4a696bf7514115fa5d94ad97e1324e06/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/19662735</guid>
+            <pubDate>Fri, 20 Oct 2017 12:38:16 GMT</pubDate>
+            <itunes:summary>Alle jublede over ugens sensationelle målinger af tyngdebølger. Men hvad er det overhovedet fysikerne går og roder med? Hvordan fungerer tyngdekraften, og hvad er masse overhovedet? Faktisk ved vi det ikke helt, forklarer astrofysiker Uffe Gråe Jørgensen og tager os både ind i materien og ned gennem den utrolige historie om jagten på forståelse. Fra Newton over Einstein og den oversete tragiske helt Bernhard Riemann.
+</itunes:summary>
+            <itunes:subtitle>Alle jublede over ugens sensationelle målinger af tyngdebølger. Men hvad er det overhovedet fysikerne går og roder med? Hvordan fungerer tyngdekraften, og hvad er masse overhovedet? Faktisk ved vi det ikke helt, forklarer astrofysiker Uffe Gråe...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>54:43</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/19476794/19662735/4a696bf7514115fa5d94ad97e1324e06/standard/thumbnail.jpg"/>
+            <category>broadcast:153025</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/19476794/19576995/61cec073dbbcba0e7984dab79922f926/audio/podcast/19576995-audio.mp3" type="audio/mp3" length="39601773"/>
+            <title>Reformationen var ikke Luther Lagkage</title>
+            <link>https://arkiv.radio24syv.dk/photo/19576995/reformationen-var-ikke-luther-lagkage</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Martin Luther har spillet samme rolle for moderne demokrati og frihedsrettigheder som Hitler har for oprettelsen af FN og staten Israel. Den store reformator endte ufrivilligt som fødselshjælper for ideer, som faktisk var ham dybt modbydelige. Religionshistoriker Jens-André P. Herbener har kigget dybt i Luthers tekster og fået øje på en religiøs fanatiker og hadprædikant af guds nåde.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/19576995/reformationen-var-ikke-luther-lagkage"&gt;&lt;img src="https://arkiv.radio24syv.dk/19476794/19576995/61cec073dbbcba0e7984dab79922f926/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/19576995</guid>
+            <pubDate>Sat, 14 Oct 2017 15:08:52 GMT</pubDate>
+            <itunes:summary>Martin Luther har spillet samme rolle for moderne demokrati og frihedsrettigheder som Hitler har for oprettelsen af FN og staten Israel. Den store reformator endte ufrivilligt som fødselshjælper for ideer, som faktisk var ham dybt modbydelige. Religionshistoriker Jens-André P. Herbener har kigget dybt i Luthers tekster og fået øje på en religiøs fanatiker og hadprædikant af guds nåde.
+</itunes:summary>
+            <itunes:subtitle>Martin Luther har spillet samme rolle for moderne demokrati og frihedsrettigheder som Hitler har for oprettelsen af FN og staten Israel. Den store reformator endte ufrivilligt som fødselshjælper for ideer, som faktisk var ham dybt modbydelige....</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/19476794/19576995/61cec073dbbcba0e7984dab79922f926/standard/thumbnail.jpg"/>
+            <category>broadcast:152523</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/19476789/19494716/40ba160866217e9425d16cfd15839ba2/audio/podcast/19494716-audio.mp3" type="audio/mp3" length="39602061"/>
+            <title>Skal traumer fortrænges?</title>
+            <link>https://arkiv.radio24syv.dk/photo/19494716/skal-traumer-fortraenges</link>
+            <description>&lt;p&gt;&lt;p&gt;Ph.d. ved Dansk Center mod Tortur, Helle Harnisch har undersøgt tidligere børnesoldater fra det nordlige Uganda. Hendes fund er en udfordring til den psykologiske verdens dogme om ’heling gennem deling’. De traumatiserede klarer sig psykisk bedst igennem ved ikke at tale om deres oplevelser.&lt;/p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/19494716/skal-traumer-fortraenges"&gt;&lt;img src="https://arkiv.radio24syv.dk/19476789/19494716/40ba160866217e9425d16cfd15839ba2/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/19494716</guid>
+            <pubDate>Sat, 07 Oct 2017 15:09:00 GMT</pubDate>
+            <itunes:summary>Ph.d. ved Dansk Center mod Tortur, Helle Harnisch har undersøgt tidligere børnesoldater fra det nordlige Uganda. Hendes fund er en udfordring til den psykologiske verdens dogme om ’heling gennem deling’. De traumatiserede klarer sig psykisk bedst igennem ved ikke at tale om deres oplevelser.</itunes:summary>
+            <itunes:subtitle>Ph.d. ved Dansk Center mod Tortur, Helle Harnisch har undersøgt tidligere børnesoldater fra det nordlige Uganda. Hendes fund er en udfordring til den psykologiske verdens dogme om ’heling gennem deling’. De traumatiserede klarer sig psykisk bedst...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/19476789/19494716/40ba160866217e9425d16cfd15839ba2/standard/thumbnail.jpg"/>
+            <category>broadcast:152030</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/16107558/19245378/8228a1ea308af895d00deb2fca967ed2/audio/podcast/19245378-audio.mp3" type="audio/mp3" length="39609261"/>
+            <title>Ind i den kriminelle hjerne</title>
+            <link>https://arkiv.radio24syv.dk/photo/19245378/ind-i-den-kriminelle-hjerne</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Er man uskyldig i drab, hvis en hjernetumor forstyrrer impulskontrollen? Og er det mere rimeligt at behandle forbryderes hjerner end at spærre dem inde? Retsfilosof Jesper Ryberg arbejder med neurovidenskab i retssystemet og forklarer, hvorfor mennesket mangler fri vilje, og ’retsfølelse’ blot er politikeres undskyldning for ikke at gennemtænke forbrydelse og straf.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/19245378/ind-i-den-kriminelle-hjerne"&gt;&lt;img src="https://arkiv.radio24syv.dk/16107558/19245378/8228a1ea308af895d00deb2fca967ed2/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/19245378</guid>
+            <pubDate>Sat, 30 Sep 2017 15:09:16 GMT</pubDate>
+            <itunes:summary>Er man uskyldig i drab, hvis en hjernetumor forstyrrer impulskontrollen? Og er det mere rimeligt at behandle forbryderes hjerner end at spærre dem inde? Retsfilosof Jesper Ryberg arbejder med neurovidenskab i retssystemet og forklarer, hvorfor mennesket mangler fri vilje, og ’retsfølelse’ blot er politikeres undskyldning for ikke at gennemtænke forbrydelse og straf.
+</itunes:summary>
+            <itunes:subtitle>Er man uskyldig i drab, hvis en hjernetumor forstyrrer impulskontrollen? Og er det mere rimeligt at behandle forbryderes hjerner end at spærre dem inde? Retsfilosof Jesper Ryberg arbejder med neurovidenskab i retssystemet og forklarer, hvorfor...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/16107558/19245378/8228a1ea308af895d00deb2fca967ed2/standard/thumbnail.jpg"/>
+            <category>broadcast:151537</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/16107561/19163180/43ea27e8e4871163ec04bf866dce7b05/audio/podcast/19163180-audio.mp3" type="audio/mp3" length="39608109"/>
+            <title>Hvad skal vi med kvinder? - psykolog Christina Lundsgaard Ottsen</title>
+            <link>https://arkiv.radio24syv.dk/photo/19163180/hvad-skal-vi-med-kvinder-psykolog-christina</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Mangfoldighed er et plusord, men psykolog Christina Lundsgaard Ottsen forsker i, hvad det faktisk betyder. Kvinder i ledelse er et gode, konstaterer hun, men kun hvis de kommer til bordet med andre perspektiver, holdninger og livserfaringer end resten. Radikal forskellighed gør beslutninger mere gennemarbejdede og skaber mere innovation.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/19163180/hvad-skal-vi-med-kvinder-psykolog-christina"&gt;&lt;img src="https://arkiv.radio24syv.dk/16107561/19163180/43ea27e8e4871163ec04bf866dce7b05/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/19163180</guid>
+            <pubDate>Sat, 23 Sep 2017 15:09:32 GMT</pubDate>
+            <itunes:summary>Mangfoldighed er et plusord, men psykolog Christina Lundsgaard Ottsen forsker i, hvad det faktisk betyder. Kvinder i ledelse er et gode, konstaterer hun, men kun hvis de kommer til bordet med andre perspektiver, holdninger og livserfaringer end resten. Radikal forskellighed gør beslutninger mere gennemarbejdede og skaber mere innovation.
+</itunes:summary>
+            <itunes:subtitle>Mangfoldighed er et plusord, men psykolog Christina Lundsgaard Ottsen forsker i, hvad det faktisk betyder. Kvinder i ledelse er et gode, konstaterer hun, men kun hvis de kommer til bordet med andre perspektiver, holdninger og livserfaringer end...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/16107561/19163180/43ea27e8e4871163ec04bf866dce7b05/standard/thumbnail.jpg"/>
+            <category>broadcast:151052</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/16107547/19079247/43b666918ab9c01e1d24657454ede159/audio/podcast/19079247-audio.mp3" type="audio/mp3" length="39601197"/>
+            <title>Family economics - økonom Jens Bonke</title>
+            <link>https://arkiv.radio24syv.dk/photo/19079247/family-economics-okonom-jens-bonke</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Jens Bonke studerer danskernes parforhold gennem statistik og kan se livets uromantiske byttehandler. Kvinder gifter sig stadig op ad, og skilsmissen truer, hvis kvinden begynder at tjene mere end sin mand. Til gengæld mister &amp;quot;brugte&amp;quot; kvinder værdi på ægteskabsmarkedet, hvis de har børn, mens det ikke koster &amp;quot;brugte&amp;quot; mænd noget af have afkom.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/19079247/family-economics-okonom-jens-bonke"&gt;&lt;img src="https://arkiv.radio24syv.dk/16107547/19079247/43b666918ab9c01e1d24657454ede159/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/19079247</guid>
+            <pubDate>Sat, 16 Sep 2017 15:09:11 GMT</pubDate>
+            <itunes:summary>Jens Bonke studerer danskernes parforhold gennem statistik og kan se livets uromantiske byttehandler. Kvinder gifter sig stadig op ad, og skilsmissen truer, hvis kvinden begynder at tjene mere end sin mand. Til gengæld mister brugte kvinder værdi på ægteskabsmarkedet, hvis de har børn, mens det ikke koster brugte mænd noget af have afkom.
+</itunes:summary>
+            <itunes:subtitle>Jens Bonke studerer danskernes parforhold gennem statistik og kan se livets uromantiske byttehandler. Kvinder gifter sig stadig op ad, og skilsmissen truer, hvis kvinden begynder at tjene mere end sin mand. Til gengæld mister brugte kvinder værdi...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/16107547/19079247/43b666918ab9c01e1d24657454ede159/standard/thumbnail.jpg"/>
+            <category>broadcast:150558</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/16107558/18987784/63a559387bf84302477aa2d234878852/audio/podcast/18987784-audio.mp3" type="audio/mp3" length="39605805"/>
+            <title>Sex og vold i bibelsk forstand - Teologi-professor ved Københavns...</title>
+            <link>https://arkiv.radio24syv.dk/photo/18987784/sex-og-vold-i-bibelsk-forstand-teologi-professor</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Hvem skrev egentlig det gamle testamente, og hvad var hensigten med de barske og blodige fortællinger? Teolog Anne Katrine de Hemmer Gudme udlægger nogle af bibelens mest besynderlige tekster og forklarer, hvordan en lille gruppe bronzealder intellektuelle brugte horror-litterære kneb til at gøre Jahve til enehersker blandt Mellemøstens mange guder.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/18987784/sex-og-vold-i-bibelsk-forstand-teologi-professor"&gt;&lt;img src="https://arkiv.radio24syv.dk/16107558/18987784/63a559387bf84302477aa2d234878852/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/18987784</guid>
+            <pubDate>Sat, 09 Sep 2017 15:09:14 GMT</pubDate>
+            <itunes:summary>Hvem skrev egentlig det gamle testamente, og hvad var hensigten med de barske og blodige fortællinger? Teolog Anne Katrine de Hemmer Gudme udlægger nogle af bibelens mest besynderlige tekster og forklarer, hvordan en lille gruppe bronzealder intellektuelle brugte horror-litterære kneb til at gøre Jahve til enehersker blandt Mellemøstens mange guder.
+</itunes:summary>
+            <itunes:subtitle>Hvem skrev egentlig det gamle testamente, og hvad var hensigten med de barske og blodige fortællinger? Teolog Anne Katrine de Hemmer Gudme udlægger nogle af bibelens mest besynderlige tekster og forklarer, hvordan en lille gruppe bronzealder...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/16107558/18987784/63a559387bf84302477aa2d234878852/standard/thumbnail.jpg"/>
+            <category>broadcast:150067</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/16107559/18900953/5e9863008fa0e3e04e08657fca09bb84/audio/podcast/18900953-audio.mp3" type="audio/mp3" length="39394502"/>
+            <title>Skumfidustest for voksne - økonom Claus Thustrup Kreiner</title>
+            <link>https://arkiv.radio24syv.dk/photo/18900953/skumfidustest-for-voksne-okonom-claus-thustrup</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Politikere taler om ulighed som et spørgsmål om samfundsmæssige strukturer, men adfærdsøkonomerne peger på, at meget af den skyldes menneskers forskellige karaktertræk og den måde de træffer valg. Lavere tålmodighed betyder mindre formue uafhængigt af udgangspunktet, fortæller Claus Thustrup Kreiner. Til gengæld går overførselsindkomst i arv mellem generationer via kultur.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/18900953/skumfidustest-for-voksne-okonom-claus-thustrup"&gt;&lt;img src="https://arkiv.radio24syv.dk/16107559/18900953/5e9863008fa0e3e04e08657fca09bb84/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/18900953</guid>
+            <pubDate>Fri, 01 Sep 2017 13:56:10 GMT</pubDate>
+            <itunes:summary>Politikere taler om ulighed som et spørgsmål om samfundsmæssige strukturer, men adfærdsøkonomerne peger på, at meget af den skyldes menneskers forskellige karaktertræk og den måde de træffer valg. Lavere tålmodighed betyder mindre formue uafhængigt af udgangspunktet, fortæller Claus Thustrup Kreiner. Til gengæld går overførselsindkomst i arv mellem generationer via kultur.
+</itunes:summary>
+            <itunes:subtitle>Politikere taler om ulighed som et spørgsmål om samfundsmæssige strukturer, men adfærdsøkonomerne peger på, at meget af den skyldes menneskers forskellige karaktertræk og den måde de træffer valg. Lavere tålmodighed betyder mindre formue...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>54:42</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/16107559/18900953/5e9863008fa0e3e04e08657fca09bb84/standard/thumbnail.jpg"/>
+            <category>broadcast:149564</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/16107559/18794288/461db70dbd5052bcbe68b4c81831ca9f/audio/podcast/18794288-audio.mp3" type="audio/mp3" length="39383469"/>
+            <title>Fra Vejle til verdenseliten - Lene Hau</title>
+            <link>https://arkiv.radio24syv.dk/photo/18794288/fra-vejle-til-verdenseliten-lene-hau</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Hvordan kommer man fra en dansk provinsby til at være en af fysikkens store internationale stjerner? Lene Hau fortæller om en matematiklærer, som inspirerede hende og om en indre drift, som får hende til at gå efter dét, ingen tror er muligt. Med en dyb fascination af kvantemekamik og et talent for at bygge kompliceret udstyr, brød hun igennem med at bremse lyset. Nu kan hun både standse det og gemme det og har åbnet en helt ny verden af muligheder for fysikken.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/18794288/fra-vejle-til-verdenseliten-lene-hau"&gt;&lt;img src="https://arkiv.radio24syv.dk/16107559/18794288/461db70dbd5052bcbe68b4c81831ca9f/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/18794288</guid>
+            <pubDate>Thu, 24 Aug 2017 14:15:34 GMT</pubDate>
+            <itunes:summary>Hvordan kommer man fra en dansk provinsby til at være en af fysikkens store internationale stjerner? Lene Hau fortæller om en matematiklærer, som inspirerede hende og om en indre drift, som får hende til at gå efter dét, ingen tror er muligt. Med en dyb fascination af kvantemekamik og et talent for at bygge kompliceret udstyr, brød hun igennem med at bremse lyset. Nu kan hun både standse det og gemme det og har åbnet en helt ny verden af muligheder for fysikken.
+</itunes:summary>
+            <itunes:subtitle>Hvordan kommer man fra en dansk provinsby til at være en af fysikkens store internationale stjerner? Lene Hau fortæller om en matematiklærer, som inspirerede hende og om en indre drift, som får hende til at gå efter dét, ingen tror er muligt. Med...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>54:41</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/16107559/18794288/461db70dbd5052bcbe68b4c81831ca9f/standard/thumbnail.jpg"/>
+            <category>broadcast:149064</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/16107557/18736687/2e4c07657d3f99aa9af410f8e048f2a0/audio/podcast/18736687-audio.mp3" type="audio/mp3" length="39606182"/>
+            <title>Om dansk skolehistorie med professor Ning de Conninck Smith</title>
+            <link>https://arkiv.radio24syv.dk/photo/18736687/om-dansk-skolehistorie-med-professor-ning-de</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Vi har skændtes om skolen i 500 år og bliver stædigt ved. Historiker Ning de Conninck Smith tager os på tur gennem udviklingen fra religiøs skole over skolen, der uddanner børn i demokrati til fremtiden, som skal handle om dannelse. Men én ting er konstant: Pigerne har klaret sig bedre end drengene lige så længe man har indsamlet data. Det er kun forklaringerne, der veksler med tidens mode.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/18736687/om-dansk-skolehistorie-med-professor-ning-de"&gt;&lt;img src="https://arkiv.radio24syv.dk/16107557/18736687/2e4c07657d3f99aa9af410f8e048f2a0/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/18736687</guid>
+            <pubDate>Sat, 19 Aug 2017 15:09:44 GMT</pubDate>
+            <itunes:summary>Vi har skændtes om skolen i 500 år og bliver stædigt ved. Historiker Ning de Conninck Smith tager os på tur gennem udviklingen fra religiøs skole over skolen, der uddanner børn i demokrati til fremtiden, som skal handle om dannelse. Men én ting er konstant: Pigerne har klaret sig bedre end drengene lige så længe man har indsamlet data. Det er kun forklaringerne, der veksler med tidens mode.
+</itunes:summary>
+            <itunes:subtitle>Vi har skændtes om skolen i 500 år og bliver stædigt ved. Historiker Ning de Conninck Smith tager os på tur gennem udviklingen fra religiøs skole over skolen, der uddanner børn i demokrati til fremtiden, som skal handle om dannelse. Men én ting er...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/16107557/18736687/2e4c07657d3f99aa9af410f8e048f2a0/standard/thumbnail.jpg"/>
+            <psc:chapters version="1.2" xmlns:psc="http://podlove.org/simple-chapters">
+                <psc:chapter start="0" title="" href="https://arkiv.radio24syv.dk/video/18736687/00:00" image="https://arkiv.radio24syv.dk/16107557/18736687/2e4c07657d3f99aa9af410f8e048f2a0/standard/section-thumbnail.jpg"/>
+            </psc:chapters>
+            <category>broadcast:148564</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/16107558/18666904/3f6294c983b646c4d67a4e8a5840d936/audio/podcast/18666904-audio.mp3" type="audio/mp3" length="39599558"/>
+            <title>Ole Fogh Kirkeby - professor emeritus ved CBS, filosofi</title>
+            <link>https://arkiv.radio24syv.dk/photo/18666904/ole-fogh-kirkeby-professor-emeritus-ved-cbs</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Hvis du vil være en god leder, skal du gå til de gamle grækere. Ironman og marathonløb er fint for legemet, men selvet skal udvikles gennem protreptik, argumenterer filosof Ole Fogh Kirkeby. De klassiske filosofiske samtaler giver moderne coaching baghjul. Hør også om Kirkeby-diæten, der består af gode gamle danske retter og et solidt lager af sprut.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/18666904/ole-fogh-kirkeby-professor-emeritus-ved-cbs"&gt;&lt;img src="https://arkiv.radio24syv.dk/16107558/18666904/3f6294c983b646c4d67a4e8a5840d936/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/18666904</guid>
+            <pubDate>Sun, 13 Aug 2017 16:09:36 GMT</pubDate>
+            <itunes:summary>Hvis du vil være en god leder, skal du gå til de gamle grækere. Ironman og marathonløb er fint for legemet, men selvet skal udvikles gennem protreptik, argumenterer filosof Ole Fogh Kirkeby. De klassiske filosofiske samtaler giver moderne coaching baghjul. Hør også om Kirkeby-diæten, der består af gode gamle danske retter og et solidt lager af sprut.
+</itunes:summary>
+            <itunes:subtitle>Hvis du vil være en god leder, skal du gå til de gamle grækere. Ironman og marathonløb er fint for legemet, men selvet skal udvikles gennem protreptik, argumenterer filosof Ole Fogh Kirkeby. De klassiske filosofiske samtaler giver moderne coaching...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>54:59</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/16107558/18666904/3f6294c983b646c4d67a4e8a5840d936/standard/thumbnail.jpg"/>
+            <category>broadcast:147953</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/16107558/18655850/65cc765b6c0a6fa548e300b164ada606/audio/podcast/18655850-audio.mp3" type="audio/mp3" length="39605318"/>
+            <title>Filosof Klemens Kappel og psykolog Bjørn Hallsson, KU</title>
+            <link>https://arkiv.radio24syv.dk/photo/18655850/filosof-klemens-kappel-og-psykolog-bjorn-hallsson</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Lige siden Platon har filosofferne taget fejl. Den menneskelige kognition arbejder ikke på at skabe et retvisende billede af virkeligheden, men på at få virkeligheden til at passe med vores eksisterende verdensbillede og værdier. Jo mere intelligent og højtuddannet, jo bedre er man til at narre sig selv. Filosof Klemens Kappel og psykolog Bjørn Hallsson forklarer, hvorfor fakta-resistens er et menneskeligt særkende.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/18655850/filosof-klemens-kappel-og-psykolog-bjorn-hallsson"&gt;&lt;img src="https://arkiv.radio24syv.dk/16107558/18655850/65cc765b6c0a6fa548e300b164ada606/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/18655850</guid>
+            <pubDate>Sat, 12 Aug 2017 15:10:25 GMT</pubDate>
+            <itunes:summary>Lige siden Platon har filosofferne taget fejl. Den menneskelige kognition arbejder ikke på at skabe et retvisende billede af virkeligheden, men på at få virkeligheden til at passe med vores eksisterende verdensbillede og værdier. Jo mere intelligent og højtuddannet, jo bedre er man til at narre sig selv. Filosof Klemens Kappel og psykolog Bjørn Hallsson forklarer, hvorfor fakta-resistens er et menneskeligt særkende.
+</itunes:summary>
+            <itunes:subtitle>Lige siden Platon har filosofferne taget fejl. Den menneskelige kognition arbejder ikke på at skabe et retvisende billede af virkeligheden, men på at få virkeligheden til at passe med vores eksisterende verdensbillede og værdier. Jo mere...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/16107558/18655850/65cc765b6c0a6fa548e300b164ada606/standard/thumbnail.jpg"/>
+            <category>broadcast:147872</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/12732917/17628865/3a97bb63f6760651a871aeae42ba2d0a/audio/podcast/17628865-audio.mp3" type="audio/mp3" length="39392198"/>
+            <title>Indiana Jones er kvinde – og hun jager naturens stregkoder. Adjunkt ved...</title>
+            <link>https://arkiv.radio24syv.dk/photo/17628865/indiana-jones-er-kvinde-og-hun-jager-naturens</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Indiana Jones er kvinde – og hun jager naturens stregkoder. Adjunkt ved Københavns Universitet Kristine Bohmann indsamler igler i Madagascars regnskov og flagermuselort i Swaziland og forvandler begge dele til forskningsmæssigt guld. Med de rigtige teknikker kan DNA fra miljøprøver afsløre hidtil ukendte sammenhænge og sladre om naturens tilstand.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/17628865/indiana-jones-er-kvinde-og-hun-jager-naturens"&gt;&lt;img src="https://arkiv.radio24syv.dk/12732917/17628865/3a97bb63f6760651a871aeae42ba2d0a/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/17628865</guid>
+            <pubDate>Fri, 09 Jun 2017 14:32:52 GMT</pubDate>
+            <itunes:summary>Indiana Jones er kvinde – og hun jager naturens stregkoder. Adjunkt ved Københavns Universitet Kristine Bohmann indsamler igler i Madagascars regnskov og flagermuselort i Swaziland og forvandler begge dele til forskningsmæssigt guld. Med de rigtige teknikker kan DNA fra miljøprøver afsløre hidtil ukendte sammenhænge og sladre om naturens tilstand.
+</itunes:summary>
+            <itunes:subtitle>Indiana Jones er kvinde – og hun jager naturens stregkoder. Adjunkt ved Københavns Universitet Kristine Bohmann indsamler igler i Madagascars regnskov og flagermuselort i Swaziland og forvandler begge dele til forskningsmæssigt guld. Med de...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>54:42</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/12732917/17628865/3a97bb63f6760651a871aeae42ba2d0a/standard/thumbnail.jpg"/>
+            <category>broadcast:143215</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/12732916/17565270/33a1a73b476cc8737b29c72989db49fe/audio/podcast/17565270-audio.mp3" type="audio/mp3" length="39607910"/>
+            <title>Jan Kindberg Jacobsen, Arkæolog og museumsinspektør ved Glyptoteket</title>
+            <link>https://arkiv.radio24syv.dk/photo/17565270/jan-kindberg-jacobsen-arkaeolog-og</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Hvordan var der i Rom før det var Rom? Det undersøger en ny stor udgravning af Cæsars Forum, som ledes af den danske arkæolog Jan Kindberg Jacobsen. Han adskiller myter og fakta om Roms grundlæggelse, og fortæller om det vendepunkt, som opstod med Julius Cæsar. Historiens første PR-ekspert og seriøse udøver af personlig branding fik væltet republikken og blev model for generationer af imperiets kejsere.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/17565270/jan-kindberg-jacobsen-arkaeolog-og"&gt;&lt;img src="https://arkiv.radio24syv.dk/12732916/17565270/33a1a73b476cc8737b29c72989db49fe/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/17565270</guid>
+            <pubDate>Sat, 03 Jun 2017 15:08:31 GMT</pubDate>
+            <itunes:summary>Hvordan var der i Rom før det var Rom? Det undersøger en ny stor udgravning af Cæsars Forum, som ledes af den danske arkæolog Jan Kindberg Jacobsen. Han adskiller myter og fakta om Roms grundlæggelse, og fortæller om det vendepunkt, som opstod med Julius Cæsar. Historiens første PR-ekspert og seriøse udøver af personlig branding fik væltet republikken og blev model for generationer af imperiets kejsere.
+</itunes:summary>
+            <itunes:subtitle>Hvordan var der i Rom før det var Rom? Det undersøger en ny stor udgravning af Cæsars Forum, som ledes af den danske arkæolog Jan Kindberg Jacobsen. Han adskiller myter og fakta om Roms grundlæggelse, og fortæller om det vendepunkt, som opstod med...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/12732916/17565270/33a1a73b476cc8737b29c72989db49fe/standard/thumbnail.jpg"/>
+            <category>broadcast:142712</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/12732916/17458282/9a7b6d1d628fd2695d47d80098ca6add/audio/podcast/17458282-audio.mp3" type="audio/mp3" length="39604742"/>
+            <title>Jeppe Sinding Jensen, Lektor ved afdeling for religionsvidenskab, AAU</title>
+            <link>https://arkiv.radio24syv.dk/photo/17458282/jeppe-sinding-jensen-lektor-ved-afdeling-for</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Jeppe Sinding Jensen blev hånet, da han valgte at studere religionshistorie i 1970erne – troen var jo på vej på museum, sagde hans vejledere. Siden er religion kommet stærkt igen og er lige nu på fremmarch. Mens evolutionsbiologer diskuterer, hvorfor mennesker udvikler religiøse ideer, taler religionshistorikere om religionens egen evolution. Mens krig og konflikt er guf for fundamentalistisk tro, er det fredelige overflodssamfund måske vejen til mere filosofiske og tandløse religioner.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/17458282/jeppe-sinding-jensen-lektor-ved-afdeling-for"&gt;&lt;img src="https://arkiv.radio24syv.dk/12732916/17458282/9a7b6d1d628fd2695d47d80098ca6add/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/17458282</guid>
+            <pubDate>Sat, 27 May 2017 15:08:37 GMT</pubDate>
+            <itunes:summary>Jeppe Sinding Jensen blev hånet, da han valgte at studere religionshistorie i 1970erne – troen var jo på vej på museum, sagde hans vejledere. Siden er religion kommet stærkt igen og er lige nu på fremmarch. Mens evolutionsbiologer diskuterer, hvorfor mennesker udvikler religiøse ideer, taler religionshistorikere om religionens egen evolution. Mens krig og konflikt er guf for fundamentalistisk tro, er det fredelige overflodssamfund måske vejen til mere filosofiske og tandløse religioner.
+</itunes:summary>
+            <itunes:subtitle>Jeppe Sinding Jensen blev hånet, da han valgte at studere religionshistorie i 1970erne – troen var jo på vej på museum, sagde hans vejledere. Siden er religion kommet stærkt igen og er lige nu på fremmarch. Mens evolutionsbiologer diskuterer,...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/12732916/17458282/9a7b6d1d628fd2695d47d80098ca6add/standard/thumbnail.jpg"/>
+            <category>broadcast:142211</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/16107547/17206438/45fa73b6253455daaaaf66ded6003ea8/audio/podcast/17206438-audio.mp3" type="audio/mp3" length="39384710"/>
+            <title>Hver kræfttumor er unik. Finn Cilius Nielsen fra Diagnostisk Center...</title>
+            <link>https://arkiv.radio24syv.dk/photo/17206438/hver-kraefttumor-er-unik-finn-cilius-nielsen-fra</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Genetiske analyser vil omkalfatre sundhedsvæsnet og især kræftbehandlingen. Den samme kræftpakke til alle er håbløst gammeldags, for hver tumor er unik, fortæller Finn Cilius Nielsen fra Diagnostisk Center Rigshospitalet. Kortlægning af patientens personlige mutationer kan pege på, hvilken behandling der virker – og afsløre, hvornår behandling er udsigtsløs. Teknologien findes, så hvorfor er Danmark bagefter?&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/17206438/hver-kraefttumor-er-unik-finn-cilius-nielsen-fra"&gt;&lt;img src="https://arkiv.radio24syv.dk/16107547/17206438/45fa73b6253455daaaaf66ded6003ea8/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/17206438</guid>
+            <pubDate>Fri, 19 May 2017 18:48:29 GMT</pubDate>
+            <itunes:summary>Genetiske analyser vil omkalfatre sundhedsvæsnet og især kræftbehandlingen. Den samme kræftpakke til alle er håbløst gammeldags, for hver tumor er unik, fortæller Finn Cilius Nielsen fra Diagnostisk Center Rigshospitalet. Kortlægning af patientens personlige mutationer kan pege på, hvilken behandling der virker – og afsløre, hvornår behandling er udsigtsløs. Teknologien findes, så hvorfor er Danmark bagefter?
+</itunes:summary>
+            <itunes:subtitle>Genetiske analyser vil omkalfatre sundhedsvæsnet og især kræftbehandlingen. Den samme kræftpakke til alle er håbløst gammeldags, for hver tumor er unik, fortæller Finn Cilius Nielsen fra Diagnostisk Center Rigshospitalet. Kortlægning af patientens...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>54:41</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/16107547/17206438/45fa73b6253455daaaaf66ded6003ea8/standard/thumbnail.jpg"/>
+            <category>broadcast:141723</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/16107560/17113249/673fbcf4bb8257d6e87d50b1518d94b7/audio/podcast/17113249-audio.mp3" type="audio/mp3" length="39607622"/>
+            <title>Forskningen begynder at afdække mænds indre verden, og den er rig på...</title>
+            <link>https://arkiv.radio24syv.dk/photo/17113249/forskningen-begynder-at-afdaekke-maends-indre</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Alt fra fødselsdepressioner til ensomhed bliver overset, fordi mænd mangler sprog for at have det dårligt, siger psykolog Svend Aage Madsen. Imens vokser myten om mandlig overgangsalder, som er opfundet for at sælge testosteronpræparater. De sure gamle mænd mangler ikke hormoner, men et sted de kan være sammen om at foretage sig noget – uden kvinder.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/17113249/forskningen-begynder-at-afdaekke-maends-indre"&gt;&lt;img src="https://arkiv.radio24syv.dk/16107560/17113249/673fbcf4bb8257d6e87d50b1518d94b7/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/17113249</guid>
+            <pubDate>Sat, 13 May 2017 15:08:59 GMT</pubDate>
+            <itunes:summary>Alt fra fødselsdepressioner til ensomhed bliver overset, fordi mænd mangler sprog for at have det dårligt, siger psykolog Svend Aage Madsen. Imens vokser myten om mandlig overgangsalder, som er opfundet for at sælge testosteronpræparater. De sure gamle mænd mangler ikke hormoner, men et sted de kan være sammen om at foretage sig noget – uden kvinder.
+</itunes:summary>
+            <itunes:subtitle>Alt fra fødselsdepressioner til ensomhed bliver overset, fordi mænd mangler sprog for at have det dårligt, siger psykolog Svend Aage Madsen. Imens vokser myten om mandlig overgangsalder, som er opfundet for at sælge testosteronpræparater. De sure...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/16107560/17113249/673fbcf4bb8257d6e87d50b1518d94b7/standard/thumbnail.jpg"/>
+            <category>broadcast:141232</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/16107547/16975426/2ef2648f0947021ba1b2c84e7dd38366/audio/podcast/16975426-audio.mp3" type="audio/mp3" length="39398534"/>
+            <title>Hvad skal mennesker i rummet? Danmarks førende rumforsker, John Leif Jørgensen.</title>
+            <link>https://arkiv.radio24syv.dk/photo/16975426/hvad-skal-mennesker-i-rummet-danmarks-forende</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Der er oplagte muligheder i turisme for rigmænd og minedrift på månen, men måske kommer vi også til at sende patienter på rekreation i vægtløs tilstand efter store operationer. Danmarks førende rumforsker, John Leif Jørgensen, inviterer på en hæsblæsende tur fra vores lille mærkelige klode til Saturn, Jupiter og omegn. Det er vilde historier fra verdensrummet.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/16975426/hvad-skal-mennesker-i-rummet-danmarks-forende"&gt;&lt;img src="https://arkiv.radio24syv.dk/16107547/16975426/2ef2648f0947021ba1b2c84e7dd38366/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/16975426</guid>
+            <pubDate>Fri, 05 May 2017 13:39:20 GMT</pubDate>
+            <itunes:summary>Der er oplagte muligheder i turisme for rigmænd og minedrift på månen, men måske kommer vi også til at sende patienter på rekreation i vægtløs tilstand efter store operationer. Danmarks førende rumforsker, John Leif Jørgensen, inviterer på en hæsblæsende tur fra vores lille mærkelige klode til Saturn, Jupiter og omegn. Det er vilde historier fra verdensrummet.
+</itunes:summary>
+            <itunes:subtitle>Der er oplagte muligheder i turisme for rigmænd og minedrift på månen, men måske kommer vi også til at sende patienter på rekreation i vægtløs tilstand efter store operationer. Danmarks førende rumforsker, John Leif Jørgensen, inviterer på en...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>54:43</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/16107547/16975426/2ef2648f0947021ba1b2c84e7dd38366/standard/thumbnail.jpg"/>
+            <category>broadcast:140735</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/16107547/16889175/2acc85a58448d0c8429448f01bafaf21/audio/podcast/16889175-audio.mp3" type="audio/mp3" length="39601862"/>
+            <title>Arbejdsmediciner og stressforsker Bo Netterstrøm</title>
+            <link>https://arkiv.radio24syv.dk/photo/16889175/arbejdsmediciner-og-stressforsker-bo-netterstrom</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Stress er glimrende – bare den ikke bliver kronisk – men jo mere negativt vi opfatter stress, jo værre virker den på os. Vi kan tåle langt større spidsbelastninger end vi tror, bare vi sørger for at restituere, siger arbejdsmediciner og stressforsker Bo Netterstrøm. Han forklarer også, hvorfor de mest stressede danskere ikke er travle højtuddannede med flydende arbejdstid, men derimod mennesker i omsorgsjobs.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/16889175/arbejdsmediciner-og-stressforsker-bo-netterstrom"&gt;&lt;img src="https://arkiv.radio24syv.dk/16107547/16889175/2acc85a58448d0c8429448f01bafaf21/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/16889175</guid>
+            <pubDate>Sat, 29 Apr 2017 17:35:30 GMT</pubDate>
+            <itunes:summary>Stress er glimrende – bare den ikke bliver kronisk – men jo mere negativt vi opfatter stress, jo værre virker den på os. Vi kan tåle langt større spidsbelastninger end vi tror, bare vi sørger for at restituere, siger arbejdsmediciner og stressforsker Bo Netterstrøm. Han forklarer også, hvorfor de mest stressede danskere ikke er travle højtuddannede med flydende arbejdstid, men derimod mennesker i omsorgsjobs.
+</itunes:summary>
+            <itunes:subtitle>Stress er glimrende – bare den ikke bliver kronisk – men jo mere negativt vi opfatter stress, jo værre virker den på os. Vi kan tåle langt større spidsbelastninger end vi tror, bare vi sørger for at restituere, siger arbejdsmediciner og...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/16107547/16889175/2acc85a58448d0c8429448f01bafaf21/standard/thumbnail.jpg"/>
+            <category>broadcast:140250</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/16107561/16777041/58bf7fba56a1f701b154516cb8853578/audio/podcast/16777041-audio.mp3" type="audio/mp3" length="39609350"/>
+            <title>Vi skal længere ind – helt ind i cellen;  Kristian Helin professor i epigenitik</title>
+            <link>https://arkiv.radio24syv.dk/photo/16777041/vi-skal-laengere-ind-helt-ind-i-cellen-kristian</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Vi skal længere ind – helt ind i cellen. Her udfolder epigenetikken sig. Professor og Centerdirektør Kristian Helin forklarer, hvordan epigenetikken både er en nøgle til at behandle kræft og til at forstå, hvordan nogle af dine livserfaringer kan nedarves til dine børn. Det handler om fint tunede mekanismer, som løbende fortolker arvemassens tekst ved at tænde og slukke for enkelte gener, og det er biologiens nye sort.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/16777041/vi-skal-laengere-ind-helt-ind-i-cellen-kristian"&gt;&lt;img src="https://arkiv.radio24syv.dk/16107561/16777041/58bf7fba56a1f701b154516cb8853578/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/16777041</guid>
+            <pubDate>Sat, 22 Apr 2017 15:08:50 GMT</pubDate>
+            <itunes:summary>Vi skal længere ind – helt ind i cellen. Her udfolder epigenetikken sig. Professor og Centerdirektør Kristian Helin forklarer, hvordan epigenetikken både er en nøgle til at behandle kræft og til at forstå, hvordan nogle af dine livserfaringer kan nedarves til dine børn. Det handler om fint tunede mekanismer, som løbende fortolker arvemassens tekst ved at tænde og slukke for enkelte gener, og det er biologiens nye sort.
+</itunes:summary>
+            <itunes:subtitle>Vi skal længere ind – helt ind i cellen. Her udfolder epigenetikken sig. Professor og Centerdirektør Kristian Helin forklarer, hvordan epigenetikken både er en nøgle til at behandle kræft og til at forstå, hvordan nogle af dine livserfaringer kan...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/16107561/16777041/58bf7fba56a1f701b154516cb8853578/standard/thumbnail.jpg"/>
+            <category>broadcast:139762</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/16107547/16688538/f4481c19a0ff56f4858ed9e8c88ded0e/audio/podcast/16688538-audio.mp3" type="audio/mp3" length="39603014"/>
+            <title>Homo sapiens er en invasiv art, som flytter sig, når den er utilfreds eller...</title>
+            <link>https://arkiv.radio24syv.dk/photo/16688538/homo-sapiens-er-en-invasiv-art-som-flytter-sig-nar</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Homo sapiens er en invasiv art, som flytter sig, når den er utilfreds eller eventyrlysten. Folkevandringer har omvæltet samfund og kulturer lige siden vi først bredte os fra Afrika og udryddede andre menneskearter på vores vej. Er folkevandring hærværk eller berigelse? Det afhænger af øjnene der ser, siger arkæolog og museumsinspektør Jeanette Varberg, men anbefaler nutidens beslutningstagere at lære af historien.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/16688538/homo-sapiens-er-en-invasiv-art-som-flytter-sig-nar"&gt;&lt;img src="https://arkiv.radio24syv.dk/16107547/16688538/f4481c19a0ff56f4858ed9e8c88ded0e/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/16688538</guid>
+            <pubDate>Sat, 15 Apr 2017 15:09:18 GMT</pubDate>
+            <itunes:summary>Homo sapiens er en invasiv art, som flytter sig, når den er utilfreds eller eventyrlysten. Folkevandringer har omvæltet samfund og kulturer lige siden vi først bredte os fra Afrika og udryddede andre menneskearter på vores vej. Er folkevandring hærværk eller berigelse? Det afhænger af øjnene der ser, siger arkæolog og museumsinspektør Jeanette Varberg, men anbefaler nutidens beslutningstagere at lære af historien.
+</itunes:summary>
+            <itunes:subtitle>Homo sapiens er en invasiv art, som flytter sig, når den er utilfreds eller eventyrlysten. Folkevandringer har omvæltet samfund og kulturer lige siden vi først bredte os fra Afrika og udryddede andre menneskearter på vores vej. Er folkevandring...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/16107547/16688538/f4481c19a0ff56f4858ed9e8c88ded0e/standard/thumbnail.jpg"/>
+            <category>broadcast:139249</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/16107558/16594630/c700b9206f052996fc80aba3338d4eaa/audio/podcast/16594630-audio.mp3" type="audio/mp3" length="39608486"/>
+            <title>Carsten Obel, Danmarks eneste professor i mental børnesundhed, Århus Universitet</title>
+            <link>https://arkiv.radio24syv.dk/photo/16594630/carsten-obel-danmarks-eneste-professor-i-mental</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Slap dog af med det forældreskab! siger Carsten Obel, som er verdens eneste professor i mental børnesundhed. Hans forskning tyder på, at børn og unge har det bedre end de siger, men forældrenes bekymring og stående omsorgstilbud får dem til at vende blikket ind ad og plante fingeren i egen navle. Vejen til mental børnesundhed er at lade ungerne lave fejl og lære dem at klare sig selv.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/16594630/carsten-obel-danmarks-eneste-professor-i-mental"&gt;&lt;img src="https://arkiv.radio24syv.dk/16107558/16594630/c700b9206f052996fc80aba3338d4eaa/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/16594630</guid>
+            <pubDate>Sat, 08 Apr 2017 15:09:24 GMT</pubDate>
+            <itunes:summary>Slap dog af med det forældreskab! siger Carsten Obel, som er verdens eneste professor i mental børnesundhed. Hans forskning tyder på, at børn og unge har det bedre end de siger, men forældrenes bekymring og stående omsorgstilbud får dem til at vende blikket ind ad og plante fingeren i egen navle. Vejen til mental børnesundhed er at lade ungerne lave fejl og lære dem at klare sig selv.
+</itunes:summary>
+            <itunes:subtitle>Slap dog af med det forældreskab! siger Carsten Obel, som er verdens eneste professor i mental børnesundhed. Hans forskning tyder på, at børn og unge har det bedre end de siger, men forældrenes bekymring og stående omsorgstilbud får dem til at...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/16107558/16594630/c700b9206f052996fc80aba3338d4eaa/standard/thumbnail.jpg"/>
+            <category>broadcast:138735</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/16107561/16501992/cbb535a2b5eb9578334824e3b0dbd228/audio/podcast/16501992-audio.mp3" type="audio/mp3" length="39600134"/>
+            <title>Hurra for den kolde krig</title>
+            <link>https://arkiv.radio24syv.dk/photo/16501992/hurra-for-den-kolde-krig</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Videnskabshistoriker Kristian Hvidtfelt Nielsen: Amerikanernes strategiske interesse i Grønland udløste massive midler til geofysiske undersøgelser og vækkede en søvnig dansk forskerverden. Videnskabshistoriker Kristian Hvidtfelt Nielsen beretter, hvordan våbenkapløbet med Sovjetunionen førte til atomreaktorer under indlandsisen og skabte den moderne forskningsmæssig verdensorden.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/16501992/hurra-for-den-kolde-krig"&gt;&lt;img src="https://arkiv.radio24syv.dk/16107561/16501992/cbb535a2b5eb9578334824e3b0dbd228/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/16501992</guid>
+            <pubDate>Sat, 01 Apr 2017 15:08:30 GMT</pubDate>
+            <itunes:summary>Videnskabshistoriker Kristian Hvidtfelt Nielsen: Amerikanernes strategiske interesse i Grønland udløste massive midler til geofysiske undersøgelser og vækkede en søvnig dansk forskerverden. Videnskabshistoriker Kristian Hvidtfelt Nielsen beretter, hvordan våbenkapløbet med Sovjetunionen førte til atomreaktorer under indlandsisen og skabte den moderne forskningsmæssig verdensorden.
+</itunes:summary>
+            <itunes:subtitle>Videnskabshistoriker Kristian Hvidtfelt Nielsen: Amerikanernes strategiske interesse i Grønland udløste massive midler til geofysiske undersøgelser og vækkede en søvnig dansk forskerverden. Videnskabshistoriker Kristian Hvidtfelt Nielsen beretter,...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>54:59</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/16107561/16501992/cbb535a2b5eb9578334824e3b0dbd228/standard/thumbnail.jpg"/>
+            <category>broadcast:138235</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/16107559/16412721/7e50774b4b7ebd373060829911d14783/audio/podcast/16412721-audio.mp3" type="audio/mp3" length="39608774"/>
+            <title>Robotterne kommer ikke – de er her allerede</title>
+            <link>https://arkiv.radio24syv.dk/photo/16412721/robotterne-kommer-ikke-de-er-her-allerede</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Robotforsker Henrik Schärfe slog internationalt igennem som robotforsker med sin maskinelle dobbeltgænger Geminoid, men den slags er snart gammeldags. Fremover vil de mest betydningsfulde robotter ikke være håndfaste maskiner men ulegemlig distribueret intelligens, som fordøjer strømme af data og tager beslutninger. De bliver vores kolleger indtil de ikke længere har brug for kolleger.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/16412721/robotterne-kommer-ikke-de-er-her-allerede"&gt;&lt;img src="https://arkiv.radio24syv.dk/16107559/16412721/7e50774b4b7ebd373060829911d14783/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/16412721</guid>
+            <pubDate>Sat, 25 Mar 2017 15:14:00 GMT</pubDate>
+            <itunes:summary>Robotforsker Henrik Schärfe slog internationalt igennem som robotforsker med sin maskinelle dobbeltgænger Geminoid, men den slags er snart gammeldags. Fremover vil de mest betydningsfulde robotter ikke være håndfaste maskiner men ulegemlig distribueret intelligens, som fordøjer strømme af data og tager beslutninger. De bliver vores kolleger indtil de ikke længere har brug for kolleger.
+</itunes:summary>
+            <itunes:subtitle>Robotforsker Henrik Schärfe slog internationalt igennem som robotforsker med sin maskinelle dobbeltgænger Geminoid, men den slags er snart gammeldags. Fremover vil de mest betydningsfulde robotter ikke være håndfaste maskiner men ulegemlig...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/16107559/16412721/7e50774b4b7ebd373060829911d14783/standard/thumbnail.jpg"/>
+            <category>broadcast:137741</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/16107561/16315220/fc416f53fd5ab7e9aa1ab369a8d4ccc8/audio/podcast/16315220-audio.mp3" type="audio/mp3" length="39603878"/>
+            <title>Psykoterapi kan også give selvmordstanker</title>
+            <link>https://arkiv.radio24syv.dk/photo/16315220/psykoterapi-kan-ogsa-give-selvmordstanker</link>
+            <description>&lt;p&gt;&lt;p&gt;Det er ikke kun antidepressiv medicin, som har bivirkninger. &lt;br&gt;&lt;br&gt;Psykiater Poul Videbech er træt af, at diskussionen om depression altid forenkles. Depression er hverken naturlig tristhed eller sorg, ligesom det ikke er én men flere sygdomme med forskellig biologi. Men argumentet for at behandle effektivt er, at hver depressiv episode gør hjernen mere sårbar.&lt;/p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/16315220/psykoterapi-kan-ogsa-give-selvmordstanker"&gt;&lt;img src="https://arkiv.radio24syv.dk/16107561/16315220/fc416f53fd5ab7e9aa1ab369a8d4ccc8/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/16315220</guid>
+            <pubDate>Sat, 18 Mar 2017 15:09:57 GMT</pubDate>
+            <itunes:summary>Det er ikke kun antidepressiv medicin, som har bivirkninger. Psykiater Poul Videbech er træt af, at diskussionen om depression altid forenkles. Depression er hverken naturlig tristhed eller sorg, ligesom det ikke er én men flere sygdomme med forskellig biologi. Men argumentet for at behandle effektivt er, at hver depressiv episode gør hjernen mere sårbar.</itunes:summary>
+            <itunes:subtitle>Det er ikke kun antidepressiv medicin, som har bivirkninger. Psykiater Poul Videbech er træt af, at diskussionen om depression altid forenkles. Depression er hverken naturlig tristhed eller sorg, ligesom det ikke er én men flere sygdomme med...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/16107561/16315220/fc416f53fd5ab7e9aa1ab369a8d4ccc8/standard/thumbnail.jpg"/>
+            <category>broadcast:137245</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/16107557/16195768/6a9cb2d8e3bf34f27d7fc66c4f3e88ff/audio/podcast/16195768-audio.mp3" type="audio/mp3" length="39602438"/>
+            <title>Zoo skal ikke kun fremvise dyr</title>
+            <link>https://arkiv.radio24syv.dk/photo/16195768/zoo-skal-ikke-kun-fremvise-dyr</link>
+            <description>&lt;p&gt;Mens udlandet var i oprør, blev Bengt Holst kåret som årets Københavner for at forsvare aflivning og dissekering af en giraf, som var til overs i avlsarbejdet. Zoologiske haver handler ikke bare om fremvisning af eksotiske dyr, men om videnskab, forklarer adfærdsbiologen. Hos Holst foregår der alt fra genetiske populationsstudier til forskning i, hvordan minks individuelle personlighed påvirker deres parforhold.&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/16195768/zoo-skal-ikke-kun-fremvise-dyr"&gt;&lt;img src="https://arkiv.radio24syv.dk/16107557/16195768/6a9cb2d8e3bf34f27d7fc66c4f3e88ff/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/16195768</guid>
+            <pubDate>Sat, 11 Mar 2017 15:12:25 GMT</pubDate>
+            <itunes:summary>Mens udlandet var i oprør, blev Bengt Holst kåret som årets Københavner for at forsvare aflivning og dissekering af en giraf, som var til overs i avlsarbejdet. Zoologiske haver handler ikke bare om fremvisning af eksotiske dyr, men om videnskab, forklarer adfærdsbiologen. Hos Holst foregår der alt fra genetiske populationsstudier til forskning i, hvordan minks individuelle personlighed påvirker deres parforhold.</itunes:summary>
+            <itunes:subtitle>Mens udlandet var i oprør, blev Bengt Holst kåret som årets Københavner for at forsvare aflivning og dissekering af en giraf, som var til overs i avlsarbejdet. Zoologiske haver handler ikke bare om fremvisning af eksotiske dyr, men om videnskab,...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/16107557/16195768/6a9cb2d8e3bf34f27d7fc66c4f3e88ff/standard/thumbnail.jpg"/>
+            <category>broadcast:136737</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/12732918/15842205/ca0606ca6c74dd016089f1182e69923d/audio/podcast/15842205-audio.mp3" type="audio/mp3" length="39387302"/>
+            <title>Er skolebørn ofre for en stor digitaliseringsløgn?</title>
+            <link>https://arkiv.radio24syv.dk/photo/15842205/er-skoleborn-ofre-for-en-stor-digitaliseringslogn</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Jesper Balslev var IT-iværksætter og gadget-entusiast, men så begyndte han at læse på evidensen. Som forsker afdækker han nu, hvordan digitalisering af undervisning er direkte skadelig. Koncentrationen og kreativiteten går ned, mens distraktionsniveauet stiger. Men resultaterne preller af på politikere, som har købt digitaliseringens evangelium.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/15842205/er-skoleborn-ofre-for-en-stor-digitaliseringslogn"&gt;&lt;img src="https://arkiv.radio24syv.dk/12732918/15842205/ca0606ca6c74dd016089f1182e69923d/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/15842205</guid>
+            <pubDate>Fri, 03 Mar 2017 16:09:30 GMT</pubDate>
+            <itunes:summary>Jesper Balslev var IT-iværksætter og gadget-entusiast, men så begyndte han at læse på evidensen. Som forsker afdækker han nu, hvordan digitalisering af undervisning er direkte skadelig. Koncentrationen og kreativiteten går ned, mens distraktionsniveauet stiger. Men resultaterne preller af på politikere, som har købt digitaliseringens evangelium.
+</itunes:summary>
+            <itunes:subtitle>Jesper Balslev var IT-iværksætter og gadget-entusiast, men så begyndte han at læse på evidensen. Som forsker afdækker han nu, hvordan digitalisering af undervisning er direkte skadelig. Koncentrationen og kreativiteten går ned, mens...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>54:42</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/12732918/15842205/ca0606ca6c74dd016089f1182e69923d/standard/thumbnail.jpg"/>
+            <category>broadcast:136062</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/13968030/15745224/0668620bd4def3a5d714b9dbd050d814/audio/podcast/15745224-audio.mp3" type="audio/mp3" length="39607046"/>
+            <title>Hjernedata kan forudsige om en film får succes</title>
+            <link>https://arkiv.radio24syv.dk/photo/15745224/hjernedata-kan-forudsige-om-en-film-far-succes</link>
+            <description>&lt;p&gt;Mens du overvejer, om du skal købe et par nye sko, har dit ubevidste allerede taget beslutningen – og måske sladret til en hjerneforsker. Neuropsykolog Thomas Ramsøy har forladt det akademiske elfenbenstårn og startet NEURONS Inc. for at forstå forbrugeradfærd. I dag er det ikke fokusgrupper men hjernedata, der forudsiger om en film får succes, og skanninger der afslører, hvordan vinsnobber bedrager sig selv.&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/15745224/hjernedata-kan-forudsige-om-en-film-far-succes"&gt;&lt;img src="https://arkiv.radio24syv.dk/13968030/15745224/0668620bd4def3a5d714b9dbd050d814/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/15745224</guid>
+            <pubDate>Sat, 25 Feb 2017 15:17:29 GMT</pubDate>
+            <itunes:summary>Mens du overvejer, om du skal købe et par nye sko, har dit ubevidste allerede taget beslutningen – og måske sladret til en hjerneforsker. Neuropsykolog Thomas Ramsøy har forladt det akademiske elfenbenstårn og startet NEURONS Inc. for at forstå forbrugeradfærd. I dag er det ikke fokusgrupper men hjernedata, der forudsiger om en film får succes, og skanninger der afslører, hvordan vinsnobber bedrager sig selv.</itunes:summary>
+            <itunes:subtitle>Mens du overvejer, om du skal købe et par nye sko, har dit ubevidste allerede taget beslutningen – og måske sladret til en hjerneforsker. Neuropsykolog Thomas Ramsøy har forladt det akademiske elfenbenstårn og startet NEURONS Inc. for at forstå...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/13968030/15745224/0668620bd4def3a5d714b9dbd050d814/standard/thumbnail.jpg"/>
+            <category>broadcast:135563</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/13968033/15643369/f4c79ea0c94375edc4d1cfe88f27a3da/audio/podcast/15643369-audio.mp3" type="audio/mp3" length="39607046"/>
+            <title>Sexolog vil kortlægge, hvad danskerne foretager sig på lagnerne</title>
+            <link>https://arkiv.radio24syv.dk/photo/15643369/sexolog-vil-kortlaegge-hvad-danskerne-foretager</link>
+            <description>&lt;p&gt;Seksualiteten blev opfundet i midten af 1800-tallet. Tidligere var der tale om noget man gjorde, nu blev det noget man var – og seksualiteten blev spærret inde i kategorier som hetero og homo. I det sen-moderne samfund er seksualiteten en flydende og foranderlig størrelse, og nu vil sexolog Christian Graugaard for første gang kortlægge, hvad danskerne foretager sig på lagnerne.&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/15643369/sexolog-vil-kortlaegge-hvad-danskerne-foretager"&gt;&lt;img src="https://arkiv.radio24syv.dk/13968033/15643369/f4c79ea0c94375edc4d1cfe88f27a3da/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/15643369</guid>
+            <pubDate>Sat, 18 Feb 2017 15:13:15 GMT</pubDate>
+            <itunes:summary>Seksualiteten blev opfundet i midten af 1800-tallet. Tidligere var der tale om noget man gjorde, nu blev det noget man var – og seksualiteten blev spærret inde i kategorier som hetero og homo. I det sen-moderne samfund er seksualiteten en flydende og foranderlig størrelse, og nu vil sexolog Christian Graugaard for første gang kortlægge, hvad danskerne foretager sig på lagnerne.</itunes:summary>
+            <itunes:subtitle>Seksualiteten blev opfundet i midten af 1800-tallet. Tidligere var der tale om noget man gjorde, nu blev det noget man var – og seksualiteten blev spærret inde i kategorier som hetero og homo. I det sen-moderne samfund er seksualiteten en flydende...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/13968033/15643369/f4c79ea0c94375edc4d1cfe88f27a3da/standard/thumbnail.jpg"/>
+            <category>broadcast:135070</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/13968029/15550769/2fb4a995c765b94fca7b42bd5efa37cb/audio/podcast/15550769-audio.mp3" type="audio/mp3" length="39386726"/>
+            <title>Dorthe Berntsen professor i psykologi og Centerleder på CON AMORE, Aarhus...</title>
+            <link>https://arkiv.radio24syv.dk/photo/15550769/dorthe-berntsen-professor-i-psykologi-og</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Dine erindringer lyver om dig. Psykologiprofessor Dorthe Berntsen studerer vores selvbiografiske hukommelse og finder, at den ikke gør i nøjagtige gengivelser, men løbende spinder en hensigtsmæssig fortælling om vores liv. Selvom ungdommen er hæslig, husker vi den senere i et lyserødt skær, og vores egne handlinger ser betydeligt bedre ud i bakspejlet. Faktisk er hukommelsen så upålidelig, at man kan plante falske erindringer hos os og se dem vokse vildt.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/15550769/dorthe-berntsen-professor-i-psykologi-og"&gt;&lt;img src="https://arkiv.radio24syv.dk/13968029/15550769/2fb4a995c765b94fca7b42bd5efa37cb/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/15550769</guid>
+            <pubDate>Fri, 10 Feb 2017 14:55:57 GMT</pubDate>
+            <itunes:summary>Dine erindringer lyver om dig. Psykologiprofessor Dorthe Berntsen studerer vores selvbiografiske hukommelse og finder, at den ikke gør i nøjagtige gengivelser, men løbende spinder en hensigtsmæssig fortælling om vores liv. Selvom ungdommen er hæslig, husker vi den senere i et lyserødt skær, og vores egne handlinger ser betydeligt bedre ud i bakspejlet. Faktisk er hukommelsen så upålidelig, at man kan plante falske erindringer hos os og se dem vokse vildt.
+</itunes:summary>
+            <itunes:subtitle>Dine erindringer lyver om dig. Psykologiprofessor Dorthe Berntsen studerer vores selvbiografiske hukommelse og finder, at den ikke gør i nøjagtige gengivelser, men løbende spinder en hensigtsmæssig fortælling om vores liv. Selvom ungdommen er...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>54:42</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/13968029/15550769/2fb4a995c765b94fca7b42bd5efa37cb/standard/thumbnail.jpg"/>
+            <category>broadcast:134563</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/13968032/15504248/2442aeb41ba447902a5269a7f619a51e/audio/podcast/15504248-audio.mp3" type="audio/mp3" length="39608198"/>
+            <title>Kaare Christensen Professor ved Dansk Center for Aldringsforskning, Syddansk...</title>
+            <link>https://arkiv.radio24syv.dk/photo/15504248/kaare-christensen-professor-ved-dansk-center-for-1</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Hvorfor lever kvinder længst, når nu mænd både er stærkere og fritaget for både graviditet og børnefødsler? Fordi to X-kromosomer er bedre end ét. Aldringsforsker Kaare Christensen afliver myten om, at forskningen finder ungdommens kilde og forklarer, hvordan vi ubønhørligt forfalder, fordi evolutionen ikke har brug for os efter de 45. Velkommen til det aldrende samfund, hvor vi er patienter hele livet.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/15504248/kaare-christensen-professor-ved-dansk-center-for-1"&gt;&lt;img src="https://arkiv.radio24syv.dk/13968032/15504248/2442aeb41ba447902a5269a7f619a51e/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/15504248</guid>
+            <pubDate>Sat, 04 Feb 2017 15:30:00 GMT</pubDate>
+            <itunes:summary>Hvorfor lever kvinder længst, når nu mænd både er stærkere og fritaget for både graviditet og børnefødsler? Fordi to X-kromosomer er bedre end ét. Aldringsforsker Kaare Christensen afliver myten om, at forskningen finder ungdommens kilde og forklarer, hvordan vi ubønhørligt forfalder, fordi evolutionen ikke har brug for os efter de 45. Velkommen til det aldrende samfund, hvor vi er patienter hele livet.
+</itunes:summary>
+            <itunes:subtitle>Hvorfor lever kvinder længst, når nu mænd både er stærkere og fritaget for både graviditet og børnefødsler? Fordi to X-kromosomer er bedre end ét. Aldringsforsker Kaare Christensen afliver myten om, at forskningen finder ungdommens kilde og...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/13968032/15504248/2442aeb41ba447902a5269a7f619a51e/standard/thumbnail.jpg"/>
+            <category>broadcast:133884</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/13968030/15450172/c6ef2115df4ae659de1faa5e5ab37ee3/audio/podcast/15450172-audio.mp3" type="audio/mp3" length="39403718"/>
+            <title>Jørgen Lange Thomsen, professor ved Retsmedicinsk Institut på Syddansk...</title>
+            <link>https://arkiv.radio24syv.dk/photo/15450172/jorgen-lange-thomsen-professor-ved-retsmedicinsk</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Karen Blixen skulle have haft en Nobelpris – og en henvisning til en psykiater. Den selviscenesættende forfatter havde slet ikke syfilis men var derimod anorektiker og hemmelig misbruger af afføringsmidler. Hun fik lov at sulte sig ihjel. Med udgangspunkt i sin nye bog Berømte Dødsfald, fortæller retsmediciner Jørgen Lange Thomsen om at arbejdet med at finde de dødsårsager, som lægerne ikke interesserer sig for.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/15450172/jorgen-lange-thomsen-professor-ved-retsmedicinsk"&gt;&lt;img src="https://arkiv.radio24syv.dk/13968030/15450172/c6ef2115df4ae659de1faa5e5ab37ee3/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/15450172</guid>
+            <pubDate>Fri, 27 Jan 2017 12:56:29 GMT</pubDate>
+            <itunes:summary>Karen Blixen skulle have haft en Nobelpris – og en henvisning til en psykiater. Den selviscenesættende forfatter havde slet ikke syfilis men var derimod anorektiker og hemmelig misbruger af afføringsmidler. Hun fik lov at sulte sig ihjel. Med udgangspunkt i sin nye bog Berømte Dødsfald, fortæller retsmediciner Jørgen Lange Thomsen om at arbejdet med at finde de dødsårsager, som lægerne ikke interesserer sig for.
+</itunes:summary>
+            <itunes:subtitle>Karen Blixen skulle have haft en Nobelpris – og en henvisning til en psykiater. Den selviscenesættende forfatter havde slet ikke syfilis men var derimod anorektiker og hemmelig misbruger af afføringsmidler. Hun fik lov at sulte sig ihjel. Med...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>54:43</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/13968030/15450172/c6ef2115df4ae659de1faa5e5ab37ee3/standard/thumbnail.jpg"/>
+            <category>broadcast:133378</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/13968032/15394415/d8fee55177d81f202ac9b17ab8cbdfbe/audio/podcast/15394415-audio.mp3" type="audio/mp3" length="39389894"/>
+            <title>Professor i nationaløkonomi Christian Bjørnskov fra Aarhus Universitet</title>
+            <link>https://arkiv.radio24syv.dk/photo/15394415/professor-i-nationalokonomi-christian-bjornskov</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Lykken er frihed, oplevelser og ingen børn, forklarer Christian Bjørnskov. Som nationaløkonom med speciale i lykkeforskning, kan han skrive under på, at danskerne faktisk er verdens lykkeligste folk. Især fordi vi har en høj grad af tillid til hinanden og kan tillade os at sige hvad som helst uden sociale sanktioner. Hør om hvordan Latinamerikanere er langt lykkerligere end de burde, hvorfor afrikanere skraber bunden af lykkehierakiet, og hvorfor høj intelligens gør dig ulykkelig.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/15394415/professor-i-nationalokonomi-christian-bjornskov"&gt;&lt;img src="https://arkiv.radio24syv.dk/13968032/15394415/d8fee55177d81f202ac9b17ab8cbdfbe/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/15394415</guid>
+            <pubDate>Fri, 20 Jan 2017 12:43:46 GMT</pubDate>
+            <itunes:summary>Lykken er frihed, oplevelser og ingen børn, forklarer Christian Bjørnskov. Som nationaløkonom med speciale i lykkeforskning, kan han skrive under på, at danskerne faktisk er verdens lykkeligste folk. Især fordi vi har en høj grad af tillid til hinanden og kan tillade os at sige hvad som helst uden sociale sanktioner. Hør om hvordan Latinamerikanere er langt lykkerligere end de burde, hvorfor afrikanere skraber bunden af lykkehierakiet, og hvorfor høj intelligens gør dig ulykkelig.
+</itunes:summary>
+            <itunes:subtitle>Lykken er frihed, oplevelser og ingen børn, forklarer Christian Bjørnskov. Som nationaløkonom med speciale i lykkeforskning, kan han skrive under på, at danskerne faktisk er verdens lykkeligste folk. Især fordi vi har en høj grad af tillid til...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>54:42</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/13968032/15394415/d8fee55177d81f202ac9b17ab8cbdfbe/standard/thumbnail.jpg"/>
+            <category>broadcast:132875</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/13968032/15348628/787564a40d5342dbe4c0f11f4d47342c/audio/podcast/15348628-audio.mp3" type="audio/mp3" length="39604166"/>
+            <title>Professor i plantebiokemi Birger Lindberg Møller, Københavns Universitet.</title>
+            <link>https://arkiv.radio24syv.dk/photo/15348628/professor-i-plantebiokemi-birger-lindberg-moller</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Professor i plantebiokemi Birger Lindberg Møller, Københavns Universitet.&lt;br /&gt;Planteforskningens svar på Indiana Jones, kalder de Birger Lindberg Møller ude i byen. Og det er ikke helt ved siden af. Han forklarer, hvorfor de tavse grønne vidundere er verdensmestre i kemisk syntese, hvordan han gennem 40 år har aflokket dem deres inderste hemmeligheder. Lindberg Møller er på vej med alger, der producerer kræftmedicin, mens han leder efter nøglen til billig bioethanol – i koalabjørnens blindtarm.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/15348628/professor-i-plantebiokemi-birger-lindberg-moller"&gt;&lt;img src="https://arkiv.radio24syv.dk/13968032/15348628/787564a40d5342dbe4c0f11f4d47342c/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/15348628</guid>
+            <pubDate>Sat, 14 Jan 2017 15:14:04 GMT</pubDate>
+            <itunes:summary>Professor i plantebiokemi Birger Lindberg Møller, Københavns Universitet.Planteforskningens svar på Indiana Jones, kalder de Birger Lindberg Møller ude i byen. Og det er ikke helt ved siden af. Han forklarer, hvorfor de tavse grønne vidundere er verdensmestre i kemisk syntese, hvordan han gennem 40 år har aflokket dem deres inderste hemmeligheder. Lindberg Møller er på vej med alger, der producerer kræftmedicin, mens han leder efter nøglen til billig bioethanol – i koalabjørnens blindtarm.
+</itunes:summary>
+            <itunes:subtitle>Professor i plantebiokemi Birger Lindberg Møller, Københavns Universitet.Planteforskningens svar på Indiana Jones, kalder de Birger Lindberg Møller ude i byen. Og det er ikke helt ved siden af. Han forklarer, hvorfor de tavse grønne vidundere er...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/13968032/15348628/787564a40d5342dbe4c0f11f4d47342c/standard/thumbnail.jpg"/>
+            <category>broadcast:132379</category>
+            <category>program:675</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/13968032/15291922/88ce1529754ea239ae157b57d8f70301/audio/podcast/15291922-audio.mp3" type="audio/mp3" length="39608774"/>
+            <title>Seniorforsker Birgitte Rahbek Kornum fra Molekylær søvn laboratorium på...</title>
+            <link>https://arkiv.radio24syv.dk/photo/15291922/seniorforsker-birgitte-rahbek-kornum-fra</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Gå dog i seng, opfordrer søvnforsker Birgitte Rahbek Kornum fra Molekylær søvn laboratorium på Rigshospitalet, Glostrup. Mangel på søvn koster milliarder på bruttonationalproduktet, og gør os både dumme og syge. Alle dyr sover, men hvorfor er stadig et uløst mysterium. Skal hjernen skylles igennem for affaldsstoffer eller måske ligefrem skrumpes, fordi den er svulmet op af dagens aktivitet? Og hvad med drømmene? Er de tilfældig statisk elektricitet i hjernevindingerne, eller tjener de et formål?&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/15291922/seniorforsker-birgitte-rahbek-kornum-fra"&gt;&lt;img src="https://arkiv.radio24syv.dk/13968032/15291922/88ce1529754ea239ae157b57d8f70301/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/15291922</guid>
+            <pubDate>Sat, 07 Jan 2017 15:19:27 GMT</pubDate>
+            <itunes:summary>Gå dog i seng, opfordrer søvnforsker Birgitte Rahbek Kornum fra Molekylær søvn laboratorium på Rigshospitalet, Glostrup. Mangel på søvn koster milliarder på bruttonationalproduktet, og gør os både dumme og syge. Alle dyr sover, men hvorfor er stadig et uløst mysterium. Skal hjernen skylles igennem for affaldsstoffer eller måske ligefrem skrumpes, fordi den er svulmet op af dagens aktivitet? Og hvad med drømmene? Er de tilfældig statisk elektricitet i hjernevindingerne, eller tjener de et formål?
+</itunes:summary>
+            <itunes:subtitle>Gå dog i seng, opfordrer søvnforsker Birgitte Rahbek Kornum fra Molekylær søvn laboratorium på Rigshospitalet, Glostrup. Mangel på søvn koster milliarder på bruttonationalproduktet, og gør os både dumme og syge. Alle dyr sover, men hvorfor er...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/13968032/15291922/88ce1529754ea239ae157b57d8f70301/standard/thumbnail.jpg"/>
+            <category>broadcast:131936</category>
+            <category>program:675</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/13968031/15237365/406cfbb0b85c6084445cac84c68dcb01/audio/podcast/15237365-audio.mp3" type="audio/mp3" length="39395399"/>
+            <title>Professor og astrofysiker Jens Hjorth fra Dark Cosmology Centre, Niels Bohr...</title>
+            <link>https://arkiv.radio24syv.dk/photo/15237365/professor-og-astrofysiker-jens-hjorth-fra-dark</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Universet er uendeligt – og det udvider sig hele tiden. Professor ved Niels Bohr Instituttet Jens Hjort kalder sig ”opdagelsesrejsende i universet” og kaster sig konsekvent over kosmologiens store spørgsmål. Tag med til The Dark Side – vi kigger nærmere på galaksernes ustrukturerede barndom og kommer en tur omkring sorte huller, mørk energi og guldproducerende gammaglimt.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/15237365/professor-og-astrofysiker-jens-hjorth-fra-dark"&gt;&lt;img src="https://arkiv.radio24syv.dk/13968031/15237365/406cfbb0b85c6084445cac84c68dcb01/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/15237365</guid>
+            <pubDate>Fri, 30 Dec 2016 16:39:40 GMT</pubDate>
+            <itunes:summary>Universet er uendeligt – og det udvider sig hele tiden. Professor ved Niels Bohr Instituttet Jens Hjort kalder sig ”opdagelsesrejsende i universet” og kaster sig konsekvent over kosmologiens store spørgsmål. Tag med til The Dark Side – vi kigger nærmere på galaksernes ustrukturerede barndom og kommer en tur omkring sorte huller, mørk energi og guldproducerende gammaglimt.
+</itunes:summary>
+            <itunes:subtitle>Universet er uendeligt – og det udvider sig hele tiden. Professor ved Niels Bohr Instituttet Jens Hjort kalder sig ”opdagelsesrejsende i universet” og kaster sig konsekvent over kosmologiens store spørgsmål. Tag med til The Dark Side – vi kigger...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>54:42</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/13968031/15237365/406cfbb0b85c6084445cac84c68dcb01/standard/thumbnail.jpg"/>
+            <category>broadcast:131438</category>
+            <category>program:675</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/13968029/15182341/3c42014416e361416aab305f44a32f9e/audio/podcast/15182341-audio.mp3" type="audio/mp3" length="39384741"/>
+            <title>Professor i nanoteknologi ved DTU Anja Boisen</title>
+            <link>https://arkiv.radio24syv.dk/photo/15182341/professor-i-nanoteknologi-ved-dtu-anja-boisen</link>
+            <description>&lt;p&gt;Tror man, at nanoteknologi bare er selvrensende sokker og imprægnering til sofaen, kan man begynde her. Professor ved DTU Anja Boisen medbringer en kunstig nano-”næse”, som på stedet afslører alvorlige infektioner i vores ånde og en CD, der indeholder et helt hjemmelaboratorium. Der er julehistorier om nano-robotter på pilleform og bakterier, der hackes og omprogammeres som nano-cyborger.&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/15182341/professor-i-nanoteknologi-ved-dtu-anja-boisen"&gt;&lt;img src="https://arkiv.radio24syv.dk/13968029/15182341/3c42014416e361416aab305f44a32f9e/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/15182341</guid>
+            <pubDate>Fri, 23 Dec 2016 14:00:00 GMT</pubDate>
+            <itunes:summary>Tror man, at nanoteknologi bare er selvrensende sokker og imprægnering til sofaen, kan man begynde her. Professor ved DTU Anja Boisen medbringer en kunstig nano-”næse”, som på stedet afslører alvorlige infektioner i vores ånde og en CD, der indeholder et helt hjemmelaboratorium. Der er julehistorier om nano-robotter på pilleform og bakterier, der hackes og omprogammeres som nano-cyborger.</itunes:summary>
+            <itunes:subtitle>Tror man, at nanoteknologi bare er selvrensende sokker og imprægnering til sofaen, kan man begynde her. Professor ved DTU Anja Boisen medbringer en kunstig nano-”næse”, som på stedet afslører alvorlige infektioner i vores ånde og en CD, der...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>54:41</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/13968029/15182341/3c42014416e361416aab305f44a32f9e/standard/thumbnail.jpg"/>
+            <category>broadcast:130934</category>
+            <category>program:675</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/13968032/15150093/00d19efab5d069b02e1b220388e9c9a1/audio/podcast/15150093-audio.mp3" type="audio/mp3" length="39607046"/>
+            <title>Carsten Rahbek, en af verdens førende biodiversitetsforskere</title>
+            <link>https://arkiv.radio24syv.dk/photo/15150093/carsten-rahbek-en-af-verdens-forende</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Vi står på randen af en artsmæssig massegrav, og det er tid at tage solbrillerne af. Kun hver tiende art er overhovedet beskrevet, men de uddør med en hast, som minder om dengang dinosaurerne forsvandt. Naturen skal nok klare sig, siger Carsten Rahbek, som er en af verdens førende biodiversitetsforskere, men Homo sapiens kan få problemer. Et af dem er nye alvorlige sygdomme. I en artsfattig verden begynder virus som har holdt sig til dyr at angribe mennesker, og Homo sapiens bliver fremtidens store ressource for alle slags snyltere.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/15150093/carsten-rahbek-en-af-verdens-forende"&gt;&lt;img src="https://arkiv.radio24syv.dk/13968032/15150093/00d19efab5d069b02e1b220388e9c9a1/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/15150093</guid>
+            <pubDate>Sat, 17 Dec 2016 15:05:50 GMT</pubDate>
+            <itunes:summary>Vi står på randen af en artsmæssig massegrav, og det er tid at tage solbrillerne af. Kun hver tiende art er overhovedet beskrevet, men de uddør med en hast, som minder om dengang dinosaurerne forsvandt. Naturen skal nok klare sig, siger Carsten Rahbek, som er en af verdens førende biodiversitetsforskere, men Homo sapiens kan få problemer. Et af dem er nye alvorlige sygdomme. I en artsfattig verden begynder virus som har holdt sig til dyr at angribe mennesker, og Homo sapiens bliver fremtidens store ressource for alle slags snyltere.
+</itunes:summary>
+            <itunes:subtitle>Vi står på randen af en artsmæssig massegrav, og det er tid at tage solbrillerne af. Kun hver tiende art er overhovedet beskrevet, men de uddør med en hast, som minder om dengang dinosaurerne forsvandt. Naturen skal nok klare sig, siger Carsten...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/13968032/15150093/00d19efab5d069b02e1b220388e9c9a1/standard/thumbnail.jpg"/>
+            <category>broadcast:130442</category>
+            <category>program:675</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/13968032/15096972/131d1cc6866afaeea168740d7917a90f/audio/podcast/15096972-audio.mp3" type="audio/mp3" length="39384427"/>
+            <title>Medieforsker og professor Anne Jerslev</title>
+            <link>https://arkiv.radio24syv.dk/photo/15096972/medieforsker-og-professor-anne-jerslev</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Er gamle kvinder de nye hipstere? Når medieforsker og professor Anne Jerslev fordyber sig i modereklamer og tv-serier, møder hun flere og flere ældre kvinder i stærke roller. Pludselig ser vi rollemodeller på 70 og stilikoner i 90erne. Er der tale om en gryende ”lady”-power eller er de påfaldende glatte, slanke og ungdommelige gamlinge snarere et tegn på en voksende angst for den virkelige alderdom, som venter os?&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/15096972/medieforsker-og-professor-anne-jerslev"&gt;&lt;img src="https://arkiv.radio24syv.dk/13968032/15096972/131d1cc6866afaeea168740d7917a90f/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/15096972</guid>
+            <pubDate>Fri, 09 Dec 2016 13:57:18 GMT</pubDate>
+            <itunes:summary>Er gamle kvinder de nye hipstere? Når medieforsker og professor Anne Jerslev fordyber sig i modereklamer og tv-serier, møder hun flere og flere ældre kvinder i stærke roller. Pludselig ser vi rollemodeller på 70 og stilikoner i 90erne. Er der tale om en gryende ”lady”-power eller er de påfaldende glatte, slanke og ungdommelige gamlinge snarere et tegn på en voksende angst for den virkelige alderdom, som venter os?
+</itunes:summary>
+            <itunes:subtitle>Er gamle kvinder de nye hipstere? Når medieforsker og professor Anne Jerslev fordyber sig i modereklamer og tv-serier, møder hun flere og flere ældre kvinder i stærke roller. Pludselig ser vi rollemodeller på 70 og stilikoner i 90erne. Er der tale...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>54:41</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/13968032/15096972/131d1cc6866afaeea168740d7917a90f/standard/thumbnail.jpg"/>
+            <category>broadcast:129946</category>
+            <category>program:675</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/13968033/15051708/684d23f9912c95df3b2a9e8c77f44f5e/audio/podcast/15051708-audio.mp3" type="audio/mp3" length="39430507"/>
+            <title>Psykologiprofessor Henrik Høegh-Olesen</title>
+            <link>https://arkiv.radio24syv.dk/photo/15051708/psykologiprofessor-henrik-hoegh-olesen</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Kunstnere får mere sex og flere børn, men det med æstetik er mere end bare en påfuglehale, der tiltrækker partnere. Vi har en dyb medfødt trang til at udsmykke verden, og æstetiske udtryk er vævet ind i hele vores adfærd som sociale tegn, siger psykologiprofessor Henrik Høegh-Olesen. Sammen dissekerer vi det æstetiske menneskedyr og finder rødderne til, hvorfor mødre synger for småbørn og rødt er farven til en tur i byen.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/15051708/psykologiprofessor-henrik-hoegh-olesen"&gt;&lt;img src="https://arkiv.radio24syv.dk/13968033/15051708/684d23f9912c95df3b2a9e8c77f44f5e/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/15051708</guid>
+            <pubDate>Fri, 02 Dec 2016 14:20:27 GMT</pubDate>
+            <itunes:summary>Kunstnere får mere sex og flere børn, men det med æstetik er mere end bare en påfuglehale, der tiltrækker partnere. Vi har en dyb medfødt trang til at udsmykke verden, og æstetiske udtryk er vævet ind i hele vores adfærd som sociale tegn, siger psykologiprofessor Henrik Høegh-Olesen. Sammen dissekerer vi det æstetiske menneskedyr og finder rødderne til, hvorfor mødre synger for småbørn og rødt er farven til en tur i byen.
+</itunes:summary>
+            <itunes:subtitle>Kunstnere får mere sex og flere børn, men det med æstetik er mere end bare en påfuglehale, der tiltrækker partnere. Vi har en dyb medfødt trang til at udsmykke verden, og æstetiske udtryk er vævet ind i hele vores adfærd som sociale tegn, siger...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>54:45</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/13968033/15051708/684d23f9912c95df3b2a9e8c77f44f5e/standard/thumbnail.jpg"/>
+            <category>broadcast:129440</category>
+            <category>program:675</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/13968031/14999525/776eb665751f5e97cf4719c0512e622f/audio/podcast/14999525-audio.mp3" type="audio/mp3" length="39613958"/>
+            <title>Professor i klassisk arkæologi Rubina Raja</title>
+            <link>https://arkiv.radio24syv.dk/photo/14999525/professor-i-klassisk-arkaeologi-rubina-raja</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Mens ISIS smadrer templer i Palmyra, genrejser danske arkæologer den sagnomspundne karavaneby med forskning. Rubina Raja er professor ved Aarhus Universitet, og hun bruger de over 3000 kendte gravportrætter fra Palmyras korte storhedstid til at forstå livet i en by med mange folkeslag og endnu flere guder. I Glyptotekets støvede magasiner møder vi Skønheden fra Palmyra og får historien om den oprørske dronning Zenobia, som gav Rom fingeren og opbyggede sit eget imperium hele vejen fra Ægypten til Tyrkiet.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/14999525/professor-i-klassisk-arkaeologi-rubina-raja"&gt;&lt;img src="https://arkiv.radio24syv.dk/13968031/14999525/776eb665751f5e97cf4719c0512e622f/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/14999525</guid>
+            <pubDate>Sat, 26 Nov 2016 15:05:09 GMT</pubDate>
+            <itunes:summary>Mens ISIS smadrer templer i Palmyra, genrejser danske arkæologer den sagnomspundne karavaneby med forskning. Rubina Raja er professor ved Aarhus Universitet, og hun bruger de over 3000 kendte gravportrætter fra Palmyras korte storhedstid til at forstå livet i en by med mange folkeslag og endnu flere guder. I Glyptotekets støvede magasiner møder vi Skønheden fra Palmyra og får historien om den oprørske dronning Zenobia, som gav Rom fingeren og opbyggede sit eget imperium hele vejen fra Ægypten til Tyrkiet.
+</itunes:summary>
+            <itunes:subtitle>Mens ISIS smadrer templer i Palmyra, genrejser danske arkæologer den sagnomspundne karavaneby med forskning. Rubina Raja er professor ved Aarhus Universitet, og hun bruger de over 3000 kendte gravportrætter fra Palmyras korte storhedstid til at...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:01</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/13968031/14999525/776eb665751f5e97cf4719c0512e622f/standard/thumbnail.jpg"/>
+            <category>broadcast:128950</category>
+            <category>program:675</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/13968032/14883616/c7cf9e97e6495589c554fd29b6e19721/audio/podcast/14883616-audio.mp3" type="audio/mp3" length="39604166"/>
+            <title>Professor i statskundskab Michael Bang Petersen</title>
+            <link>https://arkiv.radio24syv.dk/photo/14883616/professor-i-statskundskab-michael-bang-petersen</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Kan dit personlige forhold til virus og bakterier virkelig hænge sammen med din holdning til indvandring? Og påvirkes din indstilling til velfærdsstatens omfordelingspolitik af, hvorvidt du bliver spurgt før eller efter frokost? Ja og ja, afslører Michael Bang Petersen. Han er professor i statskundskab ved Aarhus Universitet og bruger evolutionspsykologiske indgangsvinkler til at forstå os som zoon politikon – det politiske dyr.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/14883616/professor-i-statskundskab-michael-bang-petersen"&gt;&lt;img src="https://arkiv.radio24syv.dk/13968032/14883616/c7cf9e97e6495589c554fd29b6e19721/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/14883616</guid>
+            <pubDate>Sat, 19 Nov 2016 15:05:02 GMT</pubDate>
+            <itunes:summary>Kan dit personlige forhold til virus og bakterier virkelig hænge sammen med din holdning til indvandring? Og påvirkes din indstilling til velfærdsstatens omfordelingspolitik af, hvorvidt du bliver spurgt før eller efter frokost? Ja og ja, afslører Michael Bang Petersen. Han er professor i statskundskab ved Aarhus Universitet og bruger evolutionspsykologiske indgangsvinkler til at forstå os som zoon politikon – det politiske dyr.
+</itunes:summary>
+            <itunes:subtitle>Kan dit personlige forhold til virus og bakterier virkelig hænge sammen med din holdning til indvandring? Og påvirkes din indstilling til velfærdsstatens omfordelingspolitik af, hvorvidt du bliver spurgt før eller efter frokost? Ja og ja, afslører...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/13968032/14883616/c7cf9e97e6495589c554fd29b6e19721/standard/thumbnail.jpg"/>
+            <category>broadcast:128456</category>
+            <category>program:675</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/13968032/14834890/ae3932e1e7eb3c60924779035986c31b/audio/podcast/14834890-audio.mp3" type="audio/mp3" length="39603878"/>
+            <title>Biologisk antropolog og gæsteprofessor Pia Bennike</title>
+            <link>https://arkiv.radio24syv.dk/photo/14834890/biologisk-antropolog-og-gaesteprofessor-pia</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Hvordan stod det til med danskheden i stenalderen? Blev de lokale jægerstammer løbet over ende og udryddet af indvandrere, som kom herop sydfra og spredte deres fremmede ideer om agerbrug? Eller blandede nye og gamle indbyggere sig med hinanden og enedes om at dyrke jorden? Pia Bennike er en af landets få biologiske antropologer, og hun fortæller om at læse fortiden i gamle knogler. Og om forskning, der kan blive kvæstet i mødet med den politiske korrekthed.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/14834890/biologisk-antropolog-og-gaesteprofessor-pia"&gt;&lt;img src="https://arkiv.radio24syv.dk/13968032/14834890/ae3932e1e7eb3c60924779035986c31b/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/14834890</guid>
+            <pubDate>Sat, 12 Nov 2016 15:05:17 GMT</pubDate>
+            <itunes:summary>Hvordan stod det til med danskheden i stenalderen? Blev de lokale jægerstammer løbet over ende og udryddet af indvandrere, som kom herop sydfra og spredte deres fremmede ideer om agerbrug? Eller blandede nye og gamle indbyggere sig med hinanden og enedes om at dyrke jorden? Pia Bennike er en af landets få biologiske antropologer, og hun fortæller om at læse fortiden i gamle knogler. Og om forskning, der kan blive kvæstet i mødet med den politiske korrekthed.
+</itunes:summary>
+            <itunes:subtitle>Hvordan stod det til med danskheden i stenalderen? Blev de lokale jægerstammer løbet over ende og udryddet af indvandrere, som kom herop sydfra og spredte deres fremmede ideer om agerbrug? Eller blandede nye og gamle indbyggere sig med hinanden og...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/13968032/14834890/ae3932e1e7eb3c60924779035986c31b/standard/thumbnail.jpg"/>
+            <category>broadcast:127947</category>
+            <category>program:675</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/13968030/14790918/ed31e2dc5c51d4694ce3521b629a039d/audio/podcast/14790918-audio.mp3" type="audio/mp3" length="39609062"/>
+            <title>Professor i antropologi samt biolog Andreas Roepstorf</title>
+            <link>https://arkiv.radio24syv.dk/photo/14790918/professor-i-antropologi-samt-biolog-andreas</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Mød Homo cooperansis – det samarbejdende menneske. Måske er det hverken sprog eller redskaber, som skiller os fra vores behårede slægtninge, men en helt særlig og indbygget trang til at samarbejde. Antropolog og biolog Andreas Roepstorff fra Aarhus Universitet måler, hvad der sker i os, når vi arbejder sammen. Hør om kroppe der bevæger sig i takt, om hjerter der indstiller sig på samme rytme og om, hvornår tillid er godt og kontrol er dyrt.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/14790918/professor-i-antropologi-samt-biolog-andreas"&gt;&lt;img src="https://arkiv.radio24syv.dk/13968030/14790918/ed31e2dc5c51d4694ce3521b629a039d/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/14790918</guid>
+            <pubDate>Sat, 05 Nov 2016 15:05:31 GMT</pubDate>
+            <itunes:summary>Mød Homo cooperansis – det samarbejdende menneske. Måske er det hverken sprog eller redskaber, som skiller os fra vores behårede slægtninge, men en helt særlig og indbygget trang til at samarbejde. Antropolog og biolog Andreas Roepstorff fra Aarhus Universitet måler, hvad der sker i os, når vi arbejder sammen. Hør om kroppe der bevæger sig i takt, om hjerter der indstiller sig på samme rytme og om, hvornår tillid er godt og kontrol er dyrt.
+</itunes:summary>
+            <itunes:subtitle>Mød Homo cooperansis – det samarbejdende menneske. Måske er det hverken sprog eller redskaber, som skiller os fra vores behårede slægtninge, men en helt særlig og indbygget trang til at samarbejde. Antropolog og biolog Andreas Roepstorff fra...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/13968030/14790918/ed31e2dc5c51d4694ce3521b629a039d/standard/thumbnail.jpg"/>
+            <category>broadcast:127441</category>
+            <category>program:675</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/13968033/14750510/58d508ffabd30f601559c9c20ae8f4e1/audio/podcast/14750510-audio.mp3" type="audio/mp3" length="39426746"/>
+            <title>Mikrobiolog og professor Tine Rask Licht</title>
+            <link>https://arkiv.radio24syv.dk/photo/14750510/mikrobiolog-og-professor-tine-rask-licht</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Lort sælger og tarme har fået charme, men vi har et underlig skizofrent forhold til mikrober, siger mikrobiolog Tine Rask Licht. Vi spiser fancy yoghurt for at forkæle vores tarmbakterier, men koger straks sutten, når ungen taber den på gulvet. Glem renhedshysteriet, for bakterierne er med os fra fødslen, og de vil os det godt. Mennesket er nemlig ikke bare menneske, men et komplekst økosystem af mikrober.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/14750510/mikrobiolog-og-professor-tine-rask-licht"&gt;&lt;img src="https://arkiv.radio24syv.dk/13968033/14750510/58d508ffabd30f601559c9c20ae8f4e1/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/14750510</guid>
+            <pubDate>Fri, 28 Oct 2016 11:57:53 GMT</pubDate>
+            <itunes:summary>Lort sælger og tarme har fået charme, men vi har et underlig skizofrent forhold til mikrober, siger mikrobiolog Tine Rask Licht. Vi spiser fancy yoghurt for at forkæle vores tarmbakterier, men koger straks sutten, når ungen taber den på gulvet. Glem renhedshysteriet, for bakterierne er med os fra fødslen, og de vil os det godt. Mennesket er nemlig ikke bare menneske, men et komplekst økosystem af mikrober.
+</itunes:summary>
+            <itunes:subtitle>Lort sælger og tarme har fået charme, men vi har et underlig skizofrent forhold til mikrober, siger mikrobiolog Tine Rask Licht. Vi spiser fancy yoghurt for at forkæle vores tarmbakterier, men koger straks sutten, når ungen taber den på gulvet....</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>54:45</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/13968033/14750510/58d508ffabd30f601559c9c20ae8f4e1/standard/thumbnail.jpg"/>
+            <category>broadcast:126936</category>
+            <category>program:675</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/13968030/14716412/67b3d03ab24e96c87ba502b3ce50d5bd/audio/podcast/14716412-audio.mp3" type="audio/mp3" length="39430790"/>
+            <title>22. okt. 2016, Filosof og professor i dyreetik ved Københavns Universitet,...</title>
+            <link>https://arkiv.radio24syv.dk/photo/14716412/22-okt-2016-filosof-og-professor-i-dyreetik-ved</link>
+            <description>&lt;p&gt;De kan både være smartere og mere empatiske end børn, men dyr er ikke mennesker med pels. For filosof og professor i dyreetik ved Københavns Universitet, Peter Sandøe, er et uoverskrideligt skel mellem dem og os med til at opretholde menneskelig værdighed. Og så minder han om, at det nok var kæledyrene, der domesticerede os og ikke omvendt. Lone Frank.&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/14716412/22-okt-2016-filosof-og-professor-i-dyreetik-ved"&gt;&lt;img src="https://arkiv.radio24syv.dk/13968030/14716412/67b3d03ab24e96c87ba502b3ce50d5bd/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/14716412</guid>
+            <pubDate>Fri, 21 Oct 2016 12:36:06 GMT</pubDate>
+            <itunes:summary>De kan både være smartere og mere empatiske end børn, men dyr er ikke mennesker med pels. For filosof og professor i dyreetik ved Københavns Universitet, Peter Sandøe, er et uoverskrideligt skel mellem dem og os med til at opretholde menneskelig værdighed. Og så minder han om, at det nok var kæledyrene, der domesticerede os og ikke omvendt. Lone Frank.</itunes:summary>
+            <itunes:subtitle>De kan både være smartere og mere empatiske end børn, men dyr er ikke mennesker med pels. For filosof og professor i dyreetik ved Københavns Universitet, Peter Sandøe, er et uoverskrideligt skel mellem dem og os med til at opretholde menneskelig...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>54:45</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/13968030/14716412/67b3d03ab24e96c87ba502b3ce50d5bd/standard/thumbnail.jpg"/>
+            <category>broadcast:126440</category>
+            <category>program:675</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/13968031/14684260/529a1f6a16aa629f86a5efe1f9c6e68f/audio/podcast/14684260-audio.mp3" type="audio/mp3" length="39609062"/>
+            <title>15. okt. 2016, Religionshistoriker Mikael Rothstein</title>
+            <link>https://arkiv.radio24syv.dk/photo/14684260/15-okt-2016-religionshistoriker-mikael-rothstein</link>
+            <description>&lt;p&gt;&lt;p&gt;I begyndelsen var de små guder, men de er på vej til at uddø. Religionshistoriker Mikael Rothstein fortæller om Penan folket, som lever på Borneo og ikke aner, hvad ”tro” betyder. Deres allestedsnærværende ånder er bæredygtige i regnskoven, men de ''store guder" smadrer livet som jægersamler. De moraliserende herrer vi kender fra jødedom, kristendom og islam er nemlig opfundet til noget helt andet – de skal banke det komplekse samfunds borgere på plads.&lt;/p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/14684260/15-okt-2016-religionshistoriker-mikael-rothstein"&gt;&lt;img src="https://arkiv.radio24syv.dk/13968031/14684260/529a1f6a16aa629f86a5efe1f9c6e68f/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/14684260</guid>
+            <pubDate>Sat, 15 Oct 2016 15:04:57 GMT</pubDate>
+            <itunes:summary>I begyndelsen var de små guder, men de er på vej til at uddø. Religionshistoriker Mikael Rothstein fortæller om Penan folket, som lever på Borneo og ikke aner, hvad ”tro” betyder. Deres allestedsnærværende ånder er bæredygtige i regnskoven, men de ''store guder" smadrer livet som jægersamler. De moraliserende herrer vi kender fra jødedom, kristendom og islam er nemlig opfundet til noget helt andet – de skal banke det komplekse samfunds borgere på plads.</itunes:summary>
+            <itunes:subtitle>I begyndelsen var de små guder, men de er på vej til at uddø. Religionshistoriker Mikael Rothstein fortæller om Penan folket, som lever på Borneo og ikke aner, hvad ”tro” betyder. Deres allestedsnærværende ånder er bæredygtige i regnskoven, men de...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/13968031/14684260/529a1f6a16aa629f86a5efe1f9c6e68f/standard/thumbnail.jpg"/>
+            <category>broadcast:125945</category>
+            <category>program:675</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/13968029/14633680/d4642be79d073e890d20c14ce084e899/audio/podcast/14633680-audio.mp3" type="audio/mp3" length="39406997"/>
+            <title>8. okt 2016 demokratiforsker Jacob Gerner Hariri</title>
+            <link>https://arkiv.radio24syv.dk/photo/14633680/8-okt-2016-demokratiforsker-jacob-gerner-hariri</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Er demokratiet den naturlige slutning på menneskets politiske historie eller bare vestens hellige ko? Lektor i statskundskab Jacob Gerner Hariri afdækker forudsætninger for demokrati og statsdannelse, og han lægger ikke fingrene imellem. Demokratiet rulles tilbage i Østeuropa, og når Mellemøsten har det svært med demokrati, er det fordi de aldrig har været grundigt koloniseret af europæere.&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/14633680/8-okt-2016-demokratiforsker-jacob-gerner-hariri"&gt;&lt;img src="https://arkiv.radio24syv.dk/13968029/14633680/d4642be79d073e890d20c14ce084e899/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/14633680</guid>
+            <pubDate>Fri, 07 Oct 2016 12:34:20 GMT</pubDate>
+            <itunes:summary>Er demokratiet den naturlige slutning på menneskets politiske historie eller bare vestens hellige ko? Lektor i statskundskab Jacob Gerner Hariri afdækker forudsætninger for demokrati og statsdannelse, og han lægger ikke fingrene imellem. Demokratiet rulles tilbage i Østeuropa, og når Mellemøsten har det svært med demokrati, er det fordi de aldrig har været grundigt koloniseret af europæere.
+</itunes:summary>
+            <itunes:subtitle>Er demokratiet den naturlige slutning på menneskets politiske historie eller bare vestens hellige ko? Lektor i statskundskab Jacob Gerner Hariri afdækker forudsætninger for demokrati og statsdannelse, og han lægger ikke fingrene imellem....</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>54:43</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/13968029/14633680/d4642be79d073e890d20c14ce084e899/standard/thumbnail.jpg"/>
+            <category>Gerner</category>
+            <category>Hariri</category>
+            <category>Jacob</category>
+            <category>broadcast:125454</category>
+            <category>demokrati</category>
+            <category>program:675</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/13968031/14244337/cea2442a870d746f00c0b381e96c3ab7/audio/podcast/14244337-audio.mp3" type="audio/mp3" length="39603590"/>
+            <title>24 Spørgsmål til Professoren uge 31, 2016</title>
+            <link>https://arkiv.radio24syv.dk/photo/14244337/24-sporgsmal-til-professoren-uge-31-2016</link>
+            <description>&lt;p&gt;&lt;p style="margin-bottom: 0px;"&gt;Psykolog Gert Martin Hald, lektor og afdelingsleder ved Institut for Folkesundhed, Københavns Universitet.&lt;br /&gt;Da Gert Martin Hald var ung psykolog besluttede han at blive pornoforsker på grund af forargelse. Ikke over pornoen men over den måde debatten om sex kører på antagelser, men ser bort fra viden. Vi tager fat på tidens stående påstande og tjekker, hvad forskningen faktisk siger. Skader den unges seksualitet og skaber den afhængighed? Eller vokser de sejlivede myter ud af de gamles evige bekymring for, hvad de unge foretager sig?&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/14244337/24-sporgsmal-til-professoren-uge-31-2016"&gt;&lt;img src="https://arkiv.radio24syv.dk/13968031/14244337/cea2442a870d746f00c0b381e96c3ab7/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/14244337</guid>
+            <pubDate>Sat, 06 Aug 2016 13:05:24 GMT</pubDate>
+            <itunes:summary>Psykolog Gert Martin Hald, lektor og afdelingsleder ved Institut for Folkesundhed, Københavns Universitet.Da Gert Martin Hald var ung psykolog besluttede han at blive pornoforsker på grund af forargelse. Ikke over pornoen men over den måde debatten om sex kører på antagelser, men ser bort fra viden. Vi tager fat på tidens stående påstande og tjekker, hvad forskningen faktisk siger. Skader den unges seksualitet og skaber den afhængighed? Eller vokser de sejlivede myter ud af de gamles evige bekymring for, hvad de unge foretager sig?
+</itunes:summary>
+            <itunes:subtitle>Psykolog Gert Martin Hald, lektor og afdelingsleder ved Institut for Folkesundhed, Københavns Universitet.Da Gert Martin Hald var ung psykolog besluttede han at blive pornoforsker på grund af forargelse. Ikke over pornoen men over den måde...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>55:00</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/13968031/14244337/cea2442a870d746f00c0b381e96c3ab7/standard/thumbnail.jpg"/>
+            <category>broadcast:120280</category>
+            <category>program:675</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/12732917/14158754/bf41f8e284c05a6f360dd730edcc1a8f/audio/podcast/14158754-audio.mp3" type="audio/mp3" length="39597254"/>
+            <title>24 Spørgsmål til Professoren uge 30, 2016</title>
+            <link>https://arkiv.radio24syv.dk/photo/14158754/24-sporgsmal-til-professoren-uge-30-2016</link>
+            <description>&lt;p&gt;Psykiater David Erritzøe, Medicinsk Forskningsstipendiat, Imperial College London. Svampe og LSD i medicinskabet. Psykedeliske stoffer gør come back i forskningen, og psykiater David Erritzøe er med i forreste række. Som forsker ved Imperial College i London er han med i banebrydende forsøg med psilocybin mod depression. Men hvordan virker de mystiske stoffer? Og hvordan kan forsøgspersonernes ”åndelige” oplevelser oversættes til hjernekemi?&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/14158754/24-sporgsmal-til-professoren-uge-30-2016"&gt;&lt;img src="https://arkiv.radio24syv.dk/12732917/14158754/bf41f8e284c05a6f360dd730edcc1a8f/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/14158754</guid>
+            <pubDate>Sat, 30 Jul 2016 21:51:37 GMT</pubDate>
+            <itunes:summary>Psykiater David Erritzøe, Medicinsk Forskningsstipendiat, Imperial College London. Svampe og LSD i medicinskabet. Psykedeliske stoffer gør come back i forskningen, og psykiater David Erritzøe er med i forreste række. Som forsker ved Imperial College i London er han med i banebrydende forsøg med psilocybin mod depression. Men hvordan virker de mystiske stoffer? Og hvordan kan forsøgspersonernes ”åndelige” oplevelser oversættes til hjernekemi?</itunes:summary>
+            <itunes:subtitle>Psykiater David Erritzøe, Medicinsk Forskningsstipendiat, Imperial College London. Svampe og LSD i medicinskabet. Psykedeliske stoffer gør come back i forskningen, og psykiater David Erritzøe er med i forreste række. Som forsker ved Imperial...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>54:59</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/12732917/14158754/bf41f8e284c05a6f360dd730edcc1a8f/standard/thumbnail.jpg"/>
+            <category>broadcast:119743</category>
+            <category>program:675</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/13968033/14122174/3cfb79f2d4628f159c0be0aaa6541115/audio/podcast/14122174-audio.mp3" type="audio/mp3" length="39399110"/>
+            <title>24 Spørgsmål til Professoren uge 29, 2016</title>
+            <link>https://arkiv.radio24syv.dk/photo/14122174/24-sporgsmal-til-professoren-uge-29-2016-2</link>
+            <description>&lt;p&gt;Professor: Kulturforsker Garbi Schmidt, professor ved Institut for Kommunikation og Humanistisk Videnskab, RUC. Døden er vores sidste store tabu. Garbi Schmidt er professor i interkulturelle studier ved RUC, men hun er også en af de få, som taler højt om døden. Som kræftpatient har hun oplevet døden ånde sig i nakken, og sammen finder vi ind til, hvad det gør ved os at lever med den. Fra de dybe personlige oplevelser går der tråde til en overraskende forskning i dødens rolle for livet. Lone Frank&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/14122174/24-sporgsmal-til-professoren-uge-29-2016-2"&gt;&lt;img src="https://arkiv.radio24syv.dk/13968033/14122174/3cfb79f2d4628f159c0be0aaa6541115/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/14122174</guid>
+            <pubDate>Tue, 26 Jul 2016 11:10:32 GMT</pubDate>
+            <itunes:summary>Professor: Kulturforsker Garbi Schmidt, professor ved Institut for Kommunikation og Humanistisk Videnskab, RUC. Døden er vores sidste store tabu. Garbi Schmidt er professor i interkulturelle studier ved RUC, men hun er også en af de få, som taler højt om døden. Som kræftpatient har hun oplevet døden ånde sig i nakken, og sammen finder vi ind til, hvad det gør ved os at lever med den. Fra de dybe personlige oplevelser går der tråde til en overraskende forskning i dødens rolle for livet. Lone Frank</itunes:summary>
+            <itunes:subtitle>Professor: Kulturforsker Garbi Schmidt, professor ved Institut for Kommunikation og Humanistisk Videnskab, RUC. Døden er vores sidste store tabu. Garbi Schmidt er professor i interkulturelle studier ved RUC, men hun er også en af de få, som taler...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>54:43</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/13968033/14122174/3cfb79f2d4628f159c0be0aaa6541115/standard/thumbnail.jpg"/>
+            <category>broadcast:119220</category>
+            <category>program:675</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/12732918/14074171/005f642a890e9c020052d44caf8e8d73/audio/podcast/14074171-audio.mp3" type="audio/mp3" length="39396806"/>
+            <title>24 Spørgsmål til Professoren uge 28, 2016</title>
+            <link>https://arkiv.radio24syv.dk/photo/14074171/24-sporgsmal-til-professoren-uge-28-2016-3</link>
+            <description>&lt;p&gt;Professor: Psykiater Tom Bolwig, professor emeritus ved Københavns Universitet. Man behøver ikke at være skør for at være kunstner, men det hjælper. Psykiater og professor emeritus Tom Bolwig har oplevet, hvordan angst og depression kan plage kreative mennesker, men samtidig være deres kunstneriske brændstof. Vi udforsker, hvordan epileptisk hjerneaktivitet kan føre direkte til Gud og skizofrene gener være en gave til menneskeheden. Lone Frank.&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/14074171/24-sporgsmal-til-professoren-uge-28-2016-3"&gt;&lt;img src="https://arkiv.radio24syv.dk/12732918/14074171/005f642a890e9c020052d44caf8e8d73/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/14074171</guid>
+            <pubDate>Mon, 18 Jul 2016 12:56:21 GMT</pubDate>
+            <itunes:summary>Professor: Psykiater Tom Bolwig, professor emeritus ved Københavns Universitet. Man behøver ikke at være skør for at være kunstner, men det hjælper. Psykiater og professor emeritus Tom Bolwig har oplevet, hvordan angst og depression kan plage kreative mennesker, men samtidig være deres kunstneriske brændstof. Vi udforsker, hvordan epileptisk hjerneaktivitet kan føre direkte til Gud og skizofrene gener være en gave til menneskeheden. Lone Frank.</itunes:summary>
+            <itunes:subtitle>Professor: Psykiater Tom Bolwig, professor emeritus ved Københavns Universitet. Man behøver ikke at være skør for at være kunstner, men det hjælper. Psykiater og professor emeritus Tom Bolwig har oplevet, hvordan angst og depression kan plage...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>54:42</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/12732918/14074171/005f642a890e9c020052d44caf8e8d73/standard/thumbnail.jpg"/>
+            <category>broadcast:118715</category>
+            <category>program:675</category>
+        </item>
+        <item>
+            <enclosure url="https://arkiv.radio24syv.dk/12732915/14001642/c495bb51c3d55351bf60cf767f5fc4cd/audio/podcast/14001642-audio.mp3" type="audio/mp3" length="39387876"/>
+            <title>24 Spørgsmål til Professoren uge 27, 2016</title>
+            <link>https://arkiv.radio24syv.dk/photo/14001642/24-sporgsmal-til-professoren-uge-27-2016</link>
+            <description>&lt;p&gt;Professor: Jacobus Boomsma, Professor og leder af Center for Social Evolution ved Københavns Universitet.&lt;br /&gt;
+Myrer er i virkeligheden bare mennesker uden kultur, fortæller professor og evolutionsbiolog Jacobus Boomsma. Han har hele karrieren studeret de sociale insekter, fordi de viser, hvordan man helt uden hjerne kan komme frem til alle de samfundsmodeller og sociale institutioner mennesker har udviklet gennem tiden. Nøglen til at forstå os selv er selviske gener og rå overlevelse.&lt;/p&gt;&lt;p&gt;&lt;a href="https://arkiv.radio24syv.dk/photo/14001642/24-sporgsmal-til-professoren-uge-27-2016"&gt;&lt;img src="https://arkiv.radio24syv.dk/12732915/14001642/c495bb51c3d55351bf60cf767f5fc4cd/standard" width="1400" height="1400"/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+            <guid>http://arkiv.radio24syv.dk/photo/14001642</guid>
+            <pubDate>Fri, 08 Jul 2016 13:07:21 GMT</pubDate>
+            <itunes:summary>Professor: Jacobus Boomsma, Professor og leder af Center for Social Evolution ved Københavns Universitet.
+Myrer er i virkeligheden bare mennesker uden kultur, fortæller professor og evolutionsbiolog Jacobus Boomsma. Han har hele karrieren studeret de sociale insekter, fordi de viser, hvordan man helt uden hjerne kan komme frem til alle de samfundsmodeller og sociale institutioner mennesker har udviklet gennem tiden. Nøglen til at forstå os selv er selviske gener og rå overlevelse.</itunes:summary>
+            <itunes:subtitle>Professor: Jacobus Boomsma, Professor og leder af Center for Social Evolution ved Københavns Universitet.
+Myrer er i virkeligheden bare mennesker uden kultur, fortæller professor og evolutionsbiolog Jacobus Boomsma. Han har hele karrieren studeret...</itunes:subtitle>
+            <itunes:author>Radio24syv</itunes:author>
+            <itunes:duration>54:42</itunes:duration>
+            <itunes:image href="https://arkiv.radio24syv.dk/12732915/14001642/c495bb51c3d55351bf60cf767f5fc4cd/standard/thumbnail.jpg"/>
+            <category>broadcast:117912</category>
+            <category>program:675</category>
+        </item>
+    </channel>
+</rss>

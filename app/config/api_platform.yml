@@ -1,0 +1,19 @@
+imports:
+    - { resource: api_filters.yml }
+
+api_platform:
+    # http_cache:
+    #     invalidation:
+    #         enabled: true
+    #         varnish_urls: '%varnish_urls%'
+    #     max_age: 0
+    #     shared_max_age: 3600
+    #     vary: ['Content-Type', 'Authorization']
+    #     public: true
+
+    formats:
+        jsonld: ['application/ld+json']
+        # csv:    ['text/csv']
+        xml:    ['application/xml']
+        rss:    ['application/rss+xml']
+        html:   ['text/html']

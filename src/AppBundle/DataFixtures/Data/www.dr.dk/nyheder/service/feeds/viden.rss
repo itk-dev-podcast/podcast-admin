@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/nyheder/service/feeds/assets/xsl/rssfeed.xsl"?>
+<rss xmlns:DR="http://dr.dk/channel/2.0/modules/dr/" version="2.0" baseUrl="/nyheder/service/feeds">
+  <channel>
+    <title><![CDATA[Viden]]></title>
+    <description><![CDATA[]]></description>
+    <link><![CDATA[https://www.dr.dk]]></link>
+    <DR:Year><![CDATA[2017]]></DR:Year>
+    <language><![CDATA[da]]></language>
+    <item>
+      <guid isPermaLink="false"><![CDATA[fb24902e-56ac-4934-a4ae-1d527f548374]]></guid>
+      <title><![CDATA[VIDEO Ny robot er mere skøde- end vagthund]]></title>
+      <description><![CDATA[Robotproducent lancerer robothund med opgraderet nuttethed.]]></description>
+      <link><![CDATA[http://www.dr.dk/nyheder/viden/tech/video-ny-robot-er-mere-skoede-end-vagthund]]></link>
+      <DR:XmlImageArticle>
+        <DR:ImageUri620x349><![CDATA[https://www.youtube.com/watch?v=kgaO45SyaO4]]></DR:ImageUri620x349>
+        <DR:ImageUri620x349><![CDATA[https://www.dr.dk/images/other/2017/11/14/vlcsnap-2017-11-14-11h16m15s309.png]]></DR:ImageUri620x349>
+      </DR:XmlImageArticle>
+      <pubDate><![CDATA[Tue, 14 Nov 2017 12:32:00 +0100]]></pubDate>
+      <DR:PostingGuid><![CDATA[fb24902e-56ac-4934-a4ae-1d527f548374]]></DR:PostingGuid>
+      <DR:ChannelName><![CDATA[Tech]]></DR:ChannelName>
+      <DR:ChannelDisplayName><![CDATA[Tech]]></DR:ChannelDisplayName>
+    </item>
+    <item>
+      <guid isPermaLink="false"><![CDATA[11b40f56-57bf-4868-9ffc-80661fdfa729]]></guid>
+      <title><![CDATA[Google: Stjålne internet-konti skyldes oftest phishing]]></title>
+      <description><![CDATA[Tyveri af online-konti kan nedbringes markant, hvis brugerne tager et par simple sikkerheds-tricks i brug. Det konkluderer ny rapport.]]></description>
+      <link><![CDATA[http://www.dr.dk/nyheder/viden/tech/google-stjaalne-internet-konti-skyldes-oftest-phishing]]></link>
+      <DR:XmlImageArticle>
+        <DR:ImageUri620x349><![CDATA[http://www.dr.dk/images/other/2017/11/13/password_2_-_wikimedia.png]]></DR:ImageUri620x349>
+      </DR:XmlImageArticle>
+      <pubDate><![CDATA[Tue, 14 Nov 2017 07:00:00 +0100]]></pubDate>
+      <DR:PostingGuid><![CDATA[11b40f56-57bf-4868-9ffc-80661fdfa729]]></DR:PostingGuid>
+      <DR:ChannelName><![CDATA[Tech]]></DR:ChannelName>
+      <DR:ChannelDisplayName><![CDATA[Tech]]></DR:ChannelDisplayName>
+    </item>
+    <item>
+      <guid isPermaLink="false"><![CDATA[e13768d4-92db-4d80-87c8-34e02d10a599]]></guid>
+      <title><![CDATA[Dyrk fitness på vej til arbejde i fremtidens tog]]></title>
+      <description><![CDATA[Deutsche Bahn's nye "Idétog" skal i fremtiden konkurrere mod selvkørende biler.]]></description>
+      <link><![CDATA[http://www.dr.dk/nyheder/viden/tech/dyrk-fitness-paa-vej-til-arbejde-i-fremtidens-tog]]></link>
+      <DR:XmlImageArticle>
+        <DR:ImageUri620x349><![CDATA[https://www.dr.dk/images/other/2017/11/13/scanpix-20171107-205549-3.jpg]]></DR:ImageUri620x349>
+      </DR:XmlImageArticle>
+      <pubDate><![CDATA[Mon, 13 Nov 2017 18:00:00 +0100]]></pubDate>
+      <DR:PostingGuid><![CDATA[e13768d4-92db-4d80-87c8-34e02d10a599]]></DR:PostingGuid>
+      <DR:ChannelName><![CDATA[Tech]]></DR:ChannelName>
+      <DR:ChannelDisplayName><![CDATA[Tech]]></DR:ChannelDisplayName>
+    </item>
+    <item>
+      <guid isPermaLink="false"><![CDATA[6da7540e-42f7-434d-8ebd-3e0d038482de]]></guid>
+      <title><![CDATA[Udledning af drivhusgasser slår rekord i 2017]]></title>
+      <description><![CDATA[Det går godt for økonomien i Kina. Og det er dårligt nyt for det globale miljø. ]]></description>
+      <link><![CDATA[http://www.dr.dk/nyheder/viden/miljoe/udledning-af-drivhusgasser-slaar-rekord-i-2017]]></link>
+      <DR:XmlImageArticle>
+        <DR:ImageUri620x349><![CDATA[http://www.dr.dk/images/crop/2017/11/13/1510579376_scanpix-20170911-074723-l.jpg]]></DR:ImageUri620x349>
+      </DR:XmlImageArticle>
+      <pubDate><![CDATA[Mon, 13 Nov 2017 14:32:00 +0100]]></pubDate>
+      <DR:PostingGuid><![CDATA[6da7540e-42f7-434d-8ebd-3e0d038482de]]></DR:PostingGuid>
+      <DR:ChannelName><![CDATA[Miljø]]></DR:ChannelName>
+      <DR:ChannelDisplayName><![CDATA[Miljø]]></DR:ChannelDisplayName>
+    </item>
+    <item>
+      <guid isPermaLink="false"><![CDATA[46d58be4-5ed1-4a89-93b3-d208d7dd9e0d]]></guid>
+      <title><![CDATA[Undersøgelse: Kun terrorisme er vigtigere end klimaforandringer]]></title>
+      <description><![CDATA[Der er stor opbakning til grøn energi, viser international undersøgelse. Politikerne halter efter befolkningen, mener professor.]]></description>
+      <link><![CDATA[http://www.dr.dk/nyheder/viden/miljoe/undersoegelse-kun-terrorisme-er-vigtigere-end-klimaforandringer]]></link>
+      <DR:XmlImageArticle>
+        <DR:ImageUri620x349><![CDATA[http://www.dr.dk/images/crop/2017/11/13/1510560836_scanpix-20171104-152133-4.jpg]]></DR:ImageUri620x349>
+      </DR:XmlImageArticle>
+      <pubDate><![CDATA[Mon, 13 Nov 2017 11:30:00 +0100]]></pubDate>
+      <DR:PostingGuid><![CDATA[46d58be4-5ed1-4a89-93b3-d208d7dd9e0d]]></DR:PostingGuid>
+      <DR:ChannelName><![CDATA[Miljø]]></DR:ChannelName>
+      <DR:ChannelDisplayName><![CDATA[Miljø]]></DR:ChannelDisplayName>
+    </item>
+    <item>
+      <guid isPermaLink="false"><![CDATA[8453a6fb-6a5d-43a1-b63a-9a65518b21bd]]></guid>
+      <title><![CDATA[Greenpeace og juraprofessor vildt uenige om klima-retssager]]></title>
+      <description><![CDATA[I morgen tørner Greenpeace og den norske regering sammen i retten. Nødvendigt for at tvinge politikerne til at overholde klimamål, siger miljøorganisationen. Juraprofessor advarer. ]]></description>
+      <link><![CDATA[http://www.dr.dk/nyheder/viden/miljoe/greenpeace-og-juraprofessor-vildt-uenige-om-klima-retssager]]></link>
+      <DR:XmlImageArticle>
+        <DR:ImageUri620x349><![CDATA[https://www.dr.dk/images/other/2017/11/13/scanpix-20171110-064716-4.jpg]]></DR:ImageUri620x349>
+      </DR:XmlImageArticle>
+      <pubDate><![CDATA[Mon, 13 Nov 2017 10:08:00 +0100]]></pubDate>
+      <DR:PostingGuid><![CDATA[8453a6fb-6a5d-43a1-b63a-9a65518b21bd]]></DR:PostingGuid>
+      <DR:ChannelName><![CDATA[Miljø]]></DR:ChannelName>
+      <DR:ChannelDisplayName><![CDATA[Miljø]]></DR:ChannelDisplayName>
+    </item>
+    <item>
+      <guid isPermaLink="false"><![CDATA[17e36825-6ece-44c1-9681-c9a8c0c1f41a]]></guid>
+      <title><![CDATA[Fejl hos kryptovaluta sletter to milliarder kroner ]]></title>
+      <description><![CDATA[En ”amatør” fik adgang til hundredvis af konti og gik i panik. Kryptovaluta for to milliarder kroner er tabt. ]]></description>
+      <link><![CDATA[http://www.dr.dk/nyheder/viden/tech/fejl-hos-kryptovaluta-sletter-milliarder-kroner]]></link>
+      <DR:XmlImageArticle>
+        <DR:ImageUri620x349><![CDATA[http://www.dr.dk/images/crop/2017/11/10/1510319759_scanpix-20170830-125829-4.jpg]]></DR:ImageUri620x349>
+      </DR:XmlImageArticle>
+      <pubDate><![CDATA[Sun, 12 Nov 2017 13:36:00 +0100]]></pubDate>
+      <DR:PostingGuid><![CDATA[17e36825-6ece-44c1-9681-c9a8c0c1f41a]]></DR:PostingGuid>
+      <DR:ChannelName><![CDATA[Tech]]></DR:ChannelName>
+      <DR:ChannelDisplayName><![CDATA[Tech]]></DR:ChannelDisplayName>
+    </item>
+    <item>
+      <guid isPermaLink="false"><![CDATA[fc10cdab-0fc4-404a-a6e0-ab1a2f432efc]]></guid>
+      <title><![CDATA[Forskere gemmer adgangskoder i skjorteærmet]]></title>
+      <description><![CDATA[En ny teknik gør det muligt at lagre data i tekstiler, helt uden brug af elektronik]]></description>
+      <link><![CDATA[http://www.dr.dk/nyheder/viden/tech/forskere-gemmer-adgangskoder-i-skjorteaermet]]></link>
+      <DR:XmlImageArticle>
+        <DR:ImageUri620x349><![CDATA[http://www.dr.dk/images/crop/2017/11/09/1510213309_magfab-door-lock.jpg]]></DR:ImageUri620x349>
+      </DR:XmlImageArticle>
+      <pubDate><![CDATA[Sun, 12 Nov 2017 12:00:00 +0100]]></pubDate>
+      <DR:PostingGuid><![CDATA[fc10cdab-0fc4-404a-a6e0-ab1a2f432efc]]></DR:PostingGuid>
+      <DR:ChannelName><![CDATA[Tech]]></DR:ChannelName>
+      <DR:ChannelDisplayName><![CDATA[Tech]]></DR:ChannelDisplayName>
+    </item>
+    <item>
+      <guid isPermaLink="false"><![CDATA[092a0484-1899-4c8e-90f3-c5c2d6cd57c6]]></guid>
+      <title><![CDATA[Lovlig doping: Kød og rødbedesaft fremmer din præstation]]></title>
+      <description><![CDATA[Men du skal ikke tro på alt, hvad du hører. Her er tre lovlige dopingmidler, der virker - og tre myter.]]></description>
+      <link><![CDATA[http://www.dr.dk/nyheder/viden/naturvidenskab/lovlig-doping-koed-og-roedbedesaft-fremmer-din-praestation]]></link>
+      <DR:XmlImageArticle>
+        <DR:ImageUri620x349><![CDATA[https://www.dr.dk/images/crop/2017/11/10/1510307093_scanpix-20170920-173035-4.jpg]]></DR:ImageUri620x349>
+      </DR:XmlImageArticle>
+      <pubDate><![CDATA[Sat, 11 Nov 2017 14:59:00 +0100]]></pubDate>
+      <DR:PostingGuid><![CDATA[092a0484-1899-4c8e-90f3-c5c2d6cd57c6]]></DR:PostingGuid>
+      <DR:ChannelName><![CDATA[Naturvidenskab]]></DR:ChannelName>
+      <DR:ChannelDisplayName><![CDATA[Naturvidenskab]]></DR:ChannelDisplayName>
+    </item>
+    <item>
+      <guid isPermaLink="false"><![CDATA[b4af32d5-80c1-465b-bbcf-313865c05e65]]></guid>
+      <title><![CDATA[IT-blogger frygter misbrug af ansigtsgenkendelse]]></title>
+      <description><![CDATA[Computere, der forsøger at identificere homoseksuelle, kriminelle og demonstranter, bekymrer it-blogger Dorte Toft.]]></description>
+      <link><![CDATA[http://www.dr.dk/nyheder/viden/tech/it-blogger-frygter-misbrug-af-ansigtsgenkendelse]]></link>
+      <DR:XmlImageArticle>
+        <DR:ImageUri620x349><![CDATA[http://www.dr.dk/images/crop/2017/11/10/1510325178_skaermbillede_2017-11-10_kl._15.20.03.png]]></DR:ImageUri620x349>
+        <DR:ImageUri620x349><![CDATA[http://mu.net.dr.dk/admin/programcard/get/?id=urn:dr:mu:programcard:5a05b9e6a11fa021384e51a8]]></DR:ImageUri620x349>
+      </DR:XmlImageArticle>
+      <pubDate><![CDATA[Sat, 11 Nov 2017 11:45:00 +0100]]></pubDate>
+      <DR:PostingGuid><![CDATA[b4af32d5-80c1-465b-bbcf-313865c05e65]]></DR:PostingGuid>
+      <DR:ChannelName><![CDATA[Tech]]></DR:ChannelName>
+      <DR:ChannelDisplayName><![CDATA[Tech]]></DR:ChannelDisplayName>
+    </item>
+    <item>
+      <guid isPermaLink="false"><![CDATA[5c8c35eb-2130-4708-871c-8f0fdd125b75]]></guid>
+      <title><![CDATA[Dreng får ny hud og overlever farlig sygdom]]></title>
+      <description><![CDATA[Læger har ved hjælp af eksperimenterende genterapi givet et barn 80 procent ny hud. ]]></description>
+      <link><![CDATA[http://www.dr.dk/nyheder/viden/naturvidenskab/dreng-faar-ny-hud-og-overlever-farlig-sygdom]]></link>
+      <DR:XmlImageArticle>
+        <DR:ImageUri620x349><![CDATA[https://www.dr.dk/images/other/2017/11/11/scanpix-20171012-053905-3.jpg]]></DR:ImageUri620x349>
+      </DR:XmlImageArticle>
+      <pubDate><![CDATA[Fri, 10 Nov 2017 18:01:00 +0100]]></pubDate>
+      <DR:PostingGuid><![CDATA[5c8c35eb-2130-4708-871c-8f0fdd125b75]]></DR:PostingGuid>
+      <DR:ChannelName><![CDATA[Naturvidenskab]]></DR:ChannelName>
+      <DR:ChannelDisplayName><![CDATA[Naturvidenskab]]></DR:ChannelDisplayName>
+    </item>
+    <item>
+      <guid isPermaLink="false"><![CDATA[90fa85f4-655f-42d0-b0f2-be15e6291b97]]></guid>
+      <title><![CDATA[Facebook vil bruge nøgenbilleder til at standse hævnporno]]></title>
+      <description><![CDATA[Utraditionelt initiativ mod hævnporno: Upload nøgenbilleder af dig selv.]]></description>
+      <link><![CDATA[http://www.dr.dk/nyheder/viden/tech/facebook-vil-bruge-noegenbilleder-til-standse-haevnporno]]></link>
+      <DR:XmlImageArticle>
+        <DR:ImageUri620x349><![CDATA[http://www.dr.dk/images/crop/2017/11/10/1510303326_scanpix-20171108-213142-3.jpg]]></DR:ImageUri620x349>
+      </DR:XmlImageArticle>
+      <pubDate><![CDATA[Fri, 10 Nov 2017 16:32:00 +0100]]></pubDate>
+      <DR:PostingGuid><![CDATA[90fa85f4-655f-42d0-b0f2-be15e6291b97]]></DR:PostingGuid>
+      <DR:ChannelName><![CDATA[Tech]]></DR:ChannelName>
+      <DR:ChannelDisplayName><![CDATA[Tech]]></DR:ChannelDisplayName>
+    </item>
+    <item>
+      <guid isPermaLink="false"><![CDATA[074b8d10-ddf3-485b-af77-82ee6818c941]]></guid>
+      <title><![CDATA[Google-balloner leverer internet til 100.000 katastrofe-ramte ]]></title>
+      <description><![CDATA[En del af Puerto Ricos indbyggere får basal adgang til nettet fra 20 kilometers højde. Øens mobilnet er hårdt ramt efter orkan i september.]]></description>
+      <link><![CDATA[http://www.dr.dk/nyheder/viden/tech/google-balloner-leverer-internet-til-100000-katastrofe-ramte]]></link>
+      <DR:XmlImageArticle>
+        <DR:ImageUri620x349><![CDATA[http://www.dr.dk/images/other/2017/11/10/loon.png]]></DR:ImageUri620x349>
+      </DR:XmlImageArticle>
+      <pubDate><![CDATA[Fri, 10 Nov 2017 12:26:00 +0100]]></pubDate>
+      <DR:PostingGuid><![CDATA[074b8d10-ddf3-485b-af77-82ee6818c941]]></DR:PostingGuid>
+      <DR:ChannelName><![CDATA[Tech]]></DR:ChannelName>
+      <DR:ChannelDisplayName><![CDATA[Tech]]></DR:ChannelDisplayName>
+    </item>
+    <item>
+      <guid isPermaLink="false"><![CDATA[840f71fb-c9c2-4fff-a6b8-4e266602d440]]></guid>
+      <title><![CDATA[Snyd med store muskler koster liv]]></title>
+      <description><![CDATA[Bivirkningerne ved anabole steroider fortsætter hele livet. Det overrasker muskelbundterne.]]></description>
+      <link><![CDATA[http://www.dr.dk/nyheder/viden/naturvidenskab/snyd-med-store-muskler-koster-liv]]></link>
+      <DR:XmlImageArticle>
+        <DR:ImageUri620x349><![CDATA[https://www.dr.dk/images/other/2017/11/10/arnold.png]]></DR:ImageUri620x349>
+      </DR:XmlImageArticle>
+      <pubDate><![CDATA[Fri, 10 Nov 2017 09:03:00 +0100]]></pubDate>
+      <DR:PostingGuid><![CDATA[840f71fb-c9c2-4fff-a6b8-4e266602d440]]></DR:PostingGuid>
+      <DR:ChannelName><![CDATA[Naturvidenskab]]></DR:ChannelName>
+      <DR:ChannelDisplayName><![CDATA[Naturvidenskab]]></DR:ChannelDisplayName>
+    </item>
+    <item>
+      <guid isPermaLink="false"><![CDATA[519fc95d-fb97-4e54-96c0-df2523743162]]></guid>
+      <title><![CDATA[1+2+3 = 24: Apples lommeregner regner pivforkert ]]></title>
+      <description><![CDATA[En fejl i det nyeste styresystem til iPhone har slået lommeregneren ud af kurs.]]></description>
+      <link><![CDATA[http://www.dr.dk/nyheder/viden/tech/123-24-apples-lommeregner-regner-pivforkert]]></link>
+      <DR:XmlImageArticle>
+        <DR:ImageUri620x349><![CDATA[http://www.dr.dk/images/other/2017/11/09/apple_lommeregner_fail.png]]></DR:ImageUri620x349>
+        <DR:ImageUri620x349><![CDATA[http://mu.net.dr.dk/admin/programcard/get/?id=urn:dr:mu:programcard:5a0453386187a40d1432bc6e]]></DR:ImageUri620x349>
+      </DR:XmlImageArticle>
+      <pubDate><![CDATA[Thu, 09 Nov 2017 19:00:00 +0100]]></pubDate>
+      <DR:PostingGuid><![CDATA[519fc95d-fb97-4e54-96c0-df2523743162]]></DR:PostingGuid>
+      <DR:ChannelName><![CDATA[Tech]]></DR:ChannelName>
+      <DR:ChannelDisplayName><![CDATA[Tech]]></DR:ChannelDisplayName>
+    </item>
+    <item>
+      <guid isPermaLink="false"><![CDATA[ec1b3388-25b5-4140-8c19-f0a5b48c4209]]></guid>
+      <title><![CDATA[Selvmåling gav Thomas en kur mod allergi]]></title>
+      <description><![CDATA[I et regneark på sin computer kan Thomas Blomseth Christiansen se, at han nyste 486 gange i 2014. I år er han indtil videre kun på 164 nys. ]]></description>
+      <link><![CDATA[http://www.dr.dk/nyheder/viden/tech/selvmaaling-gav-thomas-en-kur-mod-allergi]]></link>
+      <DR:XmlImageArticle>
+        <DR:ImageUri620x349><![CDATA[https://www.dr.dk/images/other/2017/11/09/tracker.jpg]]></DR:ImageUri620x349>
+        <DR:ImageUri620x349><![CDATA[http://mu.net.dr.dk/admin/programcard/get/?id=urn:dr:mu:programcard:5a0469346187a4045846a0a9]]></DR:ImageUri620x349>
+      </DR:XmlImageArticle>
+      <pubDate><![CDATA[Thu, 09 Nov 2017 18:02:00 +0100]]></pubDate>
+      <DR:PostingGuid><![CDATA[ec1b3388-25b5-4140-8c19-f0a5b48c4209]]></DR:PostingGuid>
+      <DR:ChannelName><![CDATA[Tech]]></DR:ChannelName>
+      <DR:ChannelDisplayName><![CDATA[Tech]]></DR:ChannelDisplayName>
+    </item>
+    <item>
+      <guid isPermaLink="false"><![CDATA[02a4bf67-fa1a-4ab3-bf66-b78e20c63a29]]></guid>
+      <title><![CDATA[Fremtidens læge får hjælp af dit ur og telefon]]></title>
+      <description><![CDATA[De store teknologivirksomheder vil i stigende grad følge med i vores helbred, men overvågningen kan komme os til gode. ]]></description>
+      <link><![CDATA[http://www.dr.dk/nyheder/viden/tech/fremtidens-laege-faar-hjaelp-af-dit-ur-og-telefon]]></link>
+      <DR:XmlImageArticle>
+        <DR:ImageUri620x349><![CDATA[http://www.dr.dk/images/crop/2017/11/09/1510239408_scanpix-20170922-050428-2.jpg]]></DR:ImageUri620x349>
+      </DR:XmlImageArticle>
+      <pubDate><![CDATA[Thu, 09 Nov 2017 18:01:00 +0100]]></pubDate>
+      <DR:PostingGuid><![CDATA[02a4bf67-fa1a-4ab3-bf66-b78e20c63a29]]></DR:PostingGuid>
+      <DR:ChannelName><![CDATA[Tech]]></DR:ChannelName>
+      <DR:ChannelDisplayName><![CDATA[Tech]]></DR:ChannelDisplayName>
+    </item>
+    <item>
+      <guid isPermaLink="false"><![CDATA[b8cad7f2-35c3-4634-8b91-b82c47a635ec]]></guid>
+      <title><![CDATA[Hjælp NASA med et bedre navn til (486958) 2014 MU69]]></title>
+      <description><![CDATA[Nu har du muligheden for at finde på navnet til et objekt, der befinder sig mere end fire milliarder kilometer fra Jorden. ]]></description>
+      <link><![CDATA[http://www.dr.dk/nyheder/viden/naturvidenskab/hjaelp-nasa-med-et-bedre-navn-til-486958-2014-mu69]]></link>
+      <DR:XmlImageArticle>
+        <DR:ImageUri620x349><![CDATA[https://www.dr.dk/images/crop/2017/11/09/1510236786_pia21867-2014mu69-binaryobject-artconcept-20170804.jpg]]></DR:ImageUri620x349>
+      </DR:XmlImageArticle>
+      <pubDate><![CDATA[Thu, 09 Nov 2017 16:09:00 +0100]]></pubDate>
+      <DR:PostingGuid><![CDATA[b8cad7f2-35c3-4634-8b91-b82c47a635ec]]></DR:PostingGuid>
+      <DR:ChannelName><![CDATA[Naturvidenskab]]></DR:ChannelName>
+      <DR:ChannelDisplayName><![CDATA[Naturvidenskab]]></DR:ChannelDisplayName>
+    </item>
+    <item>
+      <guid isPermaLink="false"><![CDATA[3523b60f-ea71-43a5-82c4-93268794501e]]></guid>
+      <title><![CDATA[Sår heler hurtigst, hvis du slår dig om dagen]]></title>
+      <description><![CDATA[Kroppen er meget bedre til at håndtere sår og skader, som opstår om dagen end om natten, viser ny forskning.]]></description>
+      <link><![CDATA[http://www.dr.dk/nyheder/viden/naturvidenskab/saar-heler-hurtigst-hvis-du-slaar-dig-om-dagen]]></link>
+      <DR:XmlImageArticle>
+        <DR:ImageUri620x349><![CDATA[https://www.dr.dk/images/other/2017/11/08/scanpix-20100706-160756-6.jpg]]></DR:ImageUri620x349>
+      </DR:XmlImageArticle>
+      <pubDate><![CDATA[Wed, 08 Nov 2017 20:03:00 +0100]]></pubDate>
+      <DR:PostingGuid><![CDATA[3523b60f-ea71-43a5-82c4-93268794501e]]></DR:PostingGuid>
+      <DR:ChannelName><![CDATA[Naturvidenskab]]></DR:ChannelName>
+      <DR:ChannelDisplayName><![CDATA[Naturvidenskab]]></DR:ChannelDisplayName>
+    </item>
+    <item>
+      <guid isPermaLink="false"><![CDATA[a7fb5f39-2c0a-4def-960a-9fdba22501d9]]></guid>
+      <title><![CDATA[VIDEO Får genkender Obama og Hermione Granger ]]></title>
+      <description><![CDATA[En flok får har lært at genkende billeder Barack Obama og andre kendte. Dyrene er et vigtigt redskab i forskning af sjældne hjernesygdomme. ]]></description>
+      <link><![CDATA[http://www.dr.dk/nyheder/viden/naturvidenskab/video-faar-genkender-obama-og-hermione-granger]]></link>
+      <DR:XmlImageArticle>
+        <DR:ImageUri620x349><![CDATA[https://www.dr.dk/images/other/2017/11/08/faar.png]]></DR:ImageUri620x349>
+      </DR:XmlImageArticle>
+      <pubDate><![CDATA[Wed, 08 Nov 2017 19:43:00 +0100]]></pubDate>
+      <DR:PostingGuid><![CDATA[a7fb5f39-2c0a-4def-960a-9fdba22501d9]]></DR:PostingGuid>
+      <DR:ChannelName><![CDATA[Naturvidenskab]]></DR:ChannelName>
+      <DR:ChannelDisplayName><![CDATA[Naturvidenskab]]></DR:ChannelDisplayName>
+    </item>
+    <item>
+      <guid isPermaLink="false"><![CDATA[fb968876-06c0-4238-a550-fff15571e088]]></guid>
+      <title><![CDATA[Uber indgår aftale med NASA om flyvende taxaer]]></title>
+      <description><![CDATA[Det amerikanske firma skal udvikle et system til at håndtere lavtflyvende lufttrafik.]]></description>
+      <link><![CDATA[http://www.dr.dk/nyheder/viden/tech/uber-indgaar-aftale-med-nasa-om-flyvende-taxaer]]></link>
+      <DR:XmlImageArticle>
+        <DR:ImageUri620x349><![CDATA[https://www.dr.dk/images/crop/2017/11/08/1510159470_uber.png]]></DR:ImageUri620x349>
+      </DR:XmlImageArticle>
+      <pubDate><![CDATA[Wed, 08 Nov 2017 17:21:00 +0100]]></pubDate>
+      <DR:PostingGuid><![CDATA[fb968876-06c0-4238-a550-fff15571e088]]></DR:PostingGuid>
+      <DR:ChannelName><![CDATA[Tech]]></DR:ChannelName>
+      <DR:ChannelDisplayName><![CDATA[Tech]]></DR:ChannelDisplayName>
+    </item>
+    <item>
+      <guid isPermaLink="false"><![CDATA[30921419-7b08-4f22-9766-665e3d543514]]></guid>
+      <title><![CDATA[Snapchat: Vores app er for svær at bruge]]></title>
+      <description><![CDATA[Firmaet vil nu ændre brugerfladen radikalt for at tiltrække nye brugere.]]></description>
+      <link><![CDATA[http://www.dr.dk/nyheder/viden/tech/snapchat-vores-app-er-svaer-bruge]]></link>
+      <DR:XmlImageArticle>
+        <DR:ImageUri620x349><![CDATA[https://www.dr.dk/images/other/2017/11/08/snap_2.png]]></DR:ImageUri620x349>
+      </DR:XmlImageArticle>
+      <pubDate><![CDATA[Wed, 08 Nov 2017 14:53:00 +0100]]></pubDate>
+      <DR:PostingGuid><![CDATA[30921419-7b08-4f22-9766-665e3d543514]]></DR:PostingGuid>
+      <DR:ChannelName><![CDATA[Tech]]></DR:ChannelName>
+      <DR:ChannelDisplayName><![CDATA[Tech]]></DR:ChannelDisplayName>
+    </item>
+    <item>
+      <guid isPermaLink="false"><![CDATA[8c2fdea4-fdf7-45b9-9725-6f4daa03e282]]></guid>
+      <title><![CDATA[145 mio. år gammel mus er måske menneskets forfader]]></title>
+      <description><![CDATA[Forskere har fundet ældgamle fossiler fra den gren af pattedyr, der førte til mennesker. ]]></description>
+      <link><![CDATA[http://www.dr.dk/nyheder/viden/naturvidenskab/145-mio-aar-gammel-mus-er-maaske-menneskets-forfader]]></link>
+      <DR:XmlImageArticle>
+        <DR:ImageUri620x349><![CDATA[http://www.dr.dk/images/other/2017/11/08/scanpix-20171107-142235-4.jpg]]></DR:ImageUri620x349>
+      </DR:XmlImageArticle>
+      <pubDate><![CDATA[Wed, 08 Nov 2017 14:00:00 +0100]]></pubDate>
+      <DR:PostingGuid><![CDATA[8c2fdea4-fdf7-45b9-9725-6f4daa03e282]]></DR:PostingGuid>
+      <DR:ChannelName><![CDATA[Naturvidenskab]]></DR:ChannelName>
+      <DR:ChannelDisplayName><![CDATA[Naturvidenskab]]></DR:ChannelDisplayName>
+    </item>
+    <item>
+      <guid isPermaLink="false"><![CDATA[676dc5e2-9dea-41d5-9b1e-490c98a787b7]]></guid>
+      <title><![CDATA[Fejlslagen forskning får ny pris]]></title>
+      <description><![CDATA[Videnskaben vrimler med priser. Nu kommer der én, som belønner resultater, der ikke falder ud som forventet og håbet.]]></description>
+      <link><![CDATA[http://www.dr.dk/nyheder/viden/naturvidenskab/fejlslagen-forskning-faar-ny-pris]]></link>
+      <DR:XmlImageArticle>
+        <DR:ImageUri620x349><![CDATA[http://www.dr.dk/images/other/2017/11/07/forskningjohannes_jansson-norden.org.jpg]]></DR:ImageUri620x349>
+      </DR:XmlImageArticle>
+      <pubDate><![CDATA[Wed, 08 Nov 2017 06:03:00 +0100]]></pubDate>
+      <DR:PostingGuid><![CDATA[676dc5e2-9dea-41d5-9b1e-490c98a787b7]]></DR:PostingGuid>
+      <DR:ChannelName><![CDATA[Naturvidenskab]]></DR:ChannelName>
+      <DR:ChannelDisplayName><![CDATA[Naturvidenskab]]></DR:ChannelDisplayName>
+    </item>
+    <item>
+      <guid isPermaLink="false"><![CDATA[7ea0e55c-657d-474d-ad33-b3c706e696c3]]></guid>
+      <title><![CDATA[Milepæl: Googles førerløse biler klar til at køre med passagerer]]></title>
+      <description><![CDATA[Biler uden et menneske bag rattet kører nu for første gang på offentlig vej i USA.]]></description>
+      <link><![CDATA[http://www.dr.dk/nyheder/viden/tech/milepael-googles-foererloese-biler-klar-til-koere-med-passagerer]]></link>
+      <DR:XmlImageArticle>
+        <DR:ImageUri620x349><![CDATA[https://www.dr.dk/images/article/2017/10/05/waymo_minivan_7.jpg]]></DR:ImageUri620x349>
+      </DR:XmlImageArticle>
+      <pubDate><![CDATA[Tue, 07 Nov 2017 23:37:00 +0100]]></pubDate>
+      <DR:PostingGuid><![CDATA[7ea0e55c-657d-474d-ad33-b3c706e696c3]]></DR:PostingGuid>
+      <DR:ChannelName><![CDATA[Tech]]></DR:ChannelName>
+      <DR:ChannelDisplayName><![CDATA[Tech]]></DR:ChannelDisplayName>
+    </item>
+  </channel>
+</rss>
