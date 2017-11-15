@@ -111,30 +111,6 @@ class Feed implements Timestampable, SoftDeleteable
     }
 
     /**
-     * Set disabled
-     *
-     * @param boolean $disabled
-     *
-     * @return Feed
-     */
-    public function setDisabled($disabled)
-    {
-        $this->disabled = $disabled;
-
-        return $this;
-    }
-
-    /**
-     * Get disabled
-     *
-     * @return boolean
-     */
-    public function getDisabled()
-    {
-        return $this->disabled;
-    }
-
-    /**
      * Set enabled
      *
      * @param boolean $enabled
