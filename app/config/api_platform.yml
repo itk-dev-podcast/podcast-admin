@@ -3,7 +3,6 @@ imports:
 
 api_platform:
     title: '%app_title%'
-    description: '%app_description'
     version: '0.0.0'
 
     # http_cache:
