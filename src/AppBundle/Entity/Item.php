@@ -7,6 +7,8 @@ use AppBundle\Traits\TaggableTrait;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use DoctrineExtensions\Taggable\Taggable;
+use Gedmo\SoftDeleteable\SoftDeleteable;
+use Gedmo\SoftDeleteable\Traits\SoftDeleteableEntity;
 use Gedmo\Timestampable\Timestampable;
 use Gedmo\Timestampable\Traits\TimestampableEntity;
 
@@ -22,8 +24,9 @@ use Gedmo\Timestampable\Traits\TimestampableEntity;
  * })
  * @ORM\Entity
  */
-class Item implements Taggable, Timestampable
+class Item implements Taggable, Timestampable, SoftDeleteable
 {
+    use SoftDeleteableEntity;
     use TaggableTrait;
     use TimestampableEntity;
 

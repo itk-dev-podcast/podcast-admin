@@ -2,10 +2,11 @@ easy_admin:
     entities:
         Item:
             class: AppBundle\Entity\Item
-            disabled_actions: [new]
+            disabled_actions: [delete, new]
             list:
                 fields:
                     - property: title
+                    - property: updatedAt
                     - property: publishedAt
                     - property: tags
                       template: tags.html.twig
@@ -35,14 +36,18 @@ easy_admin:
 
         Feed:
             class: AppBundle\Entity\Feed
+            disabled_actions: [delete]
             list:
                 fields:
                     - property: title
                     - property: url
                       type: url
+                    - property: enabled
+                      type: boolean
 
             edit:
                 fields:
+                    - property: enabled
                     - property: title
                     - property: url
                       type: url

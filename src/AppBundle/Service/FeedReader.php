@@ -20,6 +20,9 @@ class FeedReader
 
     public function read(Feed $feed, EntityManagerInterface $entityManager, TagManager $tagManager, LoggerInterface $logger = null)
     {
+        if (!$feed->getEnabled()) {
+            return;
+        }
         $data = $this->getData($feed);
         if ($data) {
             foreach ($data->channel->item as $el) {

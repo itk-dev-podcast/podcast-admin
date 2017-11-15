@@ -4,6 +4,8 @@ namespace AppBundle\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\SoftDeleteable\SoftDeleteable;
+use Gedmo\SoftDeleteable\Traits\SoftDeleteableEntity;
 use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
@@ -27,8 +29,10 @@ use Symfony\Component\Serializer\Annotation\Groups;
  *   }
  * )
  */
-class Tag extends BaseTag
+class Tag extends BaseTag implements SoftDeleteable
 {
+    use SoftDeleteableEntity;
+
     /**
      * @var int
      *

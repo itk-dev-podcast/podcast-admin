@@ -40,7 +40,7 @@ class FeedsReadCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $sources = $this->entityManager->getRepository(Feed::class)->findAll();
+        $sources = $this->entityManager->getRepository(Feed::class)->findBy(['enabled' => true]);
         foreach ($sources as $source) {
             $this->logger->notice(sprintf('Reading %s', $source));
             $this->feedReader->read($source, $this->entityManager, $this->tagManager, $this->logger);

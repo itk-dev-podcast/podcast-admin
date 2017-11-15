@@ -2,16 +2,20 @@
 
 namespace AppBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\SoftDeleteable\SoftDeleteable;
+use Gedmo\SoftDeleteable\Traits\SoftDeleteableEntity;
 use Gedmo\Timestampable\Timestampable;
 use Gedmo\Timestampable\Traits\TimestampableEntity;
 
 /**
  * @ORM\Entity
  */
-class Feed implements Timestampable
+class Feed implements Timestampable, SoftDeleteable
 {
     use TimestampableEntity;
+    use SoftDeleteableEntity;
 
     /**
      * @var int
@@ -35,6 +39,13 @@ class Feed implements Timestampable
      * @ORM\Column(type="string")
      */
     private $url;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(type="boolean")
+     */
+    private $enabled;
 
     public function __toString()
     {
@@ -97,5 +108,53 @@ class Feed implements Timestampable
     public function getUrl()
     {
         return $this->url;
+    }
+
+    /**
+     * Set disabled
+     *
+     * @param boolean $disabled
+     *
+     * @return Feed
+     */
+    public function setDisabled($disabled)
+    {
+        $this->disabled = $disabled;
+
+        return $this;
+    }
+
+    /**
+     * Get disabled
+     *
+     * @return boolean
+     */
+    public function getDisabled()
+    {
+        return $this->disabled;
+    }
+
+    /**
+     * Set enabled
+     *
+     * @param boolean $enabled
+     *
+     * @return Feed
+     */
+    public function setEnabled($enabled)
+    {
+        $this->enabled = $enabled;
+
+        return $this;
+    }
+
+    /**
+     * Get enabled
+     *
+     * @return boolean
+     */
+    public function getEnabled()
+    {
+        return $this->enabled;
     }
 }
