@@ -14,7 +14,11 @@ use Gedmo\Timestampable\Traits\TimestampableEntity;
  * @see http://www.rssboard.org/rss-profile#element-channel-item
  *
  * @ApiResource(attributes={
- *   "filters"={"item.search_filter", "item.range_filter"}
+ *   "filters"={
+ *     "item.search_filter",
+ *     "item.range_filter",
+ *     "item.published_filter"
+ *   }
  * })
  * @ORM\Entity
  */
@@ -522,5 +526,29 @@ class Item implements Taggable, Timestampable
     public function getFeed()
     {
         return $this->feed;
+    }
+
+    /**
+     * Set publishedAt
+     *
+     * @param \DateTime $publishedAt
+     *
+     * @return Item
+     */
+    public function setPublishedAt($publishedAt)
+    {
+        $this->publishedAt = $publishedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get publishedAt
+     *
+     * @return \DateTime
+     */
+    public function getPublishedAt()
+    {
+        return $this->publishedAt;
     }
 }

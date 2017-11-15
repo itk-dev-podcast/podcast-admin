@@ -9,4 +9,11 @@ services:
     item.range_filter:
         parent: 'api_platform.doctrine.orm.range_filter'
         arguments: [ { duration: ~ } ]
-        tags:  [ 'api_platform.filter' ]
+        tags: ['api_platform.filter']
+
+    item.published_filter:
+        class: AppBundle\Filter\PublishedFilter
+        arguments:
+            - '@doctrine'
+            - '@request_stack'
+        tags: ['api_platform.filter']

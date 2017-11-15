@@ -6,11 +6,17 @@ easy_admin:
             list:
                 fields:
                     - property: title
+                    - property: publishedAt
                     - property: tags
                       template: tags.html.twig
 
             edit:
                 fields:
+                    - type: group
+                      css_class: 'custom-information'
+                      label: 'Custom information'
+                    - property: publishedAt
+
                     - type: group
                       css_class: 'basic-information'
                       label: 'Basic information'

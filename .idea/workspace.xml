@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31b46aa5-055c-45e2-830f-ef36f4bc5b44" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/htdocs.iml" afterPath="$PROJECT_DIR$/.idea/htdocs.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/api_filters.yml" afterPath="$PROJECT_DIR$/app/config/api_filters.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/easy_admin.yml" afterPath="$PROJECT_DIR$/app/config/easy_admin.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/services.yml" afterPath="$PROJECT_DIR$/app/config/services.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Command/FeedsReadCommand.php" afterPath="$PROJECT_DIR$/src/AppBundle/Command/FeedsReadCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/DataFixtures/Data/Feed/Feed.yml" afterPath="$PROJECT_DIR$/src/AppBundle/DataFixtures/Data/Feed/Feed.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Feed.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Feed.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Item.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Item.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Serializer/Rss/Encoder.php" afterPath="$PROJECT_DIR$/src/AppBundle/Serializer/Rss/Encoder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Service/FeedReader.php" afterPath="$PROJECT_DIR$/src/AppBundle/Service/FeedReader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Fixtures/rss/arkiv.radio24syv.dk/audiopodcast/channel/13973671.rss" afterPath="$PROJECT_DIR$/tests/Fixtures/rss/arkiv.radio24syv.dk/audiopodcast/channel/13973671.rss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,14 +20,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Item.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Item.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Item.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="36" column="7" lean-forward="false" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+            <state relative-caret-position="304">
+              <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
               <folding>
                 <element signature="e#36#80#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PublishedFilter.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Filter/PublishedFilter.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="693">
+              <caret line="47" column="49" lean-forward="false" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+              <folding>
+                <element signature="e#36#99#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppKernel.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1008">
+              <caret line="64" column="8" lean-forward="false" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -129,18 +140,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FeedsReadCommand.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Command/FeedsReadCommand.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="45" column="85" lean-forward="false" selection-start-line="45" selection-start-column="85" selection-end-line="45" selection-end-column="85" />
-              <folding>
-                <element signature="e#37#63#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -164,7 +163,6 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Serializer/Rss/ItemNormalizer.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Serializer/Rss/CollectionNormalizer.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Category.php" />
-        <option value="$PROJECT_DIR$/vendor/api-platform/core/src/Bridge/Doctrine/Orm/Filter/AbstractFilter.php" />
         <option value="$PROJECT_DIR$/vendor/api-platform/core/src/Bridge/Doctrine/Orm/Filter/RangeFilter.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Filter/RangeFilter.php" />
         <option value="$PROJECT_DIR$/app/config/services.yml" />
@@ -181,7 +179,6 @@
         <option value="$PROJECT_DIR$/app/config/easy_admin.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Command/ReadFeedsCommand.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Traits/TaggableTrait.php" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Tagging.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Command/FeedsReadCommand.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/EventSubscriber/TagListener.php" />
@@ -189,7 +186,10 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Serializer/Rss/Encoder.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Service/FeedReader.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Feed.php" />
+        <option value="$PROJECT_DIR$/vendor/api-platform/core/src/Bridge/Doctrine/Orm/Filter/AbstractFilter.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Item.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Filter/PublishedFilter.php" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
       </list>
     </option>
   </component>
@@ -388,6 +388,13 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="EventListener" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="htdocs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="htdocs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="htdocs" type="b2602c69:ProjectViewProjectNode" />
@@ -932,12 +939,12 @@
       <workItem from="1510340549313" duration="6621000" />
       <workItem from="1510659605300" duration="42000" />
       <workItem from="1510668019893" duration="6476000" />
-      <workItem from="1510734396251" duration="9417000" />
+      <workItem from="1510734396251" duration="10119000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22556000" />
+    <option name="totallyTimeSpent" value="23258000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -978,20 +985,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/api-platform/core/src/JsonLd/Serializer/ItemNormalizer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/api-platform/core/src/Serializer/ContextTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/api-platform/core/src/Serializer/AbstractItemNormalizer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1012,6 +1005,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1120">
           <caret line="79" column="25" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1033,6 +1027,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1440">
           <caret line="103" column="32" lean-forward="false" selection-start-line="103" selection-start-column="32" selection-end-line="103" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1115,14 +1110,6 @@
           <folding>
             <element signature="e#321#395#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/api-platform/core/src/Bridge/Doctrine/Orm/Filter/AbstractFilter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="36" column="15" lean-forward="false" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1259,14 +1246,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="20" column="12" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Command/FeedsReadCommand.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -1389,13 +1368,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/api-platform/core/src/Bridge/Doctrine/Orm/Filter/AbstractFilter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Item.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="36" column="7" lean-forward="false" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+        <state relative-caret-position="304">
+          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding>
             <element signature="e#36#80#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/QueryBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="529" column="20" lean-forward="false" selection-start-line="529" selection-start-column="20" selection-end-line="529" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Filter/PublishedFilter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="47" column="49" lean-forward="false" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+          <folding>
+            <element signature="e#36#99#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="64" column="8" lean-forward="false" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
