@@ -5,6 +5,7 @@ namespace AppBundle\Service;
 use AppBundle\Entity\Feed;
 use AppBundle\Entity\Item;
 use Doctrine\ORM\EntityManagerInterface;
+use FPN\TagBundle\Entity\TagManager;
 use Psr\Log\LoggerInterface;
 
 class FeedReader
@@ -17,13 +18,18 @@ class FeedReader
         $this->helper = $helper;
     }
 
-    public function read(Feed $source, EntityManagerInterface $entityManager, LoggerInterface $logger = null)
+    public function read(Feed $feed, EntityManagerInterface $entityManager, TagManager $tagManager, LoggerInterface $logger = null)
     {
-        $data = $this->getData($source);
+        $data = $this->getData($feed);
         if ($data) {
             foreach ($data->channel->item as $el) {
-                $item = new Item();
+                $guid = (string) $el->guid;
+                if ($guid === null) {
+                    continue;
+                }
+                $item = $entityManager->getRepository(Item::class)->findOneBy(['guid' => $guid]) ?: new Item();
                 $item
+                    ->setFeed($feed)
                     ->setTitle((string) $el->title)
                     ->setDescription((string) $el->description)
                     ->setGuid((string) $el->guid)
@@ -40,9 +46,21 @@ class FeedReader
                     if ($itunes->duration) {
                         $item->setDuration($this->helper->getDuration((string) $itunes->duration));
                     }
+                    if ($itunes->category) {
+                        $names = [];
+                        foreach ($itunes->category as $category) {
+                            $names[] = (string) $category->attributes()->text;
+                        }
+                        $names = array_filter($names);
+                        if (!empty($names)) {
+                            $tags = $tagManager->loadOrCreateTags($names);
+                            $tagManager->replaceTags($tags, $item);
+                        }
+                    }
                 }
 
                 $entityManager->persist($item);
+                $tagManager->saveTagging($item);
                 if ($logger !== null) {
                     $logger->notice(sprintf('Item: %s', $item));
                 }

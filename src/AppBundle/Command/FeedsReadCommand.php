@@ -5,6 +5,7 @@ namespace AppBundle\Command;
 use AppBundle\Entity\Feed;
 use AppBundle\Service\FeedReader;
 use Doctrine\ORM\EntityManagerInterface;
+use FPN\TagBundle\Entity\TagManager;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
@@ -15,12 +16,14 @@ class FeedsReadCommand extends Command
 {
     private $entityManager;
     private $feedReader;
+    private $tagManager;
     private $logger;
 
-    public function __construct(EntityManagerInterface $entityManager, FeedReader $feedReader, LoggerInterface $logger)
+    public function __construct(EntityManagerInterface $entityManager, FeedReader $feedReader, TagManager $tagManager, LoggerInterface $logger)
     {
         $this->entityManager = $entityManager;
         $this->feedReader = $feedReader;
+        $this->tagManager = $tagManager;
         $this->logger = $logger;
 
         parent::__construct();
@@ -40,7 +43,7 @@ class FeedsReadCommand extends Command
         $sources = $this->entityManager->getRepository(Feed::class)->findAll();
         foreach ($sources as $source) {
             $this->logger->notice(sprintf('Reading %s', $source));
-            $this->feedReader->read($source, $this->entityManager, $this->logger);
+            $this->feedReader->read($source, $this->entityManager, $this->tagManager, $this->logger);
         }
     }
 }

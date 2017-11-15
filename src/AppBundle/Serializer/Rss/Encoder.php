@@ -99,7 +99,7 @@ class Encoder implements EncoderInterface
             $namespace = $this->ns[$ns];
             $name = $ns.':'.$name;
         }
-        $child = $this->element->addChild($name, (string) $value, $namespace);
+        $child = $this->element->addChild($name, htmlspecialchars((string) $value), $namespace);
         if ($attributes !== null) {
             foreach ($attributes as $name => $value) {
                 $namespace = null;
@@ -133,7 +133,7 @@ class Encoder implements EncoderInterface
     {
         if (isset($data['_items']) && is_array($data['_items'])) {
             foreach ($data['_items'] as $item) {
-                // @var $item Channel
+                // @var $item Item
                 $this->startElement('item')
                     ->startElement('title', $item->getTitle())
                     ->startElement('guid', $item->getGuid(), null, [
@@ -145,6 +145,9 @@ class Encoder implements EncoderInterface
                 }
                 if ($item->getDuration()) {
                     $this->startElement('duration', $this->formatDuration($item->getDuration()), self::NS_ITUNES);
+                }
+                foreach ($item->getTags() as $tag) {
+                    $this->startElement('category', $tag->getName(), self::NS_ITUNES);
                 }
 
                 $this->endElement();

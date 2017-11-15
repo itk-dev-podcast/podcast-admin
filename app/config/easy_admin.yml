@@ -6,6 +6,8 @@ easy_admin:
             list:
                 fields:
                     - property: title
+                    - property: tags
+                      template: tags.html.twig
 
             edit:
                 fields:
@@ -15,6 +17,15 @@ easy_admin:
                     - property: title
                       type_options:
                           disabled: true
+                          required: false
+                    - property: tags
+                      type: easyadmin_autocomplete
+                      type_options:
+                          multiple: true
+                          class: AppBundle\Entity\Tag
+                          required: false
+                          disabled: true
+
 
         Feed:
             class: AppBundle\Entity\Feed
@@ -29,3 +40,7 @@ easy_admin:
                     - property: title
                     - property: url
                       type: url
+
+
+        Tag:
+            class: AppBundle\Entity\Tag

@@ -47,3 +47,11 @@ services:
             - '@?api_platform.name_converter'
             - '@?serializer.mapping.class_metadata_factory'
         tags: [serializer.normalizer]
+
+
+    AppBundle\EventListener\TagListener:
+        arguments: ['@fpn_tag.tag_manager']
+        tags:
+            -
+                name: doctrine.event_listener
+                event: postLoad

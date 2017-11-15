@@ -3,8 +3,12 @@
 namespace AppBundle\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
+use AppBundle\Traits\TaggableTrait;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use DoctrineExtensions\Taggable\Taggable;
+use Gedmo\Timestampable\Timestampable;
+use Gedmo\Timestampable\Traits\TimestampableEntity;
 
 /**
  * @see http://www.rssboard.org/rss-profile#element-channel-item
@@ -14,14 +18,24 @@ use Doctrine\ORM\Mapping as ORM;
  * })
  * @ORM\Entity
  */
-class Item
+class Item implements Taggable, Timestampable
 {
+    use TaggableTrait;
+    use TimestampableEntity;
+
     /**
      * @var Feed
      *
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Feed")
      */
     private $feed;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    private $publishedAt;
 
     /**
      * @var string
@@ -137,7 +151,7 @@ class Item
 
     public function __toString()
     {
-        return $this->title . ' [' . $this->link . ']';
+        return $this->title.' ['.$this->link.']';
     }
 
     /**
@@ -484,5 +498,29 @@ class Item
     public function getDuration()
     {
         return $this->duration;
+    }
+
+    /**
+     * Set feed.
+     *
+     * @param \AppBundle\Entity\Feed $feed
+     *
+     * @return Item
+     */
+    public function setFeed(\AppBundle\Entity\Feed $feed = null)
+    {
+        $this->feed = $feed;
+
+        return $this;
+    }
+
+    /**
+     * Get feed.
+     *
+     * @return \AppBundle\Entity\Feed
+     */
+    public function getFeed()
+    {
+        return $this->feed;
     }
 }

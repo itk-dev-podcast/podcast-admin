@@ -81,3 +81,15 @@ nelmio_cors:
         max_age: 3600
     paths:
         '^/': ~
+
+stof_doctrine_extensions:
+    orm:
+        default:
+            timestampable: true
+            blameable: true
+            softdeleteable: true
+            sluggable: true
+fpn_tag:
+    model:
+        tag_class:     AppBundle\Entity\Tag
+        tagging_class: AppBundle\Entity\Tagging
