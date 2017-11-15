@@ -2,7 +2,6 @@
 
 namespace AppBundle\Entity;
 
-use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
@@ -70,7 +69,7 @@ class Channel
     private $guid;
 
     /**
-     * @var boolean
+     * @var bool
      *
      * @ORM\Column(type="boolean")
      */
@@ -126,7 +125,7 @@ class Channel
     private $duration;
 
     /**
-     * Get id
+     * Get id.
      *
      * @return guid
      */
@@ -136,7 +135,7 @@ class Channel
     }
 
     /**
-     * Set title
+     * Set title.
      *
      * @param string $title
      *
@@ -150,7 +149,7 @@ class Channel
     }
 
     /**
-     * Get title
+     * Get title.
      *
      * @return string
      */
@@ -160,7 +159,7 @@ class Channel
     }
 
     /**
-     * Set link
+     * Set link.
      *
      * @param string $link
      *
@@ -174,7 +173,7 @@ class Channel
     }
 
     /**
-     * Get link
+     * Get link.
      *
      * @return string
      */
@@ -184,7 +183,7 @@ class Channel
     }
 
     /**
-     * Set description
+     * Set description.
      *
      * @param string $description
      *
@@ -198,7 +197,7 @@ class Channel
     }
 
     /**
-     * Get description
+     * Get description.
      *
      * @return string
      */
@@ -208,7 +207,7 @@ class Channel
     }
 
     /**
-     * Set author
+     * Set author.
      *
      * @param string $author
      *
@@ -222,7 +221,7 @@ class Channel
     }
 
     /**
-     * Get author
+     * Get author.
      *
      * @return string
      */
@@ -232,7 +231,7 @@ class Channel
     }
 
     /**
-     * Set comments
+     * Set comments.
      *
      * @param string $comments
      *
@@ -246,7 +245,7 @@ class Channel
     }
 
     /**
-     * Get comments
+     * Get comments.
      *
      * @return string
      */
@@ -256,7 +255,7 @@ class Channel
     }
 
     /**
-     * Set guid
+     * Set guid.
      *
      * @param string $guid
      *
@@ -270,7 +269,7 @@ class Channel
     }
 
     /**
-     * Get guid
+     * Get guid.
      *
      * @return string
      */
@@ -280,9 +279,9 @@ class Channel
     }
 
     /**
-     * Set guidIsPermaLink
+     * Set guidIsPermaLink.
      *
-     * @param boolean $guidIsPermaLink
+     * @param bool $guidIsPermaLink
      *
      * @return Channel
      */
@@ -294,9 +293,9 @@ class Channel
     }
 
     /**
-     * Get guidIsPermaLink
+     * Get guidIsPermaLink.
      *
-     * @return boolean
+     * @return bool
      */
     public function getGuidIsPermaLink()
     {
@@ -304,7 +303,7 @@ class Channel
     }
 
     /**
-     * Set pubDate
+     * Set pubDate.
      *
      * @param \DateTime $pubDate
      *
@@ -318,7 +317,7 @@ class Channel
     }
 
     /**
-     * Get pubDate
+     * Get pubDate.
      *
      * @return \DateTime
      */
@@ -328,9 +327,9 @@ class Channel
     }
 
     /**
-     * Set enclosureLength
+     * Set enclosureLength.
      *
-     * @param integer $enclosureLength
+     * @param int $enclosureLength
      *
      * @return Channel
      */
@@ -342,9 +341,9 @@ class Channel
     }
 
     /**
-     * Get enclosureLength
+     * Get enclosureLength.
      *
-     * @return integer
+     * @return int
      */
     public function getEnclosureLength()
     {
@@ -352,7 +351,7 @@ class Channel
     }
 
     /**
-     * Set enclosureType
+     * Set enclosureType.
      *
      * @param string $enclosureType
      *
@@ -366,7 +365,7 @@ class Channel
     }
 
     /**
-     * Get enclosureType
+     * Get enclosureType.
      *
      * @return string
      */
@@ -376,7 +375,7 @@ class Channel
     }
 
     /**
-     * Set enclosureUrl
+     * Set enclosureUrl.
      *
      * @param string $enclosureUrl
      *
@@ -390,7 +389,7 @@ class Channel
     }
 
     /**
-     * Get enclosureUrl
+     * Get enclosureUrl.
      *
      * @return string
      */
@@ -400,7 +399,7 @@ class Channel
     }
 
     /**
-     * Set source
+     * Set source.
      *
      * @param string $source
      *
@@ -414,7 +413,7 @@ class Channel
     }
 
     /**
-     * Get source
+     * Get source.
      *
      * @return string
      */
@@ -424,7 +423,7 @@ class Channel
     }
 
     /**
-     * Set sourceUrl
+     * Set sourceUrl.
      *
      * @param string $sourceUrl
      *
@@ -438,7 +437,7 @@ class Channel
     }
 
     /**
-     * Get sourceUrl
+     * Get sourceUrl.
      *
      * @return string
      */
@@ -448,7 +447,7 @@ class Channel
     }
 
     /**
-     * Set duration
+     * Set duration.
      *
      * @param string $duration
      *
@@ -462,7 +461,7 @@ class Channel
     }
 
     /**
-     * Get duration
+     * Get duration.
      *
      * @return string
      */

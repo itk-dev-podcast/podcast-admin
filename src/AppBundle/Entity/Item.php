@@ -17,6 +17,13 @@ use Doctrine\ORM\Mapping as ORM;
 class Item
 {
     /**
+     * @var Feed
+     *
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Feed")
+     */
+    private $feed;
+
+    /**
      * @var string
      *
      * @ORM\Id
@@ -73,7 +80,7 @@ class Item
     private $guid;
 
     /**
-     * @var boolean
+     * @var bool
      *
      * @ORM\Column(type="boolean")
      */
@@ -129,7 +136,7 @@ class Item
     private $duration;
 
     /**
-     * Get id
+     * Get id.
      *
      * @return guid
      */
@@ -139,7 +146,7 @@ class Item
     }
 
     /**
-     * Set title
+     * Set title.
      *
      * @param string $title
      *
@@ -153,7 +160,7 @@ class Item
     }
 
     /**
-     * Get title
+     * Get title.
      *
      * @return string
      */
@@ -163,7 +170,7 @@ class Item
     }
 
     /**
-     * Set link
+     * Set link.
      *
      * @param string $link
      *
@@ -177,7 +184,7 @@ class Item
     }
 
     /**
-     * Get link
+     * Get link.
      *
      * @return string
      */
@@ -187,7 +194,7 @@ class Item
     }
 
     /**
-     * Set description
+     * Set description.
      *
      * @param string $description
      *
@@ -201,7 +208,7 @@ class Item
     }
 
     /**
-     * Get description
+     * Get description.
      *
      * @return string
      */
@@ -211,7 +218,7 @@ class Item
     }
 
     /**
-     * Set author
+     * Set author.
      *
      * @param string $author
      *
@@ -225,7 +232,7 @@ class Item
     }
 
     /**
-     * Get author
+     * Get author.
      *
      * @return string
      */
@@ -235,7 +242,7 @@ class Item
     }
 
     /**
-     * Set comments
+     * Set comments.
      *
      * @param string $comments
      *
@@ -249,7 +256,7 @@ class Item
     }
 
     /**
-     * Get comments
+     * Get comments.
      *
      * @return string
      */
@@ -259,7 +266,7 @@ class Item
     }
 
     /**
-     * Set guid
+     * Set guid.
      *
      * @param string $guid
      *
@@ -273,7 +280,7 @@ class Item
     }
 
     /**
-     * Get guid
+     * Get guid.
      *
      * @return string
      */
@@ -283,9 +290,9 @@ class Item
     }
 
     /**
-     * Set guidIsPermaLink
+     * Set guidIsPermaLink.
      *
-     * @param boolean $guidIsPermaLink
+     * @param bool $guidIsPermaLink
      *
      * @return Channel
      */
@@ -297,9 +304,9 @@ class Item
     }
 
     /**
-     * Get guidIsPermaLink
+     * Get guidIsPermaLink.
      *
-     * @return boolean
+     * @return bool
      */
     public function getGuidIsPermaLink()
     {
@@ -307,7 +314,7 @@ class Item
     }
 
     /**
-     * Set pubDate
+     * Set pubDate.
      *
      * @param \DateTime $pubDate
      *
@@ -321,7 +328,7 @@ class Item
     }
 
     /**
-     * Get pubDate
+     * Get pubDate.
      *
      * @return \DateTime
      */
@@ -331,9 +338,9 @@ class Item
     }
 
     /**
-     * Set enclosureLength
+     * Set enclosureLength.
      *
-     * @param integer $enclosureLength
+     * @param int $enclosureLength
      *
      * @return Channel
      */
@@ -345,9 +352,9 @@ class Item
     }
 
     /**
-     * Get enclosureLength
+     * Get enclosureLength.
      *
-     * @return integer
+     * @return int
      */
     public function getEnclosureLength()
     {
@@ -355,7 +362,7 @@ class Item
     }
 
     /**
-     * Set enclosureType
+     * Set enclosureType.
      *
      * @param string $enclosureType
      *
@@ -369,7 +376,7 @@ class Item
     }
 
     /**
-     * Get enclosureType
+     * Get enclosureType.
      *
      * @return string
      */
@@ -379,7 +386,7 @@ class Item
     }
 
     /**
-     * Set enclosureUrl
+     * Set enclosureUrl.
      *
      * @param string $enclosureUrl
      *
@@ -393,7 +400,7 @@ class Item
     }
 
     /**
-     * Get enclosureUrl
+     * Get enclosureUrl.
      *
      * @return string
      */
@@ -403,7 +410,7 @@ class Item
     }
 
     /**
-     * Set source
+     * Set source.
      *
      * @param string $source
      *
@@ -417,7 +424,7 @@ class Item
     }
 
     /**
-     * Get source
+     * Get source.
      *
      * @return string
      */
@@ -427,7 +434,7 @@ class Item
     }
 
     /**
-     * Set sourceUrl
+     * Set sourceUrl.
      *
      * @param string $sourceUrl
      *
@@ -441,7 +448,7 @@ class Item
     }
 
     /**
-     * Get sourceUrl
+     * Get sourceUrl.
      *
      * @return string
      */
@@ -451,7 +458,7 @@ class Item
     }
 
     /**
-     * Set duration
+     * Set duration.
      *
      * @param string $duration
      *
@@ -465,7 +472,7 @@ class Item
     }
 
     /**
-     * Get duration
+     * Get duration.
      *
      * @return string
      */

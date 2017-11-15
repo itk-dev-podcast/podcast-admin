@@ -2,9 +2,9 @@
 
 namespace AppBundle\DataFixtures\ORM;
 
-use AppBundle\Entity\Source;
+use AppBundle\Entity\Feed;
 
-class LoadSource extends LoadData
+class LoadFeed extends LoadData
 {
     public function getOrder()
     {
@@ -13,7 +13,7 @@ class LoadSource extends LoadData
 
     protected function loadItem($data)
     {
-        $source = new Source();
+        $source = new Feed();
         $source = $this->setValues($source, $data);
         $this->persist($source);
     }

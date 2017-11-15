@@ -7,10 +7,10 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Entity
  */
-class Source
+class Feed
 {
     /**
-     * @var integer
+     * @var int
      *
      * @ORM\Column(type="integer")
      * @ORM\Id
@@ -32,8 +32,13 @@ class Source
      */
     private $url;
 
+    public function __toString()
+    {
+        return $this->title.' ['.$this->url.']';
+    }
+
     /**
-     * Get id
+     * Get id.
      *
      * @return guid
      */
@@ -43,11 +48,11 @@ class Source
     }
 
     /**
-     * Set title
+     * Set title.
      *
      * @param string $title
      *
-     * @return Source
+     * @return Feed
      */
     public function setTitle($title)
     {
@@ -57,7 +62,7 @@ class Source
     }
 
     /**
-     * Get title
+     * Get title.
      *
      * @return string
      */
@@ -67,11 +72,11 @@ class Source
     }
 
     /**
-     * Set url
+     * Set url.
      *
      * @param string $url
      *
-     * @return Source
+     * @return Feed
      */
     public function setUrl($url)
     {
@@ -81,7 +86,7 @@ class Source
     }
 
     /**
-     * Get url
+     * Get url.
      *
      * @return string
      */
