@@ -39,8 +39,8 @@ class FeedsReadCommand extends Command
     {
         $sources = $this->entityManager->getRepository(Feed::class)->findAll();
         foreach ($sources as $source) {
-            $this->logger->info(sprintf('Reading %s', $source));
-            $this->feedReader->read($source, $this->entityManager);
+            $this->logger->notice(sprintf('Reading %s', $source));
+            $this->feedReader->read($source, $this->entityManager, $this->logger);
         }
     }
 }

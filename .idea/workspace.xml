@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31b46aa5-055c-45e2-830f-ef36f4bc5b44" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/DataFixtures/Data/Feed/Feed.yml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/DataFixtures/Data/Source/Source.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/DataFixtures/Data/arkiv.radio24syv.dk/audiopodcast/channel/13973671.rss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/DataFixtures/Data/www.dr.dk/nyheder/service/feeds/viden.rss" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/Fixtures.php" afterPath="$PROJECT_DIR$/src/AppBundle/Service/FeedReader.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/LoadSource.php" afterPath="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/LoadFeed.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Source.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Feed.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/htdocs.iml" afterPath="$PROJECT_DIR$/.idea/htdocs.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/easy_admin.yml" afterPath="$PROJECT_DIR$/app/config/easy_admin.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/deploy" afterPath="$PROJECT_DIR$/scripts/deploy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Command/FeedsReadCommand.php" afterPath="$PROJECT_DIR$/src/AppBundle/Command/FeedsReadCommand.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Item.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Item.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Service/FeedReader.php" afterPath="$PROJECT_DIR$/src/AppBundle/Service/FeedReader.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Item.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Item.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Item.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+            <state relative-caret-position="567">
+              <caret line="139" column="55" lean-forward="false" selection-start-line="139" selection-start-column="55" selection-end-line="139" selection-end-column="55" />
               <folding>
                 <element signature="e#36#80#0#PHP" expanded="true" />
               </folding>
@@ -43,9 +34,13 @@
       <file leaf-file-name="Channel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Channel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="9" column="59" lean-forward="false" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
-              <folding />
+            <state relative-caret-position="128">
+              <caret line="8" column="59" lean-forward="false" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+              <folding>
+                <marker date="1510742285000" expanded="true" signature="7259:7294" ph=" Get duration ..." />
+                <marker date="1510742285000" expanded="true" signature="7259:7376" ph="{...}" />
+                <marker date="1510742285000" expanded="true" signature="7330:7374" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,7 +50,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-              <folding />
+              <folding>
+                <marker date="1510742285000" expanded="true" signature="103:1323" ph="{...}" />
+                <marker date="1510742285000" expanded="true" signature="113:129" ph=" @var integer ..." />
+                <marker date="1510742285000" expanded="true" signature="1216:1251" ph=" Get url ..." />
+                <marker date="1510742285000" expanded="true" signature="1282:1321" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,8 +73,8 @@
       <file leaf-file-name="FeedReader.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/FeedReader.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+            <state relative-caret-position="384">
+              <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
               <folding>
                 <element signature="e#37#63#0#PHP" expanded="true" />
               </folding>
@@ -92,13 +92,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FeedsReadCommand.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FeedsReadCommand.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Command/FeedsReadCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+            <state relative-caret-position="672">
+              <caret line="42" column="32" lean-forward="false" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
               <folding>
-                <element signature="e#38#64#0#PHP" expanded="true" />
+                <element signature="e#37#63#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -171,14 +171,14 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Service/Helper.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Source.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Command/ReadSourcesCommand.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Service/FeedReader.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/DataFixtures/Data/Source/Source.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Feed.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/LoadFeed.php" />
         <option value="$PROJECT_DIR$/app/config/easy_admin.yml" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Item.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Command/ReadFeedsCommand.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Command/FeedsReadCommand.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Service/FeedReader.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Item.php" />
       </list>
     </option>
   </component>
@@ -756,12 +756,12 @@
       <workItem from="1510340549313" duration="6621000" />
       <workItem from="1510659605300" duration="42000" />
       <workItem from="1510668019893" duration="6476000" />
-      <workItem from="1510734396251" duration="5219000" />
+      <workItem from="1510734396251" duration="5653000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18358000" />
+    <option name="totallyTimeSpent" value="18792000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -807,7 +807,7 @@
         <state relative-caret-position="1536">
           <caret line="98" column="44" lean-forward="false" selection-start-line="98" selection-start-column="44" selection-end-line="98" selection-end-column="44" />
           <folding>
-            <element signature="e#44#73#0#PHP" expanded="true" />
+            <element signature="e#44#73#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -823,9 +823,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="33" column="2" lean-forward="false" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
-          <folding>
-            <element signature="e#44#91#0#PHP" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -881,7 +879,7 @@
         <state relative-caret-position="1536">
           <caret line="98" column="44" lean-forward="false" selection-start-line="98" selection-start-column="44" selection-end-line="98" selection-end-column="44" />
           <folding>
-            <element signature="e#44#73#0#PHP" expanded="true" />
+            <element signature="e#44#73#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1047,9 +1045,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="33" column="2" lean-forward="false" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
-          <folding>
-            <element signature="e#44#91#0#PHP" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1066,7 +1062,7 @@
         <state relative-caret-position="933">
           <caret line="121" column="24" lean-forward="false" selection-start-line="121" selection-start-column="24" selection-end-line="121" selection-end-column="24" />
           <folding>
-            <element signature="e#44#73#0#PHP" expanded="true" />
+            <element signature="e#44#73#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1097,9 +1093,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Channel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="9" column="59" lean-forward="false" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
-          <folding />
+        <state relative-caret-position="128">
+          <caret line="8" column="59" lean-forward="false" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+          <folding>
+            <marker date="1510742285000" expanded="true" signature="7259:7294" ph=" Get duration ..." />
+            <marker date="1510742285000" expanded="true" signature="7259:7376" ph="{...}" />
+            <marker date="1510742285000" expanded="true" signature="7330:7374" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1151,21 +1151,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/FeedReader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-          <folding>
-            <element signature="e#37#63#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Feed.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-          <folding />
+          <folding>
+            <marker date="1510742285000" expanded="true" signature="103:1323" ph="{...}" />
+            <marker date="1510742285000" expanded="true" signature="113:129" ph=" @var integer ..." />
+            <marker date="1510742285000" expanded="true" signature="1216:1251" ph=" Get url ..." />
+            <marker date="1510742285000" expanded="true" signature="1282:1321" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1193,22 +1188,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Item.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Command/FeedsReadCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        <state relative-caret-position="672">
+          <caret line="42" column="32" lean-forward="false" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
           <folding>
-            <element signature="e#36#80#0#PHP" expanded="true" />
+            <element signature="e#37#63#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Command/FeedsReadCommand.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/FeedReader.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+        <state relative-caret-position="384">
+          <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
           <folding>
-            <element signature="e#38#64#0#PHP" expanded="true" />
+            <element signature="e#37#63#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="139" column="55" lean-forward="false" selection-start-line="139" selection-start-column="55" selection-end-line="139" selection-end-column="55" />
+          <folding>
+            <element signature="e#36#80#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

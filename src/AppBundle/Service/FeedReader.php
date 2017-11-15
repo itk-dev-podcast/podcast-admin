@@ -5,6 +5,7 @@ namespace AppBundle\Service;
 use AppBundle\Entity\Feed;
 use AppBundle\Entity\Item;
 use Doctrine\ORM\EntityManagerInterface;
+use Psr\Log\LoggerInterface;
 
 class FeedReader
 {
@@ -16,7 +17,7 @@ class FeedReader
         $this->helper = $helper;
     }
 
-    public function read(Feed $source, EntityManagerInterface $entityManager)
+    public function read(Feed $source, EntityManagerInterface $entityManager, LoggerInterface $logger = null)
     {
         $data = $this->getData($source);
         if ($data) {
@@ -42,6 +43,9 @@ class FeedReader
                 }
 
                 $entityManager->persist($item);
+                if ($logger !== null) {
+                    $logger->notice(sprintf('Item: %s', $item));
+                }
             }
         }
         $entityManager->flush();

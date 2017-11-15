@@ -3,7 +3,7 @@ dir=$(cd $(dirname "${BASH_SOURCE[0]}")/../ && pwd)
 
 cd $dir
 
-env=${1:-prod}
+env=${1:-dev}
 
 rm -fr var/{cache,sessions}/*/*
 mkdir -p var/{cache,logs,sessions}/$env

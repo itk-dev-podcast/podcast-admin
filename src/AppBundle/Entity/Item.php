@@ -135,6 +135,11 @@ class Item
      */
     private $duration;
 
+    public function __toString()
+    {
+        return $this->title . ' [' . $this->link . ']';
+    }
+
     /**
      * Get id.
      *
