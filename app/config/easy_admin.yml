@@ -50,7 +50,7 @@ easy_admin:
                     - property: ttl
                       sortable: false
 
-            edit:
+            form:
                 fields:
                     - property: enabled
                     - property: title
