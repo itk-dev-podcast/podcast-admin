@@ -2,7 +2,7 @@ imports:
     - { resource: api_filters.yml }
 
 api_platform:
-    title: '%app_title%'
+    title: '%site_name'
     version: '0.0.0'
 
     # http_cache:

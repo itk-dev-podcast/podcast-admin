@@ -3,6 +3,7 @@ imports:
     - { resource: security.yml }
     - { resource: services.yml }
     - { resource: api_platform.yml }
+    - { resource: '@EasyAdminUserBundle/Resources/config/config.yml' }
     - { resource: easy_admin.yml }
 
 # Put parameters here that don't need to change on each machine where the app is deployed
@@ -40,6 +41,8 @@ framework:
 twig:
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
+    globals:
+        site_name: '%site_name%'
 
 # Doctrine Configuration
 doctrine:
@@ -68,6 +71,7 @@ doctrine:
 swiftmailer:
     transport: '%mailer_transport%'
     host: '%mailer_host%'
+    port: '%mailer_port%'
     username: '%mailer_user%'
     password: '%mailer_password%'
     spool: { type: memory }
@@ -95,3 +99,8 @@ fpn_tag:
     model:
         tag_class:     AppBundle\Entity\Tag
         tagging_class: AppBundle\Entity\Tagging
+
+fos_user:
+    db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
+    firewall_name: main
+    user_class: AppBundle\Entity\User

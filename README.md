@@ -13,6 +13,10 @@ Optionally, load fixtures:
 bin/console doctrine:fixtures:load --no-interaction
 ```
 
+```
+bin/console fos:user:create admin@example.com admin@example.com
+bin/console fos:user:promote admin@example.com ROLE_ADMIN
+```
 
 Cron
 ----

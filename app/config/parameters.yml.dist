@@ -2,7 +2,7 @@
 # Set parameters here that may be different on each deployment target of the app, e.g. development, staging, production.
 # http://symfony.com/doc/current/best_practices/configuration.html#infrastructure-related-configuration
 parameters:
-    app_title: Podcast
+    site_name: Podcast
     database_host: db
     database_port: 3306
     database_name: itk_podcast
@@ -15,9 +15,25 @@ parameters:
     mailer_user: ~
     mailer_password: ~
 
+    mailer_email: noreply@example.com
+    mailer_name: Podcast
+
+    view_timezone: GMT
+
     # A secret key that's used to generate certain security-related tokens
     secret: ThisTokenIsNotSoSecretChangeIt
 
     cors_allow_origin: http://localhost
 
     varnish_urls: [http://varnish]
+
+    user_created:
+        subject: '{{ site_name }} – brugeroprettelse'
+        header: 'Bruger oprettet på {{ site_name }}'
+        body: |
+          <p style='margin: 0;'>Du er blevet oprettet som bruger på {{ site_name }} med e-mailadressen {{ user.email }}.</p>
+          <p style='margin: 0;'>For at komme i gang skal du angive en adgangskode.
+          <p style='margin: 0;'>Du kan efterfølgende logge ind med din e-mailadresse ({{ user.email }}) og den valgte adgangskode.</p>
+        button:
+            text: 'Angiv adgangskode'
+        footer: '<p style="margin: 0;">Venlig hilsen<br/> {{ site_name }}</p>'

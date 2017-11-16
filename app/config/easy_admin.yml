@@ -58,3 +58,26 @@ easy_admin:
 
         Tag:
             class: AppBundle\Entity\Tag
+
+
+        User:
+            class: AppBundle\Entity\User
+            list:
+                fields:
+                    - property: email
+                    - property: roles
+                    - property: last_login
+                      type: datetime
+
+            form:
+                fields:
+                    - property: email
+                      type: email
+                    - property: roles
+                      type: choice
+                      type_options:
+                          multiple: true
+                          expanded: true
+                          choices: &role_list
+                              ROLE_USER: ROLE_USER
+                              ROLE_ADMIN: ROLE_ADMIN
