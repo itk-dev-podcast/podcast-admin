@@ -44,6 +44,9 @@ easy_admin:
                       type: url
                     - property: enabled
                       type: boolean
+                    - property: lastReadAt
+                    - property: ttl
+                      sortable: false
 
             edit:
                 fields:

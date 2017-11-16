@@ -47,6 +47,20 @@ class Feed implements Timestampable, SoftDeleteable
      */
     private $enabled;
 
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    private $lastReadAt;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(type="integer")
+     */
+    private $ttl;
+
     public function __toString()
     {
         return $this->title.' ['.$this->url.']';
@@ -129,8 +143,66 @@ class Feed implements Timestampable, SoftDeleteable
      *
      * @return boolean
      */
+    public function isEnabled()
+    {
+        return $this->enabled;
+    }
+
+    /**
+     * Get enabled
+     *
+     * @return boolean
+     */
     public function getEnabled()
     {
         return $this->enabled;
+    }
+
+    /**
+     * Set lastReadAt
+     *
+     * @param \DateTime $lastReadAt
+     *
+     * @return Feed
+     */
+    public function setLastReadAt($lastReadAt)
+    {
+        $this->lastReadAt = $lastReadAt;
+
+        return $this;
+    }
+
+    /**
+     * Get lastReadAt
+     *
+     * @return \DateTime
+     */
+    public function getLastReadAt()
+    {
+        return $this->lastReadAt;
+    }
+
+    /**
+     * Set ttl
+     *
+     * @param integer $ttl
+     *
+     * @return Feed
+     */
+    public function setTtl($ttl)
+    {
+        $this->ttl = $ttl;
+
+        return $this;
+    }
+
+    /**
+     * Get ttl
+     *
+     * @return integer
+     */
+    public function getTtl()
+    {
+        return $this->ttl;
     }
 }

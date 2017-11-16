@@ -18,9 +18,20 @@ class FeedReader
         $this->helper = $helper;
     }
 
-    public function read(Feed $feed, EntityManagerInterface $entityManager, TagManager $tagManager, LoggerInterface $logger = null)
+    public function read(Feed $feed, EntityManagerInterface $entityManager, TagManager $tagManager, LoggerInterface $logger)
     {
-        if (!$feed->getEnabled()) {
+        if (!$feed->isEnabled()) {
+            $logger->notice(sprintf('Feed %s is not enabled', $feed));
+            return;
+        }
+        $now = new \DateTime();
+        $nextReadAt = clone ($feed->getLastReadAt() ?: new \DateTime('2000-01-01'));
+        $ttl = (int)$feed->getTtl();
+        if ($ttl > 0) {
+            $nextReadAt->add(new \DateInterval('PT' . $ttl . 'M'));
+        }
+        if ($nextReadAt >= $now) {
+            $logger->notice(sprintf('Next read of feed %s at %s', $feed, $nextReadAt->format(\DateTime::W3C)));
             return;
         }
         $data = $this->getData($feed);
@@ -64,11 +75,13 @@ class FeedReader
 
                 $entityManager->persist($item);
                 $tagManager->saveTagging($item);
-                if ($logger !== null) {
-                    $logger->notice(sprintf('Item: %s', $item));
-                }
+                $logger->notice(sprintf('Item: %s', $item));
             }
         }
+        $feed
+            ->setTtl((int)($data->channel->ttl ?: 60))
+            ->setLastReadAt(new \DateTime());
+        $entityManager->persist($feed);
         $entityManager->flush();
     }
 
