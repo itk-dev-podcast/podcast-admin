@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block main %}
+    <h1>{{ site_name }}</h1>
+
+    <p>
+        <a class="btn btn-primary btn-block" href="{{ path('easyadmin') }}">Admin</a>
+    </p>
+
+    <p>
+        <a class="btn btn-secondary btn-block" href="{{ path('api_doc') }}">API</a>
+    </p>
+{% endblock %}

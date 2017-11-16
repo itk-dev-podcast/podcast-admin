@@ -15,7 +15,7 @@ parameters:
     mailer_user: ~
     mailer_password: ~
 
-    mailer_email: noreply@example.com
+    mailer_email: podcast@example.com
     mailer_name: Podcast
 
     view_timezone: GMT
