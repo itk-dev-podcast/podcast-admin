@@ -1652,16 +1652,16 @@
         },
         {
             "name": "itk/easyadmin-user-bundle",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aakb/easyadmin-user-bundle.git",
-                "reference": "22a910c4be7c9cf9780be92626bd3ed4263599f7"
+                "reference": "0d43e5d8933f1412dc6d7b87fa79489f08462980"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aakb/easyadmin-user-bundle/zipball/22a910c4be7c9cf9780be92626bd3ed4263599f7",
-                "reference": "22a910c4be7c9cf9780be92626bd3ed4263599f7",
+                "url": "https://api.github.com/repos/aakb/easyadmin-user-bundle/zipball/0d43e5d8933f1412dc6d7b87fa79489f08462980",
+                "reference": "0d43e5d8933f1412dc6d7b87fa79489f08462980",
                 "shasum": ""
             },
             "require": {
@@ -1686,10 +1686,10 @@
             ],
             "description": "Itk easy admin user bundle",
             "support": {
-                "source": "https://github.com/aakb/easyadmin-user-bundle/tree/1.0.1",
+                "source": "https://github.com/aakb/easyadmin-user-bundle/tree/1.0.2",
                 "issues": "https://github.com/aakb/easyadmin-user-bundle/issues"
             },
-            "time": "2017-11-16T14:13:24+00:00"
+            "time": "2017-11-17T12:08:40+00:00"
         },
         {
             "name": "javiereguiluz/easyadmin-bundle",
@@ -3377,16 +3377,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v3.3.12",
+            "version": "v3.3.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "1452970fc29131776505f684bd81d7a33cbaada4"
+                "reference": "9b0226340705f75fd0cebd220746a36050ead8a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/1452970fc29131776505f684bd81d7a33cbaada4",
-                "reference": "1452970fc29131776505f684bd81d7a33cbaada4",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/9b0226340705f75fd0cebd220746a36050ead8a9",
+                "reference": "9b0226340705f75fd0cebd220746a36050ead8a9",
                 "shasum": ""
             },
             "require": {
@@ -3527,7 +3527,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2017-11-13T19:37:31+00:00"
+            "time": "2017-11-16T18:15:01+00:00"
         },
         {
             "name": "twig/extensions",
@@ -4860,7 +4860,7 @@
         },
         {
             "name": "symfony/phpunit-bridge",
-            "version": "v3.3.12",
+            "version": "v3.3.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/phpunit-bridge.git",

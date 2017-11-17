@@ -12,6 +12,7 @@ easy_admin:
                     - property: publishedAt
                     - property: tags
                       template: tags.html.twig
+                    - property: feed
 
             edit:
                 fields:
@@ -19,6 +20,12 @@ easy_admin:
                       css_class: 'custom-information'
                       label: 'Custom information'
                     - property: publishedAt
+                    - property: tags
+                      type: easyadmin_autocomplete
+                      type_options:
+                          multiple: true
+                          class: AppBundle\Entity\Tag
+                          required: false
 
                     - type: group
                       css_class: 'basic-information'
@@ -27,13 +34,6 @@ easy_admin:
                       type_options:
                           disabled: true
                           required: false
-                    - property: tags
-                      type: easyadmin_autocomplete
-                      type_options:
-                          multiple: true
-                          class: AppBundle\Entity\Tag
-                          required: false
-                          disabled: true
 
 
         Feed:
