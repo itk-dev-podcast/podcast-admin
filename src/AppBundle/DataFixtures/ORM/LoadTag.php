@@ -4,16 +4,15 @@ namespace AppBundle\DataFixtures\ORM;
 
 use AppBundle\Entity\Feed;
 
-class LoadFeed extends LoadData
+class LoadTag extends LoadData
 {
     public function getOrder()
     {
-        return 2;
+        return 4;
     }
 
     protected function loadItem($data)
     {
-        $feed = $this->setValues(new Feed(), $data);
-        $this->persist($feed);
+        $this->container->get('fpn_tag.tag_manager')->loadOrCreateTag($data['name']);
     }
 }

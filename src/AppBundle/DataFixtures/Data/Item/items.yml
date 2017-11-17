@@ -1,0 +1,16 @@
+-
+    feed:
+        url: https://arkiv.radio24syv.dk/audiopodcast/channel/13973671
+    id: 87
+    title: Hmm …
+    link: https://podcast.example.com/hmm
+    description: Yada, yada, yada, …
+
+-
+    feed:
+        url: https://arkiv.radio24syv.dk/audiopodcast/channel/13973671
+    id: 42
+    title: MACHINES?
+    link: https://podcast.example.com/machines
+    description: Yada, yada, yada, …
+    published_at: '2017-11-17'

@@ -58,6 +58,10 @@ abstract class LoadData extends ContainerAwareFixture implements OrderedFixtureI
 
     protected function setValue($object, $path, $value)
     {
+        if (preg_match('/_at$/', $path)) {
+            $value = new \DateTime($value);
+        }
+
         $this->accessor->setValue($object, $path, $value);
 
         return $object;
