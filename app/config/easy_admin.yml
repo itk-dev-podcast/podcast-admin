@@ -60,6 +60,14 @@ easy_admin:
 
         Tag:
             class: AppBundle\Entity\Tag
+            list:
+                fields:
+                    - property: name
+                    - property: slug
+
+            form:
+                fields:
+                    - property: name
 
 
         User:

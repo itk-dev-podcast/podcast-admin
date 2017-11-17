@@ -13,10 +13,10 @@ class Encoder implements EncoderInterface
 
     const NS_ATOM = 'atom';
     const NS_ITUNES = 'itunes';
-    const NS_CUSTOM = 'custom';
+    const NS_PODCAST = 'podcast';
 
     private $ns = [
-        self::NS_CUSTOM => 'http://custom.example.com/',
+        self::NS_PODCAST => 'http://podcast.example.com/podcast',
         self::NS_ATOM => 'http://www.w3.org/2005/Atom',
         self::NS_ITUNES => 'http://www.itunes.com/dtds/podcast-1.0.dtd',
     ];
@@ -40,17 +40,22 @@ class Encoder implements EncoderInterface
     public function encode($data, $format, array $context = [])
     {
         $rss = $this->createDocument();
-        if (isset($data['totalItems'])) {
-            $this->addAttribute('totalItems', $data['totalItems'], self::NS_CUSTOM);
-        }
-        if (isset($data['itemsPerPage'])) {
-            $this->addAttribute('itemsPerPage', $data['itemsPerPage'], self::NS_CUSTOM);
-        }
-        if (isset($data['currentPage'])) {
-            $this->addAttribute('currentPage', $data['currentPage'], self::NS_CUSTOM);
-        }
-
+//        if (isset($data['totalItems'])) {
+//            $this->addAttribute('totalItems', $data['totalItems'], self::NS_PODCAST);
+//        }
+//        if (isset($data['itemsPerPage'])) {
+//            $this->addAttribute('itemsPerPage', $data['itemsPerPage'], self::NS_PODCAST);
+//        }
+//        if (isset($data['currentPage'])) {
+//            $this->addAttribute('currentPage', $data['currentPage'], self::NS_PODCAST);
+//        }
         $this->startElement('channel');
+        if (isset($data['_links'])) {
+            $baseUrl = isset($_SERVER['REQUEST_SCHEME'], $_SERVER['SERVER_NAME']) ? $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['SERVER_NAME'] : '';
+            $this->startElement('link', null, self::NS_ATOM, array_map(function ($url) use ($baseUrl) {
+                return $baseUrl . $url;
+            }, $data['_links']));
+        }
         $this->addItems($data);
 
         return $rss->asXML();

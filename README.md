@@ -24,3 +24,14 @@ Cron
 ```
 bin/console app:feeds:read
 ```
+
+
+Tests
+-----
+
+```
+SYMFONY_ENV=test bin/console doctrine:database:create
+SYMFONY_ENV=test bin/console doctrine:schema:create
+SYMFONY_ENV=test bin/console doctrine:fixtures:load --no-interaction
+SYMFONY_ENV=test ./vendor/bin/behat
+```
