@@ -133,15 +133,18 @@ class Encoder implements EncoderInterface
     {
         if (isset($data['_items']) && is_array($data['_items'])) {
             foreach ($data['_items'] as $item) {
-                // @var $item Item
+                /** @var $item Item */
                 $this->startElement('item')
                     ->startElement('title', $item->getTitle())
                     ->startElement('guid', $item->getGuid(), null, [
-                        'isPermaLink' => $item->getGuidIsPermaLink() ? 'true' : 'false',
+                        'isPermaLink' => $item->isGuidIsPermaLink() ? 'true' : 'false',
                     ])
-                    ->startElement('description', $item->getDescription())
-                    ->startElement('pubDate', $item->getPubDate()->format(\DateTime::ATOM));
-                if ($item->getEnclosureUrl()) {
+                    ->startElement('description', $item->getDescription());
+                if ($item->getPubDate() !== null) {
+                    $this->startElement('pubDate', $item->getPubDate()->format(\DateTime::ATOM));
+                }
+                if ($item->getEnclosure() !== null) {
+                    $this->startElement('enclosure', null, null, $item->getEnclosure());
                 }
                 if ($item->getDuration()) {
                     $this->startElement('duration', $this->formatDuration($item->getDuration()), self::NS_ITUNES);

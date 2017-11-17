@@ -6,6 +6,7 @@ use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\SoftDeleteable\SoftDeleteable;
 use Gedmo\SoftDeleteable\Traits\SoftDeleteableEntity;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
@@ -14,7 +15,11 @@ use Symfony\Component\Serializer\Annotation\Groups;
  * @ORM\Table()
  *
  * @ORM\Entity(repositoryClass="DoctrineExtensions\Taggable\Entity\TagRepository")
- *
+ * @UniqueEntity(
+ *   fields="name",
+ *   message="This tag is already defined."
+ * )
+
  * @ApiResource(
  *   collectionOperations={
  *     "get"={"method"="GET"}

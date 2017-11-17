@@ -14,3 +14,7 @@
     link: https://podcast.example.com/machines
     description: Yada, yada, yada, …
     published_at: '2017-11-17'
+    enclosure:
+        url: https://podcast.example.com/machines/recording.mp3
+        type: audio/mpeg
+        length: 12345678
