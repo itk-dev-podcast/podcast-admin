@@ -23,6 +23,8 @@ easy_admin:
                     - property: tags
                       type: easyadmin_autocomplete
                       type_options:
+                          # by_reference is needed to make sure that Time::setTags is called.
+                          by_reference: false
                           multiple: true
                           class: AppBundle\Entity\Tag
                           required: false

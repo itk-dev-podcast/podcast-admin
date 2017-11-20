@@ -5,7 +5,6 @@ namespace AppBundle\Entity;
 use ApiPlatform\Core\Annotation\ApiResource;
 use AppBundle\Traits\RssItemTrait;
 use AppBundle\Traits\TaggableTrait;
-use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use DoctrineExtensions\Taggable\Taggable;
 use Gedmo\SoftDeleteable\SoftDeleteable;

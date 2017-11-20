@@ -55,9 +55,9 @@ services:
     AppBundle\EventListener\TagListener:
         arguments: ['@fpn_tag.tag_manager']
         tags:
-            -
-                name: doctrine.event_listener
-                event: postLoad
+            - { name: doctrine.event_listener, event: postLoad }
+            - { name: doctrine.event_listener, event: postPersist }
+            - { name: doctrine.event_listener, event: postUpdate }
 
     twig.stringloader:
         class: Twig_Extension_StringLoader
