@@ -2,25 +2,27 @@
 
 namespace AppBundle\EventListener;
 
+use AppBundle\Entity\CategorizableInterface;
+use AppBundle\Service\CategoryManager;
 use Doctrine\ORM\Event\LifecycleEventArgs;
 use DoctrineExtensions\Taggable\Taggable;
 use FPN\TagBundle\Entity\TagManager;
 
-class TagListener
+class CategoryListener
 {
     /** @var TagManager */
-    private $tagManager;
+    private $categoryManager;
 
-    public function __construct(TagManager $tagManager)
+    public function __construct(CategoryManager $categoryManager)
     {
-        $this->tagManager = $tagManager;
+        $this->categoryManager = $categoryManager;
     }
 
     public function postPersist(LifecycleEventArgs $args)
     {
         $object = $args->getObject();
-        if ($object instanceof Taggable) {
-            $this->tagManager->saveTagging($object);
+        if ($object instanceof CategorizableInterface) {
+            $this->categoryManager->saveTagging($object);
         }
     }
 
@@ -32,8 +34,8 @@ class TagListener
     public function postLoad(LifecycleEventArgs $args)
     {
         $object = $args->getObject();
-        if ($object instanceof Taggable) {
-            $this->tagManager->loadTagging($object);
+        if ($object instanceof CategorizableInterface) {
+            $this->categoryManager->loadTagging($object);
         }
     }
 }

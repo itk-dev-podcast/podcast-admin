@@ -3,10 +3,11 @@
 namespace AppBundle\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
+use AppBundle\Traits\CategorizableTrait;
 use AppBundle\Traits\RssItemTrait;
 use AppBundle\Traits\TaggableTrait;
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
-use DoctrineExtensions\Taggable\Taggable;
 use Gedmo\SoftDeleteable\SoftDeleteable;
 use Gedmo\SoftDeleteable\Traits\SoftDeleteableEntity;
 use Gedmo\Timestampable\Timestampable;
@@ -24,10 +25,11 @@ use Gedmo\Timestampable\Traits\TimestampableEntity;
  * })
  * @ORM\Entity
  */
-class Item implements Taggable, Timestampable, SoftDeleteable
+class Item implements CategorizableInterface, Timestampable, SoftDeleteable
 {
     use SoftDeleteableEntity;
     use TaggableTrait;
+    use CategorizableTrait;
     use TimestampableEntity;
     use RssItemTrait;
 

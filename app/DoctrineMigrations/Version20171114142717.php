@@ -17,7 +17,6 @@ class Version20171114142717 extends AbstractMigration
         // this up() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'mysql', 'Migration can only be executed safely on \'mysql\'.');
 
-        $this->addSql('CREATE TABLE category (id CHAR(36) NOT NULL COMMENT \'(DC2Type:guid)\', name VARCHAR(255) NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB');
         $this->addSql('CREATE TABLE item (id CHAR(36) NOT NULL COMMENT \'(DC2Type:guid)\', title VARCHAR(255) NOT NULL, link VARCHAR(255) DEFAULT NULL, description LONGTEXT NOT NULL, author VARCHAR(255) DEFAULT NULL, comments LONGTEXT DEFAULT NULL, guid VARCHAR(255) DEFAULT NULL, guid_is_perma_link TINYINT(1) NOT NULL, pub_date DATETIME DEFAULT NULL, enclosure_length INT DEFAULT NULL, enclosure_type VARCHAR(255) DEFAULT NULL, enclosure_url VARCHAR(255) DEFAULT NULL, source VARCHAR(255) DEFAULT NULL, source_url VARCHAR(255) DEFAULT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB');
     }
 
@@ -26,7 +25,6 @@ class Version20171114142717 extends AbstractMigration
         // this down() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'mysql', 'Migration can only be executed safely on \'mysql\'.');
 
-        $this->addSql('DROP TABLE category');
         $this->addSql('DROP TABLE item');
     }
 }

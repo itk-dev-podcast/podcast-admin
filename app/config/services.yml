@@ -52,8 +52,7 @@ services:
         tags: [serializer.normalizer]
 
 
-    AppBundle\EventListener\TagListener:
-        arguments: ['@fpn_tag.tag_manager']
+    AppBundle\EventListener\CategoryListener:
         tags:
             - { name: doctrine.event_listener, event: postLoad }
             - { name: doctrine.event_listener, event: postPersist }

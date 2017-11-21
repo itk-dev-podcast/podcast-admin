@@ -20,19 +20,16 @@ easy_admin:
                       css_class: 'custom-information'
                       label: 'Custom information'
                     - property: publishedAt
-                    - property: tags
-                      type: easyadmin_autocomplete
-                      type_options:
-                          # by_reference is needed to make sure that Time::setTags is called.
-                          by_reference: false
-                          multiple: true
-                          class: AppBundle\Entity\Tag
-                          required: false
 
                     - type: group
                       css_class: 'basic-information'
                       label: 'Basic information'
                     - property: title
+                      type_options:
+                          disabled: true
+                          required: false
+                    - property: tags
+                      label: Categories
                       type_options:
                           disabled: true
                           required: false
@@ -60,16 +57,16 @@ easy_admin:
                       type: url
 
 
-        Tag:
-            class: AppBundle\Entity\Tag
-            list:
-                fields:
-                    - property: name
-                    - property: slug
+        # Tag:
+        #     class: AppBundle\Entity\Tag
+        #     list:
+        #         fields:
+        #             - property: name
+        #             - property: slug
 
-            form:
-                fields:
-                    - property: name
+        #     form:
+        #         fields:
+        #             - property: name
 
 
         User:
