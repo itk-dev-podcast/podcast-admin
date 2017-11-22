@@ -2,7 +2,6 @@
 
 namespace AppBundle\Entity;
 
-use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\SoftDeleteable\SoftDeleteable;
 use Gedmo\SoftDeleteable\Traits\SoftDeleteableEntity;
@@ -41,7 +40,7 @@ class Feed implements Timestampable, SoftDeleteable
     private $url;
 
     /**
-     * @var boolean
+     * @var bool
      *
      * @ORM\Column(type="boolean")
      */
@@ -125,9 +124,9 @@ class Feed implements Timestampable, SoftDeleteable
     }
 
     /**
-     * Set enabled
+     * Set enabled.
      *
-     * @param boolean $enabled
+     * @param bool $enabled
      *
      * @return Feed
      */
@@ -139,9 +138,9 @@ class Feed implements Timestampable, SoftDeleteable
     }
 
     /**
-     * Get enabled
+     * Get enabled.
      *
-     * @return boolean
+     * @return bool
      */
     public function isEnabled()
     {
@@ -149,9 +148,9 @@ class Feed implements Timestampable, SoftDeleteable
     }
 
     /**
-     * Get enabled
+     * Get enabled.
      *
-     * @return boolean
+     * @return bool
      */
     public function getEnabled()
     {
@@ -159,7 +158,7 @@ class Feed implements Timestampable, SoftDeleteable
     }
 
     /**
-     * Set lastReadAt
+     * Set lastReadAt.
      *
      * @param \DateTime $lastReadAt
      *
@@ -173,7 +172,7 @@ class Feed implements Timestampable, SoftDeleteable
     }
 
     /**
-     * Get lastReadAt
+     * Get lastReadAt.
      *
      * @return \DateTime
      */
@@ -183,9 +182,9 @@ class Feed implements Timestampable, SoftDeleteable
     }
 
     /**
-     * Set ttl
+     * Set ttl.
      *
-     * @param integer $ttl
+     * @param int $ttl
      *
      * @return Feed
      */
@@ -197,9 +196,9 @@ class Feed implements Timestampable, SoftDeleteable
     }
 
     /**
-     * Get ttl
+     * Get ttl.
      *
-     * @return integer
+     * @return int
      */
     public function getTtl()
     {

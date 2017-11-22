@@ -40,20 +40,20 @@ class Encoder implements EncoderInterface
     public function encode($data, $format, array $context = [])
     {
         $rss = $this->createDocument();
-//        if (isset($data['totalItems'])) {
-//            $this->addAttribute('totalItems', $data['totalItems'], self::NS_PODCAST);
-//        }
-//        if (isset($data['itemsPerPage'])) {
-//            $this->addAttribute('itemsPerPage', $data['itemsPerPage'], self::NS_PODCAST);
-//        }
-//        if (isset($data['currentPage'])) {
-//            $this->addAttribute('currentPage', $data['currentPage'], self::NS_PODCAST);
-//        }
+        //        if (isset($data['totalItems'])) {
+        //            $this->addAttribute('totalItems', $data['totalItems'], self::NS_PODCAST);
+        //        }
+        //        if (isset($data['itemsPerPage'])) {
+        //            $this->addAttribute('itemsPerPage', $data['itemsPerPage'], self::NS_PODCAST);
+        //        }
+        //        if (isset($data['currentPage'])) {
+        //            $this->addAttribute('currentPage', $data['currentPage'], self::NS_PODCAST);
+        //        }
         $this->startElement('channel');
         if (isset($data['_links'])) {
-            $baseUrl = isset($_SERVER['REQUEST_SCHEME'], $_SERVER['SERVER_NAME']) ? $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['SERVER_NAME'] : '';
+            $baseUrl = isset($_SERVER['REQUEST_SCHEME'], $_SERVER['SERVER_NAME']) ? $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['SERVER_NAME'] : '';
             $this->startElement('link', null, self::NS_ATOM, array_map(function ($url) use ($baseUrl) {
-                return $baseUrl . $url;
+                return $baseUrl.$url;
             }, $data['_links']));
         }
         $this->addItems($data);

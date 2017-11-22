@@ -50,6 +50,7 @@ class Channel
 
     /**
      * @param Feed $feed
+     *
      * @return Channel
      */
     public function setFeed(Feed $feed)

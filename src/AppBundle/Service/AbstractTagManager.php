@@ -11,7 +11,6 @@ use FPN\TagBundle\Entity\Tag;
  * A generalization of DoctrineExtensions\Taggable\TagManager with configurable properties.
  *
  * Class TagManager
- * @package AppBundle\Service
  */
 abstract class AbstractTagManager //extends BaseTagManager
 {
@@ -31,10 +30,10 @@ abstract class AbstractTagManager //extends BaseTagManager
     }
 
     /**
-     * Adds a tag on the given taggable resource
+     * Adds a tag on the given taggable resource.
      *
-     * @param Tag       $tag        Tag object
-     * @param Taggable  $resource   Taggable resource
+     * @param Tag      $tag      Tag object
+     * @param Taggable $resource Taggable resource
      */
     public function addTag($tag, $resource)
     {
@@ -42,10 +41,10 @@ abstract class AbstractTagManager //extends BaseTagManager
     }
 
     /**
-     * Adds multiple tags on the given taggable resource
+     * Adds multiple tags on the given taggable resource.
      *
-     * @param Tag[]     $tags       Array of Tag objects
-     * @param Taggable  $resource   Taggable resource
+     * @param Tag[]    $tags     Array of Tag objects
+     * @param Taggable $resource Taggable resource
      */
     public function addTags(array $tags, $resource)
     {
@@ -57,11 +56,12 @@ abstract class AbstractTagManager //extends BaseTagManager
     }
 
     /**
-     * Removes an existant tag on the given taggable resource
+     * Removes an existant tag on the given taggable resource.
      *
-     * @param Tag       $tag        Tag object
-     * @param Taggable  $resource   Taggable resource
-     * @return Boolean
+     * @param Tag      $tag      Tag object
+     * @param Taggable $resource Taggable resource
+     *
+     * @return bool
      */
     public function removeTag($tag, $resource)
     {
@@ -69,10 +69,10 @@ abstract class AbstractTagManager //extends BaseTagManager
     }
 
     /**
-     * Replaces all current tags on the given taggable resource
+     * Replaces all current tags on the given taggable resource.
      *
-     * @param Tag[]     $tags       Array of Tag objects
-     * @param Taggable  $resource   Taggable resource
+     * @param Tag[]    $tags     Array of Tag objects
+     * @param Taggable $resource Taggable resource
      */
     public function replaceTags(array $tags, $resource)
     {
@@ -81,27 +81,30 @@ abstract class AbstractTagManager //extends BaseTagManager
     }
 
     /**
-     * Loads or creates a tag from tag name
+     * Loads or creates a tag from tag name.
      *
-     * @param array  $name  Tag name
+     * @param array $name Tag name
+     *
      * @return Tag
      */
     public function loadOrCreateTag($name)
     {
-        $tags = $this->loadOrCreateTags(array($name));
+        $tags = $this->loadOrCreateTags([$name]);
+
         return $tags[0];
     }
 
     /**
-     * Loads or creates multiples tags from a list of tag names
+     * Loads or creates multiples tags from a list of tag names.
      *
      * @param array $names Array of tag names
+     *
      * @return Tag[]
      */
     public function loadOrCreateTags(array $names)
     {
         if (empty($names)) {
-            return array();
+            return [];
         }
 
         $names = array_unique($names);
@@ -118,13 +121,13 @@ abstract class AbstractTagManager //extends BaseTagManager
             ->getResult()
         ;
 
-        $loadedNames = array();
+        $loadedNames = [];
         foreach ($tags as $tag) {
             $loadedNames[] = $tag->getName();
         }
 
         $missingNames = array_udiff($names, $loadedNames, 'strcasecmp');
-        if (sizeof($missingNames)) {
+        if (count($missingNames)) {
             foreach ($missingNames as $name) {
                 $tag = $this->createTag($name);
                 $this->em->persist($tag);
@@ -139,9 +142,9 @@ abstract class AbstractTagManager //extends BaseTagManager
     }
 
     /**
-     * Saves tags for the given taggable resource
+     * Saves tags for the given taggable resource.
      *
-     * @param Taggable  $resource   Taggable resource
+     * @param Taggable $resource Taggable resource
      */
     public function saveTagging($resource)
     {
@@ -150,11 +153,11 @@ abstract class AbstractTagManager //extends BaseTagManager
         $tagsToAdd = $newTags;
 
         if ($oldTags !== null and is_array($oldTags) and !empty($oldTags)) {
-            $tagsToRemove = array();
+            $tagsToRemove = [];
 
             foreach ($oldTags as $oldTag) {
                 if ($newTags->exists(function ($index, $newTag) use ($oldTag) {
-                    return $newTag->getName() == $oldTag->getName();
+                    return $newTag->getName() === $oldTag->getName();
                 })) {
                     $tagsToAdd->removeElement($oldTag);
                 } else {
@@ -162,12 +165,12 @@ abstract class AbstractTagManager //extends BaseTagManager
                 }
             }
 
-            if (sizeof($tagsToRemove)) {
+            if (count($tagsToRemove)) {
                 $builder = $this->em->createQueryBuilder();
                 $builder
                     ->delete($this->taggingClass, 't')
-                    ->where('t.' . $this->tagIdName)
-                    ->where($builder->expr()->in('t.' . $this->tagName, $tagsToRemove))
+                    ->where('t.'.$this->tagIdName)
+                    ->where($builder->expr()->in('t.'.$this->tagName, $tagsToRemove))
                     ->andWhere('t.resourceType = :resourceType')
                     ->setParameter('resourceType', $this->getTaggableType($resource))
                     ->andWhere('t.resourceId = :resourceId')
@@ -190,9 +193,9 @@ abstract class AbstractTagManager //extends BaseTagManager
     }
 
     /**
-     * Loads all tags for the given taggable resource
+     * Loads all tags for the given taggable resource.
      *
-     * @param Taggable  $resource   Taggable resource
+     * @param Taggable $resource Taggable resource
      */
     public function loadTagging($resource)
     {
@@ -201,33 +204,9 @@ abstract class AbstractTagManager //extends BaseTagManager
     }
 
     /**
-     * Gets all tags for the given taggable resource
+     * Deletes all tagging records for the given taggable resource.
      *
-     * @param Taggable  $resource   Taggable resource
-     */
-    protected function getTagging($resource)
-    {
-        return $this->em
-            ->createQueryBuilder()
-
-            ->select('t')
-            ->from($this->tagClass, 't')
-
-            ->innerJoin('t.' . $this->taggingName, 't2', Expr\Join::WITH, 't2 . resourceId = :id AND t2 . resourceType = :type')
-            ->setParameter('id', $this->getTaggableId($resource))
-            ->setParameter('type', $this->getTaggableType($resource))
-
-            // ->orderBy('t.name', 'ASC')
-
-            ->getQuery()
-            ->getResult()
-        ;
-    }
-
-    /**
-     * Deletes all tagging records for the given taggable resource
-     *
-     * @param Taggable  $resource   Taggable resource
+     * @param Taggable $resource Taggable resource
      */
     public function deleteTagging($resource)
     {
@@ -250,12 +229,12 @@ abstract class AbstractTagManager //extends BaseTagManager
     }
 
     /**
-     * Splits an string into an array of valid tag names
+     * Splits an string into an array of valid tag names.
      *
-     * @param string    $names      String of tag names
-     * @param string    $separator  Tag name separator
+     * @param string $names     String of tag names
+     * @param string $separator Tag name separator
      */
-    public function splitTagNames($names, $separator=',')
+    public function splitTagNames($names, $separator = ',')
     {
         $tags = explode($separator, $names);
         $tags = array_map('trim', $tags);
@@ -267,13 +246,13 @@ abstract class AbstractTagManager //extends BaseTagManager
     /**
      * Returns an array of tag names for the given Taggable resource.
      *
-     * @param Taggable  $resource   Taggable resource
+     * @param Taggable $resource Taggable resource
      */
     public function getTagNames($resource)
     {
-        $names = array();
+        $names = [];
 
-        if (sizeof($this->getTags($resource)) > 0) {
+        if (count($this->getTags($resource)) > 0) {
             foreach ($this->getTags($resource) as $tag) {
                 $names[] = $tag->getName();
             }
@@ -283,9 +262,34 @@ abstract class AbstractTagManager //extends BaseTagManager
     }
 
     /**
-     * Creates a new Tag object
+     * Gets all tags for the given taggable resource.
      *
-     * @param string    $name   Tag name
+     * @param Taggable $resource Taggable resource
+     */
+    protected function getTagging($resource)
+    {
+        return $this->em
+            ->createQueryBuilder()
+
+            ->select('t')
+            ->from($this->tagClass, 't')
+
+            ->innerJoin('t.'.$this->taggingName, 't2', Expr\Join::WITH, 't2 . resourceId = :id AND t2 . resourceType = :type')
+            ->setParameter('id', $this->getTaggableId($resource))
+            ->setParameter('type', $this->getTaggableType($resource))
+
+            // ->orderBy('t.name', 'ASC')
+
+            ->getQuery()
+            ->getResult()
+        ;
+    }
+
+    /**
+     * Creates a new Tag object.
+     *
+     * @param string $name Tag name
+     *
      * @return Tag
      */
     protected function createTag($name)
@@ -294,10 +298,11 @@ abstract class AbstractTagManager //extends BaseTagManager
     }
 
     /**
-     * Creates a new Tagging object
+     * Creates a new Tagging object.
      *
-     * @param Tag       $tag        Tag object
-     * @param Taggable  $resource   Taggable resource object
+     * @param Tag      $tag      Tag object
+     * @param Taggable $resource Taggable resource object
+     *
      * @return Tagging
      */
     protected function createTagging($tag, $resource)
@@ -310,11 +315,13 @@ abstract class AbstractTagManager //extends BaseTagManager
         return $resource->{$this->getTagsMethod}();
     }
 
-    protected function getTaggableType($resource) {
+    protected function getTaggableType($resource)
+    {
         return $resource->{$this->getTaggableTypeMethod}();
     }
 
-    protected function getTaggableId($resource) {
+    protected function getTaggableId($resource)
+    {
         return $resource->{$this->getTaggableIdMethod}();
     }
 }

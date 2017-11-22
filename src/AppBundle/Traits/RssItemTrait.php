@@ -9,7 +9,6 @@ use Doctrine\ORM\Mapping as ORM;
  * @see https://cyber.harvard.edu/rss/rss.html#hrelementsOfLtitemgt
  *
  * Trait RssItem
- * @package AppBundle\Traits
  */
 trait RssItemTrait
 {
@@ -171,11 +170,13 @@ trait RssItemTrait
 
     /**
      * @param string $title
+     *
      * @return RssItemTrait
      */
     public function setTitle(string $title)
     {
         $this->title = $title;
+
         return $this;
     }
 
@@ -189,11 +190,13 @@ trait RssItemTrait
 
     /**
      * @param string $link
+     *
      * @return RssItemTrait
      */
     public function setLink(string $link)
     {
         $this->link = $link;
+
         return $this;
     }
 
@@ -207,11 +210,13 @@ trait RssItemTrait
 
     /**
      * @param string $description
+     *
      * @return RssItemTrait
      */
     public function setDescription(string $description)
     {
         $this->description = $description;
+
         return $this;
     }
 
@@ -225,11 +230,13 @@ trait RssItemTrait
 
     /**
      * @param string $author
+     *
      * @return RssItemTrait
      */
     public function setAuthor(string $author)
     {
         $this->author = $author;
+
         return $this;
     }
 
@@ -243,11 +250,13 @@ trait RssItemTrait
 
     /**
      * @param string $comments
+     *
      * @return RssItemTrait
      */
     public function setComments(string $comments)
     {
         $this->comments = $comments;
+
         return $this;
     }
 
@@ -261,11 +270,13 @@ trait RssItemTrait
 
     /**
      * @param array $enclosure
+     *
      * @return RssItemTrait
      */
     public function setEnclosure(array $enclosure)
     {
         $this->enclosure = $enclosure;
+
         return $this;
     }
 
@@ -279,11 +290,13 @@ trait RssItemTrait
 
     /**
      * @param string $guid
+     *
      * @return RssItemTrait
      */
     public function setGuid(string $guid)
     {
         $this->guid = $guid;
+
         return $this;
     }
 
@@ -297,11 +310,13 @@ trait RssItemTrait
 
     /**
      * @param bool $guidIsPermaLink
+     *
      * @return RssItemTrait
      */
     public function setGuidIsPermaLink(bool $guidIsPermaLink)
     {
         $this->guidIsPermaLink = $guidIsPermaLink;
+
         return $this;
     }
 
@@ -315,11 +330,13 @@ trait RssItemTrait
 
     /**
      * @param \DateTime $pubDate
+     *
      * @return RssItemTrait
      */
     public function setPubDate(\DateTime $pubDate)
     {
         $this->pubDate = $pubDate;
+
         return $this;
     }
 
@@ -333,11 +350,13 @@ trait RssItemTrait
 
     /**
      * @param string $sourceUrl
+     *
      * @return RssItemTrait
      */
     public function setSourceUrl(string $sourceUrl)
     {
         $this->sourceUrl = $sourceUrl;
+
         return $this;
     }
 
@@ -351,11 +370,13 @@ trait RssItemTrait
 
     /**
      * @param string $subtitle
+     *
      * @return RssItemTrait
      */
     public function setSubtitle(string $subtitle)
     {
         $this->subtitle = $subtitle;
+
         return $this;
     }
 
@@ -369,11 +390,13 @@ trait RssItemTrait
 
     /**
      * @param string $summary
+     *
      * @return RssItemTrait
      */
     public function setSummary(string $summary)
     {
         $this->summary = $summary;
+
         return $this;
     }
 
@@ -387,11 +410,13 @@ trait RssItemTrait
 
     /**
      * @param int $duration
+     *
      * @return RssItemTrait
      */
     public function setDuration(int $duration)
     {
         $this->duration = $duration;
+
         return $this;
     }
 
@@ -405,11 +430,13 @@ trait RssItemTrait
 
     /**
      * @param int $episode
+     *
      * @return RssItemTrait
      */
     public function setEpisode(int $episode)
     {
         $this->episode = $episode;
+
         return $this;
     }
 
@@ -423,11 +450,13 @@ trait RssItemTrait
 
     /**
      * @param string $episodeType
+     *
      * @return RssItemTrait
      */
     public function setEpisodeType(string $episodeType)
     {
         $this->episodeType = $episodeType;
+
         return $this;
     }
 
@@ -441,11 +470,13 @@ trait RssItemTrait
 
     /**
      * @param bool $explicit
+     *
      * @return RssItemTrait
      */
     public function setExplicit(bool $explicit)
     {
         $this->explicit = $explicit;
+
         return $this;
     }
 
@@ -459,11 +490,13 @@ trait RssItemTrait
 
     /**
      * @param string $image
+     *
      * @return RssItemTrait
      */
     public function setImage(string $image)
     {
         $this->image = $image;
+
         return $this;
     }
 
@@ -477,11 +510,13 @@ trait RssItemTrait
 
     /**
      * @param int $order
+     *
      * @return RssItemTrait
      */
     public function setOrder(int $order)
     {
         $this->order = $order;
+
         return $this;
     }
 
@@ -495,11 +530,13 @@ trait RssItemTrait
 
     /**
      * @param int $season
+     *
      * @return RssItemTrait
      */
     public function setSeason(int $season)
     {
         $this->season = $season;
+
         return $this;
     }
 }

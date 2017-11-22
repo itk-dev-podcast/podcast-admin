@@ -39,23 +39,25 @@ class FeedReader
 
         if (!$feed->isEnabled()) {
             $logger->notice(sprintf('Feed %s is not enabled', $feed));
+
             return;
         }
         $now = new \DateTime();
         $nextReadAt = clone ($feed->getLastReadAt() ?: new \DateTime('2000-01-01'));
-        $ttl = (int)$feed->getTtl();
+        $ttl = (int) $feed->getTtl();
         if ($ttl > 0) {
-            $nextReadAt->add(new \DateInterval('PT' . $ttl . 'M'));
+            $nextReadAt->add(new \DateInterval('PT'.$ttl.'M'));
         }
         if ($nextReadAt >= $now) {
             $logger->notice(sprintf('Next read of feed %s at %s', $feed, $nextReadAt->format(\DateTime::W3C)));
+
             return;
         }
 
         $channel = $this->readChannel();
 
         $feed
-            ->setTtl((int)($channel->getTtl() ?: 60))
+            ->setTtl((int) ($channel->getTtl() ?: 60))
             ->setLastReadAt(new \DateTime());
         $entityManager->persist($feed);
         $entityManager->flush();
@@ -78,35 +80,35 @@ class FeedReader
     private function readItems(\SimpleXMLElement $el, Channel $channel)
     {
         foreach ($el->item as $el) {
-            $guid = (string)$el->guid;
+            $guid = (string) $el->guid;
             if ($guid === null) {
                 continue;
             }
             $item = $this->getItem($guid);
             $item
-                ->setTitle((string)$el->title)
-                ->setLink((string)$el->link)
-                ->setDescription((string)$el->description)
-                ->setGuid((string)$el->guid)
-                ->setPubDate(new \DateTime((string)$el->pubDate));
+                ->setTitle((string) $el->title)
+                ->setLink((string) $el->link)
+                ->setDescription((string) $el->description)
+                ->setGuid((string) $el->guid)
+                ->setPubDate(new \DateTime((string) $el->pubDate));
 
             if ($el->enclosure) {
                 $item->setEnclosure([
-                    'url' => (string)$el->enclosure->attributes()->url,
-                    'type' => (string)$el->enclosure->attributes()->type,
-                    'length' => (int)$el->enclosure->attributes()->length,
+                    'url' => (string) $el->enclosure->attributes()->url,
+                    'type' => (string) $el->enclosure->attributes()->type,
+                    'length' => (int) $el->enclosure->attributes()->length,
                 ]);
             }
 
             $itunes = $el->children('http://www.itunes.com/dtds/podcast-1.0.dtd');
             if ($itunes !== null) {
                 if ($itunes->duration) {
-                    $item->setDuration($this->helper->getDuration((string)$itunes->duration));
+                    $item->setDuration($this->helper->getDuration((string) $itunes->duration));
                 }
                 if ($itunes->category) {
                     $names = [];
                     foreach ($itunes->category as $category) {
-                        $names[] = (string)$category;
+                        $names[] = (string) $category;
                     }
                     $names = array_filter($names);
                     if (!empty($names)) {
@@ -122,25 +124,29 @@ class FeedReader
         }
     }
 
-    private function getChannel() {
+    private function getChannel()
+    {
         $channel = $this->entityManager->getRepository(Channel::class)->findOneBy(['feed' => $this->feed]) ?: new Channel();
         $channel->setFeed($this->feed);
 
         return $channel;
     }
 
-    private function getItem($guid) {
+    private function getItem($guid)
+    {
         $item = $this->entityManager->getRepository(Item::class)->findOneBy(['guid' => $guid]) ?: new Item();
         $item->setFeed($this->feed);
 
         return $item;
     }
 
-    private function persist($entity) {
+    private function persist($entity)
+    {
         $this->entityManager->persist($entity);
     }
 
-    private function notice($messages) {
+    private function notice($messages)
+    {
         $this->logger->notice($messages);
     }
 }

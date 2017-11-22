@@ -42,28 +42,30 @@ class Tag implements SoftDeleteable
      */
     protected $slug;
 
-    public function __toString() {
-        return $this->name;
-    }
-
     /**
      * @var \Doctrine\Common\Collections\ArrayCollection
      *
      * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Item", mappedBy="tags")
      */
     private $items;
+
     /**
-     * Constructor
+     * Constructor.
      */
     public function __construct()
     {
         $this->items = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
+    public function __toString()
+    {
+        return $this->name;
+    }
+
     /**
-     * Get id
+     * Get id.
      *
-     * @return integer
+     * @return int
      */
     public function getId()
     {
@@ -71,7 +73,7 @@ class Tag implements SoftDeleteable
     }
 
     /**
-     * Set name
+     * Set name.
      *
      * @param string $name
      *
@@ -85,7 +87,7 @@ class Tag implements SoftDeleteable
     }
 
     /**
-     * Get name
+     * Get name.
      *
      * @return string
      */
@@ -95,7 +97,7 @@ class Tag implements SoftDeleteable
     }
 
     /**
-     * Set slug
+     * Set slug.
      *
      * @param string $slug
      *
@@ -109,7 +111,7 @@ class Tag implements SoftDeleteable
     }
 
     /**
-     * Get slug
+     * Get slug.
      *
      * @return string
      */
@@ -119,7 +121,7 @@ class Tag implements SoftDeleteable
     }
 
     /**
-     * Add item
+     * Add item.
      *
      * @param \AppBundle\Entity\Item $item
      *
@@ -133,7 +135,7 @@ class Tag implements SoftDeleteable
     }
 
     /**
-     * Remove item
+     * Remove item.
      *
      * @param \AppBundle\Entity\Item $item
      */
@@ -143,7 +145,7 @@ class Tag implements SoftDeleteable
     }
 
     /**
-     * Get items
+     * Get items.
      *
      * @return \Doctrine\Common\Collections\Collection
      */

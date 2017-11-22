@@ -5,7 +5,6 @@ namespace AppBundle\EventListener;
 use AppBundle\Entity\CategorizableInterface;
 use AppBundle\Service\CategoryManager;
 use Doctrine\ORM\Event\LifecycleEventArgs;
-use DoctrineExtensions\Taggable\Taggable;
 use FPN\TagBundle\Entity\TagManager;
 
 class CategoryListener

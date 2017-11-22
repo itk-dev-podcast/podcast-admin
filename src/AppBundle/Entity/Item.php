@@ -131,7 +131,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     }
 
     /**
-     * Set publishedAt
+     * Set publishedAt.
      *
      * @param \DateTime $publishedAt
      *
@@ -145,7 +145,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     }
 
     /**
-     * Get publishedAt
+     * Get publishedAt.
      *
      * @return \DateTime
      */

@@ -148,11 +148,13 @@ trait RssChannelTrait
 
     /**
      * @param string $title
+     *
      * @return RssChannelTrait
      */
     public function setTitle(string $title)
     {
         $this->title = $title;
+
         return $this;
     }
 
@@ -166,11 +168,13 @@ trait RssChannelTrait
 
     /**
      * @param string $link
+     *
      * @return RssChannelTrait
      */
     public function setLink(string $link)
     {
         $this->link = $link;
+
         return $this;
     }
 
@@ -184,11 +188,13 @@ trait RssChannelTrait
 
     /**
      * @param string $description
+     *
      * @return RssChannelTrait
      */
     public function setDescription(string $description)
     {
         $this->description = $description;
+
         return $this;
     }
 
@@ -202,11 +208,13 @@ trait RssChannelTrait
 
     /**
      * @param string $language
+     *
      * @return RssChannelTrait
      */
     public function setLanguage(string $language)
     {
         $this->language = $language;
+
         return $this;
     }
 
@@ -220,11 +228,13 @@ trait RssChannelTrait
 
     /**
      * @param string $copyright
+     *
      * @return RssChannelTrait
      */
     public function setCopyright(string $copyright)
     {
         $this->copyright = $copyright;
+
         return $this;
     }
 
@@ -238,11 +248,13 @@ trait RssChannelTrait
 
     /**
      * @param string $managingEditor
+     *
      * @return RssChannelTrait
      */
     public function setManagingEditor(string $managingEditor)
     {
         $this->managingEditor = $managingEditor;
+
         return $this;
     }
 
@@ -256,11 +268,13 @@ trait RssChannelTrait
 
     /**
      * @param string $webMaster
+     *
      * @return RssChannelTrait
      */
     public function setWebMaster(string $webMaster)
     {
         $this->webMaster = $webMaster;
+
         return $this;
     }
 
@@ -274,11 +288,13 @@ trait RssChannelTrait
 
     /**
      * @param \DateTime $pubDate
+     *
      * @return RssChannelTrait
      */
     public function setPubDate(\DateTime $pubDate)
     {
         $this->pubDate = $pubDate;
+
         return $this;
     }
 
@@ -292,11 +308,13 @@ trait RssChannelTrait
 
     /**
      * @param \DateTime $lastBuildDate
+     *
      * @return RssChannelTrait
      */
     public function setLastBuildDate(\DateTime $lastBuildDate)
     {
         $this->lastBuildDate = $lastBuildDate;
+
         return $this;
     }
 
@@ -310,11 +328,13 @@ trait RssChannelTrait
 
     /**
      * @param ArrayCollection $categories
+     *
      * @return RssChannelTrait
      */
     public function setCategories(ArrayCollection $categories)
     {
         $this->categories = $categories;
+
         return $this;
     }
 
@@ -328,11 +348,13 @@ trait RssChannelTrait
 
     /**
      * @param string $generator
+     *
      * @return RssChannelTrait
      */
     public function setGenerator(string $generator)
     {
         $this->generator = $generator;
+
         return $this;
     }
 
@@ -346,11 +368,13 @@ trait RssChannelTrait
 
     /**
      * @param string $docs
+     *
      * @return RssChannelTrait
      */
     public function setDocs(string $docs)
     {
         $this->docs = $docs;
+
         return $this;
     }
 
@@ -364,11 +388,13 @@ trait RssChannelTrait
 
     /**
      * @param string $cloud
+     *
      * @return RssChannelTrait
      */
     public function setCloud(string $cloud)
     {
         $this->cloud = $cloud;
+
         return $this;
     }
 
@@ -382,11 +408,13 @@ trait RssChannelTrait
 
     /**
      * @param int $ttl
+     *
      * @return RssChannelTrait
      */
     public function setTtl(int $ttl)
     {
         $this->ttl = $ttl;
+
         return $this;
     }
 
@@ -400,11 +428,13 @@ trait RssChannelTrait
 
     /**
      * @param string $image
+     *
      * @return RssChannelTrait
      */
     public function setImage(string $image)
     {
         $this->image = $image;
+
         return $this;
     }
 
@@ -418,11 +448,13 @@ trait RssChannelTrait
 
     /**
      * @param string $rating
+     *
      * @return RssChannelTrait
      */
     public function setRating(string $rating)
     {
         $this->rating = $rating;
+
         return $this;
     }
 
@@ -436,11 +468,13 @@ trait RssChannelTrait
 
     /**
      * @param array $textInput
+     *
      * @return RssChannelTrait
      */
     public function setTextInput(array $textInput)
     {
         $this->textInput = $textInput;
+
         return $this;
     }
 
@@ -454,11 +488,13 @@ trait RssChannelTrait
 
     /**
      * @param array $skipHours
+     *
      * @return RssChannelTrait
      */
     public function setSkipHours(array $skipHours)
     {
         $this->skipHours = $skipHours;
+
         return $this;
     }
 
@@ -472,11 +508,13 @@ trait RssChannelTrait
 
     /**
      * @param array $skipDays
+     *
      * @return RssChannelTrait
      */
     public function setSkipDays(array $skipDays)
     {
         $this->skipDays = $skipDays;
+
         return $this;
     }
 }

@@ -4,17 +4,27 @@ namespace AppBundle\Filter;
 
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\AbstractFilter;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Util\QueryNameGeneratorInterface;
-use AppBundle\Entity\Event;
 use AppBundle\Entity\Item;
 use Doctrine\ORM\QueryBuilder;
 use Symfony\Component\HttpFoundation\Request;
 
-/**
- *
- */
 class PublishedFilter extends AbstractFilter
 {
     private $property = 'published';
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getDescription(string $resourceClass): array
+    {
+        return [
+            'published' => [
+                'property' => 'published',
+                'type' => 'boolean',
+                'required' => false,
+            ],
+        ];
+    }
 
     protected function extractProperties(Request $request): array
     {
@@ -41,25 +51,11 @@ class PublishedFilter extends AbstractFilter
             return;
         }
 
-        $value = strcasecmp($value, 'false') !== 0 && boolval($value);
+        $value = strcasecmp($value, 'false') !== 0 && (bool) $value;
         $alias = 'o';
         $valueParameter = $queryNameGenerator->generateParameterName($property);
         $queryBuilder
             ->andWhere(sprintf('%s.publishedAt <= :%s', $alias, $valueParameter))
             ->setParameter($valueParameter, new \DateTime('now', new \DateTimeZone('UTC')));
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getDescription(string $resourceClass) : array
-    {
-        return [
-            'published' => [
-                'property' => 'published',
-                'type' => 'boolean',
-                'required' => false,
-            ]
-        ];
     }
 }
