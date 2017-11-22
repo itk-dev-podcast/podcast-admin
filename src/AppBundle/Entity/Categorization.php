@@ -8,18 +8,11 @@ use Doctrine\ORM\Mapping\UniqueConstraint;
 use FPN\TagBundle\Entity\Tagging as BaseTagging;
 
 /**
- * AppBundle\Entity\Tagging.
- *
- * @ORM\Table(uniqueConstraints={@UniqueConstraint(name="tagging_idx", columns={"tag_id", "resource_type", "resource_id"})})
+ * @ORM\Table(uniqueConstraints={@UniqueConstraint(name="categorization_idx", columns={"tag_id", "resource_type", "resource_id"})})
  *
  * @ORM\Entity
- *
- * @ApiResource(
- *   collectionOperations={},
- *   itemOperations={},
- * )
  */
-class Tagging extends BaseTagging
+class Categorization extends BaseTagging
 {
     /**
      * @var int
@@ -31,7 +24,7 @@ class Tagging extends BaseTagging
     protected $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Tag", inversedBy="tagging")
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Category", inversedBy="categorization")
      * @ORM\JoinColumn(name="tag_id", referencedColumnName="id")
      **/
     protected $tag;

@@ -148,14 +148,14 @@ class Encoder implements EncoderInterface
                 if ($item->getPubDate() !== null) {
                     $this->startElement('pubDate', $item->getPubDate()->format(\DateTime::ATOM));
                 }
-                if ($item->getEnclosure() !== null) {
-                    $this->startElement('enclosure', null, null, $item->getEnclosure());
+                if (!empty($item->getEnclosure())) {
+                    $this->startElement('enclosure', '', null, $item->getEnclosure());
                 }
                 if ($item->getDuration()) {
                     $this->startElement('duration', $this->formatDuration($item->getDuration()), self::NS_ITUNES);
                 }
-                foreach ($item->getTags() as $tag) {
-                    $this->startElement('category', $tag->getName(), self::NS_ITUNES);
+                foreach ($item->getCategories() as $category) {
+                    $this->startElement('category', $category->getName(), self::NS_ITUNES);
                 }
 
                 $this->endElement();

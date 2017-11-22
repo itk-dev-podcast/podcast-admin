@@ -3,9 +3,9 @@
 namespace AppBundle\Command;
 
 use AppBundle\Entity\Feed;
+use AppBundle\Service\CategoryManager;
 use AppBundle\Service\FeedReader;
 use Doctrine\ORM\EntityManagerInterface;
-use FPN\TagBundle\Entity\TagManager;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
@@ -19,7 +19,7 @@ class FeedsReadCommand extends Command
     private $tagManager;
     private $logger;
 
-    public function __construct(EntityManagerInterface $entityManager, FeedReader $feedReader, TagManager $tagManager, LoggerInterface $logger)
+    public function __construct(EntityManagerInterface $entityManager, FeedReader $feedReader, CategoryManager $tagManager, LoggerInterface $logger)
     {
         $this->entityManager = $entityManager;
         $this->feedReader = $feedReader;

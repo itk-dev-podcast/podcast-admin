@@ -233,23 +233,23 @@ trait RssItemTrait
         return $this;
     }
 
-    /**
-     * @return ArrayCollection
-     */
-    public function getCategories()
-    {
-        return $this->categories;
-    }
-
-    /**
-     * @param ArrayCollection $categories
-     * @return RssItemTrait
-     */
-    public function setCategories(ArrayCollection $categories)
-    {
-        $this->categories = $categories;
-        return $this;
-    }
+//    /**
+//     * @return ArrayCollection
+//     */
+//    public function getCategories()
+//    {
+//        return $this->categories;
+//    }
+//
+//    /**
+//     * @param ArrayCollection $categories
+//     * @return RssItemTrait
+//     */
+//    public function setCategories(ArrayCollection $categories)
+//    {
+//        $this->categories = $categories;
+//        return $this;
+//    }
 
     /**
      * @return string

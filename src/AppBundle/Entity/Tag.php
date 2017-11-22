@@ -4,37 +4,16 @@ namespace AppBundle\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
 use Gedmo\SoftDeleteable\SoftDeleteable;
 use Gedmo\SoftDeleteable\Traits\SoftDeleteableEntity;
-use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
- * AppBundle\Entity\Tag.
- *
- * @ORM\Table()
- *
- * @ORM\Entity(repositoryClass="DoctrineExtensions\Taggable\Entity\TagRepository")
- * @UniqueEntity(
- *   fields="name",
- *   message="This tag is already defined."
- * )
-
- * @ApiResource(
- *   collectionOperations={
- *     "get"={"method"="GET"}
- *   },
- *   itemOperations={
- *     "get"={"method"="GET"}
- *   },
- *   attributes = {
- *     "jsonld_embed_context" = true,
- *     "normalization_context" = { "groups" = { "read" } },
- *     "denormalization_context" = { "groups" = { "read" } },
- *   }
- * )
+ * @ORM\Entity
+ * @ApiResource
  */
-class Tag extends BaseTag implements SoftDeleteable
+class Tag implements SoftDeleteable
 {
     use SoftDeleteableEntity;
 
@@ -50,12 +29,123 @@ class Tag extends BaseTag implements SoftDeleteable
     /**
      * @var string
      * @Groups({"read"})
+     * @ORM\Column(type="string")
      */
     protected $name;
 
     /**
-     * @var Tagging
-     * @ORM\OneToMany(targetEntity="Tagging", mappedBy="tag", fetch="EAGER")
-     **/
-    protected $tagging;
+     * @ORM\Column(type="string")
+     * @Gedmo\Slug(fields={"name"})
+     */
+    protected $slug;
+
+    public function __toString() {
+        return $this->name;
+    }
+
+    /**
+     * @var \Doctrine\Common\Collections\ArrayCollection
+     *
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Item", mappedBy="tags")
+     */
+    private $items;
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->items = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set name
+     *
+     * @param string $name
+     *
+     * @return Tag
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * Set slug
+     *
+     * @param string $slug
+     *
+     * @return Tag
+     */
+    public function setSlug($slug)
+    {
+        $this->slug = $slug;
+
+        return $this;
+    }
+
+    /**
+     * Get slug
+     *
+     * @return string
+     */
+    public function getSlug()
+    {
+        return $this->slug;
+    }
+
+    /**
+     * Add item
+     *
+     * @param \AppBundle\Entity\Item $item
+     *
+     * @return Tag
+     */
+    public function addItem(\AppBundle\Entity\Item $item)
+    {
+        $this->items[] = $item;
+
+        return $this;
+    }
+
+    /**
+     * Remove item
+     *
+     * @param \AppBundle\Entity\Item $item
+     */
+    public function removeItem(\AppBundle\Entity\Item $item)
+    {
+        $this->items->removeElement($item);
+    }
+
+    /**
+     * Get items
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getItems()
+    {
+        return $this->items;
+    }
 }

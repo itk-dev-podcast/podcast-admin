@@ -1,0 +1,57 @@
+{% extends '@EasyAdmin/default/edit.html.twig' %}
+
+{% block entity_form %}
+    {% from _self import render_item %}
+    {{ render_item(entity, 'Basic information' | trans) }}
+
+    {{ parent() }}
+{% endblock %}
+
+
+{% macro render_item(item, title = null) %}
+    {% from _self import render_item_row, render_categories %}
+    <div class="form-horizontal">
+        <div class="row">
+            <div class="field-group col-xs-12">
+                <div class="box box-default">
+                    {% if title %}
+                        <div class="box-header with-border">
+                            <h3 class="box-title">
+                                {{ title }}
+                            </h3>
+                        </div>
+                    {% endif %}
+                    <div class="box-body">
+                        {{ render_item_row(item.title, 'Title') }}
+                        {% if item.categories %}
+                            {{ render_item_row(render_categories(item.categories), 'Categories') }}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro render_item_row(value, label = null) %}
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="form-group">
+                {% if label %}
+                    <label class="col-sm-2 control-label">{{ label | trans }}</label>
+                {% endif %}
+                <div class="col-sm-10">
+                    <span class="form-control">{{ value }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro render_categories(categories) %}
+    {% set list = [] %}
+    {% for category in categories %}
+        {% set list = list | merge([category.name]) %}
+    {% endfor %}
+    {{ list | join(', ') }}
+{% endmacro %}

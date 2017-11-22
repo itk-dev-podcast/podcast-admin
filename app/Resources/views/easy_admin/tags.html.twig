@@ -2,6 +2,8 @@
 	{% for tag in item.tags %}
 		<span class="tag">{{ tag | trans }}</span>{% if not loop.last %}, {% endif %}
   {% else %}
-		<span class="no-tags">–</span>
+		<span class="no-tags">
+            {% include 'easy_admin/label_null.html.twig' %}
+        </span>
 	{% endfor %}
 </div>

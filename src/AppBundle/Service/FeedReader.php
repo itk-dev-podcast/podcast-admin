@@ -6,7 +6,6 @@ use AppBundle\Entity\Channel;
 use AppBundle\Entity\Feed;
 use AppBundle\Entity\Item;
 use Doctrine\ORM\EntityManagerInterface;
-use FPN\TagBundle\Entity\TagManager;
 use Psr\Log\LoggerInterface;
 
 class FeedReader
@@ -20,8 +19,8 @@ class FeedReader
     /** @var EntityManagerInterface */
     private $entityManager;
 
-    /** @var TagManager */
-    private $tagManager;
+    /** @var CategoryManager */
+    private $categoryManager;
 
     /** @var LoggerInterface */
     private $logger;
@@ -31,11 +30,11 @@ class FeedReader
         $this->helper = $helper;
     }
 
-    public function read(Feed $feed, EntityManagerInterface $entityManager, TagManager $tagManager, LoggerInterface $logger)
+    public function read(Feed $feed, EntityManagerInterface $entityManager, CategoryManager $categoryManager, LoggerInterface $logger)
     {
         $this->feed = $feed;
         $this->entityManager = $entityManager;
-        $this->tagManager = $tagManager;
+        $this->categoryManager = $categoryManager;
         $this->logger = $logger;
 
         if (!$feed->isEnabled()) {
@@ -107,18 +106,18 @@ class FeedReader
                 if ($itunes->category) {
                     $names = [];
                     foreach ($itunes->category as $category) {
-                        $names[] = (string)$category->attributes()->text;
+                        $names[] = (string)$category;
                     }
                     $names = array_filter($names);
                     if (!empty($names)) {
-                        $tags = $this->tagManager->loadOrCreateTags($names);
-                        $this->tagManager->replaceTags($tags, $item);
+                        $tags = $this->categoryManager->loadOrCreateTags($names);
+                        $this->categoryManager->replaceTags($tags, $item);
                     }
                 }
             }
 
             $this->persist($item);
-            $this->tagManager->saveTagging($item);
+            $this->categoryManager->saveTagging($item);
             $this->notice(sprintf('Item: %s', $item));
         }
     }
