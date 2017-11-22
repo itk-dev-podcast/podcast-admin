@@ -11,7 +11,10 @@ use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ORM\Entity
- * @ApiResource
+ * @ApiResource(
+ *   collectionOperations={"get"={"method"="GET"}},
+ *   itemOperations={"get"={"method"="GET"}}
+ * )
  */
 class Tag implements SoftDeleteable
 {

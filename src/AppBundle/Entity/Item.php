@@ -16,13 +16,16 @@ use Gedmo\Timestampable\Traits\TimestampableEntity;
 /**
  * @see http://www.rssboard.org/rss-profile#element-channel-item
  *
- * @ApiResource(attributes={
- *   "filters"={
- *     "item.search_filter",
- *     "item.range_filter",
- *     "item.published_filter"
- *   }
- * })
+ * @ApiResource(
+ *   collectionOperations={"get"={"method"="GET"}},
+ *   itemOperations={"get"={"method"="GET"}},
+ *   attributes={
+ *     "filters"={
+ *       "item.search_filter",
+ *       "item.range_filter",
+ *       "item.published_filter"
+ *     }
+ *   })
  * @ORM\Entity
  */
 class Item implements CategorizableInterface, Timestampable, SoftDeleteable
