@@ -2,7 +2,7 @@
 
 namespace AppBundle\DataFixtures\ORM;
 
-use AppBundle\Entity\Feed;
+use AppBundle\Entity\Tag;
 
 class LoadTag extends LoadData
 {
@@ -13,6 +13,7 @@ class LoadTag extends LoadData
 
     protected function loadItem($data)
     {
-        $this->container->get('fpn_tag.tag_manager')->loadOrCreateTag($data['name']);
+        $tag = $this->setValues(new Tag(), $data);
+        $this->persist($tag);
     }
 }

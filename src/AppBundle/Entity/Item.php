@@ -50,6 +50,14 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     private $feed;
 
     /**
+     * @var ArrayCollection
+     *
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Tag", inversedBy="items")
+     * @ORM\JoinTable(name="items_tags")
+     */
+    private $tags;
+
+    /**
      * @var \DateTime
      *
      * @ORM\Column(type="datetime", nullable=true)

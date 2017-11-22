@@ -20,19 +20,7 @@ easy_admin:
                       css_class: 'custom-information'
                       label: 'Custom information'
                     - property: publishedAt
-
-                    - type: group
-                      css_class: 'basic-information'
-                      label: 'Basic information'
-                    - property: title
-                      type_options:
-                          disabled: true
-                          required: false
                     - property: tags
-                      label: Categories
-                      type_options:
-                          disabled: true
-                          required: false
 
 
         Feed:
@@ -57,16 +45,16 @@ easy_admin:
                       type: url
 
 
-        # Tag:
-        #     class: AppBundle\Entity\Tag
-        #     list:
-        #         fields:
-        #             - property: name
-        #             - property: slug
+        Tag:
+            class: AppBundle\Entity\Tag
+            list:
+                fields:
+                    - property: name
+                    - property: slug
 
-        #     form:
-        #         fields:
-        #             - property: name
+            form:
+                fields:
+                    - property: name
 
 
         User:
