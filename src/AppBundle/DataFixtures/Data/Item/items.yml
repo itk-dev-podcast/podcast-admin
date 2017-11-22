@@ -18,3 +18,8 @@
         url: https://podcast.example.com/machines/recording.mp3
         type: audio/mpeg
         length: 12345678
+    categories:
+        - test/example
+        - test
+    tags:
+        - History

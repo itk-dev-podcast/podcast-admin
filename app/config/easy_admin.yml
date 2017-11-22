@@ -1,5 +1,10 @@
 easy_admin:
     site_name: '%site_name%'
+    design:
+        form_theme: 'easy_admin/form/bootstrap_3_horizontal_layout.html.twig'
+        assets:
+            js:
+                - 'assets/js/easyadmin.js'
 
     entities:
         Item:
@@ -20,6 +25,10 @@ easy_admin:
                       css_class: 'custom-information'
                       label: 'Custom information'
                     - property: publishedAt
+                      type_options:
+                          view_timezone: "%view_timezone%"
+                          widget: single_text
+                          html5: true
                     - property: tags
 
 

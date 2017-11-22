@@ -157,6 +157,9 @@ class Encoder implements EncoderInterface
                 foreach ($item->getCategories() as $category) {
                     $this->startElement('category', $category->getName(), self::NS_ITUNES);
                 }
+                foreach ($item->getTags() as $tag) {
+                    $this->startElement('tag', $tag->getName(), self::NS_PODCAST);
+                }
 
                 $this->endElement();
             }

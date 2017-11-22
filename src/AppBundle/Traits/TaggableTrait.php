@@ -2,9 +2,9 @@
 
 namespace AppBundle\Traits;
 
+use AppBundle\Entity\Tag;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
-use FPN\TagBundle\Entity\Tag;
 
 trait TaggableTrait
 {

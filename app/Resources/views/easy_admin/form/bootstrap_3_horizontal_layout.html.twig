@@ -1,0 +1,10 @@
+{% extends '@EasyAdmin/form/bootstrap_3_horizontal_layout.html.twig' %}
+
+{% block form_widget_simple -%}
+    {# Wrap date(time) fields to make custom createNullableControls function work with non-select date inputs #}
+    {% if easyadmin.field.fieldType|default() == 'datetime' %}
+        <div>{{- parent() -}}</div>
+    {% else %}
+        {{- parent() -}}
+    {% endif %}
+{%- endblock form_widget_simple %}

@@ -8,6 +8,32 @@
 {% endblock %}
 
 
+{% block head_stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('assets/node_modules/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css') }}"/>
+{% endblock %}
+
+{% block body_javascript %}
+    {{ parent() }}
+    <script src="{{ asset('assets/node_modules/moment/min/moment-with-locales.min.js') }}"></script>
+    <script src="{{ asset('assets/node_modules/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js') }}"></script>
+
+    <script>(function ($) { $(function() {
+            $('[type="datetime"]').datetimepicker({
+                // showTodayButton: true,
+                locale: {{ locale | json_encode | raw }},
+                icons: {
+                    time: "fa fa-clock-o",
+                    date: "fa fa-calendar",
+                    up: "fa fa-arrow-up",
+                    down: "fa fa-arrow-down",
+                    today: 'fa fa-screenshot'
+                }
+            });
+        })}(jQuery))</script>
+{% endblock %}
+
+
 {% macro render_item(item, title = null) %}
     {% from _self import render_item_row, render_categories %}
     <div class="form-horizontal">

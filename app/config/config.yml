@@ -43,6 +43,7 @@ twig:
     strict_variables: '%kernel.debug%'
     globals:
         site_name: '%site_name%'
+        locale: '%locale%'
 
 # Doctrine Configuration
 doctrine:
