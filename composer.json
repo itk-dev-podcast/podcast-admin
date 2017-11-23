@@ -54,7 +54,7 @@
     "repositories": {
         "easy-admin-user-bundle": {
             "type": "vcs",
-            "url": "https://github.com/aakb/easyadmin-user-bundle.git"
+            "url": "https://github.com/itk-dev/easyadmin-user-bundle.git"
         }
     },
     "scripts": {

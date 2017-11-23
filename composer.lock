@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1592577a25491dddef3d4fab9f6d72e8",
+    "content-hash": "af21e7d46af14045ab9eb7b5219af384",
     "packages": [
         {
             "name": "api-platform/core",
@@ -1655,12 +1655,12 @@
             "version": "1.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/aakb/easyadmin-user-bundle.git",
+                "url": "https://github.com/itk-dev/easyadmin-user-bundle.git",
                 "reference": "0d43e5d8933f1412dc6d7b87fa79489f08462980"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aakb/easyadmin-user-bundle/zipball/0d43e5d8933f1412dc6d7b87fa79489f08462980",
+                "url": "https://api.github.com/repos/itk-dev/easyadmin-user-bundle/zipball/0d43e5d8933f1412dc6d7b87fa79489f08462980",
                 "reference": "0d43e5d8933f1412dc6d7b87fa79489f08462980",
                 "shasum": ""
             },
