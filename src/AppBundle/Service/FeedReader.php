@@ -87,7 +87,7 @@ class FeedReader
 
             if ($item !== null) {
                 $this->persist($item);
-                $this->categoryManager->saveTagging($item);
+                $this->categoryManager->saveCategorization($item);
                 $this->notice(sprintf('Item: %s', $item));
             }
         }
@@ -109,9 +109,16 @@ class FeedReader
 
         $itunes = $this->getItunes($el);
 
-        $itunesImage = $itunes && $itunes->image ? [
-            'href' => (string) $itunes->image->href,
-        ] : null;
+        $itunesImage = null;
+        foreach ($itunes as $itune) {
+            switch ($itune->getName()) {
+                case 'image':
+                    $itunesImage = [
+                        'href' => (string) $itune->attributes()->href,
+                    ];
+                    break;
+            }
+        }
 
         $channel
             ->setTitle((string) $el->title)
@@ -146,8 +153,12 @@ class FeedReader
 
     private function buildItem(\SimpleXMLElement $el, Channel $channel)
     {
-        if (!($el->enclosure && $el->enclosure->attributes()->url)
-            || !(string) $el->guid) {
+        if (!(string) $el->guid) {
+            $this->logger->notice('Item missing "guid"');
+            return null;
+        }
+        if (!($el->enclosure && $el->enclosure->attributes()->url)) {
+            $this->logger->notice('Item missing "enclosure"');
             return null;
         }
 
@@ -191,12 +202,12 @@ class FeedReader
             if ($itunes->category) {
                 $names = [];
                 foreach ($itunes->category as $category) {
-                    $names[] = (string) $category;
+                    $names[] = (string) $category->attributes()->text;
                 }
                 $names = array_filter($names);
                 if (!empty($names)) {
-                    $tags = $this->categoryManager->loadOrCreateTags($names);
-                    $this->categoryManager->replaceTags($tags, $item);
+                    $tags = $this->categoryManager->loadOrCreateCategories($names);
+                    $this->categoryManager->replaceCategories($tags, $item);
                 }
             }
         }
@@ -212,9 +223,29 @@ class FeedReader
         return $item;
     }
 
+    const NS_ITUNES = 'http://www.itunes.com/dtds/podcast-1.0.dtd';
+
     private function getItunes(\SimpleXMLElement $el)
     {
-        return $el->children('http://www.itunes.com/dtds/podcast-1.0.dtd');
+        // Create DOMDocument with all elements in itunes namespace.
+        $dom = new \DOMDocument('1.0', 'utf-8');
+        $root = $dom->createElementNS(self::NS_ITUNES, 'itunes:root');
+        $dom->appendChild($root);
+        foreach ($el->children(self::NS_ITUNES) as $child) {
+            $node = $dom->importNode(dom_import_simplexml($child), true);
+            $root->appendChild($node);
+        }
+
+        // Remove "itunes" namespace from the dom.
+        $sxe = new \SimpleXMLElement($dom->saveXML());
+        $root = $dom->childNodes->item(0);
+        foreach ($sxe->getNamespaces(true) as $name => $uri) {
+            if ($uri === self::NS_ITUNES) {
+                $root->removeAttributeNS($uri, $name);
+            }
+        }
+
+        return new \SimpleXMLElement($dom->saveXML());
     }
 
     private function getDate(\SimpleXMLElement $el)
