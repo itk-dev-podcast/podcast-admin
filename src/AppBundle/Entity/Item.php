@@ -74,6 +74,13 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     private $contexts;
 
     /**
+     * @var ArrayCollection
+     *
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Taxonomy\Audience", inversedBy="items")
+     */
+    private $audiences;
+
+    /**
      * @var \DateTime
      *
      * @ORM\Column(type="datetime", nullable=true)
@@ -174,6 +181,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
         $this->subjects = new \Doctrine\Common\Collections\ArrayCollection();
         $this->recommenders = new \Doctrine\Common\Collections\ArrayCollection();
         $this->contexts = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->audiences = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
     /**
@@ -344,5 +352,39 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     public function getContexts()
     {
         return $this->contexts;
+    }
+
+    /**
+     * Add audience
+     *
+     * @param \AppBundle\Entity\Taxonomy\Audience $audience
+     *
+     * @return Item
+     */
+    public function addAudience(Audience $audience)
+    {
+        $this->audiences[] = $audience;
+
+        return $this;
+    }
+
+    /**
+     * Remove audience
+     *
+     * @param \AppBundle\Entity\Taxonomy\Audience $audience
+     */
+    public function removeAudience(Audience $audience)
+    {
+        $this->audiences->removeElement($audience);
+    }
+
+    /**
+     * Get audiences
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getAudiences()
+    {
+        return $this->audiences;
     }
 }

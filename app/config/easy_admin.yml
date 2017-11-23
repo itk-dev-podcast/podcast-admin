@@ -12,6 +12,7 @@ easy_admin:
             - Subject
             - Recommender
             - Context
+            - Audience
             - { label: 'Admin' }
             - Feed
             - User
@@ -43,6 +44,7 @@ easy_admin:
                     - property: subjects
                     - property: recommenders
                     - property: contexts
+                    - property: audiences
 
 
         Feed:
@@ -91,6 +93,17 @@ easy_admin:
 
         Context:
             class: AppBundle\Entity\Taxonomy\Context
+            list:
+                fields:
+                    - property: name
+                    - property: slug
+
+            form:
+                fields:
+                    - property: name
+
+        Audience:
+            class: AppBundle\Entity\Taxonomy\Audience
             list:
                 fields:
                     - property: name
