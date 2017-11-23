@@ -58,6 +58,13 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     private $subjects;
 
     /**
+     * @var ArrayCollection
+     *
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Recommender", inversedBy="items")
+     */
+    private $recommenders;
+
+    /**
      * @var \DateTime
      *
      * @ORM\Column(type="datetime", nullable=true)
@@ -258,5 +265,39 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     public function getSubjects()
     {
         return $this->subjects;
+    }
+
+    /**
+     * Add recommender
+     *
+     * @param \AppBundle\Entity\Recommender $recommender
+     *
+     * @return Item
+     */
+    public function addRecommender(Recommender $recommender)
+    {
+        $this->recommenders[] = $recommender;
+
+        return $this;
+    }
+
+    /**
+     * Remove recommender
+     *
+     * @param \AppBundle\Entity\Recommender $recommender
+     */
+    public function removeRecommender(Recommender $recommender)
+    {
+        $this->recommenders->removeElement($recommender);
+    }
+
+    /**
+     * Get recommenders
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getRecommenders()
+    {
+        return $this->recommenders;
     }
 }

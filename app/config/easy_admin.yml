@@ -30,6 +30,7 @@ easy_admin:
                           widget: single_text
                           html5: true
                     - property: subjects
+                    - property: recommenders
 
 
         Feed:
@@ -65,6 +66,16 @@ easy_admin:
                 fields:
                     - property: name
 
+        Recommender:
+            class: AppBundle\Entity\Recommender
+            list:
+                fields:
+                    - property: name
+                    - property: slug
+
+            form:
+                fields:
+                    - property: name
 
         User:
             class: AppBundle\Entity\User
