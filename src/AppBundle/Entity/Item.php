@@ -3,6 +3,8 @@
 namespace AppBundle\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
+use AppBundle\Entity\Taxonomy\Recommender;
+use AppBundle\Entity\Taxonomy\Subject;
 use AppBundle\Traits\CategorizableTrait;
 use AppBundle\Traits\RssItemTrait;
 use Doctrine\Common\Collections\ArrayCollection;
@@ -53,16 +55,23 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     /**
      * @var ArrayCollection
      *
-     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Subject", inversedBy="items")
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Taxonomy\Subject", inversedBy="items")
      */
     private $subjects;
 
     /**
      * @var ArrayCollection
      *
-     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Recommender", inversedBy="items")
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Taxonomy\Recommender", inversedBy="items")
      */
     private $recommenders;
+
+    /**
+     * @var ArrayCollection
+     *
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Taxonomy\Context", inversedBy="items")
+     */
+    private $contexts;
 
     /**
      * @var \DateTime
@@ -163,6 +172,8 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     public function __construct()
     {
         $this->subjects = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->recommenders = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->contexts = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
     /**
@@ -236,7 +247,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     /**
      * Add subject
      *
-     * @param \AppBundle\Entity\Subject $subject
+     * @param \AppBundle\Entity\Taxonomy\Subject $subject
      *
      * @return Item
      */
@@ -250,7 +261,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     /**
      * Remove subject
      *
-     * @param \AppBundle\Entity\Subject $subject
+     * @param \AppBundle\Entity\Taxonomy\Subject $subject
      */
     public function removeSubject(Subject $subject)
     {
@@ -270,7 +281,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     /**
      * Add recommender
      *
-     * @param \AppBundle\Entity\Recommender $recommender
+     * @param \AppBundle\Entity\Taxonomy\Recommender $recommender
      *
      * @return Item
      */
@@ -284,7 +295,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     /**
      * Remove recommender
      *
-     * @param \AppBundle\Entity\Recommender $recommender
+     * @param \AppBundle\Entity\Taxonomy\Recommender $recommender
      */
     public function removeRecommender(Recommender $recommender)
     {
@@ -299,5 +310,39 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     public function getRecommenders()
     {
         return $this->recommenders;
+    }
+
+    /**
+     * Add context
+     *
+     * @param \AppBundle\Entity\Taxonomy\Context $context
+     *
+     * @return Item
+     */
+    public function addContext(Context $context)
+    {
+        $this->contexts[] = $context;
+
+        return $this;
+    }
+
+    /**
+     * Remove context
+     *
+     * @param \AppBundle\Entity\Taxonomy\Context $context
+     */
+    public function removeContext(Context $context)
+    {
+        $this->contexts->removeElement($context);
+    }
+
+    /**
+     * Get contexts
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getContexts()
+    {
+        return $this->contexts;
     }
 }

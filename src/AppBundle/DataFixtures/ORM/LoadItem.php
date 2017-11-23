@@ -4,7 +4,7 @@ namespace AppBundle\DataFixtures\ORM;
 
 use AppBundle\Entity\Feed;
 use AppBundle\Entity\Item;
-use AppBundle\Entity\Subject;
+use AppBundle\Entity\Taxonomy\Subject;
 use AppBundle\Service\CategoryManager;
 use Doctrine\Common\Collections\ArrayCollection;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace AppBundle\Entity;
+namespace AppBundle\Entity\Taxonomy;
 
 use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping as ORM;
@@ -16,14 +16,14 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
  *   itemOperations={"get"={"method"="GET"}}
  * )
  */
-class Subject extends AbstractTaxonomy implements SoftDeleteable
+class Recommender extends AbstractTaxonomy implements SoftDeleteable
 {
     use SoftDeleteableEntity;
 
     /**
      * @var \Doctrine\Common\Collections\ArrayCollection
      *
-     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Item", mappedBy="subjects")
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Item", mappedBy="recommenders")
      */
     protected $items;
 }

@@ -6,6 +6,17 @@ easy_admin:
             js:
                 - 'assets/js/easyadmin.js'
 
+        menu:
+            - Item
+            - { label: 'Taxonomy' }
+            - Subject
+            - Recommender
+            - Context
+            - { label: 'Admin' }
+            - Feed
+            - User
+
+
     entities:
         Item:
             class: AppBundle\Entity\Item
@@ -31,6 +42,7 @@ easy_admin:
                           html5: true
                     - property: subjects
                     - property: recommenders
+                    - property: contexts
 
 
         Feed:
@@ -56,7 +68,7 @@ easy_admin:
 
 
         Subject:
-            class: AppBundle\Entity\Subject
+            class: AppBundle\Entity\Taxonomy\Subject
             list:
                 fields:
                     - property: name
@@ -67,7 +79,18 @@ easy_admin:
                     - property: name
 
         Recommender:
-            class: AppBundle\Entity\Recommender
+            class: AppBundle\Entity\Taxonomy\Recommender
+            list:
+                fields:
+                    - property: name
+                    - property: slug
+
+            form:
+                fields:
+                    - property: name
+
+        Context:
+            class: AppBundle\Entity\Taxonomy\Context
             list:
                 fields:
                     - property: name

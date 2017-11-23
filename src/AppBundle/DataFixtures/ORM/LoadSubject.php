@@ -2,7 +2,7 @@
 
 namespace AppBundle\DataFixtures\ORM;
 
-use AppBundle\Entity\Subject;
+use AppBundle\Entity\Taxonomy\Subject;
 
 class LoadSubject extends LoadData
 {
