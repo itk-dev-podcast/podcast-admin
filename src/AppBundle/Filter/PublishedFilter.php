@@ -51,7 +51,6 @@ class PublishedFilter extends AbstractFilter
             return;
         }
 
-        $value = strcasecmp($value, 'false') !== 0 && (bool) $value;
         $alias = 'o';
         $valueParameter = $queryNameGenerator->generateParameterName($property);
         $queryBuilder
