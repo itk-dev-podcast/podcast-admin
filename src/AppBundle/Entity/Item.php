@@ -3,6 +3,7 @@
 namespace AppBundle\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
+use AppBundle\Entity\Taxonomy\Audience;
 use AppBundle\Entity\Taxonomy\Context;
 use AppBundle\Entity\Taxonomy\Recommender;
 use AppBundle\Entity\Taxonomy\Subject;
