@@ -20,14 +20,17 @@
 
     <script>(function ($) { $(function() {
             $('[type="datetime"]').datetimepicker({
-                // showTodayButton: true,
+                showTodayButton: true,
                 locale: {{ locale | json_encode | raw }},
+                format: 'YYYY-MM-dd HH:mm',
                 icons: {
                     time: "fa fa-clock-o",
                     date: "fa fa-calendar",
                     up: "fa fa-arrow-up",
                     down: "fa fa-arrow-down",
-                    today: 'fa fa-screenshot'
+                    today: 'fa fa-bullseye',
+                    previous: 'fa fa-arrow-left',
+                    next: 'fa fa-arrow-right'
                 }
             });
         })}(jQuery))</script>
