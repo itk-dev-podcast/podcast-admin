@@ -3,7 +3,15 @@
 services:
     item.search_filter:
         parent: 'api_platform.doctrine.orm.search_filter'
-        arguments: [ { id: 'exact', title: 'partial' } ]
+        arguments:
+            -
+                id: 'exact'
+                title: 'partial'
+                # Taxonomies.
+                subjects: ~
+                recommenders: ~
+                contexts: ~
+                audiences: ~
         tags: ['api_platform.filter']
 
     item.range_filter:
