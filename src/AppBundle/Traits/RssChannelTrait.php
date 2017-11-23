@@ -7,6 +7,11 @@ use Doctrine\ORM\Mapping as ORM;
 
 trait RssChannelTrait
 {
+    // ------------------------------------------------------------------------
+    // Core RSS channel properties
+    // @see https://cyber.harvard.edu/rss/rss.html#requiredChannelElements
+    // ------------------------------------------------------------------------
+
     /**
      * @var string
      *
@@ -104,9 +109,9 @@ trait RssChannelTrait
     private $ttl;
 
     /**
-     * @var string
+     * @var array
      *
-     * @ORM\Column(type="string", nullable=true)
+     * @ORM\Column(type="json_array", nullable=true)
      */
     private $image;
 
@@ -137,6 +142,66 @@ trait RssChannelTrait
      * @ORM\Column(type="json_array", nullable=true)
      */
     private $skipDays;
+
+    // ------------------------------------------------------------------------
+    // iTunes RSS channel properties
+    // @see https://help.apple.com/itc/podcasts_connect/#/itcb54353390
+    // ------------------------------------------------------------------------
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(type="string", nullable=true)
+     */
+    private $subtitle;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $summary;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(type="string", nullable=true)
+     */
+    private $author;
+
+    /**
+     * @var bool
+     *
+     * @ORM\Column(type="boolean", nullable=true)
+     */
+    private $block;
+
+    /**
+     * @var bool
+     *
+     * @ORM\Column(type="boolean", nullable=true)
+     */
+    private $complete;
+
+    /**
+     * @var bool
+     *
+     * @ORM\Column(type="boolean", nullable=true)
+     */
+    private $explicit;
+
+    /**
+     * @var array
+     *
+     * @ORM\Column(type="json_array", nullable=true)
+     */
+    private $itunesImage;
+
+    // The <itunes:new-feed-url> tag reports new feed URLs to Apple Podcasts
+    // and isn’t displayed in Apple Podcasts
+
+    // The <itunes:owner> tag information is for administrative
+    // communication about the podcast and isn’t displayed in Apple Podcasts.
 
     /**
      * @return string
@@ -419,7 +484,7 @@ trait RssChannelTrait
     }
 
     /**
-     * @return string
+     * @return array
      */
     public function getImage()
     {
@@ -427,11 +492,11 @@ trait RssChannelTrait
     }
 
     /**
-     * @param string $image
+     * @param array $image
      *
      * @return RssChannelTrait
      */
-    public function setImage(string $image)
+    public function setImage(array $image = null)
     {
         $this->image = $image;
 
@@ -516,5 +581,173 @@ trait RssChannelTrait
         $this->skipDays = $skipDays;
 
         return $this;
+    }
+
+    /**
+     * Set subtitle.
+     *
+     * @param string $subtitle
+     *
+     * @return Channel
+     */
+    public function setSubtitle($subtitle)
+    {
+        $this->subtitle = $subtitle;
+
+        return $this;
+    }
+
+    /**
+     * Get subtitle.
+     *
+     * @return string
+     */
+    public function getSubtitle()
+    {
+        return $this->subtitle;
+    }
+
+    /**
+     * Set summary.
+     *
+     * @param string $summary
+     *
+     * @return Channel
+     */
+    public function setSummary($summary)
+    {
+        $this->summary = $summary;
+
+        return $this;
+    }
+
+    /**
+     * Get summary.
+     *
+     * @return string
+     */
+    public function getSummary()
+    {
+        return $this->summary;
+    }
+
+    /**
+     * Set author.
+     *
+     * @param string $author
+     *
+     * @return Channel
+     */
+    public function setAuthor($author)
+    {
+        $this->author = $author;
+
+        return $this;
+    }
+
+    /**
+     * Get author.
+     *
+     * @return string
+     */
+    public function getAuthor()
+    {
+        return $this->author;
+    }
+
+    /**
+     * Set block.
+     *
+     * @param bool $block
+     *
+     * @return Channel
+     */
+    public function setBlock($block)
+    {
+        $this->block = $block;
+
+        return $this;
+    }
+
+    /**
+     * Get block.
+     *
+     * @return bool
+     */
+    public function getBlock()
+    {
+        return $this->block;
+    }
+
+    /**
+     * Set complete.
+     *
+     * @param bool $complete
+     *
+     * @return Channel
+     */
+    public function setComplete($complete)
+    {
+        $this->complete = $complete;
+
+        return $this;
+    }
+
+    /**
+     * Get complete.
+     *
+     * @return bool
+     */
+    public function getComplete()
+    {
+        return $this->complete;
+    }
+
+    /**
+     * Set explicit.
+     *
+     * @param bool $explicit
+     *
+     * @return Channel
+     */
+    public function setExplicit($explicit)
+    {
+        $this->explicit = $explicit;
+
+        return $this;
+    }
+
+    /**
+     * Get explicit.
+     *
+     * @return bool
+     */
+    public function getExplicit()
+    {
+        return $this->explicit;
+    }
+
+    /**
+     * Set itunesImage.
+     *
+     * @param array $itunesImage
+     *
+     * @return Channel
+     */
+    public function setItunesImage(array $itunesImage = null)
+    {
+        $this->itunesImage = $itunesImage;
+
+        return $this;
+    }
+
+    /**
+     * Get itunesImage.
+     *
+     * @return array
+     */
+    public function getItunesImage()
+    {
+        return $this->itunesImage;
     }
 }

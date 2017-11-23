@@ -14,7 +14,7 @@ trait RssItemTrait
 {
     // ------------------------------------------------------------------------
     // Core RSS item properties
-    // @see https://help.apple.com/itc/podcasts_connect/#/itcb54353390
+    // @see https://cyber.harvard.edu/rss/rss.html#hrelementsOfLtitemgt
     // ------------------------------------------------------------------------
 
     /**
@@ -86,11 +86,11 @@ trait RssItemTrait
     private $pubDate;
 
     /**
-     * @var string
+     * @var array
      *
-     * @ORM\Column(type="string", nullable=true)
+     * @ORM\Column(type="json_array", nullable=true)
      */
-    private $sourceUrl;
+    private $source;
 
     // ------------------------------------------------------------------------
     // iTunes RSS item properties
@@ -341,21 +341,21 @@ trait RssItemTrait
     }
 
     /**
-     * @return string
+     * @return array
      */
-    public function getSourceUrl()
+    public function getSource()
     {
-        return $this->sourceUrl;
+        return $this->source;
     }
 
     /**
-     * @param string $sourceUrl
+     * @param array $source
      *
      * @return RssItemTrait
      */
-    public function setSourceUrl(string $sourceUrl)
+    public function setSource(array $source = null)
     {
-        $this->sourceUrl = $sourceUrl;
+        $this->source = $source;
 
         return $this;
     }
