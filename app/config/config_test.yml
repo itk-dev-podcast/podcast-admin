@@ -20,3 +20,10 @@ doctrine:
         driver: 'pdo_sqlite'
         path: '%kernel.cache_dir%/db.sqlite'
         charset: 'UTF8'
+
+services:
+    # For some reason, this service is not autoloaded in the "test" environment.
+    AppBundle\Service\FeedReader:
+        arguments:
+            - '@AppBundle\Service\Helper'
+        public: true
