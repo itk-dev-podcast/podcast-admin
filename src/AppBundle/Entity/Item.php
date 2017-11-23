@@ -90,6 +90,20 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     private $publishedAt;
 
     /**
+     * @var float
+     *
+     * @ORM\Column(type="decimal", precision=8, scale=5, nullable=true)
+     */
+    private $latitude;
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(type="decimal", precision=8, scale=5, nullable=true)
+     */
+    private $longitude;
+
+    /**
      * Constructor.
      */
     public function __construct()
@@ -389,5 +403,53 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     public function getAudiences()
     {
         return $this->audiences;
+    }
+
+    /**
+     * Set latitude
+     *
+     * @param string $latitude
+     *
+     * @return Item
+     */
+    public function setLatitude($latitude)
+    {
+        $this->latitude = $latitude;
+
+        return $this;
+    }
+
+    /**
+     * Get latitude
+     *
+     * @return string
+     */
+    public function getLatitude()
+    {
+        return $this->latitude;
+    }
+
+    /**
+     * Set longitude
+     *
+     * @param string $longitude
+     *
+     * @return Item
+     */
+    public function setLongitude($longitude)
+    {
+        $this->longitude = $longitude;
+
+        return $this;
+    }
+
+    /**
+     * Get longitude
+     *
+     * @return string
+     */
+    public function getLongitude()
+    {
+        return $this->longitude;
     }
 }

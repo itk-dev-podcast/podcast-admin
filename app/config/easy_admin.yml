@@ -45,6 +45,8 @@ easy_admin:
                     - property: recommenders
                     - property: contexts
                     - property: audiences
+                    - property: latitude
+                    - property: longitude
 
 
         Feed:
