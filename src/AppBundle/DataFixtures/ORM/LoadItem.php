@@ -4,7 +4,7 @@ namespace AppBundle\DataFixtures\ORM;
 
 use AppBundle\Entity\Feed;
 use AppBundle\Entity\Item;
-use AppBundle\Entity\Tag;
+use AppBundle\Entity\Subject;
 use AppBundle\Service\CategoryManager;
 use Doctrine\Common\Collections\ArrayCollection;
 
@@ -22,8 +22,8 @@ class LoadItem extends LoadData
             $categoryManager = $this->container->get(CategoryManager::class);
             $data['categories'] = new ArrayCollection($categoryManager->loadOrCreateTags($data['categories']));
         }
-        if (isset($data['tags'])) {
-            $data['tags'] = new ArrayCollection($this->manager->getRepository(Tag::class)->findBy(['name' => $data['tags']]));
+        if (isset($data['subjects'])) {
+            $data['subjects'] = new ArrayCollection($this->manager->getRepository(Subject::class)->findBy(['name' => $data['subjects']]));
         }
         $item = $this->setValues(new Item(), $data);
         $this->persist($item);

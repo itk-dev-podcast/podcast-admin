@@ -15,8 +15,8 @@ easy_admin:
                     - property: title
                     - property: updatedAt
                     - property: publishedAt
-                    - property: tags
-                      template: tags.html.twig
+                    - property: subjects
+                      template: subjects.html.twig
                     - property: feed
 
             edit:
@@ -29,7 +29,7 @@ easy_admin:
                           view_timezone: "%view_timezone%"
                           widget: single_text
                           html5: true
-                    - property: tags
+                    - property: subjects
 
 
         Feed:
@@ -54,8 +54,8 @@ easy_admin:
                       type: url
 
 
-        Tag:
-            class: AppBundle\Entity\Tag
+        Subject:
+            class: AppBundle\Entity\Subject
             list:
                 fields:
                     - property: name

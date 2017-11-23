@@ -138,7 +138,6 @@ class Encoder implements EncoderInterface
     {
         if (isset($data['_items']) && is_array($data['_items'])) {
             foreach ($data['_items'] as $item) {
-                /** @var $item Item */
                 $this->startElement('item')
                     ->startElement('title', $item->getTitle())
                     ->startElement('guid', $item->getGuid(), null, [
@@ -157,8 +156,8 @@ class Encoder implements EncoderInterface
                 foreach ($item->getCategories() as $category) {
                     $this->startElement('category', $category->getName(), self::NS_ITUNES);
                 }
-                foreach ($item->getTags() as $tag) {
-                    $this->startElement('tag', $tag->getName(), self::NS_PODCAST);
+                foreach ($item->getSubjects() as $subject) {
+                    $this->startElement('subject', $subject->getName(), self::NS_PODCAST);
                 }
 
                 $this->endElement();

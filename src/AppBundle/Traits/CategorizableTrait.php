@@ -8,6 +8,8 @@ use Doctrine\ORM\Mapping as ORM;
 
 trait CategorizableTrait
 {
+    use TaggableTrait;
+
     /**
      * @var ArrayCollection
      *

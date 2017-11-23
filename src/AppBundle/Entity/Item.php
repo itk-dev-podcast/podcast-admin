@@ -5,7 +5,6 @@ namespace AppBundle\Entity;
 use ApiPlatform\Core\Annotation\ApiResource;
 use AppBundle\Traits\CategorizableTrait;
 use AppBundle\Traits\RssItemTrait;
-use AppBundle\Traits\TaggableTrait;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\SoftDeleteable\SoftDeleteable;
@@ -31,7 +30,6 @@ use Gedmo\Timestampable\Traits\TimestampableEntity;
 class Item implements CategorizableInterface, Timestampable, SoftDeleteable
 {
     use SoftDeleteableEntity;
-    use TaggableTrait;
     use CategorizableTrait;
     use TimestampableEntity;
     use RssItemTrait;
@@ -55,10 +53,10 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     /**
      * @var ArrayCollection
      *
-     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Tag", inversedBy="items")
-     * @ORM\JoinTable(name="items_tags")
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Subject", inversedBy="items")
+     * @ORM\JoinTable(name="items_subjects")
      */
-    private $tags;
+    private $subjects;
 
     /**
      * @var \DateTime
@@ -152,5 +150,114 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     public function getPublishedAt()
     {
         return $this->publishedAt;
+    }
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->subjects = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Set categoryList
+     *
+     * @param tag_list $categoryList
+     *
+     * @return Item
+     */
+    public function setCategoryList($categoryList)
+    {
+        $this->categoryList = $categoryList;
+
+        return $this;
+    }
+
+    /**
+     * Get categoryList
+     *
+     * @return tag_list
+     */
+    public function getCategoryList()
+    {
+        return $this->categoryList;
+    }
+
+    /**
+     * Set tagList
+     *
+     * @param tag_list $tagList
+     *
+     * @return Item
+     */
+    public function setTagList($tagList)
+    {
+        $this->tagList = $tagList;
+
+        return $this;
+    }
+
+    /**
+     * Get tagList
+     *
+     * @return tag_list
+     */
+    public function getTagList()
+    {
+        return $this->tagList;
+    }
+
+    /**
+     * Get guidIsPermaLink
+     *
+     * @return boolean
+     */
+    public function getGuidIsPermaLink()
+    {
+        return $this->guidIsPermaLink;
+    }
+
+    /**
+     * Get explicit
+     *
+     * @return boolean
+     */
+    public function getExplicit()
+    {
+        return $this->explicit;
+    }
+
+    /**
+     * Add subject
+     *
+     * @param \AppBundle\Entity\Subject $subject
+     *
+     * @return Item
+     */
+    public function addSubject(\AppBundle\Entity\Subject $subject)
+    {
+        $this->subjects[] = $subject;
+
+        return $this;
+    }
+
+    /**
+     * Remove subject
+     *
+     * @param \AppBundle\Entity\Subject $subject
+     */
+    public function removeSubject(\AppBundle\Entity\Subject $subject)
+    {
+        $this->subjects->removeElement($subject);
+    }
+
+    /**
+     * Get subjects
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getSubjects()
+    {
+        return $this->subjects;
     }
 }

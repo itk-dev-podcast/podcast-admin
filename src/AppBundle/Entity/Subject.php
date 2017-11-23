@@ -16,7 +16,7 @@ use Symfony\Component\Serializer\Annotation\Groups;
  *   itemOperations={"get"={"method"="GET"}}
  * )
  */
-class Tag implements SoftDeleteable
+class Subject implements SoftDeleteable
 {
     use SoftDeleteableEntity;
 
@@ -45,7 +45,7 @@ class Tag implements SoftDeleteable
     /**
      * @var \Doctrine\Common\Collections\ArrayCollection
      *
-     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Item", mappedBy="tags")
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Item", mappedBy="subjects")
      */
     private $items;
 
@@ -77,7 +77,7 @@ class Tag implements SoftDeleteable
      *
      * @param string $name
      *
-     * @return Tag
+     * @return Subject
      */
     public function setName($name)
     {
@@ -101,7 +101,7 @@ class Tag implements SoftDeleteable
      *
      * @param string $slug
      *
-     * @return Tag
+     * @return Subject
      */
     public function setSlug($slug)
     {
@@ -125,7 +125,7 @@ class Tag implements SoftDeleteable
      *
      * @param \AppBundle\Entity\Item $item
      *
-     * @return Tag
+     * @return Subject
      */
     public function addItem(\AppBundle\Entity\Item $item)
     {

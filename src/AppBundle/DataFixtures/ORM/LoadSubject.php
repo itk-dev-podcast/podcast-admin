@@ -2,9 +2,9 @@
 
 namespace AppBundle\DataFixtures\ORM;
 
-use AppBundle\Entity\Tag;
+use AppBundle\Entity\Subject;
 
-class LoadTag extends LoadData
+class LoadSubject extends LoadData
 {
     public function getOrder()
     {
@@ -13,7 +13,7 @@ class LoadTag extends LoadData
 
     protected function loadItem($data)
     {
-        $tag = $this->setValues(new Tag(), $data);
-        $this->persist($tag);
+        $subject = $this->setValues(new Subject(), $data);
+        $this->persist($subject);
     }
 }
