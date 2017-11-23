@@ -145,7 +145,7 @@ class Encoder implements EncoderInterface
                     ])
                     ->startElement('description', $item->getDescription());
                 if ($item->getPubDate() !== null) {
-                    $this->startElement('pubDate', $item->getPubDate()->format(\DateTime::ATOM));
+                    $this->startElement('pubDate', $item->getPubDate()->format(\DateTime::RFC822));
                 }
                 if (!empty($item->getEnclosure())) {
                     $this->startElement('enclosure', '', null, $item->getEnclosure());
