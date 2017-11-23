@@ -54,7 +54,6 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
      * @var ArrayCollection
      *
      * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Subject", inversedBy="items")
-     * @ORM\JoinTable(name="items_subjects")
      */
     private $subjects;
 
@@ -234,7 +233,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
      *
      * @return Item
      */
-    public function addSubject(\AppBundle\Entity\Subject $subject)
+    public function addSubject(Subject $subject)
     {
         $this->subjects[] = $subject;
 
@@ -246,7 +245,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
      *
      * @param \AppBundle\Entity\Subject $subject
      */
-    public function removeSubject(\AppBundle\Entity\Subject $subject)
+    public function removeSubject(Subject $subject)
     {
         $this->subjects->removeElement($subject);
     }
