@@ -87,6 +87,17 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
      */
     private $publishedAt;
 
+    /**
+     * Constructor.
+     */
+    public function __construct()
+    {
+        $this->subjects = new ArrayCollection();
+        $this->recommenders = new ArrayCollection();
+        $this->contexts = new ArrayCollection();
+        $this->audiences = new ArrayCollection();
+    }
+
     public function __toString()
     {
         return $this->title.' ['.$this->link.']';
@@ -173,19 +184,9 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     {
         return $this->publishedAt;
     }
-    /**
-     * Constructor
-     */
-    public function __construct()
-    {
-        $this->subjects = new \Doctrine\Common\Collections\ArrayCollection();
-        $this->recommenders = new \Doctrine\Common\Collections\ArrayCollection();
-        $this->contexts = new \Doctrine\Common\Collections\ArrayCollection();
-        $this->audiences = new \Doctrine\Common\Collections\ArrayCollection();
-    }
 
     /**
-     * Set categoryList
+     * Set categoryList.
      *
      * @param tag_list $categoryList
      *
@@ -199,7 +200,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     }
 
     /**
-     * Get categoryList
+     * Get categoryList.
      *
      * @return tag_list
      */
@@ -209,7 +210,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     }
 
     /**
-     * Set tagList
+     * Set tagList.
      *
      * @param tag_list $tagList
      *
@@ -223,7 +224,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     }
 
     /**
-     * Get tagList
+     * Get tagList.
      *
      * @return tag_list
      */
@@ -233,9 +234,9 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     }
 
     /**
-     * Get guidIsPermaLink
+     * Get guidIsPermaLink.
      *
-     * @return boolean
+     * @return bool
      */
     public function getGuidIsPermaLink()
     {
@@ -243,9 +244,9 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     }
 
     /**
-     * Get explicit
+     * Get explicit.
      *
-     * @return boolean
+     * @return bool
      */
     public function getExplicit()
     {
@@ -253,7 +254,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     }
 
     /**
-     * Add subject
+     * Add subject.
      *
      * @param \AppBundle\Entity\Taxonomy\Subject $subject
      *
@@ -267,7 +268,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     }
 
     /**
-     * Remove subject
+     * Remove subject.
      *
      * @param \AppBundle\Entity\Taxonomy\Subject $subject
      */
@@ -277,7 +278,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     }
 
     /**
-     * Get subjects
+     * Get subjects.
      *
      * @return \Doctrine\Common\Collections\Collection
      */
@@ -287,7 +288,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     }
 
     /**
-     * Add recommender
+     * Add recommender.
      *
      * @param \AppBundle\Entity\Taxonomy\Recommender $recommender
      *
@@ -301,7 +302,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     }
 
     /**
-     * Remove recommender
+     * Remove recommender.
      *
      * @param \AppBundle\Entity\Taxonomy\Recommender $recommender
      */
@@ -311,7 +312,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     }
 
     /**
-     * Get recommenders
+     * Get recommenders.
      *
      * @return \Doctrine\Common\Collections\Collection
      */
@@ -321,7 +322,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     }
 
     /**
-     * Add context
+     * Add context.
      *
      * @param \AppBundle\Entity\Taxonomy\Context $context
      *
@@ -335,7 +336,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     }
 
     /**
-     * Remove context
+     * Remove context.
      *
      * @param \AppBundle\Entity\Taxonomy\Context $context
      */
@@ -345,7 +346,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     }
 
     /**
-     * Get contexts
+     * Get contexts.
      *
      * @return \Doctrine\Common\Collections\Collection
      */
@@ -355,7 +356,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     }
 
     /**
-     * Add audience
+     * Add audience.
      *
      * @param \AppBundle\Entity\Taxonomy\Audience $audience
      *
@@ -369,7 +370,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     }
 
     /**
-     * Remove audience
+     * Remove audience.
      *
      * @param \AppBundle\Entity\Taxonomy\Audience $audience
      */
@@ -379,7 +380,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     }
 
     /**
-     * Get audiences
+     * Get audiences.
      *
      * @return \Doctrine\Common\Collections\Collection
      */

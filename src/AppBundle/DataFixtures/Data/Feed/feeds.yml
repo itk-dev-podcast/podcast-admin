@@ -1,23 +1,23 @@
 -
     title: Radio24syv – 24 Spørgsmål til Professoren
-    url: https://arkiv.radio24syv.dk/audiopodcast/channel/13973671
+    url: arkiv.radio24syv.dk/audiopodcast/channel/13973671.rss
     enabled: true
     ttl: 60
 
 -
     title: DR – Viden
-    url: https://www.dr.dk/nyheder/service/feeds/viden
+    url: www.dr.dk/nyheder/service/feeds/viden.rss
     enabled: true
     ttl: 60
 
 -
     title: P1 Dokumentar
-    url: https://www.dr.dk/mu/feed/p1-dokumentar.xml
+    url: www.dr.dk/mu/feed/p1-dokumentar.xml
     enabled: false
     ttl: 60
 
 -
-    title: 'In Our Time: Science'
-    url: http://podcasts.files.bbci.co.uk/p01gyd7j.rss
+    title: Test
+    url: test.rss
     enabled: true
     ttl: 60

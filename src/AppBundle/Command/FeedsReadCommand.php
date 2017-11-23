@@ -42,8 +42,12 @@ class FeedsReadCommand extends Command
     {
         $sources = $this->entityManager->getRepository(Feed::class)->findBy(['enabled' => true]);
         foreach ($sources as $source) {
-            $this->logger->notice(sprintf('Reading %s', $source));
-            $this->feedReader->read($source, $this->entityManager, $this->tagManager, $this->logger);
+            try {
+                $this->logger->notice(sprintf('Reading %s', $source));
+                $this->feedReader->read($source, $this->entityManager, $this->tagManager, $this->logger);
+            } catch (\Exception $e) {
+                $this->logger->error($e->getMessage());
+            }
         }
     }
 }

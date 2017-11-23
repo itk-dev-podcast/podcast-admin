@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+    <channel>
+        <title>Test</title>
+        <link>https://example.com/test</link>
+        <description>
+            Nullam eu ante vel est convallis dignissim.  Fusce
+            suscipit, wisi nec facilisis facilisis, est dui fermentum
+            leo, quis tempor ligula erat quis odio.  Nunc porta
+            vulputate tellus.  Nunc rutrum turpis sed pede.  Sed
+            bibendum.  Aliquam posuere.  Nunc aliquet, augue nec
+            adipiscing interdum, lacus tellus malesuada massa, quis
+            varius mi purus non odio.  Pellentesque condimentum, magna
+            ut suscipit hendrerit, ipsum augue ornare nulla, non
+            luctus diam neque sit amet urna.  Curabitur vulputate
+            vestibulum lorem.  Fusce sagittis, libero non molestie
+            mollis, magna orci ultrices dolor, at vulputate neque
+            nulla lacinia eros.  Sed id ligula quis est convallis
+            tempor.  Curabitur lacinia pulvinar nibh.  Nam a sapien.
+        </description>
+        <language>da-dk</language>
+        <itunes:author>John Doe</itunes:author>
+        <itunes:summary>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            Donec hendrerit tempor tellus.  Donec pretium posuere
+            tellus.  Proin quam nisl, tincidunt et, mattis eget,
+            convallis nec, purus.  Cum sociis natoque penatibus et
+            magnis dis parturient montes, nascetur ridiculus mus.
+            Nulla posuere.  Donec vitae dolor.  Nullam tristique diam
+            non turpis.  Cras placerat accumsan nulla.  Nullam rutrum.
+            Nam vestibulum accumsan nisl.
+        </itunes:summary>
+        <itunes:keywords>test, fixture, development</itunes:keywords>
+        <itunes:image href="https://httpbin.org/image/png"/>
+        <itunes:category text="hat &amp; briller"/>
+        <item>
+            <enclosure url="https://example.com/test/audio.mp3" type="audio/mp3" length="0"/>
+            <title>Test audio</title>
+            <link>https://example.com/test</link>
+            <description>
+                Aliquam erat volutpat.  Nunc eleifend leo vitae magna.
+                In id erat non orci commodo lobortis.  Proin neque
+                massa, cursus ut, gravida ut, lobortis eget, lacus.
+                Sed diam.  Praesent fermentum tempor tellus.  Nullam
+                tempus.  Mauris ac felis vel velit tristique
+                imperdiet.  Donec at pede.  Etiam vel neque nec dui
+                dignissim bibendum.  Vivamus id enim.  Phasellus neque
+                orci, porta a, aliquet quis, semper a, massa.
+                Phasellus purus.  Pellentesque tristique imperdiet
+                tortor.  Nam euismod tellus id erat.
+            </description>
+            <guid>https://example.com/test</guid>
+            <pubDate>Sat, 11 Nov 2017 15:08:08 GMT</pubDate>
+            <itunes:subtitle>The subtitle</itunes:subtitle>
+            <itunes:author>Mikkel Ricky</itunes:author>
+            <itunes:duration>1:23</itunes:duration>
+            <itunes:image href="https://httpbin.org/image/png"/>
+            <category>test:87</category>
+            <itunes:category text="skæg &amp; blå briller"/>
+        </item>
+    </channel>
+</rss>
+
+<!-- Local Variables: -->
+<!-- mode: xml -->
+<!-- End: -->

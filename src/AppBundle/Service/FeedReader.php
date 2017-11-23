@@ -224,7 +224,7 @@ class FeedReader
         return $value !== null ? new \DateTime($value) : null;
     }
 
-    private function getBoolean(\SimpleXMLElement $el, array $additionalTrues = [])
+    private function getBoolean(\SimpleXMLElement $el = null, array $additionalTrues = [])
     {
         $value = (string) $el;
         $trues = ['true', 'yes'] + $additionalTrues;

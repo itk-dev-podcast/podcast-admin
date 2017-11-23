@@ -3,8 +3,8 @@
 namespace AppBundle\Entity\Taxonomy;
 
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Serializer\Annotation\Groups;
 use Gedmo\Mapping\Annotation as Gedmo;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 abstract class AbstractTaxonomy
 {
@@ -140,4 +140,3 @@ abstract class AbstractTaxonomy
         return $this->items;
     }
 }
-
