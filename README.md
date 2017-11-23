@@ -3,6 +3,7 @@ Podcast
 
 ```
 composer install
+(cd web/assets && npm install)
 bin/console doctrine:database:create
 bin/console doctrine:migrations:migrate --no-interaction
 ```
