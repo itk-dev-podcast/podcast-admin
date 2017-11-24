@@ -24,3 +24,10 @@ items:
       subjects: [History, Music]
       recommenders: [Niels]
       contexts: ['On the bike']
+
+    - item:
+        guid: http://arkiv.radio24syv.dk/photo/19872983
+      publishedAt: '2001-01-01'
+      subjects: [History]
+      recommenders: [Mikkel]
+      contexts: ['Walking']

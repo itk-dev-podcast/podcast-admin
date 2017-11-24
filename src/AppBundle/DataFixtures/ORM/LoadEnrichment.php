@@ -7,6 +7,7 @@ use AppBundle\Entity\Taxonomy\Audience;
 use AppBundle\Entity\Taxonomy\Context;
 use AppBundle\Entity\Taxonomy\Recommender;
 use AppBundle\Entity\Taxonomy\Subject;
+use Symfony\Component\Yaml\Yaml;
 
 class LoadEnrichment extends LoadData
 {
@@ -29,15 +30,15 @@ class LoadEnrichment extends LoadData
                     }
                     $this->manager->flush();
 
-                break;
+                    break;
                 case 'items':
                     $repository = $this->manager->getRepository(Item::class);
                     foreach ($items as $item) {
                         $entity = $repository->findOneBy($item['item']);
-                        unset($item['item']);
                         if ($entity === null) {
-                            throw new \Exception('Invalid item: '.json_encode($item['item']));
+                            throw new \Exception('Invalid item: '.Yaml::dump($item['item']));
                         }
+                        unset($item['item']);
 
                         foreach (['subjects', 'recommenders', 'contexts', 'audiences'] as $property) {
                             if (isset($item[$property])) {
