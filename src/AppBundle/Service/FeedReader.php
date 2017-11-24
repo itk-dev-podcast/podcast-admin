@@ -10,6 +10,7 @@ use Psr\Log\LoggerInterface;
 
 class FeedReader
 {
+    const NS_ITUNES = 'http://www.itunes.com/dtds/podcast-1.0.dtd';
     /** @var Helper */
     private $helper;
 
@@ -116,6 +117,7 @@ class FeedReader
                     $itunesImage = [
                         'href' => (string) $itune->attributes()->href,
                     ];
+
                     break;
             }
         }
@@ -155,10 +157,12 @@ class FeedReader
     {
         if (!(string) $el->guid) {
             $this->logger->notice('Item missing "guid"');
+
             return null;
         }
         if (!($el->enclosure && $el->enclosure->attributes()->url)) {
             $this->logger->notice('Item missing "enclosure"');
+
             return null;
         }
 
@@ -222,8 +226,6 @@ class FeedReader
 
         return $item;
     }
-
-    const NS_ITUNES = 'http://www.itunes.com/dtds/podcast-1.0.dtd';
 
     private function getItunes(\SimpleXMLElement $el)
     {

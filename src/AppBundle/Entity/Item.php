@@ -406,7 +406,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     }
 
     /**
-     * Set latitude
+     * Set latitude.
      *
      * @param string $latitude
      *
@@ -420,7 +420,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     }
 
     /**
-     * Get latitude
+     * Get latitude.
      *
      * @return string
      */
@@ -430,7 +430,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     }
 
     /**
-     * Set longitude
+     * Set longitude.
      *
      * @param string $longitude
      *
@@ -444,7 +444,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     }
 
     /**
-     * Get longitude
+     * Get longitude.
      *
      * @return string
      */
