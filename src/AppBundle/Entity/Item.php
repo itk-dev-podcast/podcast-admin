@@ -15,6 +15,7 @@ use Gedmo\SoftDeleteable\SoftDeleteable;
 use Gedmo\SoftDeleteable\Traits\SoftDeleteableEntity;
 use Gedmo\Timestampable\Timestampable;
 use Gedmo\Timestampable\Traits\TimestampableEntity;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @see http://www.rssboard.org/rss-profile#element-channel-item
@@ -23,6 +24,7 @@ use Gedmo\Timestampable\Traits\TimestampableEntity;
  *   collectionOperations={"get"={"method"="GET"}},
  *   itemOperations={"get"={"method"="GET"}},
  *   attributes={
+ *     "normalization_context"={"groups"={"read"}},
  *     "filters"={
  *       "item.search_filter",
  *       "item.range_filter",
@@ -57,12 +59,16 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     /**
      * @var ArrayCollection
      *
+     * @Groups("read")
+     *
      * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Taxonomy\Subject", inversedBy="items")
      */
     private $subjects;
 
     /**
      * @var ArrayCollection
+     *
+     * @Groups("read")
      *
      * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Taxonomy\Recommender", inversedBy="items")
      */
@@ -71,12 +77,16 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     /**
      * @var ArrayCollection
      *
+     * @Groups("read")
+     *
      * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Taxonomy\Context", inversedBy="items")
      */
     private $contexts;
 
     /**
      * @var ArrayCollection
+     *
+     * @Groups("read")
      *
      * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Taxonomy\Audience", inversedBy="items")
      */
@@ -92,12 +102,16 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     /**
      * @var float
      *
+     * @Groups("read")
+     *
      * @ORM\Column(type="decimal", precision=8, scale=5, nullable=true)
      */
     private $latitude;
 
     /**
      * @var float
+     *
+     * @Groups("read")
      *
      * @ORM\Column(type="decimal", precision=8, scale=5, nullable=true)
      */

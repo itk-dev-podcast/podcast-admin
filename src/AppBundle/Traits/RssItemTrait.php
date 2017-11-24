@@ -4,6 +4,7 @@ namespace AppBundle\Traits;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @see https://cyber.harvard.edu/rss/rss.html#hrelementsOfLtitemgt
@@ -20,12 +21,16 @@ trait RssItemTrait
     /**
      * @var string
      *
+     * @Groups("read")
+     *
      * @ORM\Column(type="string")
      */
     private $title;
 
     /**
      * @var string
+     *
+     * @Groups("read")
      *
      * @ORM\Column(type="string")
      */
@@ -34,6 +39,8 @@ trait RssItemTrait
     /**
      * @var string
      *
+     * @Groups("read")
+     *
      * @ORM\Column(type="text")
      */
     private $description;
@@ -41,17 +48,23 @@ trait RssItemTrait
     /**
      * @var string
      *
+     * @Groups("read")
+     *
      * @ORM\Column(type="string", nullable=true)
      */
     private $author;
 
     /**
+     *
+     * @Groups("read")
      * @var ArrayCollection(Category)
      */
     private $categories;
 
     /**
      * @var string
+     *
+     * @Groups("read")
      *
      * @ORM\Column(type="text", nullable=true)
      */
@@ -60,12 +73,16 @@ trait RssItemTrait
     /**
      * @var array
      *
+     * @Groups("read")
+     *
      * @ORM\Column(type="json_array", nullable=true)
      */
     private $enclosure;
 
     /**
      * @var string
+     *
+     * @Groups("read")
      *
      * @ORM\Column(type="string", nullable=true)
      */
@@ -74,6 +91,8 @@ trait RssItemTrait
     /**
      * @var bool
      *
+     * @Groups("read")
+     *
      * @ORM\Column(type="boolean")
      */
     private $guidIsPermaLink = false;
@@ -81,12 +100,16 @@ trait RssItemTrait
     /**
      * @var \DateTime
      *
+     * @Groups("read")
+     *
      * @ORM\Column(type="datetime", nullable=true)
      */
     private $pubDate;
 
     /**
      * @var array
+     *
+     * @Groups("read")
      *
      * @ORM\Column(type="json_array", nullable=true)
      */
@@ -100,12 +123,16 @@ trait RssItemTrait
     /**
      * @var string
      *
+     * @Groups("read")
+     *
      * @ORM\Column(type="string", nullable=true)
      */
     private $subtitle;
 
     /**
      * @var string
+     *
+     * @Groups("read")
      *
      * @ORM\Column(type="text", nullable=true)
      */
@@ -114,12 +141,16 @@ trait RssItemTrait
     /**
      * @var int
      *
+     * @Groups("read")
+     *
      * @ORM\Column(type="integer", nullable=true)
      */
     private $duration;
 
     /**
      * @var int
+     *
+     * @Groups("read")
      *
      * @ORM\Column(type="integer", nullable=true)
      */
@@ -128,6 +159,8 @@ trait RssItemTrait
     /**
      * @var string
      *
+     * @Groups("read")
+     *
      * @ORM\Column(type="string", nullable=true)
      */
     private $episodeType;
@@ -135,19 +168,25 @@ trait RssItemTrait
     /**
      * @var bool
      *
+     * @Groups("read")
+     *
      * @ORM\Column(type="boolean", nullable=true)
      */
     private $explicit;
 
     /**
-     * @var string
+     * @var array
      *
-     * @ORM\Column(type="string", nullable=true)
+     * @Groups("read")
+     *
+     * @ORM\Column(type="json_array", nullable=true)
      */
     private $image;
 
     /**
      * @var int
+     *
+     * @Groups("read")
      *
      * @ORM\Column(type="integer", nullable=true, name="`order`")
      */
@@ -155,6 +194,8 @@ trait RssItemTrait
 
     /**
      * @var int
+     *
+     * @Groups("read")
      *
      * @ORM\Column(type="integer", nullable=true)
      */
@@ -481,7 +522,7 @@ trait RssItemTrait
     }
 
     /**
-     * @return string
+     * @return array
      */
     public function getImage()
     {
@@ -489,11 +530,11 @@ trait RssItemTrait
     }
 
     /**
-     * @param string $image
+     * @param array $image
      *
      * @return RssItemTrait
      */
-    public function setImage(string $image)
+    public function setImage(array $image = null)
     {
         $this->image = $image;
 

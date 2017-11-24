@@ -13,7 +13,10 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
  * @UniqueEntity(fields={"name"})
  * @ApiResource(
  *   collectionOperations={"get"={"method"="GET"}},
- *   itemOperations={"get"={"method"="GET"}}
+ *   itemOperations={"get"={"method"="GET"}},
+ *   attributes={
+ *     "normalization_context"={"groups"={"read"}}
+ *   }
  * )
  */
 class Recommender extends AbstractTaxonomy implements SoftDeleteable
