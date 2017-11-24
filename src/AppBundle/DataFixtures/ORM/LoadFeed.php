@@ -3,6 +3,8 @@
 namespace AppBundle\DataFixtures\ORM;
 
 use AppBundle\Entity\Feed;
+use AppBundle\Service\CategoryManager;
+use AppBundle\Service\FeedReader;
 
 class LoadFeed extends LoadData
 {
@@ -20,5 +22,8 @@ class LoadFeed extends LoadData
         }
         $feed = $this->setValues(new Feed(), $data);
         $this->persist($feed);
+
+        $feedReader = $this->container->get(FeedReader::class);
+        $feedReader->read($feed, $this->manager, $this->container->get(CategoryManager::class), $this->container->get('logger'));
     }
 }
