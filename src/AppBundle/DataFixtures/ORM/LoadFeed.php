@@ -15,7 +15,7 @@ class LoadFeed extends LoadData
     {
         $url = parse_url($data['url']);
         if (!isset($url['host'])) {
-            $baseUrl = 'file://' . $this->container->get('kernel')->getProjectDir().'/tests/Fixtures/rss';
+            $baseUrl = 'file://'.$this->container->get('kernel')->getProjectDir().'/tests/Fixtures/rss';
             $data['url'] = $baseUrl.'/'.ltrim($data['url'], '/');
         }
         $feed = $this->setValues(new Feed(), $data);
