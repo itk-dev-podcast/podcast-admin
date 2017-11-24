@@ -111,15 +111,10 @@ class FeedReader
         $itunes = $this->getItunes($el);
 
         $itunesImage = null;
-        foreach ($itunes as $itune) {
-            switch ($itune->getName()) {
-                case 'image':
-                    $itunesImage = [
-                        'href' => (string) $itune->attributes()->href,
-                    ];
-
-                    break;
-            }
+        if ($itunes->image && $itunes->image->attributes()->href) {
+            $itunesImage = [
+                'href' => (string) $itunes->image->attributes()->href,
+            ];
         }
 
         $channel
@@ -189,7 +184,7 @@ class FeedReader
             ->setEpisode((int) $itunes->episode)
             ->setEpisodeType((string) $itunes->episodeType)
             ->setExplicit($this->getBoolean($itunes->explicit, ['explicit']))
-            ->setImage((string) $itunes->image)
+            ->setImage($itunes->image ? ['href' => $itunes->image->attributes()->href] : null)
             ->setOrder((int) $itunes->order)
             ->setSeason((int) $itunes->season);
 
