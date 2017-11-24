@@ -39,3 +39,10 @@ monolog:
 
 #swiftmailer:
 #    delivery_addresses: ['me@example.com']
+
+services:
+    # For some reason, this service is not autoloaded in the "dev" environment.
+    AppBundle\Service\FeedReader:
+        arguments:
+            - '@AppBundle\Service\Helper'
+        public: true
