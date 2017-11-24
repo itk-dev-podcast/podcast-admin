@@ -4,10 +4,6 @@ Feature: Items
   As a …
   I need to be able to …
 
-  Background:
-    Given feed "test.rss" is read and all items are published
-
-  @createSchema
   Scenario: Anonymous access
     When I add "Accept" header equal to "application/rss+xml"
     And I send a "GET" request to "/api/items"
@@ -16,6 +12,3 @@ Feature: Items
     And print last XML response
     # And the XML element "/rss/channel" should have 1 element
     And the RSS2 feed should be valid
-
-  @dropSchema
-  Scenario: Drop schema

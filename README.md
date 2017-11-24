@@ -30,9 +30,21 @@ bin/console app:feeds:read
 Tests
 -----
 
+Set up test database:
 ```
 SYMFONY_ENV=test bin/console doctrine:database:create
+```
+
+Reset test database and load fixtures:
+
+```
+SYMFONY_ENV=test bin/console doctrine:schema:drop --force
 SYMFONY_ENV=test bin/console doctrine:schema:create
 SYMFONY_ENV=test bin/console doctrine:fixtures:load --no-interaction
+```
+
+Run features:
+
+```
 SYMFONY_ENV=test ./vendor/bin/behat
 ```
