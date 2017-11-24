@@ -35,26 +35,26 @@ class LoadEnrichment extends LoadData
                     foreach ($items as $item) {
                         $entity = $repository->findOneBy($item['item']);
                         unset($item['item']);
-                        if ($entity) {
-                            foreach (['subjects', 'recommenders', 'contexts', 'audiences'] as $property) {
-                                if (isset($item[$property])) {
-                                    list($className, $methodName) = [
-                                        'subjects' => [Subject::class, 'addSubject'],
-                                        'recommenders' => [Recommender::class, 'addRecommender'],
-                                        'contexts' => [Context::class, 'addContext'],
-                                        'audiences' => [Audience::class, 'addAudience'],
-                                    ][$property];
-                                    var_export([__FILE__, $className, (array) $item[$property]]);
-                                    foreach ($this->manager->getRepository($className)->findBy(['name' => (array) $item[$property]]) as $term) {
-                                        var_export([__FILE__, $term->getName()]);
-                                        $entity->{$methodName}($term);
-                                    }
+                        if ($entity === null) {
+                            throw new \Exception('Invalid item: '.json_encode($item['item']));
+                        }
+
+                        foreach (['subjects', 'recommenders', 'contexts', 'audiences'] as $property) {
+                            if (isset($item[$property])) {
+                                list($className, $methodName) = [
+                                    'subjects' => [Subject::class, 'addSubject'],
+                                    'recommenders' => [Recommender::class, 'addRecommender'],
+                                    'contexts' => [Context::class, 'addContext'],
+                                    'audiences' => [Audience::class, 'addAudience'],
+                                ][$property];
+                                foreach ($this->manager->getRepository($className)->findBy(['name' => (array) $item[$property]]) as $term) {
+                                    $entity->{$methodName}($term);
                                 }
-                                $this->manager->persist($entity);
                             }
-                            if (isset($item['publishedAt'])) {
-                                $entity->setPublishedAt(new \DateTime($item['publishedAt']));
-                            }
+                            $this->manager->persist($entity);
+                        }
+                        if (isset($item['publishedAt'])) {
+                            $entity->setPublishedAt(new \DateTime($item['publishedAt']));
                         }
                     }
 
