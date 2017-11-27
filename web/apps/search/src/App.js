@@ -148,7 +148,7 @@ class TaxonomyItem extends Component {
 class SearchFilter extends Component {
     render() {
         return (
-            <input type="search" name={this.props.name} placeholder={this.props.placeholder}/>
+            <input className="form-control" type="search" name={this.props.name} placeholder={this.props.placeholder}/>
         );
     }
 }
