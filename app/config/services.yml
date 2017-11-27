@@ -58,5 +58,10 @@ services:
             - { name: doctrine.event_listener, event: postPersist }
             - { name: doctrine.event_listener, event: postUpdate }
 
+    AppBundle\EventListener\IndexingListener:
+        tags:
+            - { name: doctrine.event_listener, event: prePersist }
+            - { name: doctrine.event_listener, event: preUpdate }
+
     twig.stringloader:
         class: Twig_Extension_StringLoader

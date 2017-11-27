@@ -118,6 +118,13 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     private $longitude;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(type="text", nullable=false)
+     */
+    private $query;
+
+    /**
      * Constructor.
      */
     public function __construct()
@@ -465,5 +472,29 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
     public function getLongitude()
     {
         return $this->longitude;
+    }
+
+    /**
+     * Set query.
+     *
+     * @param string $query
+     *
+     * @return Item
+     */
+    public function setQuery($query)
+    {
+        $this->query = $query;
+
+        return $this;
+    }
+
+    /**
+     * Get query.
+     *
+     * @return string
+     */
+    public function getQuery()
+    {
+        return $this->query;
     }
 }
