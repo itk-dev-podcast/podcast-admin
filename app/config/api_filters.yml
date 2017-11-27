@@ -6,7 +6,7 @@ services:
         arguments:
             -
                 id: 'exact'
-                title: 'partial'
+                query: 'partial'
                 # Taxonomies.
                 subjects: ~
                 recommenders: ~
