@@ -52,7 +52,7 @@ class App extends Component {
     render() {
         return (
             <div className="row">
-                <div className="col-md4">
+                <div className="col-md-2">
                     <form onSubmit={event => this.onSubmit(event, this)} ref={el => this.form = el}>
                         {this.filters.map((filter, index) => {
                             switch (filter.type) {
