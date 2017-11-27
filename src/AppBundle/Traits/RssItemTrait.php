@@ -55,8 +55,8 @@ trait RssItemTrait
     private $author;
 
     /**
-     *
      * @Groups("read")
+     *
      * @var ArrayCollection(Category)
      */
     private $categories;
