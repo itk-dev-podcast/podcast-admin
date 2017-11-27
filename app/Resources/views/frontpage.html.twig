@@ -1,13 +1,44 @@
 {% extends 'base.html.twig' %}
 
 {% block main %}
-    <h1>{{ site_name }}</h1>
+    <div class="row">
+        <div class="col">
+            <div id="search"></div>
+        </div>
+    </div>
+{% endblock %}
 
-    <p>
-        <a class="btn btn-primary btn-block" href="{{ path('easyadmin') }}">Admin</a>
-    </p>
+{% block body_javascript %}
+    {% set filters = [
+        {
+            type: 'search',
+            name: 'query',
+            placeholder: 'Search …'
+        },
+        {
+            type: 'taxonomy',
+            name: 'subjects',
+            title: 'Subject'
+        },
+        {
+            type: 'taxonomy',
+            name: 'recommenders',
+            title: 'Recommender'
+        },
+        {
+            type: 'taxonomy',
+            name: 'contexts',
+            title: 'Context'
+        },
+        {
+            type: 'taxonomy',
+            name: 'audiences',
+            title: 'Audience'
+        }
+    ] %}
 
-    <p>
-        <a class="btn btn-secondary btn-block" href="{{ path('api_doc') }}">API</a>
-    </p>
+    <script>
+        var filters = {{ filters | json_encode | raw }};
+    </script>
+    <script src="{{ asset('apps/search/dist/main.js') }}"></script>
 {% endblock %}
