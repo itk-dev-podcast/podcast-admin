@@ -28,7 +28,8 @@ use Symfony\Component\Serializer\Annotation\Groups;
  *     "filters"={
  *       "item.search_filter",
  *       "item.range_filter",
- *       "item.published_filter"
+ *       "item.published_filter",
+ *       "item.geolocation_filter"
  *     }
  *   })
  * @ORM\Entity
