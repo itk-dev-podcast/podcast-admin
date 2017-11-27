@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import './App.css';
+import serialize from 'form-serialize';
 
 class App extends Component {
     constructor(props) {
@@ -20,15 +20,7 @@ class App extends Component {
 
     search() {
         this.setState({searching: true});
-        let data = new FormData(this.form);
-        let queryString = '';
-        for (const item of data) {
-            if (queryString) {
-                queryString += '&';
-            }
-            queryString += encodeURIComponent(item[0]) + '=' + encodeURIComponent(item[1]);
-        }
-
+        const queryString = serialize(this.form);
         const xhr = new XMLHttpRequest();
         xhr.onreadystatechange = () => {
             if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
