@@ -19,6 +19,19 @@ services:
         arguments: [ { duration: ~ } ]
         tags: ['api_platform.filter']
 
+    item.geolocation_filter:
+        parent: AppBundle\Filter\GeolocationFilter
+        arguments:
+            - '@doctrine'
+            - '@request_stack'
+            - '@?logger'
+            -
+                property: geolocation
+                alias: geolocation
+                lat: latitude
+                lng: longitude
+        tags: ['api_platform.filter']
+
     item.published_filter:
         class: AppBundle\Filter\PublishedFilter
         arguments:
