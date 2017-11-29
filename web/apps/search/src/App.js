@@ -224,9 +224,13 @@ class GeolocationFilter extends Component {
         this.lng = null;
         this.getPosition = this.getPosition.bind(this);
         this.setPosition = this.setPosition.bind(this);
+        this.state = {
+            loading: false
+        };
     }
 
     getPosition() {
+        this.setState({loading: true});
         const self = this;
         navigator.geolocation.getCurrentPosition(function(position) {
             self.setPosition(position);
@@ -235,6 +239,7 @@ class GeolocationFilter extends Component {
     }
 
     setPosition(position) {
+        this.setState({loading: false});
         if (this.lat !== null && this.lng !== null) {
             this.lat.value = position.coords.latitude.toFixed(6);
             this.lng.value = position.coords.longitude.toFixed(6);
@@ -245,7 +250,7 @@ class GeolocationFilter extends Component {
         const getPosition = "geolocation" in navigator ?
               (
                   <div className="get-location">
-                      <button className="btn btn-light" type="button" onClick={this.getPosition}>Use my location</button>
+                      <button className="btn btn-light" type="button" onClick={this.getPosition}>{ this.state.loading ? 'Getting location …' : 'Use my location'}</button>
                   </div>
               )
               : null;
