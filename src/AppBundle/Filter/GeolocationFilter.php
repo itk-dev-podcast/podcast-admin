@@ -46,16 +46,19 @@ class GeolocationFilter extends AbstractFilter
      */
     protected function filterProperty(string $property, $value, QueryBuilder $queryBuilder, QueryNameGeneratorInterface $queryNameGenerator, string $resourceClass, string $operationName = null)
     {
-        if ($property !== $this->alias || !is_array($value) || !isset($value['origin'])) {
+        if ($property !== $this->alias || !is_array($value)) {
             return;
         }
 
         if (isset($value['lat'], $value['lng'])) {
             $lat = $value['lat'];
             $lng = $value['lng'];
-        } else {
+        } elseif (isset($value['origin'])) {
             list($lat, $lng) = explode(',', $value['origin']);
+        } else {
+            return;
         }
+
         $radius = max((int) (isset($value['radius']) ? $value['radius'] : $this->radius), 10);
 
         $resource = new $resourceClass();
@@ -70,6 +73,8 @@ class GeolocationFilter extends AbstractFilter
         $lngParameter = $queryNameGenerator->generateParameterName($this->properties['lng']);
         $radiusParameter = $queryNameGenerator->generateParameterName($this->properties['radius']);
         $queryBuilder
+            ->andWhere(sprintf('%s.%s is not null', $alias, $this->properties['lat']))
+            ->andWhere(sprintf('%s.%s is not null', $alias, $this->properties['lng']))
             ->andWhere(sprintf(
                 '%s.%s between :%s - (:%s / 111.045) and :%s + (:%s / 111.045)',
                 $alias,
