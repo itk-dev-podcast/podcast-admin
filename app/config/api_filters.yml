@@ -15,8 +15,13 @@ services:
         tags: ['api_platform.filter']
 
     item.range_filter:
-        parent: 'api_platform.doctrine.orm.range_filter'
-        arguments: [ { duration: ~ } ]
+        parent: AppBundle\Filter\DurationFilter
+        arguments:
+            - '@doctrine'
+            - '@request_stack'
+            - '@?logger'
+            -
+                duration: ~
         tags: ['api_platform.filter']
 
     item.geolocation_filter:
