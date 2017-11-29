@@ -50,7 +50,12 @@ class GeolocationFilter extends AbstractFilter
             return;
         }
 
-        list($lat, $lng) = explode(',', $value['origin']);
+        if (isset($value['lat'], $value['lng'])) {
+            $lat = $value['lat'];
+            $lng = $value['lng'];
+        } else {
+            list($lat, $lng) = explode(',', $value['origin']);
+        }
         $radius = max((int) (isset($value['radius']) ? $value['radius'] : $this->radius), 10);
 
         $resource = new $resourceClass();

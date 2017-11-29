@@ -9,6 +9,8 @@ class App extends Component {
         this.filters = window.filters;
         this.state = {
             searching: false,
+            searchUrl: null,
+            rssSearchUrl: null,
             searchResult: null,
             searchMessage: null
         };
@@ -19,8 +21,14 @@ class App extends Component {
     }
 
     search() {
-        this.setState({searching: true});
         const queryString = serialize(this.form);
+        const searchUrl = '/api/items.json?' + queryString;
+        const rssSearchUrl = '/api/items.rss?' + queryString;
+        this.setState({
+            searching: true,
+            searchUrl: searchUrl,
+            rssSearchUrl: rssSearchUrl
+        });
         const xhr = new XMLHttpRequest();
         xhr.onreadystatechange = () => {
             if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
@@ -32,7 +40,7 @@ class App extends Component {
                 }
             }
         };
-        xhr.open('GET', '/api/items.json?' + queryString);
+        xhr.open('GET', searchUrl);
         xhr.send();
     }
 
@@ -44,7 +52,7 @@ class App extends Component {
     render() {
         return (
             <div className="row">
-                <div className="col-md-2">
+                <div className="col-md-4">
                     <form onSubmit={event => this.onSubmit(event, this)} ref={el => this.form = el}>
                         {this.filters.map((filter, index) => {
                             switch (filter.type) {
@@ -60,6 +68,18 @@ class App extends Component {
                                         <TaxonomyFilter title={filter.title} taxonomy={filter.name} controller={this}/>
                                     </div>
                                 );
+                            case 'geolocation':
+                                return (
+                                    <div key={'filter-' + filter.name}>
+                                        <GeolocationFilter title={filter.title} name={filter.name} controller={this}/>
+                                    </div>
+                                );
+                            case 'duration':
+                                return (
+                                    <div key={'filter-' + filter.name}>
+                                        <DurationFilter title={filter.title} name={filter.name} controller={this}/>
+                                    </div>
+                                );
                             default:
                                 return null;
                             }
@@ -68,6 +88,7 @@ class App extends Component {
                     </form>
                 </div>
                 <div className="col">
+                {this.state.rssSearchUrl ? <a className="btn btn-light" href={this.state.rssSearchUrl}>RSS</a> : null}
                     <Result data={this.state.searchResult} searching={this.state.searching} message={this.state.searchMessage}/>
                 </div>
             </div>
@@ -195,6 +216,79 @@ class TaxonomyTerm extends Component {
         );
     }
 }
+
+class GeolocationFilter extends Component {
+    constructor(props) {
+        super(props);
+        this.lat = null;
+        this.lng = null;
+        this.getPosition = this.getPosition.bind(this);
+        this.setPosition = this.setPosition.bind(this);
+    }
+
+    getPosition() {
+        const self = this;
+        navigator.geolocation.getCurrentPosition(function(position) {
+            self.setPosition(position);
+            self.props.controller.search();
+        });
+    }
+
+    setPosition(position) {
+        if (this.lat !== null && this.lng !== null) {
+            this.lat.value = position.coords.latitude.toFixed(6);
+            this.lng.value = position.coords.longitude.toFixed(6);
+        }
+    }
+
+    render() {
+        const getPosition = "geolocation" in navigator ?
+              (
+                  <div className="get-location">
+                      <button className="btn btn-light" type="button" onClick={this.getPosition}>Use my location</button>
+                  </div>
+              )
+              : null;
+
+        return (
+            <fieldset className="form-group geolocation-filter">
+                <legend>{this.props.title}</legend>
+
+                { 'Within ' }
+                <input type="text" size="4" placeholder="radius" name={this.props.name + '[radius]'} defaultValue="10"/>
+                { ' km of ' }<br/>
+                (
+                    <input type="text" size="12" placeholder="latitude" name={this.props.name + '[lat]'} ref={el => this.lat = el}/>
+                    { ', ' }
+                    <input type="text" size="12" placeholder="longitude" name={this.props.name + '[lng]'} ref={el => this.lng = el}/>
+                )
+                {getPosition}
+            </fieldset>
+        );
+    }
+}
+
+class DurationFilter extends Component {
+    constructor(props) {
+        super(props);
+        this.lt = null;
+        this.gt = null;
+    }
+
+    validate(event) {}
+
+    render() {
+        return (
+            <fieldset className="form-group duration-filter">
+                <legend>{this.props.title}</legend>
+                <input type="text" size="10" placeholder="hh:mm:ss" name={this.props.name + '[gt]'} />
+                { ' – ' }
+                <input type="text" size="10" placeholder="hh:mm:ss" name={this.props.name + '[lt]'} />
+            </fieldset>
+        );
+    }
+}
+
 
 export default App;
 
