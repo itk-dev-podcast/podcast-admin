@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import serialize from 'form-serialize';
+import queryString from 'query-string';
 
 class App extends Component {
     constructor(props) {
@@ -7,6 +8,7 @@ class App extends Component {
         this.form = null;
         this.search = this.search.bind(this);
         this.filters = window.filters;
+        this.defaultValues = queryString.parse(window.location.hash, {arrayFormat: 'bracket'});
         this.state = {
             searching: false,
             searchUrl: null,
@@ -21,23 +23,40 @@ class App extends Component {
     }
 
     search() {
-        const queryString = serialize(this.form);
-        const searchUrl = '/api/items.json?' + queryString;
-        const rssSearchUrl = '/api/items.rss?' + queryString;
+        const query = serialize(this.form);
+        const searchUrl = '/api/items.json?' + query;
+        const rssSearchUrl = '/api/items.rss?' + query;
         this.setState({
-            searching: true,
-            searchUrl: searchUrl,
-            rssSearchUrl: rssSearchUrl
+            searching: true
         });
+        window.location.hash = query;
+        this.defaultValues = queryString.parse(window.location.hash, {arrayFormat: 'bracket'});
         const xhr = new XMLHttpRequest();
         xhr.onreadystatechange = () => {
-            if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-                try {
-                    const result = JSON.parse(xhr.responseText);
-                    this.setState({searching: false, searchResult: result, searchMessage: null});
-                } catch (ex) {
-                    this.setState({searching: false, searchResult: null, searchMessage: ex.message});
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                let state = {
+                    searching: false,
+                    searchResult: null,
+                    searchStatus: xhr.status,
+                    searchUrl: null,
+                    rssSearchUrl: null
+                };
+                if (xhr.status === 200) {
+                    try {
+                        const result = JSON.parse(xhr.responseText);
+                        state.searchResult = result;
+                        state.searchMessage = null;
+                        state.searchUrl = searchUrl;
+                        if (result.length > 0) {
+                            state.rssSearchUrl = rssSearchUrl;
+                        }
+                    } catch (ex) {
+                        state.searchMessage = ex.message;
+                    }
+                } else {
+                    state.searchMessage = 'Search failed';
                 }
+                this.setState(state);
             }
         };
         xhr.open('GET', searchUrl);
@@ -59,13 +78,13 @@ class App extends Component {
                             case 'search':
                                 return (
                                     <div key={'filter-' + filter.name}>
-                                        <SearchFilter title={filter.title} name={filter.name} placeholder={filter.placeholder || null}/>
+                                        <SearchFilter title={filter.title} name={filter.name} controller={this} placeholder={filter.placeholder || null}/>
                                     </div>
                                 );
                             case 'taxonomy':
                                 return (
                                     <div key={'filter-' + filter.name}>
-                                        <TaxonomyFilter title={filter.title} taxonomy={filter.name} controller={this}/>
+                                        <TaxonomyFilter title={filter.title} name={filter.name} controller={this}/>
                                     </div>
                                 );
                             case 'geolocation':
@@ -88,8 +107,10 @@ class App extends Component {
                     </form>
                 </div>
                 <div className="col">
-                {this.state.rssSearchUrl ? <a className="btn btn-light" href={this.state.rssSearchUrl}>RSS</a> : null}
-                    <Result data={this.state.searchResult} searching={this.state.searching} message={this.state.searchMessage}/>
+                    <div className="urls">
+                        {!this.state.searching && this.state.rssSearchUrl ? <a className="btn btn-light" href={this.state.rssSearchUrl}>RSS</a> : null}
+                    </div>
+                    <Result data={this.state.searchResult} searching={this.state.searching} status={this.state.searchStatus} message={this.state.searchMessage}/>
                 </div>
             </div>
         );
@@ -158,18 +179,28 @@ class TaxonomyItem extends Component {
     }
 }
 
-class SearchFilter extends Component {
+class AbstractFilter extends Component {
+    getDefaultValue() {
+        return typeof this.props.controller !== 'undefined'
+            && typeof this.props.controller.defaultValues !== 'undefined'
+            && this.props.name in this.props.controller.defaultValues
+            ? this.props.controller.defaultValues[this.props.name]
+            : null;
+    }
+}
+
+class SearchFilter extends AbstractFilter {
     render() {
         return (
-            <input className="form-control" type="search" name={this.props.name} placeholder={this.props.placeholder}/>
+            <input className="form-control" type="search" name={this.props.name} defaultValue={this.getDefaultValue()} placeholder={this.props.placeholder}/>
         );
     }
 }
 
-class TaxonomyFilter extends Component {
+class TaxonomyFilter extends AbstractFilter {
     // @see https://stackoverflow.com/a/31725038
     constructor(props) {
-        super();
+        super(props);
         this.state = {
             loading: true,
             terms: []
@@ -186,7 +217,7 @@ class TaxonomyFilter extends Component {
                 } catch (ex) {}
             }
         };
-        xhr.open('GET', '/api/' + this.props.taxonomy + '.json');
+        xhr.open('GET', '/api/' + this.props.name + '.json');
         xhr.send();
     }
 
@@ -194,21 +225,23 @@ class TaxonomyFilter extends Component {
         return (
             <fieldset className="form-group taxonomy-filter">
                 <legend>{this.props.title}</legend>
-                { this.state.loading ? <div className="loading">Loading {this.props.taxonomy} …</div> : null }
+                { this.state.loading ? <div className="loading">Loading {this.props.name} …</div> : null }
                 { this.state.terms.map(term => (
-                    <TaxonomyTerm controller={this.props.controller} key={this.props.taxonomy + term.id} name={this.props.taxonomy} value={term.id}>{term.name}</TaxonomyTerm>
+                    <TaxonomyTerm controller={this.props.controller} key={this.props.name + term.id} name={this.props.name} value={'' + term.id}>{term.name}</TaxonomyTerm>
                 ))}
             </fieldset>
         );
     }
 }
 
-class TaxonomyTerm extends Component {
+class TaxonomyTerm extends AbstractFilter {
     render() {
+        const defaultValue = this.getDefaultValue();
+        const checked = defaultValue !== null && defaultValue.indexOf(this.props.value) > -1;
         return (
             <div className="form-check">
                 <label className="form-check-label">
-                    <input type="checkbox" onChange={this.props.controller.search} className="form-check-input" name={this.props.name + '[]'} value={this.props.value}/>
+                    <input type="checkbox" onChange={this.props.controller.search} className="form-check-input" name={this.props.name + '[]'} value={this.props.value} checked={checked}/>
                     { ' ' }
                     {this.props.children}
                 </label>
@@ -217,7 +250,7 @@ class TaxonomyTerm extends Component {
     }
 }
 
-class GeolocationFilter extends Component {
+class GeolocationFilter extends AbstractFilter {
     constructor(props) {
         super(props);
         this.lat = null;
@@ -260,7 +293,7 @@ class GeolocationFilter extends Component {
                 <legend>{this.props.title}</legend>
 
                 { 'Within ' }
-                <input type="text" size="4" placeholder="radius" name={this.props.name + '[radius]'} defaultValue="10"/>
+                <input type="number" size="4" placeholder="10" name={this.props.name + '[radius]'} />
                 { ' km of ' }<br/>
                 (
                     <input type="text" size="12" placeholder="latitude" name={this.props.name + '[lat]'} ref={el => this.lat = el}/>
@@ -273,7 +306,7 @@ class GeolocationFilter extends Component {
     }
 }
 
-class DurationFilter extends Component {
+class DurationFilter extends AbstractFilter {
     constructor(props) {
         super(props);
         this.lt = null;
