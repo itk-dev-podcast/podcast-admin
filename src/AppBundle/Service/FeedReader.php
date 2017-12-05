@@ -88,7 +88,6 @@ class FeedReader
 
             if ($item !== null) {
                 $this->persist($item);
-                $this->categoryManager->saveCategorization($item);
                 $this->notice(sprintf('Item: %s', $item));
             }
         }
@@ -205,8 +204,8 @@ class FeedReader
                 }
                 $names = array_filter($names);
                 if (!empty($names)) {
-                    $tags = $this->categoryManager->loadOrCreateCategories($names);
-                    $this->categoryManager->replaceCategories($tags, $item);
+                    $categories = $this->categoryManager->loadOrCreateTerms($names);
+                    $item->setCategories($categories);
                 }
             }
         }

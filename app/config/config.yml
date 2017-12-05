@@ -98,11 +98,6 @@ stof_doctrine_extensions:
             softdeleteable: true
             sluggable: true
 
-fpn_tag:
-    model:
-        tag_class:     AppBundle\Entity\Category
-        tagging_class: AppBundle\Entity\Categorization
-
 fos_user:
     db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
     firewall_name: main
