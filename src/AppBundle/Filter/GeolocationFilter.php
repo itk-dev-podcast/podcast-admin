@@ -36,9 +36,28 @@ class GeolocationFilter extends AbstractFilter
      */
     public function getDescription(string $resourceClass): array
     {
-        header('Content-type: text/plain');
-        echo var_export($this->properties, true);
-        die(__FILE__.':'.__LINE__.':'.__METHOD__);
+        return [
+            sprintf('%s[%s]', $this->property, 'origin') => [
+                'property' => $this->property,
+                'type' => 'string',
+                'required' => false,
+            ],
+            sprintf('%s[%s]', $this->property, 'lat') => [
+                'property' => $this->property,
+                'type' => 'number',
+                'required' => false,
+            ],
+            sprintf('%s[%s]', $this->property, 'lng') => [
+                'property' => $this->property,
+                'type' => 'number',
+                'required' => false,
+            ],
+            sprintf('%s[%s]', $this->property, 'radius') => [
+                'property' => $this->property,
+                'type' => 'number',
+                'required' => false,
+            ],
+        ];
     }
 
     /**
