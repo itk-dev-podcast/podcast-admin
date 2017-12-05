@@ -41,8 +41,13 @@ monolog:
 #    delivery_addresses: ['me@example.com']
 
 services:
-    # For some reason, this service is not autoloaded in the "dev" environment.
+    # For some reason, these services are not autoloaded in the "dev" environment.
     AppBundle\Service\FeedReader:
         arguments:
             - '@AppBundle\Service\Helper'
+        public: true
+
+    AppBundle\Service\CategoryManager:
+        arguments:
+            - '@doctrine.orm.entity_manager'
         public: true

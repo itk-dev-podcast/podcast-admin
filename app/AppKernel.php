@@ -27,7 +27,6 @@ class AppKernel extends Kernel
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
             new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
             new EasyCorp\Bundle\EasyAdminBundle\EasyAdminBundle(),
-            new FPN\TagBundle\FPNTagBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new Itk\Bundle\EasyAdminUserBundle\EasyAdminUserBundle(),
             new AppBundle\AppBundle(),

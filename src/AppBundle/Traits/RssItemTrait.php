@@ -55,13 +55,6 @@ trait RssItemTrait
     private $author;
 
     /**
-     * @Groups("read")
-     *
-     * @var ArrayCollection(Category)
-     */
-    private $categories;
-
-    /**
      * @var string
      *
      * @Groups("read")
@@ -277,6 +270,26 @@ trait RssItemTrait
     public function setAuthor(string $author)
     {
         $this->author = $author;
+
+        return $this;
+    }
+
+		/**
+     * @return ArrayCollection
+     */
+    public function getCategories()
+    {
+        return $this->categories;
+    }
+
+    /**
+     * @param ArrayCollection $categories
+     *
+     * @return RssChannelTrait
+     */
+    public function setCategories(ArrayCollection $categories)
+    {
+        $this->categories = $categories;
 
         return $this;
     }

@@ -34,10 +34,9 @@ use Symfony\Component\Serializer\Annotation\Groups;
  *   })
  * @ORM\Entity
  */
-class Item implements CategorizableInterface, Timestampable, SoftDeleteable
+class Item implements Timestampable, SoftDeleteable
 {
     use SoftDeleteableEntity;
-    use CategorizableTrait;
     use TimestampableEntity;
     use RssItemTrait;
 
@@ -56,6 +55,15 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Feed")
      */
     private $feed;
+
+    /**
+     * @var ArrayCollection
+     *
+     * @Groups("read")
+     *
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Taxonomy\Category", inversedBy="items")
+     */
+    private $categories;
 
     /**
      * @var ArrayCollection
@@ -223,55 +231,7 @@ class Item implements CategorizableInterface, Timestampable, SoftDeleteable
         return $this->publishedAt;
     }
 
-    /**
-     * Set categoryList.
-     *
-     * @param tag_list $categoryList
-     *
-     * @return Item
-     */
-    public function setCategoryList($categoryList)
-    {
-        $this->categoryList = $categoryList;
-
-        return $this;
-    }
-
-    /**
-     * Get categoryList.
-     *
-     * @return tag_list
-     */
-    public function getCategoryList()
-    {
-        return $this->categoryList;
-    }
-
-    /**
-     * Set tagList.
-     *
-     * @param tag_list $tagList
-     *
-     * @return Item
-     */
-    public function setTagList($tagList)
-    {
-        $this->tagList = $tagList;
-
-        return $this;
-    }
-
-    /**
-     * Get tagList.
-     *
-     * @return tag_list
-     */
-    public function getTagList()
-    {
-        return $this->tagList;
-    }
-
-    /**
+		/**
      * Get guidIsPermaLink.
      *
      * @return bool

@@ -12,6 +12,7 @@ services:
                 recommenders: ~
                 contexts: ~
                 audiences: ~
+                categories: ~
         tags: ['api_platform.filter']
 
     item.range_filter:
