@@ -34,6 +34,7 @@ class DurationFilter extends RangeFilter
 
         if (strpos($value, '..') !== false) {
             $tokens = preg_split('/\.\./', $value);
+
             return $this->parseDuration($tokens[0]).'..'.$this->parseDuration($tokens[1]);
         }
 

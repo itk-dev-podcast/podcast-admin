@@ -56,5 +56,12 @@ services:
             - { name: doctrine.event_listener, event: prePersist }
             - { name: doctrine.event_listener, event: preUpdate }
 
+    AppBundle\Service\SearchService:
+        arguments:
+            -
+                url: '%search_url%'
+                agency: '%search_agency%'
+                profile: '%search_profile%'
+
     twig.stringloader:
         class: Twig_Extension_StringLoader

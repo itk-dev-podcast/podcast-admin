@@ -3,7 +3,6 @@ function createNullableControls() {
         var checkbox = $(this);
 
         checkbox.closest('.form-group').find('select, input').each(function() {
-            ;;; console.log(this, checkbox[0], this === checkbox[0]);
             if (this === checkbox[0]) {
                 return;
             }
