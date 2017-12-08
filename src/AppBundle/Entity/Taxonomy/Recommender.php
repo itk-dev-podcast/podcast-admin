@@ -19,7 +19,7 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
  *   }
  * )
  */
-class Recommender extends AbstractTaxonomy implements SoftDeleteable
+class Recommender extends AbstractTaxonomyTerm implements SoftDeleteable
 {
     use SoftDeleteableEntity;
 

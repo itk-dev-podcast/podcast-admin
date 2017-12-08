@@ -39,3 +39,7 @@ parameters:
         button:
             text: 'Angiv adgangskode'
         footer: '<p style="margin: 0;">Venlig hilsen<br/> {{ site_name }}</p>'
+
+    search_url: 'https://oss-services.dbc.dk/opensearch/4.5/'
+    search_agency: '100200'
+    search_profile: 'test'

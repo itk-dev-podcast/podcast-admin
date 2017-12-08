@@ -274,7 +274,7 @@ trait RssItemTrait
         return $this;
     }
 
-		/**
+    /**
      * @return ArrayCollection
      */
     public function getCategories()

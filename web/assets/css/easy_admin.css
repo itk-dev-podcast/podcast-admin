@@ -1,0 +1,4 @@
+.field-app_related_materials > label,
+.item-related-materials-parent input {
+    display: none;
+}

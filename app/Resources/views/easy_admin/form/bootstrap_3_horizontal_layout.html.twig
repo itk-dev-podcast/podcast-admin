@@ -8,3 +8,75 @@
         {{- parent() -}}
     {% endif %}
 {%- endblock form_widget_simple %}
+
+{% block app_related_materials_widget -%}
+    {% set item_template = '%title% (%identifier%)' %}
+    {% set search_path = 'admin_search' %}
+{% set data = value.data|default(null) %}
+
+    <select id="{{ id ~ '-ui' }}">
+        {% if not data %}
+            <option></option>
+        {% endif %}
+    </select>
+
+    {% if data %}
+        <p class="help-block">
+            <a target="_blank" href="http://bibliotek.dk/linkme.php?rec.id={{ data.identifier }}">
+                {{ 'Show details on "%title%"' | trans({'%title%': data.title}) }}
+            </a>
+        </p>
+    {% endif %}
+    <div class="item-related-materials-parent">{{- block('form_widget') -}}</div>
+
+    <script>(function ($) { $(function() {
+        var render = function(template, data) {
+            return template.replace(new RegExp('%([a-z0-9_]+)%', 'gi'), function(match, key) {
+                return data[key];
+            });
+        },
+        renderResult = function (result) {
+            if (result.loading || result.id === 0) {
+                return result.text;
+            }
+
+            result.description = result.description || '';
+
+            return render({{ item_template | json_encode | raw }}, result);
+        },
+        setValue = function (data) {
+            $('#' + {{ id | json_encode | raw }}).val(JSON.stringify(data));
+        };
+
+        $('#' + {{ (id ~ '-ui') | json_encode | raw}}).select2({
+            placeholder: {{ (data|default({id: 0, text: 'Search for related material' | trans})) | json_encode | raw }},
+            ajax: {
+                url: {{ path(search_path) | json_encode | raw }},
+                dataType: 'json',
+                delay: 250,
+                data: function (params) {
+                    return {
+                        query: params.term
+                    };
+                },
+                processResults: function (data, params) {
+                    data.results.forEach(function (item) {
+                        item.id = item.identifier;
+                    });
+
+                    return data;
+                },
+                cache: true
+            },
+            minimumInputLength: 4,
+            templateResult: renderResult,
+            templateSelection: renderResult
+        }).on('select2:select', function (event) {
+            setValue(event.params.data);
+        });
+
+        {% if data %}
+        setValue({{ data | json_encode | raw }});
+        {% endif %}
+    }) }(jQuery))</script>
+{%- endblock %}

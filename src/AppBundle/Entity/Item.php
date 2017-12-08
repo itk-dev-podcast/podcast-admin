@@ -7,7 +7,6 @@ use AppBundle\Entity\Taxonomy\Audience;
 use AppBundle\Entity\Taxonomy\Context;
 use AppBundle\Entity\Taxonomy\Recommender;
 use AppBundle\Entity\Taxonomy\Subject;
-use AppBundle\Traits\CategorizableTrait;
 use AppBundle\Traits\RssItemTrait;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
@@ -16,6 +15,8 @@ use Gedmo\SoftDeleteable\Traits\SoftDeleteableEntity;
 use Gedmo\Timestampable\Timestampable;
 use Gedmo\Timestampable\Traits\TimestampableEntity;
 use Symfony\Component\Serializer\Annotation\Groups;
+use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\Validator\Context\ExecutionContextInterface;
 
 /**
  * @see http://www.rssboard.org/rss-profile#element-channel-item
@@ -27,6 +28,7 @@ use Symfony\Component\Serializer\Annotation\Groups;
  *     "normalization_context"={"groups"={"read"}},
  *     "filters"={
  *       "item.search_filter",
+ *       "item.taxonomy_filter",
  *       "item.range_filter",
  *       "item.published_filter",
  *       "item.geolocation_filter"
@@ -134,6 +136,15 @@ class Item implements Timestampable, SoftDeleteable
     private $query;
 
     /**
+     * @var ArrayCollection
+     *
+     * @Groups("read")
+     *
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Taxonomy\RelatedMaterial", inversedBy="items")
+     */
+    private $relatedMaterials;
+
+    /**
      * Constructor.
      */
     public function __construct()
@@ -147,6 +158,22 @@ class Item implements Timestampable, SoftDeleteable
     public function __toString()
     {
         return $this->title.' ['.$this->link.']';
+    }
+
+    /**
+     * @Assert\Callback()
+     */
+    public function validate(ExecutionContextInterface $context)
+    {
+        $relatedMaterialIds = [];
+        foreach ($this->getRelatedMaterials() as $index => $relatedMaterial) {
+            if (isset($relatedMaterialIds[$relatedMaterial->getId()])) {
+                $context->buildViolation('Related materials must be unique')
+                    ->atPath('relatedMaterials['.$index.']')
+                    ->addViolation();
+            }
+            $relatedMaterialIds[$relatedMaterial->getId()] = true;
+        }
     }
 
     /**
@@ -231,7 +258,7 @@ class Item implements Timestampable, SoftDeleteable
         return $this->publishedAt;
     }
 
-		/**
+    /**
      * Get guidIsPermaLink.
      *
      * @return bool
@@ -457,5 +484,29 @@ class Item implements Timestampable, SoftDeleteable
     public function getQuery()
     {
         return $this->query;
+    }
+
+    /**
+     * Set relatedMaterials.
+     *
+     * @param ArrayCollection $relatedMaterials
+     *
+     * @return Item
+     */
+    public function setRelatedMaterials(ArrayCollection $relatedMaterials)
+    {
+        $this->relatedMaterials = $relatedMaterials;
+
+        return $this;
+    }
+
+    /**
+     * Get related materials.
+     *
+     * @return ArrayCollection
+     */
+    public function getRelatedMaterials()
+    {
+        return $this->relatedMaterials;
     }
 }

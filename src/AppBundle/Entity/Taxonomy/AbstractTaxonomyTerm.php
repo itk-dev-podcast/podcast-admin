@@ -6,7 +6,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
 use Symfony\Component\Serializer\Annotation\Groups;
 
-abstract class AbstractTaxonomy
+abstract class AbstractTaxonomyTerm
 {
     /**
      * @var int
@@ -27,10 +27,17 @@ abstract class AbstractTaxonomy
     protected $name;
 
     /**
+     * @var string
+     * @Groups({"read"})
      * @ORM\Column(type="string")
      * @Gedmo\Slug(fields={"name"})
      */
     protected $slug;
+
+    /**
+     * @ORM\Column(type="json_array", nullable=true)
+     */
+    protected $data;
 
     /**
      * @var \Doctrine\Common\Collections\ArrayCollection
@@ -65,7 +72,7 @@ abstract class AbstractTaxonomy
      *
      * @param string $name
      *
-     * @return Recommender
+     * @return AbstractTaxonomyTerm
      */
     public function setName($name)
     {
@@ -89,7 +96,7 @@ abstract class AbstractTaxonomy
      *
      * @param string $slug
      *
-     * @return Recommender
+     * @return AbstractTaxonomyTerm
      */
     public function setSlug($slug)
     {
@@ -109,11 +116,35 @@ abstract class AbstractTaxonomy
     }
 
     /**
+     * Set slug.
+     *
+     * @param null|array $data
+     *
+     * @return AbstractTaxonomyTerm
+     */
+    public function setData(array $data = null)
+    {
+        $this->data = $data;
+
+        return $this;
+    }
+
+    /**
+     * Get data.
+     *
+     * @return null|array
+     */
+    public function getData()
+    {
+        return $this->data;
+    }
+
+    /**
      * Add item.
      *
      * @param \AppBundle\Entity\Item $item
      *
-     * @return Recommender
+     * @return AbstractTaxonomyTerm
      */
     public function addItem(\AppBundle\Entity\Item $item)
     {

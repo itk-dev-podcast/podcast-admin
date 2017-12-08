@@ -13,6 +13,7 @@ services:
                 contexts: ~
                 audiences: ~
                 categories: ~
+                relatedMaterials: ~
         tags: ['api_platform.filter']
 
     item.range_filter:

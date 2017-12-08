@@ -19,7 +19,7 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
  *   }
  * )
  */
-class Category extends AbstractTaxonomy implements SoftDeleteable
+class Category extends AbstractTaxonomyTerm implements SoftDeleteable
 {
     use SoftDeleteableEntity;
 
