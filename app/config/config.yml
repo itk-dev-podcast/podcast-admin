@@ -10,6 +10,7 @@ imports:
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: en
+    version: 1.0.0
 
 framework:
     #esi: ~
@@ -33,7 +34,8 @@ framework:
         # save_path: '%kernel.project_dir%/var/sessions/%kernel.environment%'
     fragments: { enabled: false }
     http_method_override: true
-    assets: ~
+    assets:
+        version: '%version%'
     php_errors:
         log: true
 
@@ -102,3 +104,8 @@ fos_user:
     db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
     firewall_name: main
     user_class: AppBundle\Entity\User
+
+easy_admin_user:
+    resetting:
+        create:
+            redirect_route: ~

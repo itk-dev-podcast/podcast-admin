@@ -2,17 +2,17 @@
 
 namespace AppBundle\Form\Type;
 
-use AppBundle\Service\RelatedMaterialManager;
+use AppBundle\Service\RelatedEventManager;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\DataTransformerInterface;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 
-class RelatedMaterialsType extends AbstractType implements DataTransformerInterface
+class RelatedEventsType extends AbstractType implements DataTransformerInterface
 {
     private $manager;
 
-    public function __construct(RelatedMaterialManager $manager)
+    public function __construct(RelatedEventManager $manager)
     {
         $this->manager = $manager;
     }
@@ -51,7 +51,7 @@ class RelatedMaterialsType extends AbstractType implements DataTransformerInterf
      */
     public function getBlockPrefix()
     {
-        return 'app_related_materials';
+        return 'app_related_events';
     }
 
     /**

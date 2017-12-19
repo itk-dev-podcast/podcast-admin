@@ -4,7 +4,7 @@ namespace AppBundle\Service;
 
 use GuzzleHttp\Client;
 
-class SearchService
+class MaterialsSearchService
 {
     private $configuration;
 
