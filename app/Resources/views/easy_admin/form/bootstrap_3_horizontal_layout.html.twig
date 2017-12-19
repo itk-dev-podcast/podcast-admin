@@ -11,8 +11,8 @@
 
 {% block app_related_materials_widget -%}
     {% set item_template = '%title% (%identifier%)' %}
-    {% set search_path = 'admin_search' %}
-{% set data = value.data|default(null) %}
+    {% set search_path = 'admin_materials_search' %}
+    {% set data = value.data|default(null) %}
 
     <select id="{{ id ~ '-ui' }}">
         {% if not data %}
@@ -65,6 +65,71 @@
                     });
 
                     return data;
+                },
+                cache: true
+            },
+            minimumInputLength: 4,
+            templateResult: renderResult,
+            templateSelection: renderResult
+        }).on('select2:select', function (event) {
+            setValue(event.params.data);
+        });
+
+        {% if data %}
+        setValue({{ data | json_encode | raw }});
+        {% endif %}
+    }) }(jQuery))</script>
+{%- endblock %}
+
+{% block app_related_events_widget -%}
+    {% set item_template = '%name% (%identifier%)' %}
+    {% set search_path = 'admin_events_search' %}
+    {% set data = value.data|default(null) %}
+
+    <select id="{{ id ~ '-ui' }}">
+        {% if not data %}
+            <option></option>
+        {% endif %}
+    </select>
+
+    {% if data %}
+        <p class="help-block">
+            <a target="_blank" href="{{ data.id }}">
+                {{ 'Show details on "%name%"' | trans({'%name%': data.name}) }}
+            </a>
+        </p>
+    {% endif %}
+    <div class="item-related-events-parent">{{- block('form_widget') -}}</div>
+
+    <script>(function ($) { $(function() {
+        var render = function(template, data) {
+            return template.replace(new RegExp('%([a-z0-9_]+)%', 'gi'), function(match, key) {
+                return data[key];
+            });
+        },
+        renderResult = function (result) {
+            if (result.loading || result.id === 0) {
+                return result.text;
+            }
+
+            result.description = result.description || '';
+
+            return render({{ item_template | json_encode | raw }}, result);
+        },
+        setValue = function (data) {
+            $('#' + {{ id | json_encode | raw }}).val(JSON.stringify(data));
+        };
+
+        $('#' + {{ (id ~ '-ui') | json_encode | raw}}).select2({
+            placeholder: {{ (data|default({id: 0, text: 'Search for related event' | trans})) | json_encode | raw }},
+            ajax: {
+                url: {{ path(search_path) | json_encode | raw }},
+                dataType: 'json',
+                delay: 250,
+                data: function (params) {
+                    return {
+                        query: params.term
+                    };
                 },
                 cache: true
             },

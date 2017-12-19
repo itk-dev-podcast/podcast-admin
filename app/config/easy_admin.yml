@@ -56,6 +56,13 @@ easy_admin:
                         allow_delete: true
                       allow_delete: true
                       embedded: true
+                    - property: relatedEvents
+                      type: collection
+                      type_options:
+                        entry_type: AppBundle\Form\Type\RelatedEventsType
+                        allow_delete: true
+                      allow_delete: true
+                      embedded: true
 
         Feed:
             class: AppBundle\Entity\Feed

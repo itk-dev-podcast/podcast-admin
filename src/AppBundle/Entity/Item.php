@@ -145,6 +145,15 @@ class Item implements Timestampable, SoftDeleteable
     private $relatedMaterials;
 
     /**
+     * @var ArrayCollection
+     *
+     * @Groups("read")
+     *
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Taxonomy\RelatedEvent", inversedBy="items")
+     */
+    private $relatedEvents;
+
+    /**
      * Constructor.
      */
     public function __construct()
@@ -508,5 +517,29 @@ class Item implements Timestampable, SoftDeleteable
     public function getRelatedMaterials()
     {
         return $this->relatedMaterials;
+    }
+
+    /**
+     * Set relatedEvents.
+     *
+     * @param ArrayCollection $relatedEvents
+     *
+     * @return Item
+     */
+    public function setRelatedEvents(ArrayCollection $relatedEvents)
+    {
+        $this->relatedEvents = $relatedEvents;
+
+        return $this;
+    }
+
+    /**
+     * Get related events.
+     *
+     * @return ArrayCollection
+     */
+    public function getRelatedEvents()
+    {
+        return $this->relatedEvents;
     }
 }

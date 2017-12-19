@@ -10,5 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "eonasdan-bootstrap-datetimepicker": "^4.17.47"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
   }
 }
