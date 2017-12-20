@@ -80,7 +80,13 @@
         "symfony-tests-dir": "tests",
         "symfony-assets-install": "hard",
         "incenteev-parameters": {
-            "file": "app/config/parameters.yml"
+            "file": "app/config/parameters.yml",
+            "env-map": {
+                "database_name": "SYMFONY_DATABASE_NAME",
+                "database_user": "SYMFONY_DATABASE_USER",
+                "database_password": "SYMFONY_DATABASE_PASS",
+                "router.request_context.host": "SYMFONY_HOST"
+            }
         },
         "branch-alias": {
             "dev-master": "2.1-dev"
