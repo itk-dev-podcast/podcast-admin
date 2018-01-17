@@ -3,11 +3,13 @@
 namespace AppBundle\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\SoftDeleteable\SoftDeleteable;
 use Gedmo\SoftDeleteable\Traits\SoftDeleteableEntity;
 use Gedmo\Timestampable\Timestampable;
 use Gedmo\Timestampable\Traits\TimestampableEntity;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * A dynamic collection of items (based on a search query).
@@ -16,9 +18,10 @@ use Gedmo\Timestampable\Traits\TimestampableEntity;
  *   collectionOperations={"get"={"method"="GET"}},
  *   itemOperations={"get"={"method"="GET"}},
  *   attributes={
- *     "normalization_context"={"groups"={"read"}},
+ *     "normalization_context"={"groups"={"read_collection"}},
  *     "filters"={
- *       "collection.search_filter"
+ *       "collection.search_filter",
+ *       "collection.published_filter"
  *     }
  *   })
  * @ORM\Entity
@@ -31,6 +34,8 @@ class Collection implements Timestampable, SoftDeleteable
     /**
      * @var string
      *
+     * @Groups("read_collection")
+     *
      * @ORM\Id
      * @ORM\Column(type="guid")
      * @ORM\GeneratedValue(strategy="UUID")
@@ -40,6 +45,8 @@ class Collection implements Timestampable, SoftDeleteable
     /**
      * @var string
      *
+     * @Groups("read_collection")
+     *
      * @ORM\Column(type="string", nullable=false)
      */
     private $title;
@@ -47,19 +54,34 @@ class Collection implements Timestampable, SoftDeleteable
     /**
      * @var string
      *
+     * @Groups("read_collection")
+     *
      * @ORM\Column(type="text", nullable=false)
      */
     private $description;
 
     /**
+     * A query for dynamic collections.
+     *
      * @var string
      *
-     * @ORM\Column(type="json_array", nullable=false)
+     * @ORM\Column(type="json_array", nullable=true)
      */
-    private $query;
+    private $itemQuery;
+
+    /**
+     * @var ArrayCollection
+     *
+     * @Groups("read_collection")
+     *
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Item")
+     */
+    private $items;
 
     /**
      * @var \DateTime
+     *
+     * @Groups("read_collection")
      *
      * @ORM\Column(type="datetime", nullable=true)
      */
@@ -131,13 +153,13 @@ class Collection implements Timestampable, SoftDeleteable
     /**
      * Set query.
      *
-     * @param array $query
+     * @param array $itemQuery
      *
      * @return Collection
      */
-    public function setQuery($query)
+    public function setItemQuery($itemQuery)
     {
-        $this->query = $query;
+        $this->itemQuery = $itemQuery;
 
         return $this;
     }
@@ -147,9 +169,25 @@ class Collection implements Timestampable, SoftDeleteable
      *
      * @return array
      */
-    public function getQuery()
+    public function getItemQuery()
     {
-        return $this->query;
+        return $this->itemQuery;
+    }
+
+    /**
+     * @return ArrayCollection
+     */
+    public function getItems()
+    {
+        return $this->items;
+    }
+
+    /**
+     * @param ArrayCollection $items
+     */
+    public function setItems($items)
+    {
+        $this->items = $items;
     }
 
     /**

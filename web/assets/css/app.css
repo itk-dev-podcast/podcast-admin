@@ -1,4 +1,7 @@
 body {
+  padding-top: 1rem; }
+
+body.menu-bar {
   padding-top: 5rem; }
 
 .result-item img {

@@ -6,10 +6,12 @@ easy_admin:
             css:
                 - 'assets/css/easy_admin.css'
             js:
+                - 'assets/node_modules/mustache/mustache.min.js'
                 - 'assets/js/easy_admin.js'
 
         menu:
             - Item
+            - Collection
             - { label: 'Taxonomy' }
             - Subject
             - Recommender
@@ -18,6 +20,10 @@ easy_admin:
             - { label: 'Admin' }
             - Feed
             - User
+            - { label: 'Frontend' }
+            -
+                label: 'Frontpage'
+                route: 'frontpage'
 
 
     entities:
@@ -63,6 +69,29 @@ easy_admin:
                         allow_delete: true
                       allow_delete: true
                       embedded: true
+
+        Collection:
+            class: AppBundle\Entity\Collection
+            list:
+                fields:
+                    - property: title
+                    - property: description
+                    - property: publishedAt
+                    - property: item_query
+                      template: item_query.html.twig
+
+            form:
+                fields:
+                    - property: title
+                    - property: description
+                    - property: publishedAt
+                    - property: item_query
+                      type: AppBundle\Form\Type\ItemQueryType
+                    - property: items
+                      type: collection
+                      type_options:
+                        entry_type: AppBundle\Form\Type\CollectionItemType
+                        allow_delete: true
 
         Feed:
             class: AppBundle\Entity\Feed

@@ -8,7 +8,7 @@ class App extends Component {
         this.form = null;
         this.search = this.search.bind(this);
         this.filters = window.filters;
-        this.defaultValues = queryString.parse(window.location.hash, {arrayFormat: 'bracket'});
+        this.defaultValues = queryString.parse(window.location.hash.replace(/\[\d+\]/g, '[]'), {arrayFormat: 'bracket'});
         this.state = {
             searching: false,
             searchUrl: null,
@@ -18,8 +18,17 @@ class App extends Component {
         };
     }
 
-    componentDidMount() {
-        this.search();
+    loadedFilters = {};
+
+    filterLoaded(name) {
+        this.loadedFilters[name] = true;
+        // @HACK: Search when all filters are loaded.
+        if (Object.keys(this.loadedFilters).length === this.filters.length) {
+            this.setState({
+                loading: false
+            });
+            this.search();
+        }
     }
 
     search() {
@@ -30,7 +39,12 @@ class App extends Component {
             searching: true
         });
         window.location.hash = query;
-        this.defaultValues = queryString.parse(window.location.hash, {arrayFormat: 'bracket'});
+        if (window.opener !== null && typeof window.opener.setItemQuery === 'function') {
+            window.opener.setItemQuery(serialize(this.form, { hash: true }));
+        } else if (window.parent !== null && typeof window.parent.setItemQuery === 'function') {
+            window.parent.setItemQuery(serialize(this.form, { hash: true }));
+        }
+        this.defaultValues = queryString.parse(window.location.hash.replace(/\[\d+\]/g, '[]'), {arrayFormat: 'bracket'});
         const xhr = new XMLHttpRequest();
         xhr.onreadystatechange = () => {
             if (xhr.readyState === XMLHttpRequest.DONE) {
@@ -180,6 +194,10 @@ class TaxonomyItem extends Component {
 }
 
 class AbstractFilter extends Component {
+    loaded() {
+        this.props.controller.filterLoaded(this.props.name);
+    }
+
     getDefaultValue() {
         return typeof this.props.controller !== 'undefined'
             && typeof this.props.controller.defaultValues !== 'undefined'
@@ -190,6 +208,11 @@ class AbstractFilter extends Component {
 }
 
 class SearchFilter extends AbstractFilter {
+    constructor(props) {
+        super(props);
+        this.loaded();
+    }
+
     render() {
         return (
             <input className="form-control" type="search" name={this.props.name} defaultValue={this.getDefaultValue()} placeholder={this.props.placeholder}/>
@@ -214,6 +237,7 @@ class TaxonomyFilter extends AbstractFilter {
                 try {
                     const terms = JSON.parse(xhr.responseText);
                     this.setState({loading: false, terms: terms});
+                    this.loaded();
                 } catch (ex) {}
             }
         };
@@ -260,6 +284,7 @@ class GeolocationFilter extends AbstractFilter {
         this.state = {
             loading: false
         };
+        this.loaded();
     }
 
     getPosition() {
@@ -311,6 +336,7 @@ class DurationFilter extends AbstractFilter {
         super(props);
         this.lt = null;
         this.gt = null;
+        this.loaded();
     }
 
     validate(event) {}

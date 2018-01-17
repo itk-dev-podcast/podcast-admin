@@ -7,7 +7,7 @@ use Symfony\Component\Form\DataTransformerInterface;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\FormBuilderInterface;
 
-class QueryType extends AbstractType implements DataTransformerInterface
+class ItemQueryType extends AbstractType implements DataTransformerInterface
 {
     /**
      * {@inheritdoc}
@@ -20,12 +20,12 @@ class QueryType extends AbstractType implements DataTransformerInterface
 
     public function transform($value)
     {
-        return json_encode($value);
+        return $value ? json_encode($value) : '';
     }
 
     public function reverseTransform($value)
     {
-        return json_decode($value, true);
+        return $value ? json_decode($value, true) : null;
     }
 
     public function getParent()
@@ -38,7 +38,7 @@ class QueryType extends AbstractType implements DataTransformerInterface
      */
     public function getBlockPrefix()
     {
-        return 'app_query';
+        return 'app_item_query';
     }
 
     /**
