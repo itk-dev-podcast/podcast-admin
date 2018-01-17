@@ -104,6 +104,8 @@ fos_user:
     db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
     firewall_name: main
     user_class: AppBundle\Entity\User
+    resetting:
+        token_ttl: 86400
 
 easy_admin_user:
     resetting:
