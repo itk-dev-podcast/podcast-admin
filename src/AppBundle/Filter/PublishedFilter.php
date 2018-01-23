@@ -4,6 +4,7 @@ namespace AppBundle\Filter;
 
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\AbstractFilter;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Util\QueryNameGeneratorInterface;
+use AppBundle\Entity\Collection;
 use AppBundle\Entity\Item;
 use Doctrine\ORM\QueryBuilder;
 use Symfony\Component\HttpFoundation\Request;
@@ -47,7 +48,8 @@ class PublishedFilter extends AbstractFilter
         }
 
         $resource = new $resourceClass();
-        if (!$resource instanceof Item) {
+        // @TODO: Improve handling of multiple entity types.
+        if (!($resource instanceof Item || $resource instanceof Collection)) {
             return;
         }
 

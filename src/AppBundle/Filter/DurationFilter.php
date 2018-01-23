@@ -10,16 +10,18 @@ class DurationFilter extends RangeFilter
 {
     protected function filterProperty(string $property, $values, QueryBuilder $queryBuilder, QueryNameGeneratorInterface $queryNameGenerator, string $resourceClass, string $operationName = null)
     {
-        foreach ($values as $key => &$value) {
-            switch ($key) {
-                case 'lt':
-                case 'gt':
-                case 'lte':
-                case 'gte':
-                case 'between':
-                $value = $this->parseDuration($value);
+        if (is_array($values)) {
+            foreach ($values as $key => &$value) {
+                switch ($key) {
+                    case 'lt':
+                    case 'gt':
+                    case 'lte':
+                    case 'gte':
+                    case 'between':
+                        $value = $this->parseDuration($value);
 
-                break;
+                        break;
+                }
             }
         }
 

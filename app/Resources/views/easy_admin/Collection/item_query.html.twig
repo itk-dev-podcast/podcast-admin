@@ -1,0 +1,2 @@
+{% set url = path('frontpage') ~ '#' ~ (value | url_encode) %}
+<a href="{{ url }}">{{ url }}</a>

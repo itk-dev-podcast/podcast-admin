@@ -21,7 +21,7 @@ trait RssItemTrait
     /**
      * @var string
      *
-     * @Groups("read")
+     * @Groups({"read_item", "read_collection"})
      *
      * @ORM\Column(type="string")
      */
@@ -30,7 +30,7 @@ trait RssItemTrait
     /**
      * @var string
      *
-     * @Groups("read")
+     * @Groups({"read_item", "read_collection"})
      *
      * @ORM\Column(type="string")
      */
@@ -39,7 +39,7 @@ trait RssItemTrait
     /**
      * @var string
      *
-     * @Groups("read")
+     * @Groups({"read_item", "read_collection"})
      *
      * @ORM\Column(type="text")
      */
@@ -48,7 +48,7 @@ trait RssItemTrait
     /**
      * @var string
      *
-     * @Groups("read")
+     * @Groups("read_item")
      *
      * @ORM\Column(type="string", nullable=true)
      */
@@ -57,7 +57,7 @@ trait RssItemTrait
     /**
      * @var string
      *
-     * @Groups("read")
+     * @Groups("read_item")
      *
      * @ORM\Column(type="text", nullable=true)
      */
@@ -66,7 +66,7 @@ trait RssItemTrait
     /**
      * @var array
      *
-     * @Groups("read")
+     * @Groups({"read_item", "read_collection"})
      *
      * @ORM\Column(type="json_array", nullable=true)
      */
@@ -75,7 +75,7 @@ trait RssItemTrait
     /**
      * @var string
      *
-     * @Groups("read")
+     * @Groups("read_item")
      *
      * @ORM\Column(type="string", nullable=true)
      */
@@ -84,7 +84,7 @@ trait RssItemTrait
     /**
      * @var bool
      *
-     * @Groups("read")
+     * @Groups("read_item")
      *
      * @ORM\Column(type="boolean")
      */
@@ -93,7 +93,7 @@ trait RssItemTrait
     /**
      * @var \DateTime
      *
-     * @Groups("read")
+     * @Groups("read_item")
      *
      * @ORM\Column(type="datetime", nullable=true)
      */
@@ -102,7 +102,7 @@ trait RssItemTrait
     /**
      * @var array
      *
-     * @Groups("read")
+     * @Groups("read_item")
      *
      * @ORM\Column(type="json_array", nullable=true)
      */
@@ -116,7 +116,7 @@ trait RssItemTrait
     /**
      * @var string
      *
-     * @Groups("read")
+     * @Groups("read_item")
      *
      * @ORM\Column(type="string", nullable=true)
      */
@@ -125,7 +125,7 @@ trait RssItemTrait
     /**
      * @var string
      *
-     * @Groups("read")
+     * @Groups("read_item")
      *
      * @ORM\Column(type="text", nullable=true)
      */
@@ -134,7 +134,7 @@ trait RssItemTrait
     /**
      * @var int
      *
-     * @Groups("read")
+     * @Groups("read_item")
      *
      * @ORM\Column(type="integer", nullable=true)
      */
@@ -143,7 +143,7 @@ trait RssItemTrait
     /**
      * @var int
      *
-     * @Groups("read")
+     * @Groups("read_item")
      *
      * @ORM\Column(type="integer", nullable=true)
      */
@@ -152,7 +152,7 @@ trait RssItemTrait
     /**
      * @var string
      *
-     * @Groups("read")
+     * @Groups("read_item")
      *
      * @ORM\Column(type="string", nullable=true)
      */
@@ -161,7 +161,7 @@ trait RssItemTrait
     /**
      * @var bool
      *
-     * @Groups("read")
+     * @Groups("read_item")
      *
      * @ORM\Column(type="boolean", nullable=true)
      */
@@ -170,7 +170,7 @@ trait RssItemTrait
     /**
      * @var array
      *
-     * @Groups("read")
+     * @Groups("read_item")
      *
      * @ORM\Column(type="json_array", nullable=true)
      */
@@ -179,7 +179,7 @@ trait RssItemTrait
     /**
      * @var int
      *
-     * @Groups("read")
+     * @Groups("read_item")
      *
      * @ORM\Column(type="integer", nullable=true, name="`order`")
      */
@@ -188,7 +188,7 @@ trait RssItemTrait
     /**
      * @var int
      *
-     * @Groups("read")
+     * @Groups("read_item")
      *
      * @ORM\Column(type="integer", nullable=true)
      */

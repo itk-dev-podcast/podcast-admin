@@ -102,6 +102,79 @@
     <div class="item-related-events-parent">{{- block('form_widget') -}}</div>
 
     <script>(function ($) { $(function() {
+            var render = function(template, data) {
+                return template.replace(new RegExp('%([a-z0-9_]+)%', 'gi'), function(match, key) {
+                    return data[key];
+                });
+            },
+                renderResult = function (result) {
+                    if (result.loading || result.id === 0) {
+                        return result.text;
+                    }
+
+                    result.description = result.description || '';
+
+                    return render({{ item_template | json_encode | raw }}, result);
+                },
+                setValue = function (data) {
+                    $('#' + {{ id | json_encode | raw }}).val(JSON.stringify(data));
+                };
+
+            $('#' + {{ (id ~ '-ui') | json_encode | raw}}).select2({
+                placeholder: {{ (data|default({id: 0, text: 'Search for related event' | trans})) | json_encode | raw }},
+                ajax: {
+                    url: {{ path(search_path) | json_encode | raw }},
+                    dataType: 'json',
+                    delay: 250,
+                    data: function (params) {
+                        return {
+                            query: params.term
+                        };
+                    },
+                    cache: true
+                },
+                minimumInputLength: 4,
+                templateResult: renderResult,
+                templateSelection: renderResult
+            }).on('select2:select', function (event) {
+                setValue(event.params.data);
+            });
+
+            {% if data %}
+            setValue({{ data | json_encode | raw }});
+            {% endif %}
+        }) }(jQuery))</script>
+{%- endblock %}
+
+{% block app_collection_item_widget -%}
+    {% set item_template = '%title% (%link%)' %}
+    {% set search_path = 'api_items_get_collection' %}
+    {% set data = null %}
+    {% if value|default(false) %}
+        {% set data = {
+            id: value.id,
+            title: value.title,
+            description: value.description,
+            link: value.link,
+            } %}
+    {% endif %}
+
+    <select id="{{ id ~ '-ui' }}">
+        {% if not data %}
+            <option></option>
+        {% endif %}
+    </select>
+
+    {% if data %}
+        <p class="help-block">
+            <a target="_blank" href="{{ path('frontpage', {_fragment: 'id=' ~ data.id}) }}">
+                {{ 'Show details on "%title%"' | trans({'%title%': data.title}) }}
+            </a>
+        </p>
+    {% endif %}
+    <div class="item-collection-item-parent">{{- block('form_widget') -}}</div>
+
+    <script>(function ($) { $(function() {
         var render = function(template, data) {
             return template.replace(new RegExp('%([a-z0-9_]+)%', 'gi'), function(match, key) {
                 return data[key];
@@ -121,9 +194,9 @@
         };
 
         $('#' + {{ (id ~ '-ui') | json_encode | raw}}).select2({
-            placeholder: {{ (data|default({id: 0, text: 'Search for related event' | trans})) | json_encode | raw }},
+            placeholder: {{ (data|default({id: 0, text: 'Search for item' | trans})) | json_encode | raw }},
             ajax: {
-                url: {{ path(search_path) | json_encode | raw }},
+                url: {{ path(search_path, {_format: 'json'}) | json_encode | raw }},
                 dataType: 'json',
                 delay: 250,
                 data: function (params) {
@@ -131,7 +204,12 @@
                         query: params.term
                     };
                 },
-                cache: true
+                cache: true,
+                processResults: function (data) {
+                    return {
+                        results: data
+                    };
+                }
             },
             minimumInputLength: 4,
             templateResult: renderResult,
@@ -144,4 +222,40 @@
         setValue({{ data | json_encode | raw }});
         {% endif %}
     }) }(jQuery))</script>
+{%- endblock %}
+
+{% block app_item_query_widget -%}
+    <script>(function($) {
+        var id = {{ id | json_encode | raw }};
+        window.setItemQuery = function(query) {
+            $('#' + id).val(JSON.stringify(query));
+        };
+        window.openItemQuery = function() {
+            var query = {};
+            try {
+                query = JSON.parse($('#' + id).val());
+            } catch (ex) {}
+            var url = {{ path('frontpage', {menu_bar: false}) | json_encode | raw }} + '#' + $.param(query);
+            $('#' + id + '-display').attr('src', url);
+            $('#query-modal').modal('show');
+        };
+    }(jQuery));</script>
+    <button class="btn btn-default" type="button" onclick="openItemQuery()">{{ 'Open item query' | trans }}</button>
+    <div style="display: none">{{ block('form_widget') }}</div>
+
+    <div class="modal fade" id="query-modal" tabindex="-1" role="dialog" aria-labelledby="query-modal" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    {# <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> #}
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="{{ id }}-display" src="about:blank"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 {%- endblock %}

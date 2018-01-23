@@ -1,6 +1,34 @@
 .field-app_related_materials > label,
 .item-related-materials-parent input,
 .field-app_related_events > label,
-.item-related-events-parent input {
+.item-related-events-parent input,
+.field-app_collection_item > label,
+.item-collection-item-parent input {
     display: none;
+}
+
+#query-modal {
+    .modal-dialog {
+        width: 90%;
+        height: 90%;
+        padding: 0;
+    }
+
+    .modal-content {
+        height: auto;
+        min-height: 100%;
+        border-radius: 0;
+        position: relative;
+    }
+
+    .modal-body {
+        height: 800px;
+    }
+
+    iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
 }

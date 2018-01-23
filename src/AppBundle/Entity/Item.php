@@ -25,7 +25,7 @@ use Symfony\Component\Validator\Context\ExecutionContextInterface;
  *   collectionOperations={"get"={"method"="GET"}},
  *   itemOperations={"get"={"method"="GET"}},
  *   attributes={
- *     "normalization_context"={"groups"={"read"}},
+ *     "normalization_context"={"groups"={"read_item"}},
  *     "filters"={
  *       "item.search_filter",
  *       "item.taxonomy_filter",
@@ -45,6 +45,8 @@ class Item implements Timestampable, SoftDeleteable
     /**
      * @var string
      *
+     * @Groups("read_item")
+     *
      * @ORM\Id
      * @ORM\Column(type="guid")
      * @ORM\GeneratedValue(strategy="UUID")
@@ -61,7 +63,7 @@ class Item implements Timestampable, SoftDeleteable
     /**
      * @var ArrayCollection
      *
-     * @Groups("read")
+     * @Groups("read_item")
      *
      * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Taxonomy\Category", inversedBy="items")
      */
@@ -70,7 +72,7 @@ class Item implements Timestampable, SoftDeleteable
     /**
      * @var ArrayCollection
      *
-     * @Groups("read")
+     * @Groups("read_item")
      *
      * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Taxonomy\Subject", inversedBy="items")
      */
@@ -79,7 +81,7 @@ class Item implements Timestampable, SoftDeleteable
     /**
      * @var ArrayCollection
      *
-     * @Groups("read")
+     * @Groups("read_item")
      *
      * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Taxonomy\Recommender", inversedBy="items")
      */
@@ -88,7 +90,7 @@ class Item implements Timestampable, SoftDeleteable
     /**
      * @var ArrayCollection
      *
-     * @Groups("read")
+     * @Groups("read_item")
      *
      * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Taxonomy\Context", inversedBy="items")
      */
@@ -97,7 +99,7 @@ class Item implements Timestampable, SoftDeleteable
     /**
      * @var ArrayCollection
      *
-     * @Groups("read")
+     * @Groups("read_item")
      *
      * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Taxonomy\Audience", inversedBy="items")
      */
@@ -113,7 +115,7 @@ class Item implements Timestampable, SoftDeleteable
     /**
      * @var float
      *
-     * @Groups("read")
+     * @Groups("read_item")
      *
      * @ORM\Column(type="decimal", precision=8, scale=5, nullable=true)
      */
@@ -122,7 +124,7 @@ class Item implements Timestampable, SoftDeleteable
     /**
      * @var float
      *
-     * @Groups("read")
+     * @Groups("read_item")
      *
      * @ORM\Column(type="decimal", precision=8, scale=5, nullable=true)
      */
@@ -138,7 +140,7 @@ class Item implements Timestampable, SoftDeleteable
     /**
      * @var ArrayCollection
      *
-     * @Groups("read")
+     * @Groups("read_item")
      *
      * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Taxonomy\RelatedMaterial", inversedBy="items")
      */
@@ -147,7 +149,7 @@ class Item implements Timestampable, SoftDeleteable
     /**
      * @var ArrayCollection
      *
-     * @Groups("read")
+     * @Groups("read_item")
      *
      * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Taxonomy\RelatedEvent", inversedBy="items")
      */
