@@ -74,4 +74,8 @@ services:
     # @see https://api-platform.com/docs/core/serialization#decorating-a-serializer-and-add-extra-data
     AppBundle\Serializer\JsonLd\Normalizer:
         decorates: 'api_platform.jsonld.normalizer.item'
-        arguments: ['@AppBundle\Serializer\JsonLd\Normalizer.inner']
+        arguments:
+            - '@AppBundle\Serializer\JsonLd\Normalizer.inner'
+            - '@AppBundle\Service\EntitySearch'
+            -
+                uploads_base_path: '%app.path.uploads%'

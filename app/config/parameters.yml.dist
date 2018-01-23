@@ -46,3 +46,5 @@ parameters:
     materials_search_profile: 'test'
 
     events_search_url: 'https://api.detskeriaarhus.dk/api'
+
+    app.path.uploads: /uploads/

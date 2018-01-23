@@ -76,6 +76,9 @@ easy_admin:
                 fields:
                     - property: title
                     - property: description
+                    - property: image
+                      type: image
+                      base_path: '%app.path.uploads%'
                     - property: publishedAt
                     - property: item_query
                       template: item_query.html.twig
@@ -84,6 +87,8 @@ easy_admin:
                 fields:
                     - property: title
                     - property: description
+                    - property: imageFile
+                      type: vich_image
                     - property: publishedAt
                     - property: item_query
                       type: AppBundle\Form\Type\ItemQueryType

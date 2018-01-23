@@ -111,3 +111,10 @@ easy_admin_user:
     resetting:
         create:
             redirect_route: ~
+
+vich_uploader:
+    db_driver: orm
+    mappings:
+        collection_image:
+            uri_prefix:         '%app.path.uploads%'
+            upload_destination: '%kernel.root_dir%/../web/uploads'

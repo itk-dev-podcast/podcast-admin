@@ -16,8 +16,9 @@ class Normalizer implements NormalizerInterface, DenormalizerInterface, Serializ
 {
     private $decorated;
     private $entitySearch;
+    private $configuration;
 
-    public function __construct(NormalizerInterface $decorated, EntitySearch $entitySearch)
+    public function __construct(NormalizerInterface $decorated, EntitySearch $entitySearch, array $configuration)
     {
         if (!$decorated instanceof DenormalizerInterface) {
             throw new \InvalidArgumentException(sprintf('The decorated normalizer must implement the %s.', DenormalizerInterface::class));
@@ -25,6 +26,7 @@ class Normalizer implements NormalizerInterface, DenormalizerInterface, Serializ
 
         $this->decorated = $decorated;
         $this->entitySearch = $entitySearch;
+        $this->configuration = $configuration;
     }
 
     public function supportsNormalization($data, $format = null)
@@ -34,13 +36,19 @@ class Normalizer implements NormalizerInterface, DenormalizerInterface, Serializ
 
     public function normalize($object, $format = null, array $context = [])
     {
-        $items = null;
-        if ($object instanceof Collection && $object->getItemQuery()) {
-            $items = $this->entitySearch->search(Item::class, $object->getItemQuery());
-            if ($items instanceof Paginator) {
-                $items = $items->getIterator()->getArrayCopy();
+        if ($object instanceof Collection) {
+            if (!empty($object->getImage())) {
+                if (isset($this->configuration['uploads_base_path'])) {
+                    $object->setImage(rtrim($this->configuration['uploads_base_path'], '/') .'/' . $object->getImage());
+                }
             }
-            $object->setItems(new ArrayCollection($items));
+            if ($object->getItemQuery()) {
+                $items = $this->entitySearch->search(Item::class, $object->getItemQuery());
+                if ($items instanceof Paginator) {
+                    $items = $items->getIterator()->getArrayCopy();
+                }
+                $object->setItems(new ArrayCollection($items));
+            }
         }
         $data = $this->decorated->normalize($object, $format, $context);
 
