@@ -3,12 +3,24 @@ import serialize from 'form-serialize';
 import queryString from 'query-string';
 
 class App extends Component {
+    parseQueryString(q) {
+        if (!q) {
+            q = window.location.hash;
+        }
+        const options = {
+            arrayFormat: /\d+(\]|%5D)=/.test(q) ? 'index' : 'bracket'
+        };
+        const query = queryString.parse(q, options);
+
+        return query;
+    }
+
     constructor(props) {
         super(props);
         this.form = null;
         this.search = this.search.bind(this);
         this.filters = window.filters;
-        this.defaultValues = queryString.parse(window.location.hash.replace(/\[\d+\]/g, '[]'), {arrayFormat: 'bracket'});
+        this.defaultValues = this.parseQueryString();
         this.state = {
             searching: false,
             searchUrl: null,
@@ -44,7 +56,7 @@ class App extends Component {
         } else if (window.parent !== null && typeof window.parent.setItemQuery === 'function') {
             window.parent.setItemQuery(serialize(this.form, { hash: true }));
         }
-        this.defaultValues = queryString.parse(window.location.hash.replace(/\[\d+\]/g, '[]'), {arrayFormat: 'bracket'});
+        this.defaultValues = this.parseQueryString();
         const xhr = new XMLHttpRequest();
         xhr.onreadystatechange = () => {
             if (xhr.readyState === XMLHttpRequest.DONE) {
