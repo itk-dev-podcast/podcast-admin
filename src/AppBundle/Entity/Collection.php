@@ -100,6 +100,15 @@ class Collection implements Timestampable, SoftDeleteable
     private $image;
 
     /**
+     * @var Editor
+     *
+     * @Groups("read_collection")
+     *
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Editor")
+     */
+    private $editor;
+
+    /**
      * @Vich\UploadableField(mapping="collection_image", fileNameProperty="image")
      * @var File
      */
@@ -258,5 +267,21 @@ class Collection implements Timestampable, SoftDeleteable
     public function getImage()
     {
         return $this->image;
+    }
+
+    /**
+     * @return Editor
+     */
+    public function getEditor()
+    {
+        return $this->editor;
+    }
+
+    /**
+     * @param Editor $editor
+     */
+    public function setEditor($editor)
+    {
+        $this->editor = $editor;
     }
 }

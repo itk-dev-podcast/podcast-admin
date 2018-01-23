@@ -18,6 +18,7 @@ easy_admin:
             - Context
             - Audience
             - { label: 'Admin' }
+            - Editor
             - Feed
             - User
             - { label: 'Frontend' }
@@ -79,6 +80,7 @@ easy_admin:
                     - property: image
                       type: image
                       base_path: '%app.path.uploads%'
+                    - property: editor
                     - property: publishedAt
                     - property: item_query
                       template: item_query.html.twig
@@ -89,6 +91,7 @@ easy_admin:
                     - property: description
                     - property: imageFile
                       type: vich_image
+                    - property: editor
                     - property: publishedAt
                     - property: item_query
                       type: AppBundle\Form\Type\ItemQueryType
@@ -163,6 +166,23 @@ easy_admin:
             form:
                 fields:
                     - property: name
+
+        Editor:
+            class: AppBundle\Entity\Editor
+            list:
+                fields:
+                    - property: name
+                    - property: description
+
+            show:
+                fields:
+                    - property: name
+                    - property: description
+
+            form:
+                fields:
+                    - property: name
+                    - property: description
 
         User:
             class: AppBundle\Entity\User
