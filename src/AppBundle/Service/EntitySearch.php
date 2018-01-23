@@ -19,7 +19,8 @@ class EntitySearch implements EntitySearchInterface
         $this->requestStack = $requestStack;
     }
 
-    public function search($resourceClass, array $query) {
+    public function search($resourceClass, array $query)
+    {
         $attributes = [
             '_api_resource_class' => $resourceClass,
             '_api_collection_operation_name' => 'get',
@@ -31,10 +32,7 @@ class EntitySearch implements EntitySearchInterface
         $this->requestStack->pop();
 
         return $result;
-
         return $this->container->get('doctrine.orm.default_entity_manager')->getRepository($resourceClass)->findAll();
-
-
         $listener = $this->container->get('api_platform.listener.request.read');
         $kernel = $this->container->get('kernel');
         $request = new Request($query, [], $attributes);

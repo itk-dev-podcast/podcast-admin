@@ -3,7 +3,6 @@
 namespace AppBundle\Form\Type;
 
 use AppBundle\Entity\Item;
-use AppBundle\Service\RelatedMaterialManager;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\DataTransformerInterface;

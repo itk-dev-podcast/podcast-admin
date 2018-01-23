@@ -39,7 +39,7 @@ class Normalizer implements NormalizerInterface, DenormalizerInterface, Serializ
         if ($object instanceof Collection) {
             if (!empty($object->getImage())) {
                 if (isset($this->configuration['uploads_base_path'])) {
-                    $object->setImage(rtrim($this->configuration['uploads_base_path'], '/') .'/' . $object->getImage());
+                    $object->setImage(rtrim($this->configuration['uploads_base_path'], '/').'/'.$object->getImage());
                 }
             }
             if ($object->getItemQuery()) {
@@ -67,7 +67,7 @@ class Normalizer implements NormalizerInterface, DenormalizerInterface, Serializ
 
     public function setSerializer(SerializerInterface $serializer)
     {
-        if($this->decorated instanceof SerializerAwareInterface) {
+        if ($this->decorated instanceof SerializerAwareInterface) {
             $this->decorated->setSerializer($serializer);
         }
     }

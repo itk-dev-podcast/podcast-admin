@@ -12,7 +12,7 @@ use Symfony\Component\Serializer\Annotation\Groups;
 /**
  * @ORM\Entity
  */
-class Editor  implements Timestampable, SoftDeleteable
+class Editor implements Timestampable, SoftDeleteable
 {
     use SoftDeleteableEntity;
     use TimestampableEntity;

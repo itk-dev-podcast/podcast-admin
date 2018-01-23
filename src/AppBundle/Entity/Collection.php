@@ -110,6 +110,7 @@ class Collection implements Timestampable, SoftDeleteable
 
     /**
      * @Vich\UploadableField(mapping="collection_image", fileNameProperty="image")
+     *
      * @var File
      */
     private $imageFile;
